@@ -2,69 +2,68 @@
   "project": {
     "name": "CF_FPGA_testchip",
     "type": "openframe",
-    "user": "shwetank-shekhar",
-    "version": "2",
-    "user_project_wrapper_hash": "44ef20e5b06b29460f567e66d0101b786858b7a18d5457c751d0f860003e33cf",
+    "user": "unknown",
+    "version": "1",
+    "user_project_wrapper_hash": "",
     "submission_state": "Draft",
-    "github_repo_url": "https://github.com/ShekharShwetank/CF_FPGA_testchip",
-    "platform_project_id": "d3254559-f073-4b73-8f4e-fe7134b0474a"
+    "github_repo_url": "https://github.com/d-m-bailey/CF_FPGA_testchip"
   },
   "precheck": {
     "version": "1.3.1",
-    "timestamp": "2026-05-31T05:49:11.910349+00:00",
+    "timestamp": "2026-06-03T06:41:47.981233+00:00",
     "pdk": "sky130A",
     "passed": true,
     "checks": {
       "topcell_check": {
         "status": "pass",
-        "duration_s": 2.1
+        "duration_s": 2.12
       },
       "xor": {
         "status": "pass",
-        "duration_s": 281.04
+        "duration_s": 161.56
       },
       "klayout_feol": {
         "status": "pass",
-        "duration_s": 225.5
+        "duration_s": 215.82
       },
       "klayout_beol": {
         "status": "pass",
-        "duration_s": 706.05
+        "duration_s": 670.98
       },
       "klayout_offgrid": {
         "status": "pass",
-        "duration_s": 161.38
+        "duration_s": 153.65
       },
       "klayout_met_min_ca_density": {
         "status": "pass",
-        "duration_s": 46.33
+        "duration_s": 43.96
       },
       "klayout_pin_label_purposes_overlapping_drawing": {
         "status": "pass",
-        "duration_s": 31.44
+        "duration_s": 29.86
       },
       "klayout_zeroarea": {
         "status": "pass",
-        "duration_s": 13.49
+        "duration_s": 12.83
       },
       "spike_check": {
         "status": "pass",
-        "duration_s": 17.02
+        "duration_s": 16.24
       },
       "illegal_cellname_check": {
         "status": "pass",
-        "duration_s": 12.14
+        "duration_s": 4.16
       },
       "lvs": {
         "status": "pass",
-        "duration_s": 617.9
+        "duration_s": 580.42
       },
       "oeb": {
         "status": "pass",
-        "duration_s": 5.85,
+        "duration_s": 5.64,
         "details": "0 errors, 3 warnings across 44 GPIOs",
         "report": {
-          "report_relpath": "/home/ank/Desktop/WORK/T_4/CF_FPGA_testchip/precheck_results/31_MAY_2026___05_13_48/outputs/reports/cvc.oeb.report",
+          "report_relpath": "/home/ank/Desktop/WORK/T_4/CF_FPGA_testchip/precheck_results/03_JUN_2026___06_10_09/outputs/reports/cvc.oeb.report",
           "design_type": "openframe",
           "gpios": [
             {
@@ -803,6 +802,6 @@
         "reason": "optional (use --magic-drc to include)"
       }
     },
-    "input_file_hash": "1ce0212d19f6c5352eb8d093847675584fe6ea00"
+    "input_file_hash": "a00e830585ba065408ef9dc754669c5395740102"
   }
 }

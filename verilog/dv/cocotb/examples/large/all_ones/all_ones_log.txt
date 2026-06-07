@@ -1,0 +1,78 @@
+Info: Detected FABulous 2.0 format project.
+Info: Reading BELs file: /.FABulous/bel.v2.txt
+Info: Reading PIPs file: /.FABulous/pips.txt
+
+Info: constrained 'all[0]' to bel 'X0Y1/A'
+Info: constrained 'all[1]' to bel 'X0Y1/B'
+Info: constrained 'all[2]' to bel 'X0Y2/A'
+Info: constrained 'all[3]' to bel 'X0Y2/B'
+Info: constrained 'all[4]' to bel 'X0Y3/A'
+Info: constrained 'all[5]' to bel 'X0Y3/B'
+Info: constrained 'all[6]' to bel 'X0Y4/A'
+Info: constrained 'all[7]' to bel 'X0Y4/B'
+Info: constrained 'all[8]' to bel 'X0Y5/A'
+Info: constrained 'all[9]' to bel 'X0Y5/B'
+Info: constrained 'all[10]' to bel 'X0Y6/A'
+Info: constrained 'all[11]' to bel 'X0Y6/B'
+Info: constrained 'all[12]' to bel 'X5Y1/A'
+Info: constrained 'all[13]' to bel 'X5Y1/B'
+Info: constrained 'all[14]' to bel 'X5Y2/A'
+Info: constrained 'all[15]' to bel 'X5Y2/B'
+Info: constrained 'all[16]' to bel 'X5Y3/A'
+Info: constrained 'all[17]' to bel 'X5Y3/B'
+Info: constrained 'all[18]' to bel 'X5Y4/A'
+Info: constrained 'all[19]' to bel 'X5Y4/B'
+Info: constrained 'all[20]' to bel 'X5Y5/A'
+Info: constrained 'all[21]' to bel 'X5Y5/B'
+Info: constrained 'all[22]' to bel 'X5Y6/A'
+Info: constrained 'all[23]' to bel 'X5Y6/B'
+Info: Finished applying constraints from '/home/ank/Desktop/WORK/T_4/sky130-fabulous-testchip/user_designs/designs/classic/all_ones/generated_constraints.pcf'
+Info: Checksum: 0x937e49e4
+
+Info: Device utilisation:
+Info: 	         FABULOUS_LC:       0/    192     0%
+Info: 	               IOBUF:      24/     24   100%
+Info: 	                GBUF:       0/      4     0%
+Info: 	           SYS_RESET:       0/      1     0%
+
+Info: Placed 24 cells based on constraints.
+Info: Creating initial analytic placement for 1 cells, random placement wirelen = 0.
+Info:     at initial placer iter 0, wirelen = 0
+Info:     at initial placer iter 1, wirelen = 0
+Info:     at initial placer iter 2, wirelen = 0
+Info:     at initial placer iter 3, wirelen = 0
+Info: Running main analytical placer, max placement attempts per cell = 10000.
+Info:     at iteration #1, type _CONST1_DRV: wirelen solved = 0, spread = 0, legal = 0; time = 0.00s
+Info:     at iteration #2, type _CONST1_DRV: wirelen solved = 0, spread = 0, legal = 0; time = 0.00s
+Info:     at iteration #3, type _CONST1_DRV: wirelen solved = 0, spread = 0, legal = 0; time = 0.00s
+Info:     at iteration #4, type _CONST1_DRV: wirelen solved = 0, spread = 0, legal = 0; time = 0.00s
+Info:     at iteration #5, type _CONST1_DRV: wirelen solved = 0, spread = 0, legal = 0; time = 0.00s
+Info:     at iteration #6, type _CONST1_DRV: wirelen solved = 0, spread = 0, legal = 0; time = 0.00s
+Info: HeAP Placer Time: 0.00s
+Info:   of which solving equations: 0.00s
+Info:   of which spreading cells: 0.00s
+Info:   of which strict legalisation: 0.00s
+Info:      _CONST1_DRV 0.000s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 0, wirelen = 0
+iter #1: temp = 0.000000, timing cost = 0, wirelen = 0, dia = 3, Ra = -nan 
+Info:   at iteration #2: temp = 0.000000, timing cost = 0, wirelen = 0 
+Info: SA placement time 0.00s
+
+Info: No Fmax available; no interior timing paths found in design.
+Info: Checksum: 0x9c2a0761
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 48 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:         50 |        1         49 |    1    49 |         0|       0.00       0.00|
+Info: Routing complete.
+Info: Router1 time 0.00s
+Info: Checksum: 0xc8a27b35
+
+Info: No Fmax available; no interior timing paths found in design.
+
+Info: Program finished normally.

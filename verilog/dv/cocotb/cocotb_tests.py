@@ -7,3 +7,4 @@ from sys_reset.sys_reset import sys_reset
 from multiplication.multiplication import multiplication
 from ram_32x4_2r_1w.ram_32x4_2r_1w import ram_32x4_2r_1w
 from register_file.register_file import register_file
+from macc_8x8_20.macc_8x8_20 import macc_8x8_20

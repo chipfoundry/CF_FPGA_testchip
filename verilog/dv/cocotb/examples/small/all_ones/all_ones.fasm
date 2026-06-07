@@ -1,0 +1,204 @@
+# routing for net 'all[8]'
+
+
+# routing for net 'all[6]'
+
+
+# routing for net 'all[15]'
+
+
+# routing for net 'all[20]'
+
+
+# routing for net 'all[3]'
+
+
+# routing for net 'all[14]'
+
+
+# routing for net 'all[9]'
+
+
+# routing for net 'all[2]'
+
+
+# routing for net 'all[13]'
+
+
+# routing for net '$PACKER_GND'
+
+
+# routing for net 'all[23]'
+
+
+# routing for net 'all[12]'
+
+
+# routing for net 'all[19]'
+
+
+# routing for net 'all[5]'
+
+
+# routing for net 'all[11]'
+
+
+# routing for net 'all[7]'
+
+
+# routing for net 'all[18]'
+
+
+# routing for net 'all[10]'
+
+
+# routing for net 'all[22]'
+
+
+# routing for net '$PACKER_VCC'
+
+X0Y1.VCC0.A_IN
+X0Y1.VCC0.A_EN
+X0Y1.VCC0.B_IN
+X0Y1.VCC0.B_EN
+X5Y1.VCC0.A_IN
+X5Y1.VCC0.A_EN
+X5Y1.VCC0.B_IN
+X5Y1.VCC0.B_EN
+X0Y2.VCC0.A_IN
+X0Y2.VCC0.A_EN
+X0Y2.VCC0.B_IN
+X0Y2.VCC0.B_EN
+X5Y2.VCC0.A_IN
+X5Y2.VCC0.A_EN
+X5Y2.VCC0.B_IN
+X5Y2.VCC0.B_EN
+X0Y3.VCC0.A_IN
+X0Y3.VCC0.A_EN
+X0Y3.VCC0.B_IN
+X0Y3.VCC0.B_EN
+X5Y3.VCC0.A_IN
+X5Y3.VCC0.A_EN
+X5Y3.VCC0.B_IN
+X5Y3.VCC0.B_EN
+X0Y4.VCC0.A_IN
+X0Y4.VCC0.A_EN
+X0Y4.VCC0.B_IN
+X0Y4.VCC0.B_EN
+X5Y4.VCC0.A_IN
+X5Y4.VCC0.A_EN
+X5Y4.VCC0.B_IN
+X5Y4.VCC0.B_EN
+X0Y5.VCC0.A_IN
+X0Y5.VCC0.A_EN
+X0Y5.VCC0.B_IN
+X0Y5.VCC0.B_EN
+X5Y5.VCC0.A_IN
+X5Y5.VCC0.A_EN
+X5Y5.VCC0.B_IN
+X5Y5.VCC0.B_EN
+X0Y6.VCC0.A_IN
+X0Y6.VCC0.A_EN
+X0Y6.VCC0.B_IN
+X0Y6.VCC0.B_EN
+X5Y6.VCC0.A_IN
+X5Y6.VCC0.A_EN
+X5Y6.VCC0.B_IN
+X5Y6.VCC0.B_EN
+
+# routing for net 'all[1]'
+
+
+# routing for net 'all[17]'
+
+
+# routing for net 'all[4]'
+
+
+# routing for net 'all[0]'
+
+
+# routing for net 'all[21]'
+
+
+# routing for net 'all[16]'
+
+
+# config for cell '$iopadmap$all_ones.all_8'
+
+
+# config for cell '$iopadmap$all_ones.all_16'
+
+
+# config for cell '$iopadmap$all_ones.all_2'
+
+
+# config for cell '$iopadmap$all_ones.all_22'
+
+
+# config for cell '$iopadmap$all_ones.all_15'
+
+
+# config for cell '$iopadmap$all_ones.all_7'
+
+
+# config for cell '$iopadmap$all_ones.all_20'
+
+
+# config for cell '$iopadmap$all_ones.all_14'
+
+
+# config for cell '$iopadmap$all_ones.all_19'
+
+
+# config for cell '$iopadmap$all_ones.all_6'
+
+
+# config for cell '$iopadmap$all_ones.all_13'
+
+
+# config for cell '$PACKER_GND_DRV'
+
+
+# config for cell '$PACKER_VCC_DRV'
+
+
+# config for cell '$iopadmap$all_ones.all_12'
+
+
+# config for cell '$iopadmap$all_ones.all_5'
+
+
+# config for cell '$iopadmap$all_ones.all_18'
+
+
+# config for cell '$iopadmap$all_ones.all_11'
+
+
+# config for cell '$iopadmap$all_ones.all_9'
+
+
+# config for cell '$iopadmap$all_ones.all_4'
+
+
+# config for cell '$iopadmap$all_ones.all_10'
+
+
+# config for cell '$iopadmap$all_ones.all_21'
+
+
+# config for cell '$iopadmap$all_ones.all_17'
+
+
+# config for cell '$iopadmap$all_ones.all_1'
+
+
+# config for cell '$iopadmap$all_ones.all_3'
+
+
+# config for cell '$iopadmap$all_ones.all_23'
+
+
+# config for cell '$iopadmap$all_ones.all'
+
+

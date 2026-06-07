@@ -1,0 +1,904 @@
+sky130A
+classic_fabric_chipfoundry_large
+classic
+rm -rf multiplication.json
+rm -rf multiplication_out.json
+rm -rf multiplication.fasm
+rm -rf multiplication_log.txt
+rm -rf multiplication.bit
+rm -rf multiplication.hex
+rm -rf multiplication.vh
+rm -rf multiplication.vhd
+rm -rf multiplication.csv
+rm -rf multiplication.dot
+yosys \
+-p \
+"synth_fabulous \
+-top multiplication \
+-lut 4 \
+-carry ha \
+-complex-dff \
+-ff "\$_DFF_P_" x -ff "\$_DFFE_PP_" x -ff "\$_SDFF_PP?_" x -ff "\$_SDFFE_PP?P_" x -ff "\$_DLATCH_?_" x \
+-extra-plib ../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v -extra-plib ../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/primitives/IOBUF.v -extra-plib ../../../../ip/fabulous-tiles/primitives/IBUF/yosys/primitives/IBUF.v -extra-plib ../../../../ip/fabulous-tiles/primitives/OBUF/yosys/primitives/OBUF.v -extra-plib ../../../../ip/fabulous-tiles/primitives/TBUF/yosys/primitives/TBUF.v -extra-plib ../../../../ip/fabulous-tiles/primitives/GBUF/yosys/primitives/GBUF.v -extra-plib ../../../../ip/fabulous-tiles/primitives/SYS_RESET/yosys/primitives/SYS_RESET.v -extra-plib ../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v -extra-plib ../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v -extra-plib ../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v -extra-plib ../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v \
+-multiplier-map ../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/techmap/MACC_8x8_20_map.v \
+-extra-map ../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/techmap/lut_map.v -extra-map ../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/techmap/ff_map.v -extra-map ../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v -extra-map ../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/techmap/RAM_32x4_2R_1W_map.v -extra-map ../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/techmap/IHP_SRAM_1024x32_1RW_map.v -extra-map ../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/techmap/IHP_SRAM_1024x16_2RW_map.v \
+-extra-mlibmap ../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/memlib/RAM_32x4_2R_1W_lib.txt \
+-clkbuf-map ../../../../ip/fabulous-tiles/primitives/GBUF/yosys/techmap/GBUF_map.v ; \
+show -format dot -prefix multiplication; \
+write_json -noscopeinfo multiplication.json; \
+" \
+--define CLASSIC_FABRIC_CHIPFOUNDRY_LARGE multiplication.v
+
+ /----------------------------------------------------------------------------\
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |  Copyright (C) 2012 - 2026  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |  Distributed under an ISC-like license, type "license" to see terms        |
+ \----------------------------------------------------------------------------/
+ Yosys 0.62 (git sha1 2231c860ec7afd8eef9ba97231c3a10950469e95, clang++ 21.1.2 -fPIC -O3)
+
+-- Running command `read -define CLASSIC_FABRIC_CHIPFOUNDRY_LARGE' --
+
+-- Parsing `multiplication.v' using frontend ` -vlog2k' --
+
+1. Executing Verilog-2005 frontend: multiplication.v
+Parsing Verilog input from `multiplication.v' to AST representation.
+Storing AST representation for module `$abstract\multiplication'.
+Successfully finished Verilog frontend.
+
+-- Running command `synth_fabulous -top multiplication -lut 4 -carry ha -complex-dff -ff $_DFF_P_ x -ff $_DFFE_PP_ x -ff $_SDFF_PP?_ x -ff $_SDFFE_PP?P_ x -ff $_DLATCH_?_ x -extra-plib ../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v -extra-plib ../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/primitives/IOBUF.v -extra-plib ../../../../ip/fabulous-tiles/primitives/IBUF/yosys/primitives/IBUF.v -extra-plib ../../../../ip/fabulous-tiles/primitives/OBUF/yosys/primitives/OBUF.v -extra-plib ../../../../ip/fabulous-tiles/primitives/TBUF/yosys/primitives/TBUF.v -extra-plib ../../../../ip/fabulous-tiles/primitives/GBUF/yosys/primitives/GBUF.v -extra-plib ../../../../ip/fabulous-tiles/primitives/SYS_RESET/yosys/primitives/SYS_RESET.v -extra-plib ../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v -extra-plib ../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v -extra-plib ../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v -extra-plib ../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v -multiplier-map ../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/techmap/MACC_8x8_20_map.v -extra-map ../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/techmap/lut_map.v -extra-map ../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/techmap/ff_map.v -extra-map ../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v -extra-map ../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/techmap/RAM_32x4_2R_1W_map.v -extra-map ../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/techmap/IHP_SRAM_1024x32_1RW_map.v -extra-map ../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/techmap/IHP_SRAM_1024x16_2RW_map.v -extra-mlibmap ../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/memlib/RAM_32x4_2R_1W_lib.txt -clkbuf-map ../../../../ip/fabulous-tiles/primitives/GBUF/yosys/techmap/GBUF_map.v ; show -format dot -prefix multiplication; write_json -noscopeinfo multiplication.json; ' --
+
+2. Executing SYNTH_FABULOUS pass.
+
+2.1. Executing Verilog-2005 frontend: ../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v
+Parsing Verilog input from `../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v' to AST representation.
+Generating RTLIL representation for module `\LUT1'.
+Generating RTLIL representation for module `\LUT2'.
+Generating RTLIL representation for module `\LUT3'.
+Generating RTLIL representation for module `\LUT4'.
+Generating RTLIL representation for module `\LUT4_HA'.
+Generating RTLIL representation for module `\LUT5'.
+Generating RTLIL representation for module `\LUT6'.
+Generating RTLIL representation for module `\LUT55_FCY'.
+Generating RTLIL representation for module `\LUTFF'.
+Generating RTLIL representation for module `\FABULOUS_LC'.
+Generating RTLIL representation for module `\LUTFF_E'.
+Generating RTLIL representation for module `\LUTFF_SR'.
+Generating RTLIL representation for module `\LUTFF_SS'.
+Generating RTLIL representation for module `\LUTFF_SRE'.
+Generating RTLIL representation for module `\LUTFF_SSE'.
+Successfully finished Verilog frontend.
+
+2.2. Executing Verilog-2005 frontend: ../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/primitives/IOBUF.v
+Parsing Verilog input from `../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/primitives/IOBUF.v' to AST representation.
+Generating RTLIL representation for module `\IOBUF'.
+Successfully finished Verilog frontend.
+
+2.3. Executing Verilog-2005 frontend: ../../../../ip/fabulous-tiles/primitives/IBUF/yosys/primitives/IBUF.v
+Parsing Verilog input from `../../../../ip/fabulous-tiles/primitives/IBUF/yosys/primitives/IBUF.v' to AST representation.
+Generating RTLIL representation for module `\IBUF'.
+Successfully finished Verilog frontend.
+
+2.4. Executing Verilog-2005 frontend: ../../../../ip/fabulous-tiles/primitives/OBUF/yosys/primitives/OBUF.v
+Parsing Verilog input from `../../../../ip/fabulous-tiles/primitives/OBUF/yosys/primitives/OBUF.v' to AST representation.
+Generating RTLIL representation for module `\OBUF'.
+Successfully finished Verilog frontend.
+
+2.5. Executing Verilog-2005 frontend: ../../../../ip/fabulous-tiles/primitives/TBUF/yosys/primitives/TBUF.v
+Parsing Verilog input from `../../../../ip/fabulous-tiles/primitives/TBUF/yosys/primitives/TBUF.v' to AST representation.
+Generating RTLIL representation for module `\TBUF'.
+Successfully finished Verilog frontend.
+
+2.6. Executing Verilog-2005 frontend: ../../../../ip/fabulous-tiles/primitives/GBUF/yosys/primitives/GBUF.v
+Parsing Verilog input from `../../../../ip/fabulous-tiles/primitives/GBUF/yosys/primitives/GBUF.v' to AST representation.
+Generating RTLIL representation for module `\GBUF'.
+Successfully finished Verilog frontend.
+
+2.7. Executing Verilog-2005 frontend: ../../../../ip/fabulous-tiles/primitives/SYS_RESET/yosys/primitives/SYS_RESET.v
+Parsing Verilog input from `../../../../ip/fabulous-tiles/primitives/SYS_RESET/yosys/primitives/SYS_RESET.v' to AST representation.
+Generating RTLIL representation for module `\SYS_RESET'.
+Successfully finished Verilog frontend.
+
+2.8. Executing Verilog-2005 frontend: ../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v
+Parsing Verilog input from `../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v' to AST representation.
+Generating RTLIL representation for module `\RAM_32x4_2R_1W'.
+Successfully finished Verilog frontend.
+
+2.9. Executing Verilog-2005 frontend: ../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v
+Parsing Verilog input from `../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v' to AST representation.
+Generating RTLIL representation for module `\MACC_8x8_20'.
+Successfully finished Verilog frontend.
+
+2.10. Executing Verilog-2005 frontend: ../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v
+Parsing Verilog input from `../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v' to AST representation.
+Generating RTLIL representation for module `\IHP_SRAM_1024x32_1RW'.
+Successfully finished Verilog frontend.
+
+2.11. Executing Verilog-2005 frontend: ../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v
+Parsing Verilog input from `../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v' to AST representation.
+Generating RTLIL representation for module `\IHP_SRAM_1024x16_2RW'.
+Successfully finished Verilog frontend.
+
+2.12. Executing HIERARCHY pass (managing design hierarchy).
+
+2.13. Executing AST frontend in derive mode using pre-parsed AST for module `\multiplication'.
+Generating RTLIL representation for module `\multiplication'.
+
+2.13.1. Analyzing design hierarchy..
+Top module:  \multiplication
+
+2.13.2. Analyzing design hierarchy..
+Top module:  \multiplication
+Removing unused module `$abstract\multiplication'.
+Removed 1 unused modules.
+
+2.14. Executing PROC pass (convert processes to netlists).
+
+2.14.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.14.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Removed a total of 0 dead cases.
+
+2.14.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 0 redundant assignments.
+Promoted 0 assignments to connections.
+
+2.14.4. Executing PROC_INIT pass (extract init attributes).
+
+2.14.5. Executing PROC_ARST pass (detect async resets in processes).
+
+2.14.6. Executing PROC_ROM pass (convert switches to ROMs).
+Converted 0 switches.
+
+2.14.7. Executing PROC_MUX pass (convert decision trees to multiplexers).
+
+2.14.8. Executing PROC_DLATCH pass (convert process syncs to latches).
+
+2.14.9. Executing PROC_DFF pass (convert process syncs to FFs).
+
+2.14.10. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+2.14.11. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+2.14.12. Executing OPT_EXPR pass (perform const folding).
+Optimizing module multiplication.
+
+2.15. Executing FLATTEN pass (flatten design).
+
+2.16. Executing TRIBUF pass.
+
+2.17. Executing DEMINOUT pass (demote inout ports to input or output).
+
+2.18. Executing TRIBUF pass.
+
+2.19. Executing DEMINOUT pass (demote inout ports to input or output).
+
+2.20. Executing OPT_EXPR pass (perform const folding).
+Optimizing module multiplication.
+
+2.21. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \multiplication..
+Removed 0 unused cells and 1 unused wires.
+<suppressed ~1 debug messages>
+
+2.22. Executing CHECK pass (checking for obvious problems).
+Checking module multiplication...
+Found and reported 0 problems.
+
+2.23. Executing OPT pass (performing simple optimizations).
+
+2.23.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module multiplication.
+
+2.23.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\multiplication'.
+Computing hashes of 1 cells of `\multiplication'.
+Finding duplicate cells in `\multiplication'.
+Removed a total of 0 cells.
+
+2.23.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \multiplication..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+2.23.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \multiplication.
+Performed a total of 0 changes.
+
+2.23.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\multiplication'.
+Computing hashes of 1 cells of `\multiplication'.
+Finding duplicate cells in `\multiplication'.
+Removed a total of 0 cells.
+
+2.23.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.23.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \multiplication..
+
+2.23.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module multiplication.
+
+2.23.9. Finished fast OPT passes. (There is nothing left to do.)
+
+2.24. Executing FSM pass (extract and optimize FSM).
+
+2.24.1. Executing FSM_DETECT pass (finding FSMs in design).
+
+2.24.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+
+2.24.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+2.24.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \multiplication..
+
+2.24.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+
+2.24.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+
+2.24.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+2.24.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+
+2.25. Executing OPT pass (performing simple optimizations).
+
+2.25.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module multiplication.
+
+2.25.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\multiplication'.
+Computing hashes of 1 cells of `\multiplication'.
+Finding duplicate cells in `\multiplication'.
+Removed a total of 0 cells.
+
+2.25.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \multiplication..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+2.25.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \multiplication.
+Performed a total of 0 changes.
+
+2.25.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\multiplication'.
+Computing hashes of 1 cells of `\multiplication'.
+Finding duplicate cells in `\multiplication'.
+Removed a total of 0 cells.
+
+2.25.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.25.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \multiplication..
+
+2.25.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module multiplication.
+
+2.25.9. Finished fast OPT passes. (There is nothing left to do.)
+
+2.26. Executing WREDUCE pass (reducing word size of cells).
+
+2.27. Executing PEEPOPT pass (run peephole optimizers).
+
+2.28. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \multiplication..
+
+2.29. Executing TECHMAP pass (map to technology primitives).
+
+2.29.1. Executing Verilog-2005 frontend: /nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/cmp2lut.v
+Parsing Verilog input from `/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/cmp2lut.v' to AST representation.
+Generating RTLIL representation for module `\_90_lut_cmp_'.
+Successfully finished Verilog frontend.
+
+2.29.2. Executing Verilog-2005 frontend: /nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/cmp2lcu.v
+Parsing Verilog input from `/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/cmp2lcu.v' to AST representation.
+Generating RTLIL representation for module `\_80_lcu_cmp_'.
+Generating RTLIL representation for module `$__CMP2LCU'.
+Successfully finished Verilog frontend.
+
+2.29.3. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~7 debug messages>
+
+2.30. Executing WREDUCE pass (reducing word size of cells).
+
+2.31. Executing TECHMAP pass (map to technology primitives).
+
+2.31.1. Executing Verilog-2005 frontend: /nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/mul2dsp.v
+Parsing Verilog input from `/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/mul2dsp.v' to AST representation.
+Generating RTLIL representation for module `\_80_mul'.
+Generating RTLIL representation for module `\_90_soft_mul'.
+Successfully finished Verilog frontend.
+
+2.31.2. Executing Verilog-2005 frontend: ../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/techmap/MACC_8x8_20_map.v
+Parsing Verilog input from `../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/techmap/MACC_8x8_20_map.v' to AST representation.
+Generating RTLIL representation for module `$__FABULOUS_MUL'.
+../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/techmap/MACC_8x8_20_map.v:51: Warning: Range select out of bounds on signal `\A': Setting result bit to undef.
+../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/techmap/MACC_8x8_20_map.v:52: Warning: Range select out of bounds on signal `\A': Setting result bit to undef.
+../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/techmap/MACC_8x8_20_map.v:53: Warning: Range select out of bounds on signal `\A': Setting result bit to undef.
+../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/techmap/MACC_8x8_20_map.v:54: Warning: Range select out of bounds on signal `\A': Setting result bit to undef.
+../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/techmap/MACC_8x8_20_map.v:55: Warning: Range select out of bounds on signal `\A': Setting result bit to undef.
+../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/techmap/MACC_8x8_20_map.v:56: Warning: Range select out of bounds on signal `\A': Setting result bit to undef.
+../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/techmap/MACC_8x8_20_map.v:57: Warning: Range select out of bounds on signal `\A': Setting result bit to undef.
+../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/techmap/MACC_8x8_20_map.v:58: Warning: Range select out of bounds on signal `\A': Setting result bit to undef.
+../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/techmap/MACC_8x8_20_map.v:60: Warning: Range select out of bounds on signal `\B': Setting result bit to undef.
+../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/techmap/MACC_8x8_20_map.v:61: Warning: Range select out of bounds on signal `\B': Setting result bit to undef.
+../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/techmap/MACC_8x8_20_map.v:62: Warning: Range select out of bounds on signal `\B': Setting result bit to undef.
+../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/techmap/MACC_8x8_20_map.v:63: Warning: Range select out of bounds on signal `\B': Setting result bit to undef.
+../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/techmap/MACC_8x8_20_map.v:64: Warning: Range select out of bounds on signal `\B': Setting result bit to undef.
+../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/techmap/MACC_8x8_20_map.v:65: Warning: Range select out of bounds on signal `\B': Setting result bit to undef.
+../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/techmap/MACC_8x8_20_map.v:66: Warning: Range select out of bounds on signal `\B': Setting result bit to undef.
+../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/techmap/MACC_8x8_20_map.v:67: Warning: Range select out of bounds on signal `\B': Setting result bit to undef.
+Successfully finished Verilog frontend.
+
+2.31.3. Continuing TECHMAP pass.
+Using template $paramod$97406cd5ce9b515e2d7bb19cbc1b05f4831dfaf2\_80_mul for cells of type $mul.
+Using template $paramod$c7a80b2af5cca3d423b230759aac129a1ea7a909$__FABULOUS_MUL for cells of type $__FABULOUS_MUL.
+No more expansions possible.
+<suppressed ~106 debug messages>
+
+2.32. Executing OPT_EXPR pass (perform const folding).
+
+2.33. Executing WREDUCE pass (reducing word size of cells).
+
+2.34. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module multiplication:
+  created 0 $alu and 0 $macc cells.
+
+2.35. Executing SHARE pass (SAT-based resource sharing).
+
+2.36. Executing OPT pass (performing simple optimizations).
+
+2.36.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module multiplication.
+
+2.36.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\multiplication'.
+Computing hashes of 1 cells of `\multiplication'.
+Finding duplicate cells in `\multiplication'.
+Removed a total of 0 cells.
+
+2.36.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \multiplication..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+2.36.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \multiplication.
+Performed a total of 0 changes.
+
+2.36.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\multiplication'.
+Computing hashes of 1 cells of `\multiplication'.
+Finding duplicate cells in `\multiplication'.
+Removed a total of 0 cells.
+
+2.36.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.36.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \multiplication..
+Removed 0 unused cells and 10 unused wires.
+<suppressed ~1 debug messages>
+
+2.36.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module multiplication.
+
+2.36.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+2.36.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \multiplication..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+2.36.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \multiplication.
+Performed a total of 0 changes.
+
+2.36.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\multiplication'.
+Computing hashes of 1 cells of `\multiplication'.
+Finding duplicate cells in `\multiplication'.
+Removed a total of 0 cells.
+
+2.36.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.36.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \multiplication..
+
+2.36.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module multiplication.
+
+2.36.16. Finished fast OPT passes. (There is nothing left to do.)
+
+2.37. Executing MEMORY pass.
+
+2.37.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+2.37.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+2.37.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+2.37.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+
+2.37.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+2.37.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \multiplication..
+
+2.37.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+2.37.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+2.37.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \multiplication..
+
+2.37.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+2.38. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \multiplication..
+
+2.39. Executing MEMORY_LIBMAP pass (mapping memories to cells).
+
+2.40. Executing OPT pass (performing simple optimizations).
+
+2.40.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module multiplication.
+
+2.40.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\multiplication'.
+Computing hashes of 1 cells of `\multiplication'.
+Finding duplicate cells in `\multiplication'.
+Removed a total of 0 cells.
+
+2.40.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.40.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \multiplication..
+
+2.40.5. Finished fast OPT passes.
+
+2.41. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+2.42. Executing OPT pass (performing simple optimizations).
+
+2.42.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module multiplication.
+
+2.42.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\multiplication'.
+Computing hashes of 1 cells of `\multiplication'.
+Finding duplicate cells in `\multiplication'.
+Removed a total of 0 cells.
+
+2.42.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \multiplication..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+2.42.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \multiplication.
+Performed a total of 0 changes.
+
+2.42.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\multiplication'.
+Computing hashes of 1 cells of `\multiplication'.
+Finding duplicate cells in `\multiplication'.
+Removed a total of 0 cells.
+
+2.42.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.42.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \multiplication..
+
+2.42.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module multiplication.
+
+2.42.9. Finished fast OPT passes. (There is nothing left to do.)
+
+2.43. Executing OPT pass (performing simple optimizations).
+
+2.43.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module multiplication.
+
+2.43.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\multiplication'.
+Computing hashes of 1 cells of `\multiplication'.
+Finding duplicate cells in `\multiplication'.
+Removed a total of 0 cells.
+
+2.43.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \multiplication..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+2.43.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \multiplication.
+Performed a total of 0 changes.
+
+2.43.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\multiplication'.
+Computing hashes of 1 cells of `\multiplication'.
+Finding duplicate cells in `\multiplication'.
+Removed a total of 0 cells.
+
+2.43.6. Executing OPT_SHARE pass.
+
+2.43.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.43.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \multiplication..
+
+2.43.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module multiplication.
+
+2.43.10. Finished fast OPT passes. (There is nothing left to do.)
+
+2.44. Executing TECHMAP pass (map to technology primitives).
+
+2.44.1. Executing Verilog-2005 frontend: /nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu_brent_kung'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `$__div_mod_u'.
+Generating RTLIL representation for module `$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_demux'.
+Generating RTLIL representation for module `\_90_lut'.
+Generating RTLIL representation for module `$connect'.
+Generating RTLIL representation for module `$input_port'.
+Successfully finished Verilog frontend.
+
+2.44.2. Executing Verilog-2005 frontend: /nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v
+Parsing Verilog input from `/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v' to AST representation.
+Generating RTLIL representation for module `\_80_fabulous_ha_alu'.
+Successfully finished Verilog frontend.
+
+2.44.3. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~77 debug messages>
+
+2.45. Executing OPT pass (performing simple optimizations).
+
+2.45.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module multiplication.
+
+2.45.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\multiplication'.
+Computing hashes of 1 cells of `\multiplication'.
+Finding duplicate cells in `\multiplication'.
+Removed a total of 0 cells.
+
+2.45.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.45.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \multiplication..
+
+2.45.5. Finished fast OPT passes.
+
+2.46. Executing OPT pass (performing simple optimizations).
+
+2.46.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module multiplication.
+
+2.46.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\multiplication'.
+Computing hashes of 1 cells of `\multiplication'.
+Finding duplicate cells in `\multiplication'.
+Removed a total of 0 cells.
+
+2.46.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \multiplication..
+  Creating internal representation of mux trees.
+  No muxes found in this module.
+Removed 0 multiplexer ports.
+
+2.46.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \multiplication.
+Performed a total of 0 changes.
+
+2.46.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\multiplication'.
+Computing hashes of 1 cells of `\multiplication'.
+Finding duplicate cells in `\multiplication'.
+Removed a total of 0 cells.
+
+2.46.6. Executing OPT_SHARE pass.
+
+2.46.7. Executing OPT_DFF pass (perform DFF optimizations).
+
+2.46.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \multiplication..
+
+2.46.9. Executing OPT_EXPR pass (perform const folding).
+Optimizing module multiplication.
+
+2.46.10. Finished fast OPT passes. (There is nothing left to do.)
+
+2.47. Executing IOPADMAP pass (mapping inputs/outputs to IO-PAD cells).
+Mapping port multiplication.product using $__FABULOUS_OBUF.
+Mapping port multiplication.b using $__FABULOUS_IBUF.
+Mapping port multiplication.a using $__FABULOUS_IBUF.
+
+2.48. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+
+2.49. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\multiplication'.
+Computing hashes of 25 cells of `\multiplication'.
+Finding duplicate cells in `\multiplication'.
+Removed a total of 0 cells.
+
+2.50. Executing TECHMAP pass (map to technology primitives).
+
+2.50.1. Executing Verilog-2005 frontend: ../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/techmap/lut_map.v
+Parsing Verilog input from `../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/techmap/lut_map.v' to AST representation.
+Generating RTLIL representation for module `$lut'.
+Successfully finished Verilog frontend.
+
+2.50.2. Executing Verilog-2005 frontend: ../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/techmap/ff_map.v
+Parsing Verilog input from `../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/techmap/ff_map.v' to AST representation.
+Generating RTLIL representation for module `$_DFF_P_'.
+Generating RTLIL representation for module `$_DFFE_PP_'.
+Generating RTLIL representation for module `$_SDFF_PP0_'.
+Generating RTLIL representation for module `$_SDFF_PP1_'.
+Generating RTLIL representation for module `$_SDFFE_PP0P_'.
+Generating RTLIL representation for module `$_SDFFE_PP1P_'.
+Successfully finished Verilog frontend.
+
+2.50.3. Executing Verilog-2005 frontend: ../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v
+Parsing Verilog input from `../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v' to AST representation.
+Generating RTLIL representation for module `$__FABULOUS_IBUF'.
+Generating RTLIL representation for module `$__FABULOUS_OBUF'.
+Generating RTLIL representation for module `$__FABULOUS_TBUF'.
+Generating RTLIL representation for module `$__FABULOUS_IOBUF'.
+Successfully finished Verilog frontend.
+
+2.50.4. Executing Verilog-2005 frontend: ../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/techmap/RAM_32x4_2R_1W_map.v
+Parsing Verilog input from `../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/techmap/RAM_32x4_2R_1W_map.v' to AST representation.
+Generating RTLIL representation for module `$__RAM_32x4_2R_1W_XX_'.
+Successfully finished Verilog frontend.
+
+2.50.5. Executing Verilog-2005 frontend: ../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/techmap/IHP_SRAM_1024x32_1RW_map.v
+Parsing Verilog input from `../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/techmap/IHP_SRAM_1024x32_1RW_map.v' to AST representation.
+Generating RTLIL representation for module `$__RAM_1024x32_1RW_'.
+Successfully finished Verilog frontend.
+
+2.50.6. Executing Verilog-2005 frontend: ../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/techmap/IHP_SRAM_1024x16_2RW_map.v
+Parsing Verilog input from `../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/techmap/IHP_SRAM_1024x16_2RW_map.v' to AST representation.
+Generating RTLIL representation for module `$__RAM_1024x16_2RW_'.
+Successfully finished Verilog frontend.
+
+2.50.7. Continuing TECHMAP pass.
+Using template $__FABULOUS_IBUF for cells of type $__FABULOUS_IBUF.
+Using template $__FABULOUS_OBUF for cells of type $__FABULOUS_OBUF.
+No more expansions possible.
+<suppressed ~43 debug messages>
+Removed 0 unused cells and 48 unused wires.
+
+2.51. Executing ABC pass (technology mapping using ABC).
+
+2.51.1. Extracting gate netlist of module `\multiplication' to `<abc-temp-dir>/input.blif'..
+Don't call ABC as there is nothing to map.
+
+2.51.1.1. Executed ABC.
+Extracted 0 gates and 0 wires to a netlist network with 0 inputs and 0 outputs.
+Removing temp directory.
+Removing global temp directory.
+
+2.52. Executing TECHMAP pass (map to technology primitives).
+
+2.52.1. Executing Verilog-2005 frontend: /nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/cells_map.v
+Parsing Verilog input from `/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/cells_map.v' to AST representation.
+Generating RTLIL representation for module `$lut'.
+Generating RTLIL representation for module `$_DFF_P_'.
+Successfully finished Verilog frontend.
+
+2.52.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+2.53. Executing CLKBUFMAP pass (inserting clock buffers).
+
+2.54. Executing TECHMAP pass (map to technology primitives).
+
+2.54.1. Executing Verilog-2005 frontend: ../../../../ip/fabulous-tiles/primitives/GBUF/yosys/techmap/GBUF_map.v
+Parsing Verilog input from `../../../../ip/fabulous-tiles/primitives/GBUF/yosys/techmap/GBUF_map.v' to AST representation.
+Generating RTLIL representation for module `$__FABULOUS_GBUF'.
+Successfully finished Verilog frontend.
+
+2.54.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~3 debug messages>
+
+2.55. Executing HIERARCHY pass (managing design hierarchy).
+Attribute `top' found on module `multiplication'. Setting top module to multiplication.
+
+2.55.1. Analyzing design hierarchy..
+Top module:  \multiplication
+
+2.55.2. Analyzing design hierarchy..
+Top module:  \multiplication
+Removed 0 unused modules.
+
+2.56. Printing statistics.
+
+=== multiplication ===
+
+        +----------Local Count, excluding submodules.
+        | 
+        7 wires
+       68 wire bits
+        3 public wires
+       24 public wire bits
+        3 ports
+       24 port bits
+       25 cells
+       24   IOBUF
+        1   MACC_8x8_20
+
+3. Generating Graphviz representation of design.
+Writing dot description to `multiplication.dot'.
+Dumping module multiplication to page 1.
+
+4. Executing JSON backend.
+
+Warnings: 2 unique messages, 16 total
+End of script. Logfile hash: 59e0ac969c, CPU: user 0.22s system 0.02s, MEM: 29.64 MB peak
+Yosys 0.62 (git sha1 2231c860ec7afd8eef9ba97231c3a10950469e95, clang++ 21.1.2 -fPIC -O3)
+Time spent: 41% 38x read_verilog (0 sec), 16% 19x opt_expr (0 sec), ...
+Found 36 available I/O pins
+Discovered ports for module: multiplication
+✓ Generated PCF: /home/ank/Desktop/WORK/T_4/sky130-fabulous-testchip/user_designs/designs/classic/multiplication/generated_constraints.pcf
+Generated /home/ank/Desktop/WORK/T_4/sky130-fabulous-testchip/user_designs/designs/classic/multiplication/generated_constraints.pcf
+FAB_ROOT=/home/ank/Desktop/WORK/T_4/sky130-fabulous-testchip/user_designs/fabrics/classic_fabric_chipfoundry_large/macro/sky130A/fabulous \
+nextpnr-generic \
+--uarch fabulous \
+--json multiplication.json \
+--write multiplication_out.json \
+-o fasm=multiplication.fasm \
+-o pcf=/home/ank/Desktop/WORK/T_4/sky130-fabulous-testchip/user_designs/designs/classic/multiplication/generated_constraints.pcf \
+--verbose \
+--log multiplication_log.txt \
+--timing-allow-fail
+Info: Detected FABulous 2.0 format project.
+Info: Reading BELs file: /.FABulous/bel.v2.txt
+Info: Reading PIPs file: /.FABulous/pips.txt
+
+Info: constrained 'a[0]' to bel 'X0Y1/A'
+Info: constrained 'a[1]' to bel 'X0Y1/B'
+Info: constrained 'a[2]' to bel 'X0Y2/A'
+Info: constrained 'a[3]' to bel 'X0Y2/B'
+Info: constrained 'a[4]' to bel 'X0Y3/A'
+Info: constrained 'a[5]' to bel 'X0Y3/B'
+Info: constrained 'b[0]' to bel 'X0Y4/A'
+Info: constrained 'b[1]' to bel 'X0Y4/B'
+Info: constrained 'b[2]' to bel 'X0Y5/A'
+Info: constrained 'b[3]' to bel 'X0Y5/B'
+Info: constrained 'b[4]' to bel 'X0Y6/A'
+Info: constrained 'b[5]' to bel 'X0Y6/B'
+Info: constrained 'product[0]' to bel 'X0Y7/A'
+Info: constrained 'product[1]' to bel 'X0Y7/B'
+Info: constrained 'product[2]' to bel 'X0Y8/A'
+Info: constrained 'product[3]' to bel 'X0Y8/B'
+Info: constrained 'product[4]' to bel 'X0Y9/A'
+Info: constrained 'product[5]' to bel 'X0Y9/B'
+Info: constrained 'product[6]' to bel 'X0Y10/A'
+Info: constrained 'product[7]' to bel 'X0Y10/B'
+Info: constrained 'product[8]' to bel 'X0Y11/A'
+Info: constrained 'product[9]' to bel 'X0Y11/B'
+Info: constrained 'product[10]' to bel 'X0Y12/A'
+Info: constrained 'product[11]' to bel 'X0Y12/B'
+Info: Finished applying constraints from '/home/ank/Desktop/WORK/T_4/sky130-fabulous-testchip/user_designs/designs/classic/multiplication/generated_constraints.pcf'
+Info: Checksum: 0xdefc2022
+
+Info: Device utilisation:
+Info: 	         FABULOUS_LC:       0/   1056     0%
+Info: 	               IOBUF:      24/     36    66%
+Info: 	      RAM_32x4_2R_1W:       0/     12     0%
+Info: 	         MACC_8x8_20:       1/      6    16%
+Info: 	                GBUF:       0/      4     0%
+Info: 	           SYS_RESET:       0/      1     0%
+
+Info: Placed 24 cells based on constraints.
+Info: Creating initial analytic placement for 3 cells, random placement wirelen = 288.
+Info:     at initial placer iter 0, wirelen = 72
+Info:     at initial placer iter 1, wirelen = 72
+Info:     at initial placer iter 2, wirelen = 72
+Info:     at initial placer iter 3, wirelen = 72
+Info: Running main analytical placer, max placement attempts per cell = 10000.
+Info:     at iteration #1, type _CONST0_DRV: wirelen solved = 72, spread = 72, legal = 72; time = 0.00s
+Info:     at iteration #1, type MACC_8x8_20: wirelen solved = 72, spread = 72, legal = 328; time = 0.00s
+Info:     at iteration #1, type _CONST1_DRV: wirelen solved = 328, spread = 328, legal = 328; time = 0.00s
+Info:     at iteration #1, type ALL: wirelen solved = 84, spread = 84, legal = 300; time = 0.00s
+Info:     at iteration #2, type _CONST0_DRV: wirelen solved = 300, spread = 300, legal = 300; time = 0.00s
+Info:     at iteration #2, type MACC_8x8_20: wirelen solved = 84, spread = 84, legal = 288; time = 0.00s
+Info:     at iteration #2, type _CONST1_DRV: wirelen solved = 288, spread = 288, legal = 288; time = 0.00s
+Info:     at iteration #2, type ALL: wirelen solved = 72, spread = 72, legal = 288; time = 0.00s
+Info:     at iteration #3, type _CONST0_DRV: wirelen solved = 288, spread = 288, legal = 288; time = 0.00s
+Info:     at iteration #3, type MACC_8x8_20: wirelen solved = 72, spread = 72, legal = 300; time = 0.00s
+Info:     at iteration #3, type _CONST1_DRV: wirelen solved = 300, spread = 300, legal = 300; time = 0.00s
+Info:     at iteration #3, type ALL: wirelen solved = 84, spread = 84, legal = 328; time = 0.00s
+Info:     at iteration #4, type _CONST0_DRV: wirelen solved = 328, spread = 328, legal = 328; time = 0.00s
+Info:     at iteration #4, type MACC_8x8_20: wirelen solved = 84, spread = 84, legal = 288; time = 0.00s
+Info:     at iteration #4, type _CONST1_DRV: wirelen solved = 288, spread = 288, legal = 288; time = 0.00s
+Info:     at iteration #4, type ALL: wirelen solved = 72, spread = 72, legal = 312; time = 0.00s
+Info:     at iteration #5, type _CONST0_DRV: wirelen solved = 312, spread = 312, legal = 312; time = 0.00s
+Info:     at iteration #5, type MACC_8x8_20: wirelen solved = 72, spread = 72, legal = 348; time = 0.00s
+Info:     at iteration #5, type _CONST1_DRV: wirelen solved = 348, spread = 348, legal = 348; time = 0.00s
+Info:     at iteration #5, type ALL: wirelen solved = 72, spread = 72, legal = 328; time = 0.00s
+Info:     at iteration #6, type _CONST0_DRV: wirelen solved = 328, spread = 328, legal = 328; time = 0.00s
+Info:     at iteration #6, type MACC_8x8_20: wirelen solved = 84, spread = 84, legal = 312; time = 0.00s
+Info:     at iteration #6, type _CONST1_DRV: wirelen solved = 312, spread = 312, legal = 312; time = 0.00s
+Info:     at iteration #6, type ALL: wirelen solved = 72, spread = 72, legal = 312; time = 0.00s
+Info:     at iteration #7, type _CONST0_DRV: wirelen solved = 312, spread = 312, legal = 312; time = 0.00s
+Info:     at iteration #7, type MACC_8x8_20: wirelen solved = 72, spread = 72, legal = 328; time = 0.00s
+Info:     at iteration #7, type _CONST1_DRV: wirelen solved = 328, spread = 328, legal = 328; time = 0.00s
+Info:     at iteration #7, type ALL: wirelen solved = 84, spread = 84, legal = 328; time = 0.00s
+Info: HeAP Placer Time: 0.01s
+Info:   of which solving equations: 0.00s
+Info:   of which spreading cells: 0.00s
+Info:   of which strict legalisation: 0.00s
+Info:      _CONST1_DRV 0.000s
+Info:      MACC_8x8_20 0.000s
+Info:      _CONST0_DRV 0.000s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 0, wirelen = 288
+iter #1: temp = 0.000000, timing cost = 0, wirelen = 288, dia = 3, Ra = 0.00 
+Info:   at iteration #2: temp = 0.000000, timing cost = 0, wirelen = 288 
+Info: SA placement time 0.00s
+
+Info: No Fmax available; no interior timing paths found in design.
+Info: Checksum: 0x049a2240
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 75 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:         79 |        4         75 |    4    75 |         0|       0.07       0.07|
+Info: Routing complete.
+Info: Router1 time 0.07s
+Info: Checksum: 0x494ecad9
+
+Info: No Fmax available; no interior timing paths found in design.
+
+Info: Program finished normally.
+python3 ../../../scripts/bit_gen.py \
+-genBitstream \
+multiplication.fasm \
+/home/ank/Desktop/WORK/T_4/sky130-fabulous-testchip/user_designs/fabrics/classic_fabric_chipfoundry_large/macro/sky130A/fabulous/bitStreamSpec.bin \
+multiplication.bit
+/nix/store/ji9fnr5f4j66l49qbwqj50jxnk2igmj4-python3-3.13.9-env/lib/python3.13/site-packages/fasm/parser/__init__.py:22: RuntimeWarning: Importing fasm.parse_fasm: cannot import name 'tags' from partially initialized module 'fasm.parser' (most likely due to a circular import) (/nix/store/ji9fnr5f4j66l49qbwqj50jxnk2igmj4-python3-3.13.9-env/lib/python3.13/site-packages/fasm/parser/__init__.py)
+  warn('Importing fasm.parse_fasm: {}'.format(e), RuntimeWarning)
+/nix/store/ji9fnr5f4j66l49qbwqj50jxnk2igmj4-python3-3.13.9-env/lib/python3.13/site-packages/fasm/parser/__init__.py:23: RuntimeWarning: Falling back on slower textX parser implementation
+  warn('Falling back on slower textX parser implementation', RuntimeWarning)
+python3 ../../../scripts/bit_to_hex.py \
+multiplication.bit \
+multiplication.hex

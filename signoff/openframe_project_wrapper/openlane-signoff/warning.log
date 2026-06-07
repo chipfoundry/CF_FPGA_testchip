@@ -1,4 +1,4 @@
-510 Lint warnings found.
+506 Lint warnings found.
 No libs found for macro classic_fabric_chipfoundry_small at corner nom_tt_025C_1v80. The module will be black-boxed.
 No libs found for macro classic_fabric_chipfoundry_large at corner nom_tt_025C_1v80. The module will be black-boxed.
 No libs found for macro vccd1_connection at corner nom_tt_025C_1v80. The module will be black-boxed.

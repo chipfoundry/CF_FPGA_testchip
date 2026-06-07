@@ -4,7 +4,7 @@ import cocotb
 from cocotb.triggers import ClockCycles
 from pathlib import Path
 import random
-from common.common import parse_pcf, bitbang_upload_bitstream, set_signal, get_signal, release_signal, select_fabric, get_pcf_path, get_bitstream_path
+from common.common import get_fabric_handle, initialize_pads, force_power_signals, bitbang_clear_bitstream, parse_pcf, bitbang_upload_bitstream, set_signal, get_signal, release_signal, select_fabric, get_pcf_path, get_bitstream_path
 
 @cocotb.test()
 @report_test
@@ -15,8 +15,15 @@ async def multiplication(dut):
     cocotb.log.info("=" * 62)
 
     proj_root = Path(__file__).resolve().parent.parent.parent.parent.parent
-    fabric_type = "large"
     testname = "multiplication"
+
+    initialize_pads(caravelEnv)
+    
+    fabric_type = "large"
+    fabric_handle = get_fabric_handle(caravelEnv, fabric_type)
+    if fabric_handle:
+        force_power_signals(fabric_handle)
+
 
     await select_fabric(caravelEnv, fabric_type)
 
@@ -24,6 +31,7 @@ async def multiplication(dut):
     bitstream_path = get_bitstream_path(proj_root, fabric_type, testname)
 
     pcf = parse_pcf(pcf_path)
+    await bitbang_clear_bitstream(caravelEnv, fabric_type)
     await bitbang_upload_bitstream(caravelEnv, bitstream_path)
     await ClockCycles(caravelEnv.clk, 100)
 

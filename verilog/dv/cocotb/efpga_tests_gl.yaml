@@ -1,0 +1,12 @@
+---
+Tests:
+    - {name: addition, sim: GL}
+    - {name: all_ones, sim: GL}
+    - {name: all_zeros, sim: GL}
+    - {name: passthrough, sim: GL}
+    - {name: counter, sim: GL}
+    - {name: sys_reset, sim: GL}
+    - {name: multiplication, sim: GL}
+    - {name: ram_32x4_2r_1w, sim: GL}
+    - {name: register_file, sim: GL}
+    - {name: macc_8x8_20, sim: GL}

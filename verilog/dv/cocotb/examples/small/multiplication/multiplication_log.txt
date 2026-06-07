@@ -1,0 +1,104 @@
+Info: Detected FABulous 2.0 format project.
+Info: Reading BELs file: /.FABulous/bel.v2.txt
+Info: Reading PIPs file: /.FABulous/pips.txt
+
+Info: constrained 'a[0]' to bel 'X0Y1/A'
+Info: constrained 'a[1]' to bel 'X0Y1/B'
+Info: constrained 'a[2]' to bel 'X0Y2/A'
+Info: constrained 'a[3]' to bel 'X0Y2/B'
+Info: constrained 'a[4]' to bel 'X0Y3/A'
+Info: constrained 'a[5]' to bel 'X0Y3/B'
+Info: constrained 'b[0]' to bel 'X0Y4/A'
+Info: constrained 'b[1]' to bel 'X0Y4/B'
+Info: constrained 'b[2]' to bel 'X0Y5/A'
+Info: constrained 'b[3]' to bel 'X0Y5/B'
+Info: constrained 'b[4]' to bel 'X0Y6/A'
+Info: constrained 'b[5]' to bel 'X0Y6/B'
+Info: constrained 'product[0]' to bel 'X0Y7/A'
+Info: constrained 'product[1]' to bel 'X0Y7/B'
+Info: constrained 'product[2]' to bel 'X0Y8/A'
+Info: constrained 'product[3]' to bel 'X0Y8/B'
+Info: constrained 'product[4]' to bel 'X0Y9/A'
+Info: constrained 'product[5]' to bel 'X0Y9/B'
+Info: constrained 'product[6]' to bel 'X0Y10/A'
+Info: constrained 'product[7]' to bel 'X0Y10/B'
+Info: constrained 'product[8]' to bel 'X0Y11/A'
+Info: constrained 'product[9]' to bel 'X0Y11/B'
+Info: constrained 'product[10]' to bel 'X0Y12/A'
+Info: constrained 'product[11]' to bel 'X0Y12/B'
+Info: Finished applying constraints from '/home/ank/Desktop/WORK/T_4/sky130-fabulous-testchip/user_designs/designs/classic/multiplication/generated_constraints.pcf'
+Info: Checksum: 0xdefc2022
+
+Info: Device utilisation:
+Info: 	         FABULOUS_LC:       0/   1056     0%
+Info: 	               IOBUF:      24/     36    66%
+Info: 	      RAM_32x4_2R_1W:       0/     12     0%
+Info: 	         MACC_8x8_20:       1/      6    16%
+Info: 	                GBUF:       0/      4     0%
+Info: 	           SYS_RESET:       0/      1     0%
+
+Info: Placed 24 cells based on constraints.
+Info: Creating initial analytic placement for 3 cells, random placement wirelen = 288.
+Info:     at initial placer iter 0, wirelen = 72
+Info:     at initial placer iter 1, wirelen = 72
+Info:     at initial placer iter 2, wirelen = 72
+Info:     at initial placer iter 3, wirelen = 72
+Info: Running main analytical placer, max placement attempts per cell = 10000.
+Info:     at iteration #1, type _CONST0_DRV: wirelen solved = 72, spread = 72, legal = 72; time = 0.00s
+Info:     at iteration #1, type MACC_8x8_20: wirelen solved = 72, spread = 72, legal = 328; time = 0.00s
+Info:     at iteration #1, type _CONST1_DRV: wirelen solved = 328, spread = 328, legal = 328; time = 0.00s
+Info:     at iteration #1, type ALL: wirelen solved = 84, spread = 84, legal = 300; time = 0.00s
+Info:     at iteration #2, type _CONST0_DRV: wirelen solved = 300, spread = 300, legal = 300; time = 0.00s
+Info:     at iteration #2, type MACC_8x8_20: wirelen solved = 84, spread = 84, legal = 288; time = 0.00s
+Info:     at iteration #2, type _CONST1_DRV: wirelen solved = 288, spread = 288, legal = 288; time = 0.00s
+Info:     at iteration #2, type ALL: wirelen solved = 72, spread = 72, legal = 288; time = 0.00s
+Info:     at iteration #3, type _CONST0_DRV: wirelen solved = 288, spread = 288, legal = 288; time = 0.00s
+Info:     at iteration #3, type MACC_8x8_20: wirelen solved = 72, spread = 72, legal = 300; time = 0.00s
+Info:     at iteration #3, type _CONST1_DRV: wirelen solved = 300, spread = 300, legal = 300; time = 0.00s
+Info:     at iteration #3, type ALL: wirelen solved = 84, spread = 84, legal = 328; time = 0.00s
+Info:     at iteration #4, type _CONST0_DRV: wirelen solved = 328, spread = 328, legal = 328; time = 0.00s
+Info:     at iteration #4, type MACC_8x8_20: wirelen solved = 84, spread = 84, legal = 288; time = 0.00s
+Info:     at iteration #4, type _CONST1_DRV: wirelen solved = 288, spread = 288, legal = 288; time = 0.00s
+Info:     at iteration #4, type ALL: wirelen solved = 72, spread = 72, legal = 312; time = 0.00s
+Info:     at iteration #5, type _CONST0_DRV: wirelen solved = 312, spread = 312, legal = 312; time = 0.00s
+Info:     at iteration #5, type MACC_8x8_20: wirelen solved = 72, spread = 72, legal = 348; time = 0.00s
+Info:     at iteration #5, type _CONST1_DRV: wirelen solved = 348, spread = 348, legal = 348; time = 0.00s
+Info:     at iteration #5, type ALL: wirelen solved = 72, spread = 72, legal = 328; time = 0.00s
+Info:     at iteration #6, type _CONST0_DRV: wirelen solved = 328, spread = 328, legal = 328; time = 0.00s
+Info:     at iteration #6, type MACC_8x8_20: wirelen solved = 84, spread = 84, legal = 312; time = 0.00s
+Info:     at iteration #6, type _CONST1_DRV: wirelen solved = 312, spread = 312, legal = 312; time = 0.00s
+Info:     at iteration #6, type ALL: wirelen solved = 72, spread = 72, legal = 312; time = 0.00s
+Info:     at iteration #7, type _CONST0_DRV: wirelen solved = 312, spread = 312, legal = 312; time = 0.00s
+Info:     at iteration #7, type MACC_8x8_20: wirelen solved = 72, spread = 72, legal = 328; time = 0.00s
+Info:     at iteration #7, type _CONST1_DRV: wirelen solved = 328, spread = 328, legal = 328; time = 0.00s
+Info:     at iteration #7, type ALL: wirelen solved = 84, spread = 84, legal = 328; time = 0.00s
+Info: HeAP Placer Time: 0.01s
+Info:   of which solving equations: 0.00s
+Info:   of which spreading cells: 0.00s
+Info:   of which strict legalisation: 0.00s
+Info:      _CONST1_DRV 0.000s
+Info:      MACC_8x8_20 0.000s
+Info:      _CONST0_DRV 0.000s
+
+Info: Running simulated annealing placer for refinement.
+Info:   at iteration #1: temp = 0.000000, timing cost = 0, wirelen = 288
+iter #1: temp = 0.000000, timing cost = 0, wirelen = 288, dia = 3, Ra = 0.00 
+Info:   at iteration #2: temp = 0.000000, timing cost = 0, wirelen = 288 
+Info: SA placement time 0.00s
+
+Info: No Fmax available; no interior timing paths found in design.
+Info: Checksum: 0x049a2240
+
+Info: Routing..
+Info: Setting up routing queue.
+Info: Routing 75 arcs.
+Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
+Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
+Info:         79 |        4         75 |    4    75 |         0|       0.07       0.07|
+Info: Routing complete.
+Info: Router1 time 0.07s
+Info: Checksum: 0x494ecad9
+
+Info: No Fmax available; no interior timing paths found in design.
+
+Info: Program finished normally.

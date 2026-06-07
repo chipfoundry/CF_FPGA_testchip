@@ -1,0 +1,1632 @@
+{
+  "creator": "Yosys 0.62 (git sha1 2231c860ec7afd8eef9ba97231c3a10950469e95, clang++ 21.1.2 -fPIC -O3)",
+  "modules": {
+    "FABULOUS_LC": {
+      "attributes": {
+        "dynports": "00000000000000000000000000000001",
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:79.1-110.10"
+      },
+      "parameter_default_values": {
+        "DFF_ENABLE": "0",
+        "INIT": "0000000000000000",
+        "K": "00000000000000000000000000000100"
+      },
+      "ports": {
+        "CLK": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "I": {
+          "direction": "input",
+          "bits": [ 3, 4, 5, 6 ]
+        },
+        "O": {
+          "direction": "output",
+          "bits": [ 7 ]
+        },
+        "Q": {
+          "direction": "output",
+          "bits": [ 8 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:84.9-84.12"
+          }
+        },
+        "I": {
+          "hide_name": 0,
+          "bits": [ 3, 4, 5, 6 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:85.17-85.18"
+          }
+        },
+        "O": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:86.10-86.11"
+          }
+        },
+        "Q": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:87.10-87.11"
+          }
+        }
+      }
+    },
+    "GBUF": {
+      "attributes": {
+        "keep": "00000000000000000000000000000001",
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "../../../../ip/fabulous-tiles/primitives/GBUF/yosys/primitives/GBUF.v:16.1-25.10"
+      },
+      "parameter_default_values": {
+        "INVERT": "0"
+      },
+      "ports": {
+        "IN": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "OUT": {
+          "direction": "output",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "IN": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/GBUF/yosys/primitives/GBUF.v:19.12-19.14"
+          }
+        },
+        "OUT": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "clkbuf_driver": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/GBUF/yosys/primitives/GBUF.v:20.32-20.35"
+          }
+        }
+      }
+    },
+    "IBUF": {
+      "attributes": {
+        "keep": "00000000000000000000000000000001",
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "../../../../ip/fabulous-tiles/primitives/IBUF/yosys/primitives/IBUF.v:16.1-36.10"
+      },
+      "parameter_default_values": {
+        "OUT_REG": "0"
+      },
+      "ports": {
+        "CLK": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "OUT": {
+          "direction": "output",
+          "bits": [ 3 ]
+        },
+        "PAD": {
+          "direction": "input",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "clkbuf_sink": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/IBUF/yosys/primitives/IBUF.v:19.28-19.31"
+          }
+        },
+        "OUT": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IBUF/yosys/primitives/IBUF.v:20.10-20.13"
+          }
+        },
+        "PAD": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "iopad_external_pin": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/IBUF/yosys/primitives/IBUF.v:21.34-21.37"
+          }
+        }
+      }
+    },
+    "IOBUF": {
+      "attributes": {
+        "blackbox": "00000000000000000000000000000001",
+        "keep": "00000000000000000000000000000001",
+        "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/primitives/IOBUF.v:16.1-45.10"
+      },
+      "parameter_default_values": {
+        "EN_REG": "0",
+        "IN_REG": "0",
+        "OUT_REG": "0"
+      },
+      "ports": {
+        "CLK": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "EN": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "IN": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "OUT": {
+          "direction": "output",
+          "bits": [ 5 ]
+        },
+        "PAD": {
+          "direction": "inout",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "clkbuf_sink": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/primitives/IOBUF.v:21.28-21.31"
+          }
+        },
+        "EN": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/primitives/IOBUF.v:22.10-22.12"
+          }
+        },
+        "IN": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/primitives/IOBUF.v:23.10-23.12"
+          }
+        },
+        "OUT": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/primitives/IOBUF.v:24.10-24.13"
+          }
+        },
+        "PAD": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "iopad_external_pin": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/primitives/IOBUF.v:25.34-25.37"
+          }
+        }
+      }
+    },
+    "LUT1": {
+      "attributes": {
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:1.1-4.10"
+      },
+      "parameter_default_values": {
+        "INIT": "00"
+      },
+      "ports": {
+        "O": {
+          "direction": "output",
+          "bits": [ 2 ]
+        },
+        "I0": {
+          "direction": "input",
+          "bits": [ 3 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "I0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:1.29-1.31"
+          }
+        },
+        "O": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:1.20-1.21"
+          }
+        }
+      }
+    },
+    "LUT2": {
+      "attributes": {
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:6.1-10.10"
+      },
+      "parameter_default_values": {
+        "INIT": "0000"
+      },
+      "ports": {
+        "O": {
+          "direction": "output",
+          "bits": [ 2 ]
+        },
+        "I0": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "I1": {
+          "direction": "input",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "I0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:6.29-6.31"
+          }
+        },
+        "I1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:6.33-6.35"
+          }
+        },
+        "O": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:6.20-6.21"
+          }
+        }
+      }
+    },
+    "LUT3": {
+      "attributes": {
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:12.1-17.10"
+      },
+      "parameter_default_values": {
+        "INIT": "00000000"
+      },
+      "ports": {
+        "O": {
+          "direction": "output",
+          "bits": [ 2 ]
+        },
+        "I0": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "I1": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "I2": {
+          "direction": "input",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "I0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:12.29-12.31"
+          }
+        },
+        "I1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:12.33-12.35"
+          }
+        },
+        "I2": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:12.37-12.39"
+          }
+        },
+        "O": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:12.20-12.21"
+          }
+        }
+      }
+    },
+    "LUT4": {
+      "attributes": {
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:19.1-25.10"
+      },
+      "parameter_default_values": {
+        "INIT": "0000000000000000"
+      },
+      "ports": {
+        "O": {
+          "direction": "output",
+          "bits": [ 2 ]
+        },
+        "I0": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "I1": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "I2": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "I3": {
+          "direction": "input",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "I0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:19.29-19.31"
+          }
+        },
+        "I1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:19.33-19.35"
+          }
+        },
+        "I2": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:19.37-19.39"
+          }
+        },
+        "I3": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:19.41-19.43"
+          }
+        },
+        "O": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:19.20-19.21"
+          }
+        }
+      }
+    },
+    "LUT4_HA": {
+      "attributes": {
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:27.1-39.10"
+      },
+      "parameter_default_values": {
+        "I0MUX": "1",
+        "INIT": "0000000000000000"
+      },
+      "ports": {
+        "O": {
+          "direction": "output",
+          "bits": [ 2 ]
+        },
+        "Co": {
+          "direction": "output",
+          "bits": [ 3 ]
+        },
+        "I0": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "I1": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "I2": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "I3": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "Ci": {
+          "direction": "input",
+          "bits": [ 8 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "Ci": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:27.52-27.54"
+          }
+        },
+        "Co": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:27.26-27.28"
+          }
+        },
+        "I0": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:27.36-27.38"
+          }
+        },
+        "I1": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:27.40-27.42"
+          }
+        },
+        "I2": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:27.44-27.46"
+          }
+        },
+        "I3": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:27.48-27.50"
+          }
+        },
+        "O": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:27.23-27.24"
+          }
+        }
+      }
+    },
+    "LUT5": {
+      "attributes": {
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:41.1-48.10"
+      },
+      "parameter_default_values": {
+        "INIT": "00000000000000000000000000000000"
+      },
+      "ports": {
+        "O": {
+          "direction": "output",
+          "bits": [ 2 ]
+        },
+        "I0": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "I1": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "I2": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "I3": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "I4": {
+          "direction": "input",
+          "bits": [ 7 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "I0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:41.29-41.31"
+          }
+        },
+        "I1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:41.33-41.35"
+          }
+        },
+        "I2": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:41.37-41.39"
+          }
+        },
+        "I3": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:41.41-41.43"
+          }
+        },
+        "I4": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:41.45-41.47"
+          }
+        },
+        "O": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:41.20-41.21"
+          }
+        }
+      }
+    },
+    "LUT55_FCY": {
+      "attributes": {
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:60.1-70.10"
+      },
+      "parameter_default_values": {
+        "INIT": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "ports": {
+        "O": {
+          "direction": "output",
+          "bits": [ 2 ]
+        },
+        "Co": {
+          "direction": "output",
+          "bits": [ 3 ]
+        },
+        "I0": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "I1": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "I2": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "I3": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "I4": {
+          "direction": "input",
+          "bits": [ 8 ]
+        },
+        "Ci": {
+          "direction": "input",
+          "bits": [ 9 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "Ci": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:60.59-60.61"
+          }
+        },
+        "Co": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:60.29-60.31"
+          }
+        },
+        "I0": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:60.39-60.41"
+          }
+        },
+        "I1": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:60.43-60.45"
+          }
+        },
+        "I2": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:60.47-60.49"
+          }
+        },
+        "I3": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:60.51-60.53"
+          }
+        },
+        "I4": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:60.55-60.57"
+          }
+        },
+        "O": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:60.26-60.27"
+          }
+        }
+      }
+    },
+    "LUT6": {
+      "attributes": {
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:50.1-58.10"
+      },
+      "parameter_default_values": {
+        "INIT": "0000000000000000000000000000000000000000000000000000000000000000"
+      },
+      "ports": {
+        "O": {
+          "direction": "output",
+          "bits": [ 2 ]
+        },
+        "I0": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "I1": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "I2": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "I3": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "I4": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "I5": {
+          "direction": "input",
+          "bits": [ 8 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "I0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:50.29-50.31"
+          }
+        },
+        "I1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:50.33-50.35"
+          }
+        },
+        "I2": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:50.37-50.39"
+          }
+        },
+        "I3": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:50.41-50.43"
+          }
+        },
+        "I4": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:50.45-50.47"
+          }
+        },
+        "I5": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:50.49-50.51"
+          }
+        },
+        "O": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:50.20-50.21"
+          }
+        }
+      }
+    },
+    "LUTFF": {
+      "attributes": {
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:72.1-77.10"
+      },
+      "ports": {
+        "CLK": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "O": {
+          "direction": "output",
+          "bits": [ 4 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "clkbuf_sink": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:72.38-72.41"
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:72.49-72.50"
+          }
+        },
+        "O": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:72.63-72.64"
+          }
+        }
+      }
+    },
+    "LUTFF_E": {
+      "attributes": {
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:112.1-121.10"
+      },
+      "ports": {
+        "O": {
+          "direction": "output",
+          "bits": [ 2 ]
+        },
+        "CLK": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "E": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "clkbuf_sink": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:114.27-114.30"
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:115.12-115.13"
+          }
+        },
+        "E": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:115.9-115.10"
+          }
+        },
+        "O": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:113.14-113.15"
+          }
+        }
+      }
+    },
+    "LUTFF_SR": {
+      "attributes": {
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:123.1-134.10"
+      },
+      "ports": {
+        "O": {
+          "direction": "output",
+          "bits": [ 2 ]
+        },
+        "CLK": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "R": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "clkbuf_sink": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:125.27-125.30"
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:126.12-126.13"
+          }
+        },
+        "O": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:124.14-124.15"
+          }
+        },
+        "R": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:126.9-126.10"
+          }
+        }
+      }
+    },
+    "LUTFF_SRE": {
+      "attributes": {
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:149.1-164.10"
+      },
+      "ports": {
+        "O": {
+          "direction": "output",
+          "bits": [ 2 ]
+        },
+        "CLK": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "E": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "R": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "clkbuf_sink": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:151.27-151.30"
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:152.15-152.16"
+          }
+        },
+        "E": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:152.9-152.10"
+          }
+        },
+        "O": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:150.14-150.15"
+          }
+        },
+        "R": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:152.12-152.13"
+          }
+        }
+      }
+    },
+    "LUTFF_SS": {
+      "attributes": {
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:136.1-147.10"
+      },
+      "ports": {
+        "O": {
+          "direction": "output",
+          "bits": [ 2 ]
+        },
+        "CLK": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "S": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "clkbuf_sink": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:138.27-138.30"
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:139.12-139.13"
+          }
+        },
+        "O": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:137.14-137.15"
+          }
+        },
+        "S": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:139.9-139.10"
+          }
+        }
+      }
+    },
+    "LUTFF_SSE": {
+      "attributes": {
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:166.1-181.10"
+      },
+      "ports": {
+        "O": {
+          "direction": "output",
+          "bits": [ 2 ]
+        },
+        "CLK": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "E": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "S": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "D": {
+          "direction": "input",
+          "bits": [ 6 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "clkbuf_sink": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:168.27-168.30"
+          }
+        },
+        "D": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:169.15-169.16"
+          }
+        },
+        "E": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:169.9-169.10"
+          }
+        },
+        "O": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:167.14-167.15"
+          }
+        },
+        "S": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/primitives/prims.v:169.12-169.13"
+          }
+        }
+      }
+    },
+    "OBUF": {
+      "attributes": {
+        "keep": "00000000000000000000000000000001",
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "../../../../ip/fabulous-tiles/primitives/OBUF/yosys/primitives/OBUF.v:16.1-40.10"
+      },
+      "parameter_default_values": {
+        "EN_REG": "0",
+        "IN_REG": "0"
+      },
+      "ports": {
+        "CLK": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "EN": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "IN": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "PAD": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "clkbuf_sink": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/OBUF/yosys/primitives/OBUF.v:20.28-20.31"
+          }
+        },
+        "EN": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/OBUF/yosys/primitives/OBUF.v:21.10-21.12"
+          }
+        },
+        "IN": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/OBUF/yosys/primitives/OBUF.v:22.10-22.12"
+          }
+        },
+        "PAD": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "iopad_external_pin": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/OBUF/yosys/primitives/OBUF.v:23.35-23.38"
+          }
+        }
+      }
+    },
+    "SYS_RESET": {
+      "attributes": {
+        "keep": "00000000000000000000000000000001",
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "../../../../ip/fabulous-tiles/primitives/SYS_RESET/yosys/primitives/SYS_RESET.v:16.1-19.10"
+      },
+      "ports": {
+        "RESET": {
+          "direction": "output",
+          "bits": [ 2 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "RESET": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/SYS_RESET/yosys/primitives/SYS_RESET.v:17.10-17.15"
+          }
+        }
+      }
+    },
+    "TBUF": {
+      "attributes": {
+        "keep": "00000000000000000000000000000001",
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "../../../../ip/fabulous-tiles/primitives/TBUF/yosys/primitives/TBUF.v:16.1-41.10"
+      },
+      "parameter_default_values": {
+        "EN_REG": "0",
+        "IN_REG": "0",
+        "OUT_REG": "0"
+      },
+      "ports": {
+        "CLK": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "EN": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "IN": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "PAD": {
+          "direction": "output",
+          "bits": [ 5 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "clkbuf_sink": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/TBUF/yosys/primitives/TBUF.v:21.28-21.31"
+          }
+        },
+        "EN": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/TBUF/yosys/primitives/TBUF.v:22.10-22.12"
+          }
+        },
+        "IN": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/TBUF/yosys/primitives/TBUF.v:23.10-23.12"
+          }
+        },
+        "PAD": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "iopad_external_pin": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/TBUF/yosys/primitives/TBUF.v:24.35-24.38"
+          }
+        }
+      }
+    },
+    "passthrough": {
+      "attributes": {
+        "hdlname": "passthrough",
+        "top": "00000000000000000000000000000001",
+        "src": "passthrough.v:6.1-13.10"
+      },
+      "ports": {
+        "a": {
+          "direction": "input",
+          "bits": [ 2, 3, 4, 5, 6, 7 ]
+        },
+        "b": {
+          "direction": "output",
+          "bits": [ 8, 9, 10, 11, 12, 13 ]
+        }
+      },
+      "cells": {
+        "$iopadmap$passthrough.a": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:2.8-2.59"
+          },
+          "port_directions": {
+            "EN": "input",
+            "OUT": "output",
+            "PAD": "inout"
+          },
+          "connections": {
+            "EN": [ "0" ],
+            "OUT": [ 14 ],
+            "PAD": [ 2 ]
+          }
+        },
+        "$iopadmap$passthrough.a_1": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:2.8-2.59"
+          },
+          "port_directions": {
+            "EN": "input",
+            "OUT": "output",
+            "PAD": "inout"
+          },
+          "connections": {
+            "EN": [ "0" ],
+            "OUT": [ 15 ],
+            "PAD": [ 3 ]
+          }
+        },
+        "$iopadmap$passthrough.a_2": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:2.8-2.59"
+          },
+          "port_directions": {
+            "EN": "input",
+            "OUT": "output",
+            "PAD": "inout"
+          },
+          "connections": {
+            "EN": [ "0" ],
+            "OUT": [ 16 ],
+            "PAD": [ 4 ]
+          }
+        },
+        "$iopadmap$passthrough.a_3": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:2.8-2.59"
+          },
+          "port_directions": {
+            "EN": "input",
+            "OUT": "output",
+            "PAD": "inout"
+          },
+          "connections": {
+            "EN": [ "0" ],
+            "OUT": [ 17 ],
+            "PAD": [ 5 ]
+          }
+        },
+        "$iopadmap$passthrough.a_4": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:2.8-2.59"
+          },
+          "port_directions": {
+            "EN": "input",
+            "OUT": "output",
+            "PAD": "inout"
+          },
+          "connections": {
+            "EN": [ "0" ],
+            "OUT": [ 18 ],
+            "PAD": [ 6 ]
+          }
+        },
+        "$iopadmap$passthrough.a_5": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:2.8-2.59"
+          },
+          "port_directions": {
+            "EN": "input",
+            "OUT": "output",
+            "PAD": "inout"
+          },
+          "connections": {
+            "EN": [ "0" ],
+            "OUT": [ 19 ],
+            "PAD": [ 7 ]
+          }
+        },
+        "$iopadmap$passthrough.b": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:6.8-6.57"
+          },
+          "port_directions": {
+            "EN": "input",
+            "IN": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "EN": [ "1" ],
+            "IN": [ 14 ],
+            "PAD": [ 8 ]
+          }
+        },
+        "$iopadmap$passthrough.b_1": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:6.8-6.57"
+          },
+          "port_directions": {
+            "EN": "input",
+            "IN": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "EN": [ "1" ],
+            "IN": [ 15 ],
+            "PAD": [ 9 ]
+          }
+        },
+        "$iopadmap$passthrough.b_2": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:6.8-6.57"
+          },
+          "port_directions": {
+            "EN": "input",
+            "IN": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "EN": [ "1" ],
+            "IN": [ 16 ],
+            "PAD": [ 10 ]
+          }
+        },
+        "$iopadmap$passthrough.b_3": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:6.8-6.57"
+          },
+          "port_directions": {
+            "EN": "input",
+            "IN": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "EN": [ "1" ],
+            "IN": [ 17 ],
+            "PAD": [ 11 ]
+          }
+        },
+        "$iopadmap$passthrough.b_4": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:6.8-6.57"
+          },
+          "port_directions": {
+            "EN": "input",
+            "IN": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "EN": [ "1" ],
+            "IN": [ 18 ],
+            "PAD": [ 12 ]
+          }
+        },
+        "$iopadmap$passthrough.b_5": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:6.8-6.57"
+          },
+          "port_directions": {
+            "EN": "input",
+            "IN": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "EN": [ "1" ],
+            "IN": [ 19 ],
+            "PAD": [ 13 ]
+          }
+        }
+      },
+      "netnames": {
+        "$iopadmap$a": {
+          "hide_name": 1,
+          "bits": [ 14, 15, 16, 17, 18, 19 ],
+          "attributes": {
+          }
+        },
+        "a": {
+          "hide_name": 0,
+          "bits": [ 2, 3, 4, 5, 6, 7 ],
+          "attributes": {
+            "src": "passthrough.v:7.23-7.24"
+          }
+        },
+        "b": {
+          "hide_name": 0,
+          "bits": [ 8, 9, 10, 11, 12, 13 ],
+          "attributes": {
+            "src": "passthrough.v:8.23-8.24"
+          }
+        }
+      }
+    }
+  }
+}

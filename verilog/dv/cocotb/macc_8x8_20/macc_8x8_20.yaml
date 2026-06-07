@@ -1,0 +1,4 @@
+---
+Tests: 
+    - {name: macc_8x8_20, sim: RTL}
+

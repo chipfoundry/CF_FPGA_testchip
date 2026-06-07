@@ -9,3 +9,4 @@ Tests:
     - {name: multiplication, sim: RTL}
     - {name: ram_32x4_2r_1w, sim: RTL}
     - {name: register_file, sim: RTL}
+    - {name: macc_8x8_20, sim: RTL}

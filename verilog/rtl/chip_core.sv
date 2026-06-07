@@ -41,6 +41,11 @@ module chip_core #(
     output wire [NUM_BIDIR_PADS-1 :0] bidir_oe    // Output enable
 );
 
+    `ifdef USE_POWER_PINS
+        supply1 vccd1;
+        supply0 vssd1;
+    `endif
+
     // Synchronizers
 
     logic spi_mode_sync;
@@ -467,6 +472,10 @@ module chip_core #(
     classic_fabric_chipfoundry_small i_classic_fabric_chipfoundry_small (
         .FrameData            (frame_data_small),
         .FrameStrobe          (frame_strobe_small),
+        `ifdef USE_POWER_PINS
+                .VPWR                 (vccd1),
+                .VGND                 (vssd1),
+        `endif
         
         .Tile_X0Y7_SYS_RESET_RESET_top (config_busy_small),
         
@@ -548,6 +557,10 @@ module chip_core #(
     classic_fabric_chipfoundry_medium i_classic_fabric_chipfoundry_medium (
         .FrameData            (frame_data_medium),
         .FrameStrobe          (frame_strobe_medium),
+        `ifdef USE_POWER_PINS
+                .VPWR                 (vccd1),
+                .VGND                 (vssd1),
+        `endif
         
         .Tile_X0Y7_SYS_RESET_RESET_top (config_busy_medium),
         
@@ -634,6 +647,10 @@ module chip_core #(
     classic_fabric_chipfoundry_large i_classic_fabric_chipfoundry_large (
         .FrameData            (frame_data_large),
         .FrameStrobe          (frame_strobe_large),
+        `ifdef USE_POWER_PINS
+                .VPWR                 (vccd1),
+                .VGND                 (vssd1),
+        `endif
         
         .Tile_X0Y13_SYS_RESET_RESET_top (config_busy_large),
         

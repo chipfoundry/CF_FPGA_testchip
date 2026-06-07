@@ -1,0 +1,774 @@
+{
+  "creator": "Next Generation Place and Route (Version nextpnr-0e66c0ce)",
+  "modules": {
+    "top": {
+      "settings": {
+        "route": "00000000000000000000000000000001",
+        "router/tmg_ripup": "0 ",
+        "router1/useEstimate": "1 ",
+        "router1/fullCleanupReroute": "1 ",
+        "router1/cleanupReroute": "1 ",
+        "router1/maxIterCnt": "200",
+        "place": "00000000000000000000000000000001",
+        "placer1/startTemp": "1.000000",
+        "placer1/minBelsForGridPick": "64",
+        "placer1/netShareWeight": "0.000000",
+        "placer1/constraintWeight": "10.000000",
+        "placerHeap/cellPlacementTimeout": "8",
+        "placerHeap/noCtrlSet": "0 ",
+        "placerHeap/netShareWeight": "0.000000",
+        "placerHeap/parallelRefine": "0 ",
+        "pack": "00000000000000000000000000000001",
+        "synth": "00000000000000000000000000000001",
+        "placerHeap/timingWeight": "10 ",
+        "placerHeap/criticalityExponent": "2",
+        "placerHeap/beta": "0.900000",
+        "placerHeap/alpha": "0.100000",
+        "seed": "0011000101000001010110010010011001010011010110001001011110010011",
+        "arch.type": "none",
+        "arch.name": "generic",
+        "router": "router1",
+        "placer": "heap",
+        "auto_freq": "00000000000000000000000000000000",
+        "slack_redist_iter": "00000000000000000000000000000000",
+        "timing_driven": "00000000000000000000000000000001",
+        "target_freq": "12000000.000000",
+        "timing/allowFail": "00000000000000000000000000000001"
+      },
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "sys_reset.sv:6.1-48.10",
+        "hdlname": "sys_reset"
+      },
+      "ports": {
+        "clk1": {
+          "direction": "input",
+          "bits": [ 3487 ]
+        },
+        "b": {
+          "direction": "output",
+          "bits": [ 3535, 3539, 3543, 3547, 3551 ]
+        },
+        "a": {
+          "direction": "input",
+          "bits": [ 3514, 3519, 3523, 3527, 3531 ]
+        }
+      },
+      "cells": {
+        "clock_buf_i": {
+          "hide_name": 0,
+          "type": "GBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X0Y7/A",
+            "src": "sys_reset.sv:20.10-23.6",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "OUT": "output",
+            "IN": "input"
+          },
+          "connections": {
+            "OUT": [ 3492 ],
+            "IN": [ 3555 ]
+          }
+        },
+        "$iopadmap$sys_reset.b_2": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X0Y4/B",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:6.8-6.57",
+            "module_not_derived": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "PAD": "inout",
+            "IN": "input",
+            "EN": "input"
+          },
+          "connections": {
+            "PAD": [ 3543 ],
+            "IN": [ 3503 ],
+            "EN": [ 3594 ]
+          }
+        },
+        "SYS_RESET": {
+          "hide_name": 0,
+          "type": "SYS_RESET",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X0Y7/E",
+            "src": "sys_reset.sv:27.15-29.6",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "RESET": "output"
+          },
+          "connections": {
+            "RESET": [ 3556 ]
+          }
+        },
+        "$iopadmap$sys_reset.b_1": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X0Y4/A",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:6.8-6.57",
+            "module_not_derived": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "PAD": "inout",
+            "IN": "input",
+            "EN": "input"
+          },
+          "connections": {
+            "PAD": [ 3539 ],
+            "IN": [ 3500 ],
+            "EN": [ 3594 ]
+          }
+        },
+        "$PACKER_GND_DRV": {
+          "hide_name": 1,
+          "type": "_CONST0_DRV",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X0Y0/_CONST0_DRV"
+          },
+          "port_directions": {
+            "O": "output"
+          },
+          "connections": {
+            "O": [ 3595 ]
+          }
+        },
+        "$iopadmap$sys_reset.b": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X0Y3/B",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:6.8-6.57",
+            "module_not_derived": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "PAD": "inout",
+            "IN": "input",
+            "EN": "input"
+          },
+          "connections": {
+            "PAD": [ 3535 ],
+            "IN": [ 3494 ],
+            "EN": [ 3594 ]
+          }
+        },
+        "$iopadmap$sys_reset.clk1": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X5Y6/A",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:2.8-2.59",
+            "module_not_derived": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "PAD": "inout",
+            "OUT": "output",
+            "EN": "input"
+          },
+          "connections": {
+            "PAD": [ 3487 ],
+            "OUT": [ 3555 ],
+            "EN": [ 3595 ]
+          }
+        },
+        "$iopadmap$sys_reset.a_4": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X0Y3/A",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:2.8-2.59",
+            "module_not_derived": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "PAD": "inout",
+            "OUT": "output",
+            "EN": "input"
+          },
+          "connections": {
+            "PAD": [ 3531 ],
+            "OUT": [ 3508 ],
+            "EN": [ 3595 ]
+          }
+        },
+        "$PACKER_VCC_DRV": {
+          "hide_name": 1,
+          "type": "_CONST1_DRV",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X0Y0/_CONST1_DRV"
+          },
+          "port_directions": {
+            "O": "output"
+          },
+          "connections": {
+            "O": [ 3594 ]
+          }
+        },
+        "$iopadmap$sys_reset.a_3": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X0Y2/B",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:2.8-2.59",
+            "module_not_derived": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "PAD": "inout",
+            "OUT": "output",
+            "EN": "input"
+          },
+          "connections": {
+            "PAD": [ 3527 ],
+            "OUT": [ 3505 ],
+            "EN": [ 3595 ]
+          }
+        },
+        "$iopadmap$sys_reset.b_4": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X0Y5/B",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:6.8-6.57",
+            "module_not_derived": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "PAD": "inout",
+            "IN": "input",
+            "EN": "input"
+          },
+          "connections": {
+            "PAD": [ 3551 ],
+            "IN": [ 3509 ],
+            "EN": [ 3594 ]
+          }
+        },
+        "$iopadmap$sys_reset.a_2": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X0Y2/A",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:2.8-2.59",
+            "module_not_derived": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "PAD": "inout",
+            "OUT": "output",
+            "EN": "input"
+          },
+          "connections": {
+            "PAD": [ 3523 ],
+            "OUT": [ 3502 ],
+            "EN": [ 3595 ]
+          }
+        },
+        "rst_buf_i": {
+          "hide_name": 0,
+          "type": "GBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X0Y7/B",
+            "src": "sys_reset.sv:31.10-34.6",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "OUT": "output",
+            "IN": "input"
+          },
+          "connections": {
+            "OUT": [ 3495 ],
+            "IN": [ 3556 ]
+          }
+        },
+        "$iopadmap$sys_reset.a_1": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X0Y1/B",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:2.8-2.59",
+            "module_not_derived": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "PAD": "inout",
+            "OUT": "output",
+            "EN": "input"
+          },
+          "connections": {
+            "PAD": [ 3519 ],
+            "OUT": [ 3499 ],
+            "EN": [ 3595 ]
+          }
+        },
+        "$iopadmap$sys_reset.b_3": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X0Y5/A",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:6.8-6.57",
+            "module_not_derived": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "PAD": "inout",
+            "IN": "input",
+            "EN": "input"
+          },
+          "connections": {
+            "PAD": [ 3547 ],
+            "IN": [ 3506 ],
+            "EN": [ 3594 ]
+          }
+        },
+        "$iopadmap$sys_reset.a": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X0Y1/A",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:2.8-2.59",
+            "module_not_derived": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "PAD": "inout",
+            "OUT": "output",
+            "EN": "input"
+          },
+          "connections": {
+            "PAD": [ 3514 ],
+            "OUT": [ 3493 ],
+            "EN": [ 3595 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$98": {
+          "hide_name": 1,
+          "type": "FABULOUS_LC",
+          "parameters": {
+            "FF": "00000000000000000000000000000001",
+            "INIT": "00000000000000001010101010101010",
+            "ASYNC_SR": "00000000000000000000000000000000",
+            "SET_NORESET": "00000000000000000000000000000001",
+            "NEG_CLK": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y4/B",
+            "src": "sys_reset.sv:38.5-44.8|../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/techmap/ff_map.v:6.59-6.107",
+            "module_not_derived": "00000000000000000000000000000001",
+            "always_ff": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "SR": "input",
+            "I0": "input",
+            "EN": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 3509 ],
+            "SR": [ 3495 ],
+            "I0": [ 3508 ],
+            "EN": [  ],
+            "CLK": [ 3492 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$97": {
+          "hide_name": 1,
+          "type": "FABULOUS_LC",
+          "parameters": {
+            "FF": "00000000000000000000000000000001",
+            "INIT": "00000000000000001010101010101010",
+            "ASYNC_SR": "00000000000000000000000000000000",
+            "SET_NORESET": "00000000000000000000000000000000",
+            "NEG_CLK": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y4/H",
+            "src": "sys_reset.sv:38.5-44.8|../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/techmap/ff_map.v:5.59-5.107",
+            "module_not_derived": "00000000000000000000000000000001",
+            "always_ff": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "SR": "input",
+            "I0": "input",
+            "EN": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 3506 ],
+            "SR": [ 3495 ],
+            "I0": [ 3505 ],
+            "EN": [  ],
+            "CLK": [ 3492 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$96": {
+          "hide_name": 1,
+          "type": "FABULOUS_LC",
+          "parameters": {
+            "FF": "00000000000000000000000000000001",
+            "INIT": "00000000000000001010101010101010",
+            "ASYNC_SR": "00000000000000000000000000000000",
+            "SET_NORESET": "00000000000000000000000000000001",
+            "NEG_CLK": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y3/G",
+            "src": "sys_reset.sv:38.5-44.8|../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/techmap/ff_map.v:6.59-6.107",
+            "module_not_derived": "00000000000000000000000000000001",
+            "always_ff": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "SR": "input",
+            "I0": "input",
+            "EN": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 3503 ],
+            "SR": [ 3495 ],
+            "I0": [ 3502 ],
+            "EN": [  ],
+            "CLK": [ 3492 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$95": {
+          "hide_name": 1,
+          "type": "FABULOUS_LC",
+          "parameters": {
+            "FF": "00000000000000000000000000000001",
+            "INIT": "00000000000000001010101010101010",
+            "ASYNC_SR": "00000000000000000000000000000000",
+            "SET_NORESET": "00000000000000000000000000000001",
+            "NEG_CLK": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y4/D",
+            "src": "sys_reset.sv:38.5-44.8|../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/techmap/ff_map.v:6.59-6.107",
+            "module_not_derived": "00000000000000000000000000000001",
+            "always_ff": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "SR": "input",
+            "I0": "input",
+            "EN": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 3500 ],
+            "SR": [ 3495 ],
+            "I0": [ 3499 ],
+            "EN": [  ],
+            "CLK": [ 3492 ]
+          }
+        },
+        "$auto$ff.cc:337:slice$94": {
+          "hide_name": 1,
+          "type": "FABULOUS_LC",
+          "parameters": {
+            "FF": "00000000000000000000000000000001",
+            "INIT": "00000000000000001010101010101010",
+            "ASYNC_SR": "00000000000000000000000000000000",
+            "SET_NORESET": "00000000000000000000000000000001",
+            "NEG_CLK": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y3/F",
+            "src": "sys_reset.sv:38.5-44.8|../../../../ip/fabulous-tiles/primitives/FABULOUS_LC/yosys/techmap/ff_map.v:6.59-6.107",
+            "module_not_derived": "00000000000000000000000000000001",
+            "always_ff": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "Q": "output",
+            "SR": "input",
+            "I0": "input",
+            "EN": "input",
+            "CLK": "input"
+          },
+          "connections": {
+            "Q": [ 3494 ],
+            "SR": [ 3495 ],
+            "I0": [ 3493 ],
+            "EN": [  ],
+            "CLK": [ 3492 ]
+          }
+        }
+      },
+      "netnames": {
+        "clk1": {
+          "hide_name": 0,
+          "bits": [ 3487 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "sys_reset.sv:7.17-7.21"
+          }
+        },
+        "b[1]": {
+          "hide_name": 0,
+          "bits": [ 3539 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "sys_reset.sv:14.23-14.24"
+          }
+        },
+        "$iopadmap$clk1": {
+          "hide_name": 1,
+          "bits": [ 3555 ] ,
+          "attributes": {
+            "ROUTING": "X5Y6/A_OUT;;1;X5Y6/W6BEG0;X5Y6/A_OUT.W6BEG0;1;X4Y6/W6END0;X5Y6/W6BEG0.W6END0;1;X4Y6/JS2BEG1;X4Y6/W6END0.JS2BEG1;1;X4Y6/JS2END1;X4Y6/JS2BEG1.JS2END1;1;X4Y6/W1BEG2;X4Y6/JS2END1.W1BEG2;1;X3Y6/W1END2;X4Y6/W1BEG2.W1END2;1;X3Y6/WW4BEG0;X3Y6/W1END2.WW4BEG0;1;X2Y6/WW4END12;X3Y6/WW4BEG0.WW4END12;1;X2Y6/WW4BEG12;X2Y6/WW4END12.WW4BEG12;1;X1Y6/WW4END8;X2Y6/WW4BEG12.WW4END8;1;X1Y6/WW4BEG8;X1Y6/WW4END8.WW4BEG8;1;X0Y6/WW4END4;X1Y6/WW4BEG8.WW4END4;1;X0Y6/E2BEGb3;X0Y6/WW4END4.E2BEGb3;1;X1Y6/E2END3;X0Y6/E2BEGb3.E2END3;1;X1Y6/JE2BEG2;X1Y6/E2END3.JE2BEG2;1;X1Y6/JE2END2;X1Y6/JE2BEG2.JE2END2;1;X1Y6/S1BEG3;X1Y6/JE2END2.S1BEG3;1;X1Y7/S1END3;X1Y6/S1BEG3.S1END3;1;X1Y7/W_GBUF_FEED_BEG2;X1Y7/S1END3.W_GBUF_FEED_BEG2;1;X0Y7/W_GBUF_FEED_END2;X1Y7/W_GBUF_FEED_BEG2.W_GBUF_FEED_END2;1;X0Y7/GBUF_A_IN;X0Y7/W_GBUF_FEED_END2.GBUF_A_IN;1"
+          }
+        },
+        "b[0]": {
+          "hide_name": 0,
+          "bits": [ 3535 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "sys_reset.sv:14.23-14.24"
+          }
+        },
+        "$PACKER_GND": {
+          "hide_name": 1,
+          "bits": [ 3595 ] ,
+          "attributes": {
+            "ROUTING": "X0Y2/A_EN;X0Y2/GND0.A_EN;1;X0Y1/B_EN;X0Y1/GND0.B_EN;1;X0Y2/$CONST0;X0Y0/$CONST0/X0Y2/$CONST0;1;X0Y2/GND0;X0Y2/$CONST0/X0Y2/GND0;1;X0Y2/B_EN;X0Y2/GND0.B_EN;1;X0Y6/$CONST0;X0Y0/$CONST0/X0Y6/$CONST0;1;X5Y6/$CONST0;X0Y6/$CONST0/X5Y6/$CONST0;1;X5Y6/GND0;X5Y6/$CONST0/X5Y6/GND0;1;X5Y6/A_EN;X5Y6/GND0.A_EN;1;X0Y1/$CONST0;X0Y0/$CONST0/X0Y1/$CONST0;1;X0Y1/GND0;X0Y1/$CONST0/X0Y1/GND0;1;X0Y1/A_EN;X0Y1/GND0.A_EN;1;X0Y0/$CONST0;;1;X0Y3/$CONST0;X0Y0/$CONST0/X0Y3/$CONST0;1;X0Y3/GND0;X0Y3/$CONST0/X0Y3/GND0;1;X0Y3/A_EN;X0Y3/GND0.A_EN;1"
+          }
+        },
+        "a[4]": {
+          "hide_name": 0,
+          "bits": [ 3531 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "sys_reset.sv:13.23-13.24"
+          }
+        },
+        "b[4]": {
+          "hide_name": 0,
+          "bits": [ 3551 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "sys_reset.sv:14.23-14.24"
+          }
+        },
+        "a[3]": {
+          "hide_name": 0,
+          "bits": [ 3527 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "sys_reset.sv:13.23-13.24"
+          }
+        },
+        "$PACKER_VCC": {
+          "hide_name": 1,
+          "bits": [ 3594 ] ,
+          "attributes": {
+            "ROUTING": "X0Y4/B_EN;X0Y4/VCC0.B_EN;1;X0Y5/B_EN;X0Y5/VCC0.B_EN;1;X0Y4/$CONST1;X0Y0/$CONST1/X0Y4/$CONST1;1;X0Y4/VCC0;X0Y4/$CONST1/X0Y4/VCC0;1;X0Y4/A_EN;X0Y4/VCC0.A_EN;1;X0Y3/$CONST1;X0Y0/$CONST1/X0Y3/$CONST1;1;X0Y3/VCC0;X0Y3/$CONST1/X0Y3/VCC0;1;X0Y3/B_EN;X0Y3/VCC0.B_EN;1;X0Y0/$CONST1;;1;X0Y5/$CONST1;X0Y0/$CONST1/X0Y5/$CONST1;1;X0Y5/VCC0;X0Y5/$CONST1/X0Y5/VCC0;1;X0Y5/A_EN;X0Y5/VCC0.A_EN;1"
+          }
+        },
+        "a[2]": {
+          "hide_name": 0,
+          "bits": [ 3523 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "sys_reset.sv:13.23-13.24"
+          }
+        },
+        "b[3]": {
+          "hide_name": 0,
+          "bits": [ 3547 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "sys_reset.sv:14.23-14.24"
+          }
+        },
+        "a[1]": {
+          "hide_name": 0,
+          "bits": [ 3519 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "sys_reset.sv:13.23-13.24"
+          }
+        },
+        "rst": {
+          "hide_name": 0,
+          "bits": [ 3556 ] ,
+          "attributes": {
+            "ROUTING": "X0Y7/SYS_RESET_RESET;;1;X0Y7/GBUF_B_IN;X0Y7/SYS_RESET_RESET.GBUF_B_IN;1",
+            "src": "sys_reset.sv:25.10-25.13"
+          }
+        },
+        "a[0]": {
+          "hide_name": 0,
+          "bits": [ 3514 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "sys_reset.sv:13.23-13.24"
+          }
+        },
+        "b[2]": {
+          "hide_name": 0,
+          "bits": [ 3543 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "sys_reset.sv:14.23-14.24"
+          }
+        },
+        "data[4]": {
+          "hide_name": 0,
+          "bits": [ 3509 ] ,
+          "attributes": {
+            "ROUTING": "X1Y4/B_Q;;1;X1Y4/LB_O;X1Y4/B_Q/X1Y4/LB_O;1;X1Y4/JS2BEG7;X1Y4/LB_O.JS2BEG7;1;X1Y4/JS2END7;X1Y4/JS2BEG7.JS2END7;1;X1Y4/S2BEG7;X1Y4/JS2END7.S2BEG7;1;X1Y5/S2MID7;X1Y4/S2BEG7.S2MID7;1;X1Y5/J2MID_EFb_BEG0;X1Y5/S2MID7.J2MID_EFb_BEG0;1;X1Y5/J2MID_EFb_END0;X1Y5/J2MID_EFb_BEG0.J2MID_EFb_END0;1;X1Y5/W1BEG1;X1Y5/J2MID_EFb_END0.W1BEG1;1;X0Y5/W1END1;X1Y5/W1BEG1.W1END1;1;X0Y5/B_IN;X0Y5/W1END1.B_IN;1",
+            "src": "sys_reset.sv:36.17-36.21"
+          }
+        },
+        "$iopadmap$a[4]": {
+          "hide_name": 1,
+          "bits": [ 3508 ] ,
+          "attributes": {
+            "ROUTING": "X0Y3/A_OUT;;1;X0Y3/EE4BEG2;X0Y3/A_OUT.EE4BEG2;1;X1Y3/EE4END2;X0Y3/EE4BEG2.EE4END2;1;X1Y3/JS2BEG1;X1Y3/EE4END2.JS2BEG1;1;X1Y3/JS2END1;X1Y3/JS2BEG1.JS2END1;1;X1Y3/S2BEG1;X1Y3/JS2END1.S2BEG1;1;X1Y4/S2MID1;X1Y3/S2BEG1.S2MID1;1;X1Y4/J2MID_ABb_BEG3;X1Y4/S2MID1.J2MID_ABb_BEG3;1;X1Y4/J2MID_ABb_END3;X1Y4/J2MID_ABb_BEG3.J2MID_ABb_END3;1;X1Y4/LB_I3;X1Y4/J2MID_ABb_END3.LB_I3;1;X1Y4/B_PERM_I0;X1Y4/LB_I3/X1Y4/B_PERM_I0;1"
+          }
+        },
+        "data[3]": {
+          "hide_name": 0,
+          "bits": [ 3506 ] ,
+          "attributes": {
+            "ROUTING": "X1Y4/H_Q;;1;X1Y4/LH_O;X1Y4/H_Q/X1Y4/LH_O;1;X1Y4/JS2BEG1;X1Y4/LH_O.JS2BEG1;1;X1Y4/JS2END1;X1Y4/JS2BEG1.JS2END1;1;X1Y4/S2BEG1;X1Y4/JS2END1.S2BEG1;1;X1Y5/S2MID1;X1Y4/S2BEG1.S2MID1;1;X1Y5/J2MID_CDb_BEG3;X1Y5/S2MID1.J2MID_CDb_BEG3;1;X1Y5/J2MID_CDb_END3;X1Y5/J2MID_CDb_BEG3.J2MID_CDb_END3;1;X1Y5/W1BEG0;X1Y5/J2MID_CDb_END3.W1BEG0;1;X0Y5/W1END0;X1Y5/W1BEG0.W1END0;1;X0Y5/A_IN;X0Y5/W1END0.A_IN;1",
+            "src": "sys_reset.sv:36.17-36.21"
+          }
+        },
+        "$iopadmap$a[3]": {
+          "hide_name": 1,
+          "bits": [ 3505 ] ,
+          "attributes": {
+            "ROUTING": "X0Y2/B_OUT;;1;X0Y2/E1BEG1;X0Y2/B_OUT.E1BEG1;1;X1Y2/E1END1;X0Y2/E1BEG1.E1END1;1;X1Y2/JW2BEG4;X1Y2/E1END1.JW2BEG4;1;X1Y2/JW2END4;X1Y2/JW2BEG4.JW2END4;1;X1Y2/J_l_GH_BEG3;X1Y2/JW2END4.J_l_GH_BEG3;1;X1Y2/J_l_GH_END3;X1Y2/J_l_GH_BEG3.J_l_GH_END3;1;X1Y2/S1BEG2;X1Y2/J_l_GH_END3.S1BEG2;1;X1Y3/S1END2;X1Y2/S1BEG2.S1END2;1;X1Y3/JS2BEG5;X1Y3/S1END2.JS2BEG5;1;X1Y3/JS2END5;X1Y3/JS2BEG5.JS2END5;1;X1Y3/S2BEG5;X1Y3/JS2END5.S2BEG5;1;X1Y4/S2MID5;X1Y3/S2BEG5.S2MID5;1;X1Y4/J2MID_GHb_BEG2;X1Y4/S2MID5.J2MID_GHb_BEG2;1;X1Y4/J2MID_GHb_END2;X1Y4/J2MID_GHb_BEG2.J2MID_GHb_END2;1;X1Y4/LH_I2;X1Y4/J2MID_GHb_END2.LH_I2;1;X1Y4/H_PERM_I0;X1Y4/LH_I2/X1Y4/H_PERM_I0;1"
+          }
+        },
+        "data[2]": {
+          "hide_name": 0,
+          "bits": [ 3503 ] ,
+          "attributes": {
+            "ROUTING": "X1Y3/G_Q;;1;X1Y3/LG_O;X1Y3/G_Q/X1Y3/LG_O;1;X1Y3/S1BEG2;X1Y3/LG_O.S1BEG2;1;X1Y4/S1END2;X1Y3/S1BEG2.S1END2;1;X1Y4/W6BEG1;X1Y4/S1END2.W6BEG1;1;X0Y4/W6END11;X1Y4/W6BEG1.W6END11;1;X0Y4/E6BEG0;X0Y4/W6END11.E6BEG0;1;X1Y4/E6END0;X0Y4/E6BEG0.E6END0;1;X1Y4/JW2BEG1;X1Y4/E6END0.JW2BEG1;1;X1Y4/JW2END1;X1Y4/JW2BEG1.JW2END1;1;X1Y4/W2BEG1;X1Y4/JW2END1.W2BEG1;1;X0Y4/W2MID1;X1Y4/W2BEG1.W2MID1;1;X0Y4/B_IN;X0Y4/W2MID1.B_IN;1",
+            "src": "sys_reset.sv:36.17-36.21"
+          }
+        },
+        "$iopadmap$a[2]": {
+          "hide_name": 1,
+          "bits": [ 3502 ] ,
+          "attributes": {
+            "ROUTING": "X0Y2/A_OUT;;1;X0Y2/E1BEG0;X0Y2/A_OUT.E1BEG0;1;X1Y2/E1END0;X0Y2/E1BEG0.E1END0;1;X1Y2/JS2BEG7;X1Y2/E1END0.JS2BEG7;1;X1Y2/JS2END7;X1Y2/JS2BEG7.JS2END7;1;X1Y2/S2BEG7;X1Y2/JS2END7.S2BEG7;1;X1Y3/S2MID7;X1Y2/S2BEG7.S2MID7;1;X1Y3/J2MID_GHb_BEG0;X1Y3/S2MID7.J2MID_GHb_BEG0;1;X1Y3/J2MID_GHb_END0;X1Y3/J2MID_GHb_BEG0.J2MID_GHb_END0;1;X1Y3/LG_I0;X1Y3/J2MID_GHb_END0.LG_I0;1;X1Y3/G_PERM_I0;X1Y3/LG_I0/X1Y3/G_PERM_I0;1"
+          }
+        },
+        "data[1]": {
+          "hide_name": 0,
+          "bits": [ 3500 ] ,
+          "attributes": {
+            "ROUTING": "X1Y4/D_Q;;1;X1Y4/LD_O;X1Y4/D_Q/X1Y4/LD_O;1;X1Y4/JW2BEG0;X1Y4/LD_O.JW2BEG0;1;X1Y4/JW2END0;X1Y4/JW2BEG0.JW2END0;1;X1Y4/W2BEG0;X1Y4/JW2END0.W2BEG0;1;X0Y4/W2MID0;X1Y4/W2BEG0.W2MID0;1;X0Y4/A_IN;X0Y4/W2MID0.A_IN;1",
+            "src": "sys_reset.sv:36.17-36.21"
+          }
+        },
+        "$iopadmap$a[1]": {
+          "hide_name": 1,
+          "bits": [ 3499 ] ,
+          "attributes": {
+            "ROUTING": "X0Y1/B_OUT;;1;X0Y1/E6BEG1;X0Y1/B_OUT.E6BEG1;1;X1Y1/E6END1;X0Y1/E6BEG1.E6END1;1;X1Y1/S4BEG0;X1Y1/E6END1.S4BEG0;1;X1Y2/S4END12;X1Y1/S4BEG0.S4END12;1;X1Y2/S4BEG12;X1Y2/S4END12.S4BEG12;1;X1Y3/S4END8;X1Y2/S4BEG12.S4END8;1;X1Y3/S4BEG8;X1Y3/S4END8.S4BEG8;1;X1Y4/S4END4;X1Y3/S4BEG8.S4END4;1;X1Y4/S4BEG4;X1Y4/S4END4.S4BEG4;1;X1Y5/S4END0;X1Y4/S4BEG4.S4END0;1;X1Y5/JS2BEG3;X1Y5/S4END0.JS2BEG3;1;X1Y5/JS2END3;X1Y5/JS2BEG3.JS2END3;1;X1Y5/J_l_EF_BEG2;X1Y5/JS2END3.J_l_EF_BEG2;1;X1Y5/J_l_EF_END2;X1Y5/J_l_EF_BEG2.J_l_EF_END2;1;X1Y5/N1BEG1;X1Y5/J_l_EF_END2.N1BEG1;1;X1Y4/N1END1;X1Y5/N1BEG1.N1END1;1;X1Y4/JN2BEG4;X1Y4/N1END1.JN2BEG4;1;X1Y4/JN2END4;X1Y4/JN2BEG4.JN2END4;1;X1Y4/J2MID_CDa_BEG0;X1Y4/JN2END4.J2MID_CDa_BEG0;1;X1Y4/J2MID_CDa_END0;X1Y4/J2MID_CDa_BEG0.J2MID_CDa_END0;1;X1Y4/LD_I0;X1Y4/J2MID_CDa_END0.LD_I0;1;X1Y4/D_PERM_I0;X1Y4/LD_I0/X1Y4/D_PERM_I0;1"
+          }
+        },
+        "rst_buf": {
+          "hide_name": 0,
+          "bits": [ 3495 ] ,
+          "attributes": {
+            "ROUTING": "X1Y3/LF_SR;X1Y3/J_SR_END0.LF_SR;1;X1Y4/LH_SR;X1Y4/J_SR_END0.LH_SR;1;X1Y4/LB_SR;X1Y4/J_SR_END0.LB_SR;1;X1Y4/GSR_BEG0;X1Y4/N_GBUF_END1.GSR_BEG0;1;X1Y4/GSR_END0;X1Y4/GSR_BEG0.GSR_END0;1;X1Y4/J_SR_BEG0;X1Y4/GSR_END0.J_SR_BEG0;1;X1Y4/J_SR_END0;X1Y4/J_SR_BEG0.J_SR_END0;1;X1Y4/LD_SR;X1Y4/J_SR_END0.LD_SR;1;X0Y7/GBUF_B_OUT;;1;X0Y7/E_GBUF_BEG1;X0Y7/GBUF_B_OUT.E_GBUF_BEG1;1;X1Y7/E_GBUF_END1;X0Y7/E_GBUF_BEG1.E_GBUF_END1;1;X1Y7/N_GBUF_BEG1;X1Y7/E_GBUF_END1.N_GBUF_BEG1;1;X1Y6/N_GBUF_END1;X1Y7/N_GBUF_BEG1.N_GBUF_END1;1;X1Y6/N_GBUF_BEG1;X1Y6/N_GBUF_END1.N_GBUF_BEG1;1;X1Y5/N_GBUF_END1;X1Y6/N_GBUF_BEG1.N_GBUF_END1;1;X1Y5/N_GBUF_BEG1;X1Y5/N_GBUF_END1.N_GBUF_BEG1;1;X1Y4/N_GBUF_END1;X1Y5/N_GBUF_BEG1.N_GBUF_END1;1;X1Y4/N_GBUF_BEG1;X1Y4/N_GBUF_END1.N_GBUF_BEG1;1;X1Y3/N_GBUF_END1;X1Y4/N_GBUF_BEG1.N_GBUF_END1;1;X1Y3/GSR_BEG0;X1Y3/N_GBUF_END1.GSR_BEG0;1;X1Y3/GSR_END0;X1Y3/GSR_BEG0.GSR_END0;1;X1Y3/J_SR_BEG0;X1Y3/GSR_END0.J_SR_BEG0;1;X1Y3/J_SR_END0;X1Y3/J_SR_BEG0.J_SR_END0;1;X1Y3/LG_SR;X1Y3/J_SR_END0.LG_SR;1",
+            "src": "sys_reset.sv:25.15-25.22"
+          }
+        },
+        "data[0]": {
+          "hide_name": 0,
+          "bits": [ 3494 ] ,
+          "attributes": {
+            "ROUTING": "X1Y3/F_Q;;1;X1Y3/LF_O;X1Y3/F_Q/X1Y3/LF_O;1;X1Y3/JW2BEG1;X1Y3/LF_O.JW2BEG1;1;X1Y3/JW2END1;X1Y3/JW2BEG1.JW2END1;1;X1Y3/W2BEG1;X1Y3/JW2END1.W2BEG1;1;X0Y3/W2MID1;X1Y3/W2BEG1.W2MID1;1;X0Y3/B_IN;X0Y3/W2MID1.B_IN;1",
+            "src": "sys_reset.sv:36.17-36.21"
+          }
+        },
+        "$iopadmap$a[0]": {
+          "hide_name": 1,
+          "bits": [ 3493 ] ,
+          "attributes": {
+            "ROUTING": "X0Y1/A_OUT;;1;X0Y1/EE4BEG2;X0Y1/A_OUT.EE4BEG2;1;X1Y1/EE4END2;X0Y1/EE4BEG2.EE4END2;1;X1Y1/JS2BEG1;X1Y1/EE4END2.JS2BEG1;1;X1Y1/JS2END1;X1Y1/JS2BEG1.JS2END1;1;X1Y1/S2BEG1;X1Y1/JS2END1.S2BEG1;1;X1Y2/S2MID1;X1Y1/S2BEG1.S2MID1;1;X1Y2/S2BEGb1;X1Y2/S2MID1.S2BEGb1;1;X1Y3/S2END1;X1Y2/S2BEGb1.S2END1;1;X1Y3/J2END_EF_BEG3;X1Y3/S2END1.J2END_EF_BEG3;1;X1Y3/J2END_EF_END3;X1Y3/J2END_EF_BEG3.J2END_EF_END3;1;X1Y3/LF_I3;X1Y3/J2END_EF_END3.LF_I3;1;X1Y3/F_PERM_I0;X1Y3/LF_I3/X1Y3/F_PERM_I0;1"
+          }
+        },
+        "clk1_buf": {
+          "hide_name": 0,
+          "bits": [ 3492 ] ,
+          "attributes": {
+            "ROUTING": "X1Y3/LG_CLK;X1Y3/GCLK_END0.LG_CLK;1;X1Y4/LH_CLK;X1Y4/GCLK_END0.LH_CLK;1;X1Y4/LD_CLK;X1Y4/GCLK_END0.LD_CLK;1;X1Y4/N_GBUF_BEG0;X1Y4/N_GBUF_END0.N_GBUF_BEG0;1;X1Y3/N_GBUF_END0;X1Y4/N_GBUF_BEG0.N_GBUF_END0;1;X1Y3/GCLK_BEG0;X1Y3/N_GBUF_END0.GCLK_BEG0;1;X1Y3/GCLK_END0;X1Y3/GCLK_BEG0.GCLK_END0;1;X1Y3/LF_CLK;X1Y3/GCLK_END0.LF_CLK;1;X0Y7/GBUF_A_OUT;;1;X0Y7/E_GBUF_BEG0;X0Y7/GBUF_A_OUT.E_GBUF_BEG0;1;X1Y7/E_GBUF_END0;X0Y7/E_GBUF_BEG0.E_GBUF_END0;1;X1Y7/N_GBUF_BEG0;X1Y7/E_GBUF_END0.N_GBUF_BEG0;1;X1Y6/N_GBUF_END0;X1Y7/N_GBUF_BEG0.N_GBUF_END0;1;X1Y6/N_GBUF_BEG0;X1Y6/N_GBUF_END0.N_GBUF_BEG0;1;X1Y5/N_GBUF_END0;X1Y6/N_GBUF_BEG0.N_GBUF_END0;1;X1Y5/N_GBUF_BEG0;X1Y5/N_GBUF_END0.N_GBUF_BEG0;1;X1Y4/N_GBUF_END0;X1Y5/N_GBUF_BEG0.N_GBUF_END0;1;X1Y4/GCLK_BEG0;X1Y4/N_GBUF_END0.GCLK_BEG0;1;X1Y4/GCLK_END0;X1Y4/GCLK_BEG0.GCLK_END0;1;X1Y4/LB_CLK;X1Y4/GCLK_END0.LB_CLK;1",
+            "src": "sys_reset.sv:18.10-18.18"
+          }
+        }
+      }
+    }
+  }
+}

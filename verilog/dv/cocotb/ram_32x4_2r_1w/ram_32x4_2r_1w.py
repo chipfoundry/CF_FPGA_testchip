@@ -4,7 +4,7 @@ import cocotb
 from cocotb.triggers import ClockCycles, Timer
 from cocotb.types import LogicArray
 from pathlib import Path
-from common.common import parse_pcf, bitbang_upload_bitstream, set_signal, get_signal, release_signal, select_fabric, get_pcf_path, get_bitstream_path, get_gpio
+from common.common import get_fabric_handle, initialize_pads, force_power_signals, bitbang_clear_bitstream, parse_pcf, bitbang_upload_bitstream, set_signal, get_signal, release_signal, select_fabric, get_pcf_path, get_bitstream_path, get_gpio
 
 @cocotb.test()
 @report_test
@@ -17,6 +17,11 @@ async def ram_32x4_2r_1w(dut):
     proj_root = Path(__file__).resolve().parent.parent.parent.parent.parent
     fabric_type = "large"
     testname = "ram_32x4_2r_1w"
+
+    initialize_pads(caravelEnv)
+    fabric_handle = get_fabric_handle(caravelEnv, fabric_type)
+    if fabric_handle:
+        force_power_signals(fabric_handle)
 
     await select_fabric(caravelEnv, fabric_type)
 
@@ -31,23 +36,31 @@ async def ram_32x4_2r_1w(dut):
     rst_gpio = get_gpio("X0Y7/B", fabric_type)
 
     # Reset
-    caravelEnv.drive_gpio(clk1_gpio, 0)
-    caravelEnv.drive_gpio(clk2_gpio, 0)
-    caravelEnv.drive_gpio(rst_gpio, 1)
-    caravelEnv.drive_gpio(ena_gpio, 1)
+    set_signal(caravelEnv, "clk1", 0, pcf, fabric_type)
+    set_signal(caravelEnv, "clk2", 0, pcf, fabric_type)
+    set_signal(caravelEnv, "rst", 1, pcf, fabric_type)
+    set_signal(caravelEnv, "ena", 1, pcf, fabric_type)
     await ClockCycles(caravelEnv.clk, 10)
 
+    await bitbang_clear_bitstream(caravelEnv, fabric_type)
     await bitbang_upload_bitstream(caravelEnv, bitstream_path)
+    await ClockCycles(caravelEnv.clk, 10)
+    
+    # Release reset
+    set_signal(caravelEnv, "rst", 0, pcf, fabric_type)
     await ClockCycles(caravelEnv.clk, 10)
     
     # Fill the memory with data
     for i in range(32):
-        set_signal(caravelEnv, "word_a", i & 0xF, pcf, fabric_type)
+        word_val = i & 0xF
+        set_signal(caravelEnv, "word_a", word_val, pcf, fabric_type)
         set_signal(caravelEnv, "addr_a", i, pcf, fabric_type)
         
-        caravelEnv.drive_gpio(clk1_gpio, 1)
+        await ClockCycles(caravelEnv.clk, 1) # Setup time
+        set_signal(caravelEnv, "clk1", 1, pcf, fabric_type)
+        cocotb.log.info(f"  WRITE [addr_a={i}]: {word_val}")
         await ClockCycles(caravelEnv.clk, 5)
-        caravelEnv.drive_gpio(clk1_gpio, 0)
+        set_signal(caravelEnv, "clk1", 0, pcf, fabric_type)
         await ClockCycles(caravelEnv.clk, 5)
 
     await ClockCycles(caravelEnv.clk, 10)
@@ -58,14 +71,18 @@ async def ram_32x4_2r_1w(dut):
         set_signal(caravelEnv, "addr_b", value, pcf, fabric_type)
         set_signal(caravelEnv, "addr_c", value & 0x3, pcf, fabric_type)
         
+        await ClockCycles(caravelEnv.clk, 1) # Setup time
         # Dual-read-cycle on clk2
-        caravelEnv.drive_gpio(clk2_gpio, 1)
+        set_signal(caravelEnv, "clk2", 1, pcf, fabric_type)
         await ClockCycles(caravelEnv.clk, 10)
-        caravelEnv.drive_gpio(clk2_gpio, 0)
+        set_signal(caravelEnv, "clk2", 0, pcf, fabric_type)
         await ClockCycles(caravelEnv.clk, 10)
 
         word_b_val = get_signal(caravelEnv, "word_b", pcf, fabric_type)
         word_c_val = get_signal(caravelEnv, "word_c", pcf, fabric_type)
+
+        cocotb.log.info(f"  READ [addr_b={value}]: expected {value & 0xF}, got {word_b_val}")
+        cocotb.log.info(f"  READ [addr_c={value & 0x3}]: expected {value % 0x4}, got {word_c_val}")
 
         assert word_b_val == value & 0xF, f"ram_32x4 FAIL word_b: expected {value & 0xF}, got {word_b_val}"
         assert word_c_val == value % 0x4, f"ram_32x4 FAIL word_c: expected {value % 0x4}, got {word_c_val}"
@@ -74,9 +91,9 @@ async def ram_32x4_2r_1w(dut):
     release_signal(caravelEnv, "addr_a", pcf, fabric_type)
     release_signal(caravelEnv, "addr_b", pcf, fabric_type)
     release_signal(caravelEnv, "addr_c", pcf, fabric_type)
-    caravelEnv.release_gpio(clk1_gpio)
-    caravelEnv.release_gpio(clk2_gpio)
-    caravelEnv.release_gpio(ena_gpio)
-    caravelEnv.release_gpio(rst_gpio)
+    release_signal(caravelEnv, "clk1", pcf, fabric_type)
+    release_signal(caravelEnv, "clk2", pcf, fabric_type)
+    release_signal(caravelEnv, "ena", pcf, fabric_type)
+    release_signal(caravelEnv, "rst", pcf, fabric_type)
 
     cocotb.log.info("TEST PASSED")
