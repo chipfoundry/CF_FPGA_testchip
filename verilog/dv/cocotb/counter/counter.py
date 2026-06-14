@@ -10,7 +10,7 @@ from common.common import get_fabric_handle, initialize_pads, force_power_signal
 async def counter(dut):
     caravelEnv = await test_configure(dut, timeout_cycles=5000000)
     cocotb.log.info("=" * 62)
-    cocotb.log.info("OPENFRAME TESTCASE: counter (Small Fabric)")
+    cocotb.log.info("OPENFRAME TESTCASE: counter (Small & Large Fabric)")
     cocotb.log.info("=" * 62)
 
     proj_root = Path(__file__).resolve().parent.parent.parent.parent.parent

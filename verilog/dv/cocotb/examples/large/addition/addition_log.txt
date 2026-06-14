@@ -7,41 +7,63 @@ Info: constrained 'a[1]' to bel 'X0Y1/B'
 Info: constrained 'a[2]' to bel 'X0Y2/A'
 Info: constrained 'a[3]' to bel 'X0Y2/B'
 Info: constrained 'a[4]' to bel 'X0Y3/A'
-Info: constrained 'b[0]' to bel 'X0Y3/B'
-Info: constrained 'b[1]' to bel 'X0Y4/A'
-Info: constrained 'b[2]' to bel 'X0Y4/B'
-Info: constrained 'b[3]' to bel 'X0Y5/A'
-Info: constrained 'b[4]' to bel 'X0Y5/B'
-Info: constrained 'c[0]' to bel 'X0Y6/A'
-Info: constrained 'c[1]' to bel 'X0Y6/B'
-Info: constrained 'c[2]' to bel 'X5Y1/A'
-Info: constrained 'c[3]' to bel 'X5Y1/B'
-Info: constrained 'c[4]' to bel 'X5Y2/A'
-Info: constrained 'c[5]' to bel 'X5Y2/B'
-Info: constrained 'c[6]' to bel 'X5Y3/A'
-Info: constrained 'c[7]' to bel 'X5Y3/B'
-Info: constrained 'c[8]' to bel 'X5Y4/A'
-Info: constrained 'c[9]' to bel 'X5Y4/B'
+Info: constrained 'a[5]' to bel 'X0Y3/B'
+Info: constrained 'b[0]' to bel 'X0Y4/A'
+Info: constrained 'b[1]' to bel 'X0Y4/B'
+Info: constrained 'b[2]' to bel 'X0Y5/A'
+Info: constrained 'b[3]' to bel 'X0Y5/B'
+Info: constrained 'b[4]' to bel 'X0Y6/A'
+Info: constrained 'b[5]' to bel 'X0Y6/B'
+Info: constrained 'c[0]' to bel 'X0Y7/A'
+Info: constrained 'c[1]' to bel 'X0Y7/B'
+Info: constrained 'c[2]' to bel 'X0Y8/A'
+Info: constrained 'c[3]' to bel 'X0Y8/B'
+Info: constrained 'c[4]' to bel 'X0Y9/A'
+Info: constrained 'c[5]' to bel 'X0Y9/B'
+Info: constrained 'c[6]' to bel 'X0Y10/A'
+Info: constrained 'c[7]' to bel 'X0Y10/B'
 Info: Finished applying constraints from '/home/ank/Desktop/WORK/T_4/sky130-fabulous-testchip/user_designs/designs/classic/addition/generated_constraints.pcf'
-Info: Checksum: 0xe7f000f8
+Info: Checksum: 0xfbbb85f2
 
 Info: Device utilisation:
-Info: 	         FABULOUS_LC:       7/    192     3%
-Info: 	               IOBUF:      20/     24    83%
+Info: 	         FABULOUS_LC:       8/   1056     0%
+Info: 	               IOBUF:      20/     36    55%
+Info: 	      RAM_32x4_2R_1W:       0/     12     0%
+Info: 	         MACC_8x8_20:       0/      6     0%
 Info: 	                GBUF:       0/      4     0%
 Info: 	           SYS_RESET:       0/      1     0%
 
 Info: Placed 20 cells based on constraints.
-Info: Creating initial analytic placement for 3 cells, random placement wirelen = 80.
-Info:     at initial placer iter 0, wirelen = 52
-Info:     at initial placer iter 1, wirelen = 44
-Info:     at initial placer iter 2, wirelen = 44
-Info:     at initial placer iter 3, wirelen = 44
+Info: Creating initial analytic placement for 3 cells, random placement wirelen = 166.
+Info:     at initial placer iter 0, wirelen = 46
+Info:     at initial placer iter 1, wirelen = 45
+Info:     at initial placer iter 2, wirelen = 45
+Info:     at initial placer iter 3, wirelen = 45
 Info: Running main analytical placer, max placement attempts per cell = 10000.
-Info:     at iteration #1, type _CONST0_DRV: wirelen solved = 44, spread = 44, legal = 44; time = 0.00s
-Info:     at iteration #1, type _CONST1_DRV: wirelen solved = 44, spread = 44, legal = 44; time = 0.00s
-Info:     at iteration #1, type FABULOUS_LC: wirelen solved = 44, spread = 44, legal = 60; time = 0.00s
-Info:     at iteration #1, type ALL: wirelen solved = 44, spread = 44, legal = 52; time = 0.00s
+Info:     at iteration #1, type _CONST0_DRV: wirelen solved = 45, spread = 45, legal = 45; time = 0.00s
+Info:     at iteration #1, type _CONST1_DRV: wirelen solved = 45, spread = 45, legal = 45; time = 0.00s
+Info:     at iteration #1, type FABULOUS_LC: wirelen solved = 45, spread = 45, legal = 67; time = 0.00s
+Info:     at iteration #1, type ALL: wirelen solved = 48, spread = 48, legal = 67; time = 0.00s
+Info:     at iteration #2, type _CONST0_DRV: wirelen solved = 67, spread = 67, legal = 67; time = 0.00s
+Info:     at iteration #2, type _CONST1_DRV: wirelen solved = 67, spread = 67, legal = 67; time = 0.00s
+Info:     at iteration #2, type FABULOUS_LC: wirelen solved = 48, spread = 48, legal = 74; time = 0.00s
+Info:     at iteration #2, type ALL: wirelen solved = 55, spread = 55, legal = 85; time = 0.00s
+Info:     at iteration #3, type _CONST0_DRV: wirelen solved = 85, spread = 85, legal = 85; time = 0.00s
+Info:     at iteration #3, type _CONST1_DRV: wirelen solved = 85, spread = 85, legal = 85; time = 0.00s
+Info:     at iteration #3, type FABULOUS_LC: wirelen solved = 55, spread = 55, legal = 74; time = 0.00s
+Info:     at iteration #3, type ALL: wirelen solved = 55, spread = 55, legal = 85; time = 0.00s
+Info:     at iteration #4, type _CONST0_DRV: wirelen solved = 85, spread = 85, legal = 85; time = 0.00s
+Info:     at iteration #4, type _CONST1_DRV: wirelen solved = 85, spread = 85, legal = 85; time = 0.00s
+Info:     at iteration #4, type FABULOUS_LC: wirelen solved = 55, spread = 55, legal = 74; time = 0.00s
+Info:     at iteration #4, type ALL: wirelen solved = 55, spread = 55, legal = 85; time = 0.00s
+Info:     at iteration #5, type _CONST0_DRV: wirelen solved = 85, spread = 85, legal = 85; time = 0.00s
+Info:     at iteration #5, type _CONST1_DRV: wirelen solved = 85, spread = 85, legal = 85; time = 0.00s
+Info:     at iteration #5, type FABULOUS_LC: wirelen solved = 55, spread = 55, legal = 85; time = 0.00s
+Info:     at iteration #5, type ALL: wirelen solved = 55, spread = 55, legal = 74; time = 0.00s
+Info:     at iteration #6, type _CONST0_DRV: wirelen solved = 74, spread = 74, legal = 74; time = 0.00s
+Info:     at iteration #6, type _CONST1_DRV: wirelen solved = 74, spread = 74, legal = 74; time = 0.00s
+Info:     at iteration #6, type FABULOUS_LC: wirelen solved = 55, spread = 55, legal = 74; time = 0.00s
+Info:     at iteration #6, type ALL: wirelen solved = 55, spread = 55, legal = 67; time = 0.00s
 Info: HeAP Placer Time: 0.00s
 Info:   of which solving equations: 0.00s
 Info:   of which spreading cells: 0.00s
@@ -51,23 +73,23 @@ Info:      _CONST1_DRV 0.000s
 Info:      _CONST0_DRV 0.000s
 
 Info: Running simulated annealing placer for refinement.
-Info:   at iteration #1: temp = 0.000000, timing cost = 0, wirelen = 52
-iter #1: temp = 0.000000, timing cost = 0, wirelen = 52, dia = 3, Ra = 0.00 
-Info:   at iteration #2: temp = 0.000000, timing cost = 0, wirelen = 52 
+Info:   at iteration #1: temp = 0.000000, timing cost = 0, wirelen = 67
+iter #1: temp = 0.000000, timing cost = 0, wirelen = 67, dia = 3, Ra = 0.00 
+Info:   at iteration #2: temp = 0.000000, timing cost = 0, wirelen = 67 
 Info: SA placement time 0.00s
 
 Info: No Fmax available; no interior timing paths found in design.
-Info: Checksum: 0x886b864a
+Info: Checksum: 0x32293e01
 
 Info: Routing..
 Info: Setting up routing queue.
-Info: Routing 50 arcs.
+Info: Routing 51 arcs.
 Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
 Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
-Info:         54 |        4         50 |    4    50 |         0|       0.01       0.01|
+Info:         54 |        3         51 |    3    51 |         0|       0.01       0.01|
 Info: Routing complete.
 Info: Router1 time 0.01s
-Info: Checksum: 0x367e9354
+Info: Checksum: 0x2625db09
 
 Info: No Fmax available; no interior timing paths found in design.
 

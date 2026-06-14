@@ -43,11 +43,11 @@
       "ports": {
         "b": {
           "direction": "output",
-          "bits": [ 3526, 3530, 3534, 3538, 3542, 3546 ]
+          "bits": [ 5258, 5262, 5266, 5270, 5274, 5278 ]
         },
         "a": {
           "direction": "input",
-          "bits": [ 3495, 3502, 3507, 3512, 3517, 3522 ]
+          "bits": [ 5227, 5234, 5239, 5244, 5249, 5254 ]
         }
       },
       "cells": {
@@ -69,9 +69,9 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3542 ],
-            "IN": [ 3516 ],
-            "EN": [ 3582 ]
+            "PAD": [ 5274 ],
+            "IN": [ 5248 ],
+            "EN": [ 5326 ]
           }
         },
         "$iopadmap$passthrough.b": {
@@ -92,9 +92,9 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3526 ],
-            "IN": [ 3494 ],
-            "EN": [ 3582 ]
+            "PAD": [ 5258 ],
+            "IN": [ 5226 ],
+            "EN": [ 5326 ]
           }
         },
         "$PACKER_GND_DRV": {
@@ -110,7 +110,7 @@
             "O": "output"
           },
           "connections": {
-            "O": [ 3583 ]
+            "O": [ 5327 ]
           }
         },
         "$iopadmap$passthrough.a_5": {
@@ -131,9 +131,9 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3522 ],
-            "OUT": [ 3521 ],
-            "EN": [ 3583 ]
+            "PAD": [ 5254 ],
+            "OUT": [ 5253 ],
+            "EN": [ 5327 ]
           }
         },
         "$iopadmap$passthrough.b_3": {
@@ -154,9 +154,9 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3538 ],
-            "IN": [ 3511 ],
-            "EN": [ 3582 ]
+            "PAD": [ 5270 ],
+            "IN": [ 5243 ],
+            "EN": [ 5326 ]
           }
         },
         "$iopadmap$passthrough.a_4": {
@@ -177,9 +177,9 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3517 ],
-            "OUT": [ 3516 ],
-            "EN": [ 3583 ]
+            "PAD": [ 5249 ],
+            "OUT": [ 5248 ],
+            "EN": [ 5327 ]
           }
         },
         "$iopadmap$passthrough.b_5": {
@@ -200,9 +200,9 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3546 ],
-            "IN": [ 3521 ],
-            "EN": [ 3582 ]
+            "PAD": [ 5278 ],
+            "IN": [ 5253 ],
+            "EN": [ 5326 ]
           }
         },
         "$iopadmap$passthrough.a_3": {
@@ -223,9 +223,9 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3512 ],
-            "OUT": [ 3511 ],
-            "EN": [ 3583 ]
+            "PAD": [ 5244 ],
+            "OUT": [ 5243 ],
+            "EN": [ 5327 ]
           }
         },
         "$iopadmap$passthrough.b_2": {
@@ -246,9 +246,9 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3534 ],
-            "IN": [ 3506 ],
-            "EN": [ 3582 ]
+            "PAD": [ 5266 ],
+            "IN": [ 5238 ],
+            "EN": [ 5326 ]
           }
         },
         "$iopadmap$passthrough.a_2": {
@@ -269,9 +269,9 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3507 ],
-            "OUT": [ 3506 ],
-            "EN": [ 3583 ]
+            "PAD": [ 5239 ],
+            "OUT": [ 5238 ],
+            "EN": [ 5327 ]
           }
         },
         "$PACKER_VCC_DRV": {
@@ -287,7 +287,7 @@
             "O": "output"
           },
           "connections": {
-            "O": [ 3582 ]
+            "O": [ 5326 ]
           }
         },
         "$iopadmap$passthrough.a_1": {
@@ -308,9 +308,9 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3502 ],
-            "OUT": [ 3501 ],
-            "EN": [ 3583 ]
+            "PAD": [ 5234 ],
+            "OUT": [ 5233 ],
+            "EN": [ 5327 ]
           }
         },
         "$iopadmap$passthrough.b_1": {
@@ -331,9 +331,9 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3530 ],
-            "IN": [ 3501 ],
-            "EN": [ 3582 ]
+            "PAD": [ 5262 ],
+            "IN": [ 5233 ],
+            "EN": [ 5326 ]
           }
         },
         "$iopadmap$passthrough.a": {
@@ -354,16 +354,16 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3495 ],
-            "OUT": [ 3494 ],
-            "EN": [ 3583 ]
+            "PAD": [ 5227 ],
+            "OUT": [ 5226 ],
+            "EN": [ 5327 ]
           }
         }
       },
       "netnames": {
         "b[0]": {
           "hide_name": 0,
-          "bits": [ 3526 ] ,
+          "bits": [ 5258 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "passthrough.v:8.23-8.24"
@@ -371,14 +371,14 @@
         },
         "$PACKER_VCC": {
           "hide_name": 1,
-          "bits": [ 3582 ] ,
+          "bits": [ 5326 ] ,
           "attributes": {
-            "ROUTING": "X0Y4/A_EN;X0Y4/VCC0.A_EN;1;X0Y4/$CONST1;X0Y0/$CONST1/X0Y4/$CONST1;1;X0Y4/VCC0;X0Y4/$CONST1/X0Y4/VCC0;1;X0Y4/B_EN;X0Y4/VCC0.B_EN;1;X0Y5/B_EN;X0Y5/VCC0.B_EN;1;X0Y6/B_EN;X0Y6/VCC0.B_EN;1;X0Y5/$CONST1;X0Y0/$CONST1/X0Y5/$CONST1;1;X0Y5/VCC0;X0Y5/$CONST1/X0Y5/VCC0;1;X0Y5/A_EN;X0Y5/VCC0.A_EN;1;X0Y0/$CONST1;;1;X0Y6/$CONST1;X0Y0/$CONST1/X0Y6/$CONST1;1;X0Y6/VCC0;X0Y6/$CONST1/X0Y6/VCC0;1;X0Y6/A_EN;X0Y6/VCC0.A_EN;1"
+            "ROUTING": "X0Y5/B_EN;X0Y5/VCC0.B_EN;1;X0Y4/A_EN;X0Y4/VCC0.A_EN;1;X0Y6/B_EN;X0Y6/VCC0.B_EN;1;X0Y5/$CONST1;X0Y0/$CONST1/X0Y5/$CONST1;1;X0Y5/VCC0;X0Y5/$CONST1/X0Y5/VCC0;1;X0Y5/A_EN;X0Y5/VCC0.A_EN;1;X0Y4/$CONST1;X0Y0/$CONST1/X0Y4/$CONST1;1;X0Y4/VCC0;X0Y4/$CONST1/X0Y4/VCC0;1;X0Y4/B_EN;X0Y4/VCC0.B_EN;1;X0Y0/$CONST1;;1;X0Y6/$CONST1;X0Y0/$CONST1/X0Y6/$CONST1;1;X0Y6/VCC0;X0Y6/$CONST1/X0Y6/VCC0;1;X0Y6/A_EN;X0Y6/VCC0.A_EN;1"
           }
         },
         "a[5]": {
           "hide_name": 0,
-          "bits": [ 3522 ] ,
+          "bits": [ 5254 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "passthrough.v:7.23-7.24"
@@ -386,14 +386,14 @@
         },
         "$iopadmap$a[5]": {
           "hide_name": 1,
-          "bits": [ 3521 ] ,
+          "bits": [ 5253 ] ,
           "attributes": {
-            "ROUTING": "X0Y3/B_OUT;;1;X0Y3/E1BEG3;X0Y3/B_OUT.E1BEG3;1;X1Y3/E1END3;X0Y3/E1BEG3.E1END3;1;X1Y3/JS2BEG6;X1Y3/E1END3.JS2BEG6;1;X1Y3/JS2END6;X1Y3/JS2BEG6.JS2END6;1;X1Y3/S2BEG6;X1Y3/JS2END6.S2BEG6;1;X1Y4/S2MID6;X1Y3/S2BEG6.S2MID6;1;X1Y4/S2BEGb6;X1Y4/S2MID6.S2BEGb6;1;X1Y5/S2END6;X1Y4/S2BEGb6.S2END6;1;X1Y5/JS2BEG5;X1Y5/S2END6.JS2BEG5;1;X1Y5/JS2END5;X1Y5/JS2BEG5.JS2END5;1;X1Y5/S2BEG5;X1Y5/JS2END5.S2BEG5;1;X1Y6/S2MID5;X1Y5/S2BEG5.S2MID5;1;X1Y6/S2BEGb5;X1Y6/S2MID5.S2BEGb5;1;X1Y7/S2END5;X1Y6/S2BEGb5.S2END5;1;X1Y7/N2BEGb2;X1Y7/S2END5.N2BEGb2;1;X1Y6/N2END2;X1Y7/N2BEGb2.N2END2;1;X1Y6/JW2BEG1;X1Y6/N2END2.JW2BEG1;1;X1Y6/JW2END1;X1Y6/JW2BEG1.JW2END1;1;X1Y6/W2BEG1;X1Y6/JW2END1.W2BEG1;1;X0Y6/W2MID1;X1Y6/W2BEG1.W2MID1;1;X0Y6/B_IN;X0Y6/W2MID1.B_IN;1"
+            "ROUTING": "X0Y3/B_OUT;;1;X0Y3/E6BEG1;X0Y3/B_OUT.E6BEG1;1;X1Y3/E6END1;X0Y3/E6BEG1.E6END1;1;X1Y3/S4BEG0;X1Y3/E6END1.S4BEG0;1;X1Y4/S4END12;X1Y3/S4BEG0.S4END12;1;X1Y4/S4BEG12;X1Y4/S4END12.S4BEG12;1;X1Y5/S4END8;X1Y4/S4BEG12.S4END8;1;X1Y5/S4BEG8;X1Y5/S4END8.S4BEG8;1;X1Y6/S4END4;X1Y5/S4BEG8.S4END4;1;X1Y6/S4BEG4;X1Y6/S4END4.S4BEG4;1;X1Y7/S4END0;X1Y6/S4BEG4.S4END0;1;X1Y7/JW2BEG3;X1Y7/S4END0.JW2BEG3;1;X1Y7/JW2END3;X1Y7/JW2BEG3.JW2END3;1;X1Y7/N1BEG0;X1Y7/JW2END3.N1BEG0;1;X1Y6/N1END0;X1Y7/N1BEG0.N1END0;1;X1Y6/JW2BEG1;X1Y6/N1END0.JW2BEG1;1;X1Y6/JW2END1;X1Y6/JW2BEG1.JW2END1;1;X1Y6/W2BEG1;X1Y6/JW2END1.W2BEG1;1;X0Y6/W2MID1;X1Y6/W2BEG1.W2MID1;1;X0Y6/B_IN;X0Y6/W2MID1.B_IN;1"
           }
         },
         "b[3]": {
           "hide_name": 0,
-          "bits": [ 3538 ] ,
+          "bits": [ 5270 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "passthrough.v:8.23-8.24"
@@ -401,7 +401,7 @@
         },
         "a[4]": {
           "hide_name": 0,
-          "bits": [ 3517 ] ,
+          "bits": [ 5249 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "passthrough.v:7.23-7.24"
@@ -409,14 +409,14 @@
         },
         "$iopadmap$a[4]": {
           "hide_name": 1,
-          "bits": [ 3516 ] ,
+          "bits": [ 5248 ] ,
           "attributes": {
-            "ROUTING": "X0Y3/A_OUT;;1;X0Y3/E1BEG2;X0Y3/A_OUT.E1BEG2;1;X1Y3/E1END2;X0Y3/E1BEG2.E1END2;1;X1Y3/JS2BEG5;X1Y3/E1END2.JS2BEG5;1;X1Y3/JS2END5;X1Y3/JS2BEG5.JS2END5;1;X1Y3/S2BEG5;X1Y3/JS2END5.S2BEG5;1;X1Y4/S2MID5;X1Y3/S2BEG5.S2MID5;1;X1Y4/S2BEGb5;X1Y4/S2MID5.S2BEGb5;1;X1Y5/S2END5;X1Y4/S2BEGb5.S2END5;1;X1Y5/JS2BEG4;X1Y5/S2END5.JS2BEG4;1;X1Y5/JS2END4;X1Y5/JS2BEG4.JS2END4;1;X1Y5/S2BEG4;X1Y5/JS2END4.S2BEG4;1;X1Y6/S2MID4;X1Y5/S2BEG4.S2MID4;1;X1Y6/J2MID_EFa_BEG2;X1Y6/S2MID4.J2MID_EFa_BEG2;1;X1Y6/J2MID_EFa_END2;X1Y6/J2MID_EFa_BEG2.J2MID_EFa_END2;1;X1Y6/W6BEG1;X1Y6/J2MID_EFa_END2.W6BEG1;1;X0Y6/W6END11;X1Y6/W6BEG1.W6END11;1;X0Y6/E6BEG0;X0Y6/W6END11.E6BEG0;1;X1Y6/E6END0;X0Y6/E6BEG0.E6END0;1;X1Y6/JS2BEG3;X1Y6/E6END0.JS2BEG3;1;X1Y6/JS2END3;X1Y6/JS2BEG3.JS2END3;1;X1Y6/W1BEG0;X1Y6/JS2END3.W1BEG0;1;X0Y6/W1END0;X1Y6/W1BEG0.W1END0;1;X0Y6/A_IN;X0Y6/W1END0.A_IN;1"
+            "ROUTING": "X0Y3/A_OUT;;1;X0Y3/E6BEG0;X0Y3/A_OUT.E6BEG0;1;X1Y3/E6END0;X0Y3/E6BEG0.E6END0;1;X1Y3/S4BEG1;X1Y3/E6END0.S4BEG1;1;X1Y4/S4END13;X1Y3/S4BEG1.S4END13;1;X1Y4/S4BEG13;X1Y4/S4END13.S4BEG13;1;X1Y5/S4END9;X1Y4/S4BEG13.S4END9;1;X1Y5/S4BEG9;X1Y5/S4END9.S4BEG9;1;X1Y6/S4END5;X1Y5/S4BEG9.S4END5;1;X1Y6/S4BEG5;X1Y6/S4END5.S4BEG5;1;X1Y7/S4END1;X1Y6/S4BEG5.S4END1;1;X1Y7/JW2BEG0;X1Y7/S4END1.JW2BEG0;1;X1Y7/JW2END0;X1Y7/JW2BEG0.JW2END0;1;X1Y7/N1BEG1;X1Y7/JW2END0.N1BEG1;1;X1Y6/N1END1;X1Y7/N1BEG1.N1END1;1;X1Y6/JE2BEG2;X1Y6/N1END1.JE2BEG2;1;X1Y6/JE2END2;X1Y6/JE2BEG2.JE2END2;1;X1Y6/J_l_CD_BEG1;X1Y6/JE2END2.J_l_CD_BEG1;1;X1Y6/J_l_CD_END1;X1Y6/J_l_CD_BEG1.J_l_CD_END1;1;X1Y6/W1BEG0;X1Y6/J_l_CD_END1.W1BEG0;1;X0Y6/W1END0;X1Y6/W1BEG0.W1END0;1;X0Y6/A_IN;X0Y6/W1END0.A_IN;1"
           }
         },
         "b[5]": {
           "hide_name": 0,
-          "bits": [ 3546 ] ,
+          "bits": [ 5278 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "passthrough.v:8.23-8.24"
@@ -424,7 +424,7 @@
         },
         "a[3]": {
           "hide_name": 0,
-          "bits": [ 3512 ] ,
+          "bits": [ 5244 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "passthrough.v:7.23-7.24"
@@ -432,14 +432,14 @@
         },
         "$iopadmap$a[3]": {
           "hide_name": 1,
-          "bits": [ 3511 ] ,
+          "bits": [ 5243 ] ,
           "attributes": {
             "ROUTING": "X0Y2/B_OUT;;1;X0Y2/E6BEG1;X0Y2/B_OUT.E6BEG1;1;X1Y2/E6END1;X0Y2/E6BEG1.E6END1;1;X1Y2/S4BEG0;X1Y2/E6END1.S4BEG0;1;X1Y3/S4END12;X1Y2/S4BEG0.S4END12;1;X1Y3/S4BEG12;X1Y3/S4END12.S4BEG12;1;X1Y4/S4END8;X1Y3/S4BEG12.S4END8;1;X1Y4/S4BEG8;X1Y4/S4END8.S4BEG8;1;X1Y5/S4END4;X1Y4/S4BEG8.S4END4;1;X1Y5/S4BEG4;X1Y5/S4END4.S4BEG4;1;X1Y6/S4END0;X1Y5/S4BEG4.S4END0;1;X1Y6/JW2BEG3;X1Y6/S4END0.JW2BEG3;1;X1Y6/JW2END3;X1Y6/JW2BEG3.JW2END3;1;X1Y6/N1BEG0;X1Y6/JW2END3.N1BEG0;1;X1Y5/N1END0;X1Y6/N1BEG0.N1END0;1;X1Y5/JW2BEG1;X1Y5/N1END0.JW2BEG1;1;X1Y5/JW2END1;X1Y5/JW2BEG1.JW2END1;1;X1Y5/W2BEG1;X1Y5/JW2END1.W2BEG1;1;X0Y5/W2MID1;X1Y5/W2BEG1.W2MID1;1;X0Y5/B_IN;X0Y5/W2MID1.B_IN;1"
           }
         },
         "b[2]": {
           "hide_name": 0,
-          "bits": [ 3534 ] ,
+          "bits": [ 5266 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "passthrough.v:8.23-8.24"
@@ -447,7 +447,7 @@
         },
         "a[2]": {
           "hide_name": 0,
-          "bits": [ 3507 ] ,
+          "bits": [ 5239 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "passthrough.v:7.23-7.24"
@@ -455,21 +455,21 @@
         },
         "$iopadmap$a[2]": {
           "hide_name": 1,
-          "bits": [ 3506 ] ,
+          "bits": [ 5238 ] ,
           "attributes": {
             "ROUTING": "X0Y2/A_OUT;;1;X0Y2/E6BEG0;X0Y2/A_OUT.E6BEG0;1;X1Y2/E6END0;X0Y2/E6BEG0.E6END0;1;X1Y2/S4BEG1;X1Y2/E6END0.S4BEG1;1;X1Y3/S4END13;X1Y2/S4BEG1.S4END13;1;X1Y3/S4BEG13;X1Y3/S4END13.S4BEG13;1;X1Y4/S4END9;X1Y3/S4BEG13.S4END9;1;X1Y4/S4BEG9;X1Y4/S4END9.S4BEG9;1;X1Y5/S4END5;X1Y4/S4BEG9.S4END5;1;X1Y5/S4BEG5;X1Y5/S4END5.S4BEG5;1;X1Y6/S4END1;X1Y5/S4BEG5.S4END1;1;X1Y6/JW2BEG0;X1Y6/S4END1.JW2BEG0;1;X1Y6/JW2END0;X1Y6/JW2BEG0.JW2END0;1;X1Y6/N1BEG1;X1Y6/JW2END0.N1BEG1;1;X1Y5/N1END1;X1Y6/N1BEG1.N1END1;1;X1Y5/JE2BEG2;X1Y5/N1END1.JE2BEG2;1;X1Y5/JE2END2;X1Y5/JE2BEG2.JE2END2;1;X1Y5/J_l_CD_BEG1;X1Y5/JE2END2.J_l_CD_BEG1;1;X1Y5/J_l_CD_END1;X1Y5/J_l_CD_BEG1.J_l_CD_END1;1;X1Y5/W1BEG0;X1Y5/J_l_CD_END1.W1BEG0;1;X0Y5/W1END0;X1Y5/W1BEG0.W1END0;1;X0Y5/A_IN;X0Y5/W1END0.A_IN;1"
           }
         },
         "$PACKER_GND": {
           "hide_name": 1,
-          "bits": [ 3583 ] ,
+          "bits": [ 5327 ] ,
           "attributes": {
-            "ROUTING": "X0Y2/A_EN;X0Y2/GND0.A_EN;1;X0Y3/A_EN;X0Y3/GND0.A_EN;1;X0Y1/B_EN;X0Y1/GND0.B_EN;1;X0Y2/$CONST0;X0Y0/$CONST0/X0Y2/$CONST0;1;X0Y2/GND0;X0Y2/$CONST0/X0Y2/GND0;1;X0Y2/B_EN;X0Y2/GND0.B_EN;1;X0Y1/$CONST0;X0Y0/$CONST0/X0Y1/$CONST0;1;X0Y1/GND0;X0Y1/$CONST0/X0Y1/GND0;1;X0Y1/A_EN;X0Y1/GND0.A_EN;1;X0Y0/$CONST0;;1;X0Y3/$CONST0;X0Y0/$CONST0/X0Y3/$CONST0;1;X0Y3/GND0;X0Y3/$CONST0/X0Y3/GND0;1;X0Y3/B_EN;X0Y3/GND0.B_EN;1"
+            "ROUTING": "X0Y3/B_EN;X0Y3/GND0.B_EN;1;X0Y3/$CONST0;X0Y0/$CONST0/X0Y3/$CONST0;1;X0Y3/GND0;X0Y3/$CONST0/X0Y3/GND0;1;X0Y3/A_EN;X0Y3/GND0.A_EN;1;X0Y2/B_EN;X0Y2/GND0.B_EN;1;X0Y2/$CONST0;X0Y0/$CONST0/X0Y2/$CONST0;1;X0Y2/GND0;X0Y2/$CONST0/X0Y2/GND0;1;X0Y2/A_EN;X0Y2/GND0.A_EN;1;X0Y1/A_EN;X0Y1/GND0.A_EN;1;X0Y0/$CONST0;;1;X0Y1/$CONST0;X0Y0/$CONST0/X0Y1/$CONST0;1;X0Y1/GND0;X0Y1/$CONST0/X0Y1/GND0;1;X0Y1/B_EN;X0Y1/GND0.B_EN;1"
           }
         },
         "a[1]": {
           "hide_name": 0,
-          "bits": [ 3502 ] ,
+          "bits": [ 5234 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "passthrough.v:7.23-7.24"
@@ -477,14 +477,14 @@
         },
         "$iopadmap$a[1]": {
           "hide_name": 1,
-          "bits": [ 3501 ] ,
+          "bits": [ 5233 ] ,
           "attributes": {
             "ROUTING": "X0Y1/B_OUT;;1;X0Y1/E6BEG1;X0Y1/B_OUT.E6BEG1;1;X1Y1/E6END1;X0Y1/E6BEG1.E6END1;1;X1Y1/S4BEG0;X1Y1/E6END1.S4BEG0;1;X1Y2/S4END12;X1Y1/S4BEG0.S4END12;1;X1Y2/S4BEG12;X1Y2/S4END12.S4BEG12;1;X1Y3/S4END8;X1Y2/S4BEG12.S4END8;1;X1Y3/S4BEG8;X1Y3/S4END8.S4BEG8;1;X1Y4/S4END4;X1Y3/S4BEG8.S4END4;1;X1Y4/S4BEG4;X1Y4/S4END4.S4BEG4;1;X1Y5/S4END0;X1Y4/S4BEG4.S4END0;1;X1Y5/JW2BEG3;X1Y5/S4END0.JW2BEG3;1;X1Y5/JW2END3;X1Y5/JW2BEG3.JW2END3;1;X1Y5/N1BEG0;X1Y5/JW2END3.N1BEG0;1;X1Y4/N1END0;X1Y5/N1BEG0.N1END0;1;X1Y4/JW2BEG1;X1Y4/N1END0.JW2BEG1;1;X1Y4/JW2END1;X1Y4/JW2BEG1.JW2END1;1;X1Y4/W2BEG1;X1Y4/JW2END1.W2BEG1;1;X0Y4/W2MID1;X1Y4/W2BEG1.W2MID1;1;X0Y4/B_IN;X0Y4/W2MID1.B_IN;1"
           }
         },
         "b[1]": {
           "hide_name": 0,
-          "bits": [ 3530 ] ,
+          "bits": [ 5262 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "passthrough.v:8.23-8.24"
@@ -492,7 +492,7 @@
         },
         "a[0]": {
           "hide_name": 0,
-          "bits": [ 3495 ] ,
+          "bits": [ 5227 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "passthrough.v:7.23-7.24"
@@ -500,14 +500,14 @@
         },
         "$iopadmap$a[0]": {
           "hide_name": 1,
-          "bits": [ 3494 ] ,
+          "bits": [ 5226 ] ,
           "attributes": {
             "ROUTING": "X0Y1/A_OUT;;1;X0Y1/E6BEG0;X0Y1/A_OUT.E6BEG0;1;X1Y1/E6END0;X0Y1/E6BEG0.E6END0;1;X1Y1/S4BEG1;X1Y1/E6END0.S4BEG1;1;X1Y2/S4END13;X1Y1/S4BEG1.S4END13;1;X1Y2/S4BEG13;X1Y2/S4END13.S4BEG13;1;X1Y3/S4END9;X1Y2/S4BEG13.S4END9;1;X1Y3/S4BEG9;X1Y3/S4END9.S4BEG9;1;X1Y4/S4END5;X1Y3/S4BEG9.S4END5;1;X1Y4/S4BEG5;X1Y4/S4END5.S4BEG5;1;X1Y5/S4END1;X1Y4/S4BEG5.S4END1;1;X1Y5/JW2BEG0;X1Y5/S4END1.JW2BEG0;1;X1Y5/JW2END0;X1Y5/JW2BEG0.JW2END0;1;X1Y5/N1BEG1;X1Y5/JW2END0.N1BEG1;1;X1Y4/N1END1;X1Y5/N1BEG1.N1END1;1;X1Y4/JW2BEG0;X1Y4/N1END1.JW2BEG0;1;X1Y4/JW2END0;X1Y4/JW2BEG0.JW2END0;1;X1Y4/W2BEG0;X1Y4/JW2END0.W2BEG0;1;X0Y4/W2MID0;X1Y4/W2BEG0.W2MID0;1;X0Y4/A_IN;X0Y4/W2MID0.A_IN;1"
           }
         },
         "b[4]": {
           "hide_name": 0,
-          "bits": [ 3542 ] ,
+          "bits": [ 5274 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "passthrough.v:8.23-8.24"

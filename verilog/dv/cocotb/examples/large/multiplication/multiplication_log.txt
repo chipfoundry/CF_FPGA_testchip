@@ -72,7 +72,7 @@ Info:     at iteration #7, type _CONST0_DRV: wirelen solved = 312, spread = 312,
 Info:     at iteration #7, type MACC_8x8_20: wirelen solved = 72, spread = 72, legal = 328; time = 0.00s
 Info:     at iteration #7, type _CONST1_DRV: wirelen solved = 328, spread = 328, legal = 328; time = 0.00s
 Info:     at iteration #7, type ALL: wirelen solved = 84, spread = 84, legal = 328; time = 0.00s
-Info: HeAP Placer Time: 0.01s
+Info: HeAP Placer Time: 0.00s
 Info:   of which solving equations: 0.00s
 Info:   of which spreading cells: 0.00s
 Info:   of which strict legalisation: 0.00s
@@ -94,9 +94,9 @@ Info: Setting up routing queue.
 Info: Routing 75 arcs.
 Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
 Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
-Info:         79 |        4         75 |    4    75 |         0|       0.07       0.07|
+Info:         79 |        4         75 |    4    75 |         0|       0.03       0.03|
 Info: Routing complete.
-Info: Router1 time 0.07s
+Info: Router1 time 0.03s
 Info: Checksum: 0x494ecad9
 
 Info: No Fmax available; no interior timing paths found in design.

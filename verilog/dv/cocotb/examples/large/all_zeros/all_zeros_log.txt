@@ -14,28 +14,42 @@ Info: constrained 'all[8]' to bel 'X0Y5/A'
 Info: constrained 'all[9]' to bel 'X0Y5/B'
 Info: constrained 'all[10]' to bel 'X0Y6/A'
 Info: constrained 'all[11]' to bel 'X0Y6/B'
-Info: constrained 'all[12]' to bel 'X5Y1/A'
-Info: constrained 'all[13]' to bel 'X5Y1/B'
-Info: constrained 'all[14]' to bel 'X5Y2/A'
-Info: constrained 'all[15]' to bel 'X5Y2/B'
-Info: constrained 'all[16]' to bel 'X5Y3/A'
-Info: constrained 'all[17]' to bel 'X5Y3/B'
-Info: constrained 'all[18]' to bel 'X5Y4/A'
-Info: constrained 'all[19]' to bel 'X5Y4/B'
-Info: constrained 'all[20]' to bel 'X5Y5/A'
-Info: constrained 'all[21]' to bel 'X5Y5/B'
-Info: constrained 'all[22]' to bel 'X5Y6/A'
-Info: constrained 'all[23]' to bel 'X5Y6/B'
+Info: constrained 'all[12]' to bel 'X0Y7/A'
+Info: constrained 'all[13]' to bel 'X0Y7/B'
+Info: constrained 'all[14]' to bel 'X0Y8/A'
+Info: constrained 'all[15]' to bel 'X0Y8/B'
+Info: constrained 'all[16]' to bel 'X0Y9/A'
+Info: constrained 'all[17]' to bel 'X0Y9/B'
+Info: constrained 'all[18]' to bel 'X0Y10/A'
+Info: constrained 'all[19]' to bel 'X0Y10/B'
+Info: constrained 'all[20]' to bel 'X0Y11/A'
+Info: constrained 'all[21]' to bel 'X0Y11/B'
+Info: constrained 'all[22]' to bel 'X0Y12/A'
+Info: constrained 'all[23]' to bel 'X0Y12/B'
+Info: constrained 'all[24]' to bel 'X14Y1/A'
+Info: constrained 'all[25]' to bel 'X14Y2/A'
+Info: constrained 'all[26]' to bel 'X14Y3/A'
+Info: constrained 'all[27]' to bel 'X14Y4/A'
+Info: constrained 'all[28]' to bel 'X14Y5/A'
+Info: constrained 'all[29]' to bel 'X14Y6/A'
+Info: constrained 'all[30]' to bel 'X14Y7/A'
+Info: constrained 'all[31]' to bel 'X14Y8/A'
+Info: constrained 'all[32]' to bel 'X14Y9/A'
+Info: constrained 'all[33]' to bel 'X14Y10/A'
+Info: constrained 'all[34]' to bel 'X14Y11/A'
+Info: constrained 'all[35]' to bel 'X14Y12/A'
 Info: Finished applying constraints from '/home/ank/Desktop/WORK/T_4/sky130-fabulous-testchip/user_designs/designs/classic/all_zeros/generated_constraints.pcf'
-Info: Checksum: 0xa4599b5b
+Info: Checksum: 0xb15c5438
 
 Info: Device utilisation:
-Info: 	         FABULOUS_LC:       0/    192     0%
-Info: 	               IOBUF:      24/     24   100%
+Info: 	         FABULOUS_LC:       0/   1056     0%
+Info: 	               IOBUF:      36/     36   100%
+Info: 	      RAM_32x4_2R_1W:       0/     12     0%
+Info: 	         MACC_8x8_20:       0/      6     0%
 Info: 	                GBUF:       0/      4     0%
 Info: 	           SYS_RESET:       0/      1     0%
 
-Info: Placed 24 cells based on constraints.
+Info: Placed 36 cells based on constraints.
 Info: Creating initial analytic placement for 2 cells, random placement wirelen = 0.
 Info:     at initial placer iter 0, wirelen = 0
 Info:     at initial placer iter 1, wirelen = 0
@@ -74,17 +88,17 @@ Info:   at iteration #2: temp = 0.000000, timing cost = 0, wirelen = 0
 Info: SA placement time 0.00s
 
 Info: No Fmax available; no interior timing paths found in design.
-Info: Checksum: 0x8a909cb1
+Info: Checksum: 0xd0568e73
 
 Info: Routing..
 Info: Setting up routing queue.
-Info: Routing 48 arcs.
+Info: Routing 72 arcs.
 Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
 Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
-Info:         48 |        0         48 |    0    48 |         0|       0.00       0.00|
+Info:         72 |        0         72 |    0    72 |         0|       0.00       0.00|
 Info: Routing complete.
 Info: Router1 time 0.00s
-Info: Checksum: 0xe24d3212
+Info: Checksum: 0x5de38593
 
 Info: No Fmax available; no interior timing paths found in design.
 

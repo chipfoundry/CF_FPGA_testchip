@@ -753,9 +753,9 @@ Dumping module addition to page 1.
 4. Executing JSON backend.
 
 Warnings: 2 unique messages, 16 total
-End of script. Logfile hash: 38f80f7c4a, CPU: user 0.15s system 0.04s, MEM: 31.22 MB peak
+End of script. Logfile hash: 38f80f7c4a, CPU: user 0.07s system 0.01s, MEM: 31.12 MB peak
 Yosys 0.62 (git sha1 2231c860ec7afd8eef9ba97231c3a10950469e95, clang++ 21.1.2 -fPIC -O3)
-Time spent: 45% 38x read_verilog (0 sec), 15% 17x opt_expr (0 sec), ...
+Time spent: 49% 38x read_verilog (0 sec), 14% 17x opt_expr (0 sec), ...
 Found 36 available I/O pins
 Discovered ports for module: addition
 ✓ Generated PCF: /home/ank/Desktop/WORK/T_4/sky130-fabulous-testchip/user_designs/designs/classic/addition/generated_constraints.pcf
@@ -836,7 +836,7 @@ Info:     at iteration #6, type _CONST0_DRV: wirelen solved = 74, spread = 74, l
 Info:     at iteration #6, type _CONST1_DRV: wirelen solved = 74, spread = 74, legal = 74; time = 0.00s
 Info:     at iteration #6, type FABULOUS_LC: wirelen solved = 55, spread = 55, legal = 74; time = 0.00s
 Info:     at iteration #6, type ALL: wirelen solved = 55, spread = 55, legal = 67; time = 0.00s
-Info: HeAP Placer Time: 0.01s
+Info: HeAP Placer Time: 0.00s
 Info:   of which solving equations: 0.00s
 Info:   of which spreading cells: 0.00s
 Info:   of which strict legalisation: 0.00s

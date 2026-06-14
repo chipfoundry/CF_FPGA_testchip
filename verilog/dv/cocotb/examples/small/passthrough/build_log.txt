@@ -735,9 +735,9 @@ Dumping module passthrough to page 1.
 4. Executing JSON backend.
 
 Warnings: 2 unique messages, 16 total
-End of script. Logfile hash: 37f29a376d, CPU: user 0.20s system 0.02s, MEM: 31.16 MB peak
+End of script. Logfile hash: 37f29a376d, CPU: user 0.06s system 0.01s, MEM: 31.62 MB peak
 Yosys 0.62 (git sha1 2231c860ec7afd8eef9ba97231c3a10950469e95, clang++ 21.1.2 -fPIC -O3)
-Time spent: 47% 38x read_verilog (0 sec), 15% 17x opt_expr (0 sec), ...
+Time spent: 53% 38x read_verilog (0 sec), 14% 17x opt_expr (0 sec), ...
 Found 36 available I/O pins
 Discovered ports for module: passthrough
 ✓ Generated PCF: /home/ank/Desktop/WORK/T_4/sky130-fabulous-testchip/user_designs/designs/classic/passthrough/generated_constraints.pcf

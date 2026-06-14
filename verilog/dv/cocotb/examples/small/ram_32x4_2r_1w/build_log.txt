@@ -749,9 +749,9 @@ Dumping module ram_32x4_2r_1w to page 1.
 4. Executing JSON backend.
 
 Warnings: 2 unique messages, 16 total
-End of script. Logfile hash: 12b7a3b3f4, CPU: user 0.16s system 0.02s, MEM: 30.21 MB peak
+End of script. Logfile hash: 12b7a3b3f4, CPU: user 0.06s system 0.01s, MEM: 31.75 MB peak
 Yosys 0.62 (git sha1 2231c860ec7afd8eef9ba97231c3a10950469e95, clang++ 21.1.2 -fPIC -O3)
-Time spent: 45% 38x read_verilog (0 sec), 13% 17x opt_expr (0 sec), ...
+Time spent: 49% 38x read_verilog (0 sec), 13% 17x opt_expr (0 sec), ...
 Found 36 available I/O pins
 Discovered ports for module: ram_32x4_2r_1w
 ✓ Generated PCF: /home/ank/Desktop/WORK/T_4/sky130-fabulous-testchip/user_designs/designs/classic/ram_32x4_2r_1w/generated_constraints.pcf
@@ -846,7 +846,7 @@ Info:     at iteration #6, type _CONST0_DRV: wirelen solved = 252, spread = 252,
 Info:     at iteration #6, type _CONST1_DRV: wirelen solved = 252, spread = 252, legal = 252; time = 0.00s
 Info:     at iteration #6, type GBUF: wirelen solved = 238, spread = 238, legal = 252; time = 0.00s
 Info:     at iteration #6, type ALL: wirelen solved = 148, spread = 148, legal = 260; time = 0.00s
-Info: HeAP Placer Time: 0.01s
+Info: HeAP Placer Time: 0.00s
 Info:   of which solving equations: 0.00s
 Info:   of which spreading cells: 0.00s
 Info:   of which strict legalisation: 0.00s
@@ -869,9 +869,9 @@ Info: Setting up routing queue.
 Info: Routing 62 arcs.
 Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
 Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
-Info:         67 |        4         63 |    4    63 |         0|       0.02       0.02|
+Info:         67 |        4         63 |    4    63 |         0|       0.01       0.01|
 Info: Routing complete.
-Info: Router1 time 0.02s
+Info: Router1 time 0.01s
 Info: Checksum: 0xff1b44cf
 
 Info: No Fmax available; no interior timing paths found in design.

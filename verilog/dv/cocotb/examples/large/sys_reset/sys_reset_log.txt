@@ -2,98 +2,108 @@ Info: Detected FABulous 2.0 format project.
 Info: Reading BELs file: /.FABulous/bel.v2.txt
 Info: Reading PIPs file: /.FABulous/pips.txt
 
-Info: constrained 'clk1' to bel 'X5Y6/A'
+Info: constrained 'clk1' to bel 'X14Y12/A'
 Info: constrained 'a[0]' to bel 'X0Y1/A'
 Info: constrained 'a[1]' to bel 'X0Y1/B'
 Info: constrained 'a[2]' to bel 'X0Y2/A'
 Info: constrained 'a[3]' to bel 'X0Y2/B'
 Info: constrained 'a[4]' to bel 'X0Y3/A'
-Info: constrained 'b[0]' to bel 'X0Y3/B'
-Info: constrained 'b[1]' to bel 'X0Y4/A'
-Info: constrained 'b[2]' to bel 'X0Y4/B'
-Info: constrained 'b[3]' to bel 'X0Y5/A'
-Info: constrained 'b[4]' to bel 'X0Y5/B'
+Info: constrained 'a[5]' to bel 'X0Y3/B'
+Info: constrained 'b[0]' to bel 'X0Y4/A'
+Info: constrained 'b[1]' to bel 'X0Y4/B'
+Info: constrained 'b[2]' to bel 'X0Y5/A'
+Info: constrained 'b[3]' to bel 'X0Y5/B'
+Info: constrained 'b[4]' to bel 'X0Y6/A'
+Info: constrained 'b[5]' to bel 'X0Y6/B'
 Info: Finished applying constraints from '/home/ank/Desktop/WORK/T_4/sky130-fabulous-testchip/user_designs/designs/classic/sys_reset/generated_constraints.pcf'
-Info: Checksum: 0xc96b5a8a
+Info: Checksum: 0xd4c8b2a8
 
 Info: Device utilisation:
-Info: 	         FABULOUS_LC:       5/    192     2%
-Info: 	               IOBUF:      11/     24    45%
+Info: 	         FABULOUS_LC:       6/   1056     0%
+Info: 	               IOBUF:      13/     36    36%
+Info: 	      RAM_32x4_2R_1W:       0/     12     0%
+Info: 	         MACC_8x8_20:       0/      6     0%
 Info: 	                GBUF:       2/      4    50%
 Info: 	           SYS_RESET:       1/      1   100%
 
-Info: Placed 11 cells based on constraints.
-Info: Creating initial analytic placement for 10 cells, random placement wirelen = 64.
-Info:     at initial placer iter 0, wirelen = 22
-Info:     at initial placer iter 1, wirelen = 22
-Info:     at initial placer iter 2, wirelen = 22
-Info:     at initial placer iter 3, wirelen = 22
+Info: Placed 13 cells based on constraints.
+Info: Creating initial analytic placement for 11 cells, random placement wirelen = 203.
+Info:     at initial placer iter 0, wirelen = 41
+Info:     at initial placer iter 1, wirelen = 41
+Info:     at initial placer iter 2, wirelen = 41
+Info:     at initial placer iter 3, wirelen = 41
 Info: Running main analytical placer, max placement attempts per cell = 10000.
-Info:     at iteration #1, type GBUF: wirelen solved = 22, spread = 22, legal = 33; time = 0.00s
-Info:     at iteration #1, type SYS_RESET: wirelen solved = 28, spread = 28, legal = 28; time = 0.00s
-Info:     at iteration #1, type _CONST0_DRV: wirelen solved = 28, spread = 28, legal = 28; time = 0.00s
-Info:     at iteration #1, type _CONST1_DRV: wirelen solved = 28, spread = 28, legal = 28; time = 0.00s
-Info:     at iteration #1, type FABULOUS_LC: wirelen solved = 28, spread = 30, legal = 44; time = 0.00s
-Info:     at iteration #1, type ALL: wirelen solved = 22, spread = 24, legal = 42; time = 0.00s
-Info:     at iteration #2, type GBUF: wirelen solved = 38, spread = 38, legal = 42; time = 0.00s
-Info:     at iteration #2, type SYS_RESET: wirelen solved = 42, spread = 42, legal = 42; time = 0.00s
-Info:     at iteration #2, type _CONST0_DRV: wirelen solved = 42, spread = 42, legal = 42; time = 0.00s
-Info:     at iteration #2, type _CONST1_DRV: wirelen solved = 42, spread = 42, legal = 42; time = 0.00s
-Info:     at iteration #2, type FABULOUS_LC: wirelen solved = 28, spread = 30, legal = 42; time = 0.00s
-Info:     at iteration #2, type ALL: wirelen solved = 22, spread = 24, legal = 48; time = 0.00s
-Info:     at iteration #3, type GBUF: wirelen solved = 44, spread = 44, legal = 48; time = 0.00s
-Info:     at iteration #3, type SYS_RESET: wirelen solved = 48, spread = 48, legal = 48; time = 0.00s
-Info:     at iteration #3, type _CONST0_DRV: wirelen solved = 48, spread = 48, legal = 48; time = 0.00s
-Info:     at iteration #3, type _CONST1_DRV: wirelen solved = 48, spread = 48, legal = 48; time = 0.00s
-Info:     at iteration #3, type FABULOUS_LC: wirelen solved = 28, spread = 30, legal = 46; time = 0.00s
-Info:     at iteration #3, type ALL: wirelen solved = 22, spread = 24, legal = 44; time = 0.00s
-Info:     at iteration #4, type GBUF: wirelen solved = 40, spread = 40, legal = 44; time = 0.00s
-Info:     at iteration #4, type SYS_RESET: wirelen solved = 44, spread = 44, legal = 44; time = 0.00s
-Info:     at iteration #4, type _CONST0_DRV: wirelen solved = 44, spread = 44, legal = 44; time = 0.00s
-Info:     at iteration #4, type _CONST1_DRV: wirelen solved = 44, spread = 44, legal = 44; time = 0.00s
-Info:     at iteration #4, type FABULOUS_LC: wirelen solved = 28, spread = 30, legal = 40; time = 0.00s
-Info:     at iteration #4, type ALL: wirelen solved = 22, spread = 24, legal = 46; time = 0.00s
-Info:     at iteration #5, type GBUF: wirelen solved = 42, spread = 42, legal = 46; time = 0.00s
-Info:     at iteration #5, type SYS_RESET: wirelen solved = 46, spread = 46, legal = 46; time = 0.00s
-Info:     at iteration #5, type _CONST0_DRV: wirelen solved = 46, spread = 46, legal = 46; time = 0.00s
-Info:     at iteration #5, type _CONST1_DRV: wirelen solved = 46, spread = 46, legal = 46; time = 0.00s
-Info:     at iteration #5, type FABULOUS_LC: wirelen solved = 28, spread = 30, legal = 42; time = 0.00s
-Info:     at iteration #5, type ALL: wirelen solved = 24, spread = 24, legal = 42; time = 0.00s
-Info:     at iteration #6, type GBUF: wirelen solved = 38, spread = 38, legal = 42; time = 0.00s
-Info:     at iteration #6, type SYS_RESET: wirelen solved = 42, spread = 42, legal = 42; time = 0.00s
-Info:     at iteration #6, type _CONST0_DRV: wirelen solved = 42, spread = 42, legal = 42; time = 0.00s
-Info:     at iteration #6, type _CONST1_DRV: wirelen solved = 42, spread = 42, legal = 42; time = 0.00s
-Info:     at iteration #6, type FABULOUS_LC: wirelen solved = 28, spread = 30, legal = 42; time = 0.00s
-Info:     at iteration #6, type ALL: wirelen solved = 23, spread = 25, legal = 48; time = 0.00s
-Info: HeAP Placer Time: 0.01s
+Info:     at iteration #1, type SYS_RESET: wirelen solved = 41, spread = 41, legal = 51; time = 0.00s
+Info:     at iteration #1, type _CONST0_DRV: wirelen solved = 51, spread = 51, legal = 51; time = 0.00s
+Info:     at iteration #1, type _CONST1_DRV: wirelen solved = 51, spread = 51, legal = 51; time = 0.00s
+Info:     at iteration #1, type GBUF: wirelen solved = 51, spread = 51, legal = 53; time = 0.00s
+Info:     at iteration #1, type FABULOUS_LC: wirelen solved = 53, spread = 55, legal = 71; time = 0.00s
+Info:     at iteration #1, type ALL: wirelen solved = 43, spread = 45, legal = 73; time = 0.00s
+Info:     at iteration #2, type SYS_RESET: wirelen solved = 73, spread = 73, legal = 73; time = 0.00s
+Info:     at iteration #2, type _CONST0_DRV: wirelen solved = 73, spread = 73, legal = 73; time = 0.00s
+Info:     at iteration #2, type _CONST1_DRV: wirelen solved = 73, spread = 73, legal = 73; time = 0.00s
+Info:     at iteration #2, type GBUF: wirelen solved = 69, spread = 69, legal = 73; time = 0.00s
+Info:     at iteration #2, type FABULOUS_LC: wirelen solved = 55, spread = 57, legal = 71; time = 0.00s
+Info:     at iteration #2, type ALL: wirelen solved = 43, spread = 45, legal = 71; time = 0.00s
+Info:     at iteration #3, type SYS_RESET: wirelen solved = 71, spread = 71, legal = 71; time = 0.00s
+Info:     at iteration #3, type _CONST0_DRV: wirelen solved = 71, spread = 71, legal = 71; time = 0.00s
+Info:     at iteration #3, type _CONST1_DRV: wirelen solved = 71, spread = 71, legal = 71; time = 0.00s
+Info:     at iteration #3, type GBUF: wirelen solved = 67, spread = 67, legal = 71; time = 0.00s
+Info:     at iteration #3, type FABULOUS_LC: wirelen solved = 55, spread = 57, legal = 73; time = 0.00s
+Info:     at iteration #3, type ALL: wirelen solved = 43, spread = 45, legal = 75; time = 0.00s
+Info:     at iteration #4, type SYS_RESET: wirelen solved = 75, spread = 75, legal = 75; time = 0.00s
+Info:     at iteration #4, type _CONST0_DRV: wirelen solved = 75, spread = 75, legal = 75; time = 0.00s
+Info:     at iteration #4, type _CONST1_DRV: wirelen solved = 75, spread = 75, legal = 75; time = 0.00s
+Info:     at iteration #4, type GBUF: wirelen solved = 71, spread = 71, legal = 75; time = 0.00s
+Info:     at iteration #4, type FABULOUS_LC: wirelen solved = 55, spread = 57, legal = 69; time = 0.00s
+Info:     at iteration #4, type ALL: wirelen solved = 44, spread = 46, legal = 73; time = 0.00s
+Info:     at iteration #5, type SYS_RESET: wirelen solved = 73, spread = 73, legal = 73; time = 0.00s
+Info:     at iteration #5, type _CONST0_DRV: wirelen solved = 73, spread = 73, legal = 73; time = 0.00s
+Info:     at iteration #5, type _CONST1_DRV: wirelen solved = 73, spread = 73, legal = 73; time = 0.00s
+Info:     at iteration #5, type GBUF: wirelen solved = 69, spread = 69, legal = 73; time = 0.00s
+Info:     at iteration #5, type FABULOUS_LC: wirelen solved = 55, spread = 57, legal = 71; time = 0.00s
+Info:     at iteration #5, type ALL: wirelen solved = 47, spread = 49, legal = 75; time = 0.00s
+Info:     at iteration #6, type SYS_RESET: wirelen solved = 75, spread = 75, legal = 75; time = 0.00s
+Info:     at iteration #6, type _CONST0_DRV: wirelen solved = 75, spread = 75, legal = 75; time = 0.00s
+Info:     at iteration #6, type _CONST1_DRV: wirelen solved = 75, spread = 75, legal = 75; time = 0.00s
+Info:     at iteration #6, type GBUF: wirelen solved = 71, spread = 71, legal = 75; time = 0.00s
+Info:     at iteration #6, type FABULOUS_LC: wirelen solved = 55, spread = 57, legal = 75; time = 0.00s
+Info:     at iteration #6, type ALL: wirelen solved = 48, spread = 50, legal = 71; time = 0.00s
+Info:     at iteration #7, type SYS_RESET: wirelen solved = 71, spread = 71, legal = 71; time = 0.00s
+Info:     at iteration #7, type _CONST0_DRV: wirelen solved = 71, spread = 71, legal = 71; time = 0.00s
+Info:     at iteration #7, type _CONST1_DRV: wirelen solved = 71, spread = 71, legal = 71; time = 0.00s
+Info:     at iteration #7, type GBUF: wirelen solved = 67, spread = 67, legal = 71; time = 0.00s
+Info:     at iteration #7, type FABULOUS_LC: wirelen solved = 55, spread = 57, legal = 71; time = 0.00s
+Info:     at iteration #7, type ALL: wirelen solved = 50, spread = 52, legal = 71; time = 0.00s
+Info: HeAP Placer Time: 0.00s
 Info:   of which solving equations: 0.00s
 Info:   of which spreading cells: 0.00s
 Info:   of which strict legalisation: 0.00s
 Info:      FABULOUS_LC 0.000s
+Info:      GBUF 0.000s
 Info:      _CONST1_DRV 0.000s
 Info:      _CONST0_DRV 0.000s
 Info:      SYS_RESET 0.000s
-Info:      GBUF 0.000s
 
 Info: Running simulated annealing placer for refinement.
-Info:   at iteration #1: temp = 0.000000, timing cost = 0, wirelen = 42
-iter #1: temp = 0.000000, timing cost = 0, wirelen = 40, dia = 3, Ra = 0.33 
-iter #2: temp = 0.000000, timing cost = 0, wirelen = 38, dia = 3, Ra = 0.30 
-Info:   at iteration #3: temp = 0.000000, timing cost = 0, wirelen = 38 
+Info:   at iteration #1: temp = 0.000000, timing cost = 0, wirelen = 71
+iter #1: temp = 0.000000, timing cost = 0, wirelen = 69, dia = 3, Ra = 0.24 
+iter #2: temp = 0.000000, timing cost = 0, wirelen = 67, dia = 2, Ra = 0.37 
+Info:   at iteration #3: temp = 0.000000, timing cost = 0, wirelen = 67 
 Info: SA placement time 0.00s
 
 Info: No Fmax available; no interior timing paths found in design.
-Info: Checksum: 0xee674763
+Info: Checksum: 0x1b892cfb
 
 Info: Routing..
 Info: Setting up routing queue.
-Info: Routing 33 arcs.
+Info: Routing 39 arcs.
 Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
 Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
-Info:         33 |        0         33 |    0    33 |         0|       0.00       0.00|
+Info:         40 |        1         39 |    1    39 |         0|       0.00       0.00|
 Info: Routing complete.
 Info: Router1 time 0.00s
-Info: Checksum: 0x0fd2dadf
+Info: Checksum: 0x5f008d36
 
 Info: No Fmax available; no interior timing paths found in design.
 

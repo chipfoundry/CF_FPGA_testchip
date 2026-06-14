@@ -1,58 +1,94 @@
+# routing for net 'all[32]'
+
+
+# routing for net 'all[27]'
+
+
+# routing for net 'all[19]'
+
+
 # routing for net 'all[8]'
 
 
 # routing for net 'all[6]'
 
 
-# routing for net 'all[15]'
+# routing for net 'all[18]'
 
 
-# routing for net 'all[20]'
+# routing for net 'all[26]'
 
 
-# routing for net 'all[3]'
+# routing for net 'all[31]'
 
 
-# routing for net 'all[14]'
+# routing for net 'all[17]'
+
+
+# routing for net 'all[35]'
+
+
+# routing for net 'all[25]'
+
+
+# routing for net 'all[16]'
 
 
 # routing for net 'all[9]'
 
 
-# routing for net 'all[2]'
+# routing for net 'all[30]'
 
 
-# routing for net 'all[13]'
+# routing for net 'all[15]'
+
+
+# routing for net 'all[24]'
 
 
 # routing for net '$PACKER_GND'
 
 
+# routing for net 'all[14]'
+
+
+# routing for net 'all[34]'
+
+
 # routing for net 'all[23]'
 
 
-# routing for net 'all[12]'
+# routing for net 'all[13]'
 
 
-# routing for net 'all[19]'
+# routing for net 'all[3]'
 
 
 # routing for net 'all[5]'
 
 
-# routing for net 'all[11]'
+# routing for net 'all[12]'
+
+
+# routing for net 'all[22]'
 
 
 # routing for net 'all[7]'
 
 
-# routing for net 'all[18]'
+# routing for net 'all[11]'
+
+
+# routing for net 'all[29]'
+
+
+# routing for net 'all[21]'
 
 
 # routing for net 'all[10]'
 
 
-# routing for net 'all[22]'
+# routing for net 'all[33]'
 
 
 # routing for net '$PACKER_VCC'
@@ -61,142 +97,262 @@ X0Y1.VCC0.A_IN
 X0Y1.VCC0.A_EN
 X0Y1.VCC0.B_IN
 X0Y1.VCC0.B_EN
-X5Y1.VCC0.A_IN
-X5Y1.VCC0.A_EN
-X5Y1.VCC0.B_IN
-X5Y1.VCC0.B_EN
+X13Y1.JE2END7.E2BEG7
+X13Y1.LB_O.JE2BEG7
+X13Y1.E2BEG7.E2MID7
+X13Y1.JE2BEG7.JE2END7
+X14Y1.E2MID7.A_IN
+X14Y1.VCC0.A_EN
 X0Y2.VCC0.A_IN
 X0Y2.VCC0.A_EN
 X0Y2.VCC0.B_IN
 X0Y2.VCC0.B_EN
-X5Y2.VCC0.A_IN
-X5Y2.VCC0.A_EN
-X5Y2.VCC0.B_IN
-X5Y2.VCC0.B_EN
+X13Y2.JE2END6.E2BEG6
+X13Y2.LE_O.JE2BEG6
+X13Y2.E2BEG6.E2MID6
+X13Y2.JE2BEG6.JE2END6
+X14Y2.E2MID6.A_IN
+X14Y2.VCC0.A_EN
 X0Y3.VCC0.A_IN
 X0Y3.VCC0.A_EN
 X0Y3.VCC0.B_IN
 X0Y3.VCC0.B_EN
-X5Y3.VCC0.A_IN
-X5Y3.VCC0.A_EN
-X5Y3.VCC0.B_IN
-X5Y3.VCC0.B_EN
+X13Y3.JE2END2.E2BEG2
+X13Y3.LA_O.JE2BEG2
+X13Y3.E2BEG2.E2MID2
+X13Y3.JE2BEG2.JE2END2
+X14Y3.E2MID2.A_IN
+X14Y3.VCC0.A_EN
 X0Y4.VCC0.A_IN
 X0Y4.VCC0.A_EN
 X0Y4.VCC0.B_IN
 X0Y4.VCC0.B_EN
-X5Y4.VCC0.A_IN
-X5Y4.VCC0.A_EN
-X5Y4.VCC0.B_IN
-X5Y4.VCC0.B_EN
+X13Y4.JE2END6.E2BEG6
+X13Y4.LB_O.JE2BEG6
+X13Y4.E2BEG6.E2MID6
+X13Y4.JE2BEG6.JE2END6
+X14Y4.E2MID6.A_IN
+X14Y4.VCC0.A_EN
 X0Y5.VCC0.A_IN
 X0Y5.VCC0.A_EN
 X0Y5.VCC0.B_IN
 X0Y5.VCC0.B_EN
-X5Y5.VCC0.A_IN
-X5Y5.VCC0.A_EN
-X5Y5.VCC0.B_IN
-X5Y5.VCC0.B_EN
+X13Y5.JE2END2.E2BEG2
+X13Y5.LA_O.JE2BEG2
+X13Y5.E2BEG2.E2MID2
+X13Y5.JE2BEG2.JE2END2
+X14Y5.E2MID2.A_IN
+X14Y5.VCC0.A_EN
 X0Y6.VCC0.A_IN
 X0Y6.VCC0.A_EN
 X0Y6.VCC0.B_IN
 X0Y6.VCC0.B_EN
-X5Y6.VCC0.A_IN
-X5Y6.VCC0.A_EN
-X5Y6.VCC0.B_IN
-X5Y6.VCC0.B_EN
+X13Y6.JE2END5.E2BEG5
+X13Y6.LH_O.JE2BEG5
+X13Y6.E2BEG5.E2MID5
+X13Y6.JE2BEG5.JE2END5
+X14Y6.E2MID5.A_IN
+X14Y6.VCC0.A_EN
+X0Y7.VCC0.A_IN
+X0Y7.VCC0.A_EN
+X0Y7.VCC0.B_IN
+X0Y7.VCC0.B_EN
+X13Y7.JE2END5.E2BEG5
+X13Y7.LG_O.JE2BEG5
+X13Y7.E2BEG5.E2MID5
+X13Y7.JE2BEG5.JE2END5
+X14Y7.E2MID5.A_IN
+X14Y7.VCC0.A_EN
+X0Y8.VCC0.A_IN
+X0Y8.VCC0.A_EN
+X0Y8.VCC0.B_IN
+X0Y8.VCC0.B_EN
+X13Y8.JE2END2.E2BEG2
+X13Y8.LA_O.JE2BEG2
+X13Y8.E2BEG2.E2MID2
+X13Y8.JE2BEG2.JE2END2
+X14Y8.E2MID2.A_IN
+X14Y8.VCC0.A_EN
+X0Y9.VCC0.A_IN
+X0Y9.VCC0.A_EN
+X0Y9.VCC0.B_IN
+X0Y9.VCC0.B_EN
+X13Y9.JE2END1.E2BEG1
+X13Y9.LC_O.JE2BEG1
+X13Y9.E2BEG1.E2MID1
+X13Y9.JE2BEG1.JE2END1
+X14Y9.E2MID1.A_IN
+X14Y9.VCC0.A_EN
+X0Y10.VCC0.A_IN
+X0Y10.VCC0.A_EN
+X0Y10.VCC0.B_IN
+X0Y10.VCC0.B_EN
+X13Y10.JE2END3.E2BEG3
+X13Y10.LE_O.JE2BEG3
+X13Y10.E2BEG3.E2MID3
+X13Y10.JE2BEG3.JE2END3
+X14Y10.E2MID3.A_IN
+X14Y10.VCC0.A_EN
+X0Y11.VCC0.A_IN
+X0Y11.VCC0.A_EN
+X0Y11.VCC0.B_IN
+X0Y11.VCC0.B_EN
+X13Y11.JE2END5.E2BEG5
+X13Y11.LA_O.JE2BEG5
+X13Y11.E2BEG5.E2MID5
+X13Y11.JE2BEG5.JE2END5
+X14Y11.E2MID5.A_IN
+X14Y11.VCC0.A_EN
+X0Y12.VCC0.A_IN
+X0Y12.VCC0.A_EN
+X0Y12.VCC0.B_IN
+X0Y12.VCC0.B_EN
+X13Y12.JE2END2.E2BEG2
+X13Y12.LF_O.JE2BEG2
+X13Y12.E2BEG2.E2MID2
+X13Y12.JE2BEG2.JE2END2
+X14Y12.E2MID2.A_IN
+X14Y12.VCC0.A_EN
+X13Y1.B.INIT[15:0] = 16'b1111111111111111
+X13Y2.E.INIT[15:0] = 16'b1111111111111111
+X13Y3.A.INIT[15:0] = 16'b1111111111111111
+X13Y4.B.INIT[15:0] = 16'b1111111111111111
+X13Y5.A.INIT[15:0] = 16'b1111111111111111
+X13Y6.H.INIT[15:0] = 16'b1111111111111111
+X13Y7.G.INIT[15:0] = 16'b1111111111111111
+X13Y8.A.INIT[15:0] = 16'b1111111111111111
+X13Y9.C.INIT[15:0] = 16'b1111111111111111
+X13Y10.E.INIT[15:0] = 16'b1111111111111111
+X13Y11.A.INIT[15:0] = 16'b1111111111111111
+X13Y12.F.INIT[15:0] = 16'b1111111111111111
 
 # routing for net 'all[1]'
 
 
-# routing for net 'all[17]'
+# routing for net 'all[20]'
 
 
-# routing for net 'all[4]'
+# routing for net 'all[28]'
 
 
 # routing for net 'all[0]'
 
 
-# routing for net 'all[21]'
+# routing for net 'all[4]'
 
 
-# routing for net 'all[16]'
+# routing for net 'all[2]'
 
 
-# config for cell '$iopadmap$all_ones.all_8'
-
-
-# config for cell '$iopadmap$all_ones.all_16'
+# config for cell '$iopadmap$all_ones.all_25'
 
 
 # config for cell '$iopadmap$all_ones.all_2'
 
 
-# config for cell '$iopadmap$all_ones.all_22'
-
-
-# config for cell '$iopadmap$all_ones.all_15'
-
-
-# config for cell '$iopadmap$all_ones.all_7'
-
-
-# config for cell '$iopadmap$all_ones.all_20'
-
-
-# config for cell '$iopadmap$all_ones.all_14'
-
-
-# config for cell '$iopadmap$all_ones.all_19'
+# config for cell '$iopadmap$all_ones.all_27'
 
 
 # config for cell '$iopadmap$all_ones.all_6'
 
 
-# config for cell '$iopadmap$all_ones.all_13'
-
-
-# config for cell '$PACKER_GND_DRV'
-
-
-# config for cell '$PACKER_VCC_DRV'
-
-
-# config for cell '$iopadmap$all_ones.all_12'
-
-
-# config for cell '$iopadmap$all_ones.all_5'
-
-
-# config for cell '$iopadmap$all_ones.all_18'
-
-
-# config for cell '$iopadmap$all_ones.all_11'
-
-
-# config for cell '$iopadmap$all_ones.all_9'
-
-
-# config for cell '$iopadmap$all_ones.all_4'
-
-
-# config for cell '$iopadmap$all_ones.all_10'
-
-
-# config for cell '$iopadmap$all_ones.all_21'
-
-
-# config for cell '$iopadmap$all_ones.all_17'
-
-
-# config for cell '$iopadmap$all_ones.all_1'
+# config for cell '$iopadmap$all_ones.all_19'
 
 
 # config for cell '$iopadmap$all_ones.all_3'
 
 
+# config for cell '$iopadmap$all_ones.all_24'
+
+
+# config for cell '$iopadmap$all_ones.all_18'
+
+
+# config for cell '$iopadmap$all_ones.all_5'
+
+
+# config for cell '$PACKER_GND_DRV'
+
+
+# config for cell '$iopadmap$all_ones.all_17'
+
+
+# config for cell '$PACKER_VCC_DRV'
+
+
+# config for cell '$iopadmap$all_ones.all_4'
+
+
+# config for cell '$iopadmap$all_ones.all_16'
+
+
 # config for cell '$iopadmap$all_ones.all_23'
+
+
+# config for cell '$iopadmap$all_ones.all_9'
+
+
+# config for cell '$iopadmap$all_ones.all_15'
+
+
+# config for cell '$iopadmap$all_ones.all_35'
+
+
+# config for cell '$iopadmap$all_ones.all_28'
+
+
+# config for cell '$iopadmap$all_ones.all_14'
+
+
+# config for cell '$iopadmap$all_ones.all_22'
+
+
+# config for cell '$iopadmap$all_ones.all_34'
+
+
+# config for cell '$iopadmap$all_ones.all_13'
+
+
+# config for cell '$iopadmap$all_ones.all_26'
+
+
+# config for cell '$iopadmap$all_ones.all_8'
+
+
+# config for cell '$iopadmap$all_ones.all_12'
+
+
+# config for cell '$iopadmap$all_ones.all_33'
+
+
+# config for cell '$iopadmap$all_ones.all_21'
+
+
+# config for cell '$iopadmap$all_ones.all_11'
+
+
+# config for cell '$iopadmap$all_ones.all_29'
+
+
+# config for cell '$iopadmap$all_ones.all_32'
+
+
+# config for cell '$iopadmap$all_ones.all_10'
+
+
+# config for cell '$iopadmap$all_ones.all_30'
+
+
+# config for cell '$iopadmap$all_ones.all_20'
+
+
+# config for cell '$iopadmap$all_ones.all_1'
+
+
+# config for cell '$iopadmap$all_ones.all_31'
+
+
+# config for cell '$iopadmap$all_ones.all_7'
 
 
 # config for cell '$iopadmap$all_ones.all'

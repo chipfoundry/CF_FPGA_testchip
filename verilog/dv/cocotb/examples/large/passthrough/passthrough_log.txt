@@ -15,11 +15,13 @@ Info: constrained 'b[3]' to bel 'X0Y5/B'
 Info: constrained 'b[4]' to bel 'X0Y6/A'
 Info: constrained 'b[5]' to bel 'X0Y6/B'
 Info: Finished applying constraints from '/home/ank/Desktop/WORK/T_4/sky130-fabulous-testchip/user_designs/designs/classic/passthrough/generated_constraints.pcf'
-Info: Checksum: 0x61a380f7
+Info: Checksum: 0xba198426
 
 Info: Device utilisation:
-Info: 	         FABULOUS_LC:       0/    192     0%
-Info: 	               IOBUF:      12/     24    50%
+Info: 	         FABULOUS_LC:       0/   1056     0%
+Info: 	               IOBUF:      12/     36    33%
+Info: 	      RAM_32x4_2R_1W:       0/     12     0%
+Info: 	         MACC_8x8_20:       0/      6     0%
 Info: 	                GBUF:       0/      4     0%
 Info: 	           SYS_RESET:       0/      1     0%
 
@@ -47,17 +49,17 @@ Info:   at iteration #2: temp = 0.000000, timing cost = 0, wirelen = 18
 Info: SA placement time 0.00s
 
 Info: No Fmax available; no interior timing paths found in design.
-Info: Checksum: 0x0a8cc350
+Info: Checksum: 0xc20ceb76
 
 Info: Routing..
 Info: Setting up routing queue.
 Info: Routing 18 arcs.
 Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
 Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
-Info:         21 |        3         18 |    3    18 |         0|       0.00       0.00|
+Info:         19 |        1         18 |    1    18 |         0|       0.00       0.00|
 Info: Routing complete.
 Info: Router1 time 0.00s
-Info: Checksum: 0xb7c696a9
+Info: Checksum: 0x95a33ad7
 
 Info: No Fmax available; no interior timing paths found in design.
 

@@ -802,9 +802,9 @@ Dumping module counter to page 1.
 4. Executing JSON backend.
 
 Warnings: 2 unique messages, 16 total
-End of script. Logfile hash: a4cda709e0, CPU: user 0.19s system 0.01s, MEM: 30.89 MB peak
+End of script. Logfile hash: a4cda709e0, CPU: user 0.07s system 0.01s, MEM: 32.12 MB peak
 Yosys 0.62 (git sha1 2231c860ec7afd8eef9ba97231c3a10950469e95, clang++ 21.1.2 -fPIC -O3)
-Time spent: 40% 38x read_verilog (0 sec), 16% 18x opt_expr (0 sec), ...
+Time spent: 47% 38x read_verilog (0 sec), 15% 18x opt_expr (0 sec), ...
 Found 36 available I/O pins
 Discovered ports for module: counter
 ✓ Generated PCF: /home/ank/Desktop/WORK/T_4/sky130-fabulous-testchip/user_designs/designs/classic/counter/generated_constraints.pcf
@@ -867,7 +867,7 @@ Info:     at iteration #3, type _CONST0_DRV: wirelen solved = 56, spread = 56, l
 Info:     at iteration #3, type _CONST1_DRV: wirelen solved = 56, spread = 56, legal = 56; time = 0.00s
 Info:     at iteration #3, type FABULOUS_LC: wirelen solved = 45, spread = 45, legal = 56; time = 0.00s
 Info:     at iteration #3, type ALL: wirelen solved = 43, spread = 43, legal = 53; time = 0.00s
-Info: HeAP Placer Time: 0.01s
+Info: HeAP Placer Time: 0.00s
 Info:   of which solving equations: 0.00s
 Info:   of which spreading cells: 0.00s
 Info:   of which strict legalisation: 0.00s

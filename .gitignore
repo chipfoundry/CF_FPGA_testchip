@@ -16,7 +16,7 @@ runs/
 lvs_results/
 __pycache__/
 openlane/.venv/
-
+verilog/dv/cocotb/sim/
 *.gds
 *.mag
 *.def

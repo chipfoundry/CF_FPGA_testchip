@@ -43,19 +43,19 @@
       "ports": {
         "rst": {
           "direction": "input",
-          "bits": [ 3488 ]
+          "bits": [ 5220 ]
         },
         "ena": {
           "direction": "input",
-          "bits": [ 3487 ]
+          "bits": [ 5219 ]
         },
         "clk1": {
           "direction": "input",
-          "bits": [ 3486 ]
+          "bits": [ 5218 ]
         },
         "c": {
           "direction": "output",
-          "bits": [ 3562, 3567, 3571, 3575, 3579, 3583, 3587, 3591 ]
+          "bits": [ 5294, 5299, 5303, 5307, 5311, 5315, 5319, 5323 ]
         }
       },
       "cells": {
@@ -77,9 +77,9 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3562 ],
-            "IN": [ 3504 ],
-            "EN": [ 3640 ]
+            "PAD": [ 5294 ],
+            "IN": [ 5236 ],
+            "EN": [ 5384 ]
           }
         },
         "$iopadmap$counter.c_4": {
@@ -100,9 +100,9 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3579 ],
-            "IN": [ 3528 ],
-            "EN": [ 3640 ]
+            "PAD": [ 5311 ],
+            "IN": [ 5260 ],
+            "EN": [ 5384 ]
           }
         },
         "$iopadmap$counter.c_1": {
@@ -123,9 +123,9 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3567 ],
-            "IN": [ 3510 ],
-            "EN": [ 3640 ]
+            "PAD": [ 5299 ],
+            "IN": [ 5242 ],
+            "EN": [ 5384 ]
           }
         },
         "$iopadmap$counter.c_6": {
@@ -146,9 +146,9 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3587 ],
-            "IN": [ 3540 ],
-            "EN": [ 3640 ]
+            "PAD": [ 5319 ],
+            "IN": [ 5272 ],
+            "EN": [ 5384 ]
           }
         },
         "$iopadmap$counter.c_7": {
@@ -169,12 +169,12 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3591 ],
-            "IN": [ 3546 ],
-            "EN": [ 3640 ]
+            "PAD": [ 5323 ],
+            "IN": [ 5278 ],
+            "EN": [ 5384 ]
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$13.slice[7].lut_i": {
+        "$auto$alumacc.cc:512:replace_alu$17.slice[7].lut_i": {
           "hide_name": 1,
           "type": "FABULOUS_LC",
           "parameters": {
@@ -205,17 +205,17 @@
             "Ci": "input"
           },
           "connections": {
-            "Q": [ 3546 ],
-            "EN": [ 3550 ],
-            "SR": [ 3551 ],
-            "CLK": [ 3549 ],
+            "Q": [ 5278 ],
+            "EN": [ 5282 ],
+            "SR": [ 5283 ],
+            "CLK": [ 5281 ],
             "I3": [  ],
             "I0": [  ],
             "O": [  ],
-            "I2": [ 3546 ],
-            "I1": [ 3641 ],
-            "Co": [ 3543 ],
-            "Ci": [ 3537 ]
+            "I2": [ 5278 ],
+            "I1": [ 5385 ],
+            "Co": [ 5275 ],
+            "Ci": [ 5269 ]
           }
         },
         "$iopadmap$counter.c_3": {
@@ -236,12 +236,12 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3575 ],
-            "IN": [ 3522 ],
-            "EN": [ 3640 ]
+            "PAD": [ 5307 ],
+            "IN": [ 5254 ],
+            "EN": [ 5384 ]
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$13.slice[6].lut_i": {
+        "$auto$alumacc.cc:512:replace_alu$17.slice[6].lut_i": {
           "hide_name": 1,
           "type": "FABULOUS_LC",
           "parameters": {
@@ -272,17 +272,17 @@
             "Ci": "input"
           },
           "connections": {
-            "Q": [ 3540 ],
-            "EN": [ 3550 ],
-            "SR": [ 3551 ],
-            "CLK": [ 3549 ],
+            "Q": [ 5272 ],
+            "EN": [ 5282 ],
+            "SR": [ 5283 ],
+            "CLK": [ 5281 ],
             "I3": [  ],
             "I0": [  ],
             "O": [  ],
-            "I2": [ 3540 ],
-            "I1": [ 3641 ],
-            "Co": [ 3537 ],
-            "Ci": [ 3531 ]
+            "I2": [ 5272 ],
+            "I1": [ 5385 ],
+            "Co": [ 5269 ],
+            "Ci": [ 5263 ]
           }
         },
         "clock_buf": {
@@ -292,7 +292,7 @@
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "X0Y7/D",
+            "NEXTPNR_BEL": "X0Y13/A",
             "src": "counter.v:16.10-19.6",
             "module_not_derived": "00000000000000000000000000000001"
           },
@@ -301,11 +301,11 @@
             "IN": "input"
           },
           "connections": {
-            "OUT": [ 3549 ],
-            "IN": [ 3595 ]
+            "OUT": [ 5281 ],
+            "IN": [ 5327 ]
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$13.slice[5].lut_i": {
+        "$auto$alumacc.cc:512:replace_alu$17.slice[5].lut_i": {
           "hide_name": 1,
           "type": "FABULOUS_LC",
           "parameters": {
@@ -336,17 +336,17 @@
             "Ci": "input"
           },
           "connections": {
-            "Q": [ 3534 ],
-            "EN": [ 3550 ],
-            "SR": [ 3551 ],
-            "CLK": [ 3549 ],
+            "Q": [ 5266 ],
+            "EN": [ 5282 ],
+            "SR": [ 5283 ],
+            "CLK": [ 5281 ],
             "I3": [  ],
             "I0": [  ],
             "O": [  ],
-            "I2": [ 3534 ],
-            "I1": [ 3641 ],
-            "Co": [ 3531 ],
-            "Ci": [ 3525 ]
+            "I2": [ 5266 ],
+            "I1": [ 5385 ],
+            "Co": [ 5263 ],
+            "Ci": [ 5257 ]
           }
         },
         "$PACKER_GND_DRV": {
@@ -362,10 +362,10 @@
             "O": "output"
           },
           "connections": {
-            "O": [ 3641 ]
+            "O": [ 5385 ]
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$13.slice[4].lut_i": {
+        "$auto$alumacc.cc:512:replace_alu$17.slice[4].lut_i": {
           "hide_name": 1,
           "type": "FABULOUS_LC",
           "parameters": {
@@ -396,17 +396,17 @@
             "Ci": "input"
           },
           "connections": {
-            "Q": [ 3528 ],
-            "EN": [ 3550 ],
-            "SR": [ 3551 ],
-            "CLK": [ 3549 ],
+            "Q": [ 5260 ],
+            "EN": [ 5282 ],
+            "SR": [ 5283 ],
+            "CLK": [ 5281 ],
             "I3": [  ],
             "I0": [  ],
             "O": [  ],
-            "I2": [ 3528 ],
-            "I1": [ 3641 ],
-            "Co": [ 3525 ],
-            "Ci": [ 3519 ]
+            "I2": [ 5260 ],
+            "I1": [ 5385 ],
+            "Co": [ 5257 ],
+            "Ci": [ 5251 ]
           }
         },
         "$iopadmap$counter.rst": {
@@ -427,12 +427,12 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3488 ],
-            "OUT": [ 3551 ],
-            "EN": [ 3641 ]
+            "PAD": [ 5220 ],
+            "OUT": [ 5283 ],
+            "EN": [ 5385 ]
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$13.slice[3].lut_i": {
+        "$auto$alumacc.cc:512:replace_alu$17.slice[3].lut_i": {
           "hide_name": 1,
           "type": "FABULOUS_LC",
           "parameters": {
@@ -463,17 +463,17 @@
             "Ci": "input"
           },
           "connections": {
-            "Q": [ 3522 ],
-            "EN": [ 3550 ],
-            "SR": [ 3551 ],
-            "CLK": [ 3549 ],
+            "Q": [ 5254 ],
+            "EN": [ 5282 ],
+            "SR": [ 5283 ],
+            "CLK": [ 5281 ],
             "I3": [  ],
             "I0": [  ],
             "O": [  ],
-            "I2": [ 3522 ],
-            "I1": [ 3641 ],
-            "Co": [ 3519 ],
-            "Ci": [ 3513 ]
+            "I2": [ 5254 ],
+            "I1": [ 5385 ],
+            "Co": [ 5251 ],
+            "Ci": [ 5245 ]
           }
         },
         "$PACKER_VCC_DRV": {
@@ -489,10 +489,10 @@
             "O": "output"
           },
           "connections": {
-            "O": [ 3640 ]
+            "O": [ 5384 ]
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$13.slice[2].lut_i": {
+        "$auto$alumacc.cc:512:replace_alu$17.slice[2].lut_i": {
           "hide_name": 1,
           "type": "FABULOUS_LC",
           "parameters": {
@@ -523,17 +523,17 @@
             "Ci": "input"
           },
           "connections": {
-            "Q": [ 3516 ],
-            "EN": [ 3550 ],
-            "SR": [ 3551 ],
-            "CLK": [ 3549 ],
+            "Q": [ 5248 ],
+            "EN": [ 5282 ],
+            "SR": [ 5283 ],
+            "CLK": [ 5281 ],
             "I3": [  ],
             "I0": [  ],
             "O": [  ],
-            "I2": [ 3516 ],
-            "I1": [ 3641 ],
-            "Co": [ 3513 ],
-            "Ci": [ 3507 ]
+            "I2": [ 5248 ],
+            "I1": [ 5385 ],
+            "Co": [ 5245 ],
+            "Ci": [ 5239 ]
           }
         },
         "$iopadmap$counter.ena": {
@@ -554,12 +554,12 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3487 ],
-            "OUT": [ 3550 ],
-            "EN": [ 3641 ]
+            "PAD": [ 5219 ],
+            "OUT": [ 5282 ],
+            "EN": [ 5385 ]
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$13.slice[1].lut_i": {
+        "$auto$alumacc.cc:512:replace_alu$17.slice[1].lut_i": {
           "hide_name": 1,
           "type": "FABULOUS_LC",
           "parameters": {
@@ -590,17 +590,17 @@
             "Ci": "input"
           },
           "connections": {
-            "Q": [ 3510 ],
-            "EN": [ 3550 ],
-            "SR": [ 3551 ],
-            "CLK": [ 3549 ],
+            "Q": [ 5242 ],
+            "EN": [ 5282 ],
+            "SR": [ 5283 ],
+            "CLK": [ 5281 ],
             "I3": [  ],
             "I0": [  ],
             "O": [  ],
-            "I2": [ 3510 ],
-            "I1": [ 3641 ],
-            "Co": [ 3507 ],
-            "Ci": [ 3501 ]
+            "I2": [ 5242 ],
+            "I1": [ 5385 ],
+            "Co": [ 5239 ],
+            "Ci": [ 5233 ]
           }
         },
         "$iopadmap$counter.c_5": {
@@ -621,12 +621,12 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3583 ],
-            "IN": [ 3534 ],
-            "EN": [ 3640 ]
+            "PAD": [ 5315 ],
+            "IN": [ 5266 ],
+            "EN": [ 5384 ]
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$13.slice[0].lut_i": {
+        "$auto$alumacc.cc:512:replace_alu$17.slice[0].lut_i": {
           "hide_name": 1,
           "type": "FABULOUS_LC",
           "parameters": {
@@ -657,17 +657,17 @@
             "Ci": "input"
           },
           "connections": {
-            "Q": [ 3504 ],
-            "EN": [ 3550 ],
-            "SR": [ 3551 ],
-            "CLK": [ 3549 ],
+            "Q": [ 5236 ],
+            "EN": [ 5282 ],
+            "SR": [ 5283 ],
+            "CLK": [ 5281 ],
             "I3": [  ],
             "I0": [  ],
             "O": [  ],
-            "I2": [ 3504 ],
-            "I1": [ 3640 ],
-            "Co": [ 3501 ],
-            "Ci": [ 3493 ]
+            "I2": [ 5236 ],
+            "I1": [ 5384 ],
+            "Co": [ 5233 ],
+            "Ci": [ 5225 ]
           }
         },
         "$iopadmap$counter.clk1": {
@@ -677,7 +677,7 @@
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000110",
-            "NEXTPNR_BEL": "X5Y6/A",
+            "NEXTPNR_BEL": "X14Y12/A",
             "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:2.8-2.59",
             "module_not_derived": "00000000000000000000000000000001",
             "keep": "00000000000000000000000000000001"
@@ -688,9 +688,9 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3486 ],
-            "OUT": [ 3595 ],
-            "EN": [ 3641 ]
+            "PAD": [ 5218 ],
+            "OUT": [ 5327 ],
+            "EN": [ 5385 ]
           }
         },
         "$iopadmap$counter.c_2": {
@@ -711,12 +711,12 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3571 ],
-            "IN": [ 3516 ],
-            "EN": [ 3640 ]
+            "PAD": [ 5303 ],
+            "IN": [ 5248 ],
+            "EN": [ 5384 ]
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$13.carry_start": {
+        "$auto$alumacc.cc:512:replace_alu$17.carry_start": {
           "hide_name": 1,
           "type": "FABULOUS_LC",
           "parameters": {
@@ -739,16 +739,16 @@
           "connections": {
             "I3": [  ],
             "I0": [  ],
-            "I2": [ 3641 ],
-            "I1": [ 3641 ],
-            "Co": [ 3493 ]
+            "I2": [ 5385 ],
+            "I1": [ 5385 ],
+            "Co": [ 5225 ]
           }
         }
       },
       "netnames": {
         "c[1]": {
           "hide_name": 0,
-          "bits": [ 3567 ] ,
+          "bits": [ 5299 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "counter.v:11.23-11.24"
@@ -756,7 +756,7 @@
         },
         "c[7]": {
           "hide_name": 0,
-          "bits": [ 3591 ] ,
+          "bits": [ 5323 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "counter.v:11.23-11.24"
@@ -764,7 +764,7 @@
         },
         "c[0]": {
           "hide_name": 0,
-          "bits": [ 3562 ] ,
+          "bits": [ 5294 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "counter.v:11.23-11.24"
@@ -772,36 +772,36 @@
         },
         "$PACKER_GND": {
           "hide_name": 1,
-          "bits": [ 3641 ] ,
+          "bits": [ 5385 ] ,
           "attributes": {
-            "ROUTING": "X1Y3/LF_I1;X1Y3/J2MID_EFb_END1.LF_I1;1;X1Y3/F_PERM_I1;X1Y3/LF_I1/X1Y3/F_PERM_I1;1;X0Y5/A_EN;X0Y5/GND0.A_EN;1;X0Y6/$CONST0;X0Y0/$CONST0/X0Y6/$CONST0;1;X5Y6/$CONST0;X0Y6/$CONST0/X5Y6/$CONST0;1;X5Y6/GND0;X5Y6/$CONST0/X5Y6/GND0;1;X5Y6/A_EN;X5Y6/GND0.A_EN;1;X1Y3/LD_I1;X1Y3/J2MID_CDa_END1.LD_I1;1;X1Y3/D_PERM_I1;X1Y3/LD_I1/X1Y3/D_PERM_I1;1;X1Y3/J2MID_CDa_BEG1;X1Y3/JE2END4.J2MID_CDa_BEG1;1;X1Y3/J2MID_CDa_END1;X1Y3/J2MID_CDa_BEG1.J2MID_CDa_END1;1;X1Y3/LC_I1;X1Y3/J2MID_CDa_END1.LC_I1;1;X1Y3/C_PERM_I1;X1Y3/LC_I1/X1Y3/C_PERM_I1;1;X1Y3/J2MID_EFb_BEG1;X1Y3/W2MID3.J2MID_EFb_BEG1;1;X1Y3/J2MID_EFb_END1;X1Y3/J2MID_EFb_BEG1.J2MID_EFb_END1;1;X1Y3/LE_I1;X1Y3/J2MID_EFb_END1.LE_I1;1;X1Y3/E_PERM_I1;X1Y3/LE_I1/X1Y3/E_PERM_I1;1;X2Y3/JW2BEG5;X2Y3/LG_O.JW2BEG5;1;X2Y3/JW2END5;X2Y3/JW2BEG5.JW2END5;1;X2Y3/W2BEG5;X2Y3/JW2END5.W2BEG5;1;X1Y3/W2MID5;X2Y3/W2BEG5.W2MID5;1;X1Y3/J2MID_ABb_BEG2;X1Y3/W2MID5.J2MID_ABb_BEG2;1;X1Y3/J2MID_ABb_END2;X1Y3/J2MID_ABb_BEG2.J2MID_ABb_END2;1;X1Y3/LA_I2;X1Y3/J2MID_ABb_END2.LA_I2;1;X1Y3/A_PERM_I2;X1Y3/LA_I2/X1Y3/A_PERM_I2;1;X0Y5/$CONST0;X0Y0/$CONST0/X0Y5/$CONST0;1;X0Y5/GND0;X0Y5/$CONST0/X0Y5/GND0;1;X0Y5/B_EN;X0Y5/GND0.B_EN;1;X1Y3/LG_I1;X1Y3/J_l_GH_END1.LG_I1;1;X1Y3/G_PERM_I1;X1Y3/LG_I1/X1Y3/G_PERM_I1;1;X0Y2/$CONST0;X0Y0/$CONST0/X0Y2/$CONST0;1;X1Y2/$CONST0;X0Y2/$CONST0/X1Y2/$CONST0;1;X1Y2/LD_O;X1Y2/$CONST0/X1Y2/LD_O;1;X1Y2/JE2BEG1;X1Y2/LD_O.JE2BEG1;1;X1Y2/JE2END1;X1Y2/JE2BEG1.JE2END1;1;X1Y2/J_l_AB_BEG1;X1Y2/JE2END1.J_l_AB_BEG1;1;X1Y2/J_l_AB_END1;X1Y2/J_l_AB_BEG1.J_l_AB_END1;1;X1Y2/LA_I1;X1Y2/J_l_AB_END1.LA_I1;1;X1Y2/A_PERM_I1;X1Y2/LA_I1/X1Y2/A_PERM_I1;1;X2Y3/JW2BEG3;X2Y3/LG_O.JW2BEG3;1;X2Y3/JW2END3;X2Y3/JW2BEG3.JW2END3;1;X2Y3/W2BEG3;X2Y3/JW2END3.W2BEG3;1;X1Y3/W2MID3;X2Y3/W2BEG3.W2MID3;1;X1Y3/J2MID_ABb_BEG1;X1Y3/W2MID3.J2MID_ABb_BEG1;1;X1Y3/J2MID_ABb_END1;X1Y3/J2MID_ABb_BEG1.J2MID_ABb_END1;1;X1Y3/LA_I1;X1Y3/J2MID_ABb_END1.LA_I1;1;X1Y3/A_PERM_I1;X1Y3/LA_I1/X1Y3/A_PERM_I1;1;X0Y0/$CONST0;;1;X0Y3/$CONST0;X0Y0/$CONST0/X0Y3/$CONST0;1;X2Y3/$CONST0;X0Y3/$CONST0/X2Y3/$CONST0;1;X2Y3/LG_O;X2Y3/$CONST0/X2Y3/LG_O;1;X2Y3/W1BEG1;X2Y3/LG_O.W1BEG1;1;X1Y3/W1END1;X2Y3/W1BEG1.W1END1;1;X1Y3/JE2BEG4;X1Y3/W1END1.JE2BEG4;1;X1Y3/JE2END4;X1Y3/JE2BEG4.JE2END4;1;X1Y3/J_l_GH_BEG1;X1Y3/JE2END4.J_l_GH_BEG1;1;X1Y3/J_l_GH_END1;X1Y3/J_l_GH_BEG1.J_l_GH_END1;1;X1Y3/LH_I1;X1Y3/J_l_GH_END1.LH_I1;1;X1Y3/H_PERM_I1;X1Y3/LH_I1/X1Y3/H_PERM_I1;1"
+            "ROUTING": "X1Y2/JS2BEG5;X1Y2/LG_O.JS2BEG5;1;X1Y2/JS2END5;X1Y2/JS2BEG5.JS2END5;1;X1Y2/S2BEG5;X1Y2/JS2END5.S2BEG5;1;X1Y3/S2MID5;X1Y2/S2BEG5.S2MID5;1;X1Y3/J2MID_ABb_BEG2;X1Y3/S2MID5.J2MID_ABb_BEG2;1;X1Y3/J2MID_ABb_END2;X1Y3/J2MID_ABb_BEG2.J2MID_ABb_END2;1;X1Y3/LA_I2;X1Y3/J2MID_ABb_END2.LA_I2;1;X1Y3/A_PERM_I2;X1Y3/LA_I2/X1Y3/A_PERM_I2;1;X0Y5/B_EN;X0Y5/GND0.B_EN;1;X1Y3/LF_I1;X1Y3/J2MID_EFb_END1.LF_I1;1;X1Y3/F_PERM_I1;X1Y3/LF_I1/X1Y3/F_PERM_I1;1;X1Y3/J2MID_EFb_BEG1;X1Y3/W2MID3.J2MID_EFb_BEG1;1;X1Y3/J2MID_EFb_END1;X1Y3/J2MID_EFb_BEG1.J2MID_EFb_END1;1;X1Y3/LE_I1;X1Y3/J2MID_EFb_END1.LE_I1;1;X1Y3/E_PERM_I1;X1Y3/LE_I1/X1Y3/E_PERM_I1;1;X1Y3/LD_I1;X1Y3/J2MID_CDa_END1.LD_I1;1;X1Y3/D_PERM_I1;X1Y3/LD_I1/X1Y3/D_PERM_I1;1;X0Y5/$CONST0;X0Y0/$CONST0/X0Y5/$CONST0;1;X0Y5/GND0;X0Y5/$CONST0/X0Y5/GND0;1;X0Y5/A_EN;X0Y5/GND0.A_EN;1;X1Y3/LG_I1;X1Y3/J_l_GH_END1.LG_I1;1;X1Y3/G_PERM_I1;X1Y3/LG_I1/X1Y3/G_PERM_I1;1;X2Y3/JW2BEG3;X2Y3/LG_O.JW2BEG3;1;X2Y3/JW2END3;X2Y3/JW2BEG3.JW2END3;1;X2Y3/W2BEG3;X2Y3/JW2END3.W2BEG3;1;X1Y3/W2MID3;X2Y3/W2BEG3.W2MID3;1;X1Y3/J2MID_ABb_BEG1;X1Y3/W2MID3.J2MID_ABb_BEG1;1;X1Y3/J2MID_ABb_END1;X1Y3/J2MID_ABb_BEG1.J2MID_ABb_END1;1;X1Y3/LA_I1;X1Y3/J2MID_ABb_END1.LA_I1;1;X1Y3/A_PERM_I1;X1Y3/LA_I1/X1Y3/A_PERM_I1;1;X14Y0/$CONST0;X0Y0/$CONST0/X14Y0/$CONST0;1;X14Y12/$CONST0;X14Y0/$CONST0/X14Y12/$CONST0;1;X14Y12/GND0;X14Y12/$CONST0/X14Y12/GND0;1;X14Y12/A_EN;X14Y12/GND0.A_EN;1;X0Y2/$CONST0;X0Y0/$CONST0/X0Y2/$CONST0;1;X1Y2/$CONST0;X0Y2/$CONST0/X1Y2/$CONST0;1;X1Y2/LG_O;X1Y2/$CONST0/X1Y2/LG_O;1;X1Y2/JE2BEG1;X1Y2/LG_O.JE2BEG1;1;X1Y2/JE2END1;X1Y2/JE2BEG1.JE2END1;1;X1Y2/J_l_AB_BEG1;X1Y2/JE2END1.J_l_AB_BEG1;1;X1Y2/J_l_AB_END1;X1Y2/J_l_AB_BEG1.J_l_AB_END1;1;X1Y2/LA_I1;X1Y2/J_l_AB_END1.LA_I1;1;X1Y2/A_PERM_I1;X1Y2/LA_I1/X1Y2/A_PERM_I1;1;X1Y3/J_l_GH_BEG1;X1Y3/JE2END4.J_l_GH_BEG1;1;X1Y3/J_l_GH_END1;X1Y3/J_l_GH_BEG1.J_l_GH_END1;1;X1Y3/LH_I1;X1Y3/J_l_GH_END1.LH_I1;1;X1Y3/H_PERM_I1;X1Y3/LH_I1/X1Y3/H_PERM_I1;1;X0Y0/$CONST0;;1;X0Y3/$CONST0;X0Y0/$CONST0/X0Y3/$CONST0;1;X2Y3/$CONST0;X0Y3/$CONST0/X2Y3/$CONST0;1;X2Y3/LG_O;X2Y3/$CONST0/X2Y3/LG_O;1;X2Y3/W1BEG1;X2Y3/LG_O.W1BEG1;1;X1Y3/W1END1;X2Y3/W1BEG1.W1END1;1;X1Y3/JE2BEG4;X1Y3/W1END1.JE2BEG4;1;X1Y3/JE2END4;X1Y3/JE2BEG4.JE2END4;1;X1Y3/J2MID_CDa_BEG1;X1Y3/JE2END4.J2MID_CDa_BEG1;1;X1Y3/J2MID_CDa_END1;X1Y3/J2MID_CDa_BEG1.J2MID_CDa_END1;1;X1Y3/LC_I1;X1Y3/J2MID_CDa_END1.LC_I1;1;X1Y3/C_PERM_I1;X1Y3/LC_I1/X1Y3/C_PERM_I1;1"
           }
         },
         "$iopadmap$rst": {
           "hide_name": 1,
-          "bits": [ 3551 ] ,
+          "bits": [ 5283 ] ,
           "attributes": {
-            "ROUTING": "X1Y3/LE_SR;X1Y3/J_SR_END0.LE_SR;1;X1Y3/LD_SR;X1Y3/J_SR_END0.LD_SR;1;X1Y3/LB_SR;X1Y3/J_SR_END0.LB_SR;1;X1Y5/NN4BEG3;X1Y5/E1END1.NN4BEG3;1;X1Y4/NN4END15;X1Y5/NN4BEG3.NN4END15;1;X1Y4/NN4BEG15;X1Y4/NN4END15.NN4BEG15;1;X1Y3/NN4END11;X1Y4/NN4BEG15.NN4END11;1;X1Y3/NN4BEG11;X1Y3/NN4END11.NN4BEG11;1;X1Y2/NN4END7;X1Y3/NN4BEG11.NN4END7;1;X1Y2/NN4BEG7;X1Y2/NN4END7.NN4BEG7;1;X1Y1/NN4END3;X1Y2/NN4BEG7.NN4END3;1;X1Y1/J_l_AB_BEG0;X1Y1/NN4END3.J_l_AB_BEG0;1;X1Y1/J_l_AB_END0;X1Y1/J_l_AB_BEG0.J_l_AB_END0;1;X1Y1/S1BEG3;X1Y1/J_l_AB_END0.S1BEG3;1;X1Y2/S1END3;X1Y1/S1BEG3.S1END3;1;X1Y2/JN2BEG6;X1Y2/S1END3.JN2BEG6;1;X1Y2/JN2END6;X1Y2/JN2BEG6.JN2END6;1;X1Y2/J2MID_GHa_BEG0;X1Y2/JN2END6.J2MID_GHa_BEG0;1;X1Y2/J2MID_GHa_END0;X1Y2/J2MID_GHa_BEG0.J2MID_GHa_END0;1;X1Y2/J_SR_BEG0;X1Y2/J2MID_GHa_END0.J_SR_BEG0;1;X1Y2/J_SR_END0;X1Y2/J_SR_BEG0.J_SR_END0;1;X1Y2/LA_SR;X1Y2/J_SR_END0.LA_SR;1;X1Y3/LF_SR;X1Y3/J_SR_END0.LF_SR;1;X1Y3/LG_SR;X1Y3/J_SR_END0.LG_SR;1;X1Y3/LH_SR;X1Y3/J_SR_END0.LH_SR;1;X0Y5/B_OUT;;1;X0Y5/E1BEG1;X0Y5/B_OUT.E1BEG1;1;X1Y5/E1END1;X0Y5/E1BEG1.E1END1;1;X1Y5/JN2BEG2;X1Y5/E1END1.JN2BEG2;1;X1Y5/JN2END2;X1Y5/JN2BEG2.JN2END2;1;X1Y5/N2BEG2;X1Y5/JN2END2.N2BEG2;1;X1Y4/N2MID2;X1Y5/N2BEG2.N2MID2;1;X1Y4/N2BEGb2;X1Y4/N2MID2.N2BEGb2;1;X1Y3/N2END2;X1Y4/N2BEGb2.N2END2;1;X1Y3/JE2BEG1;X1Y3/N2END2.JE2BEG1;1;X1Y3/JE2END1;X1Y3/JE2BEG1.JE2END1;1;X1Y3/J_SR_BEG0;X1Y3/JE2END1.J_SR_BEG0;1;X1Y3/J_SR_END0;X1Y3/J_SR_BEG0.J_SR_END0;1;X1Y3/LC_SR;X1Y3/J_SR_END0.LC_SR;1"
+            "ROUTING": "X1Y3/LB_SR;X1Y3/J_SR_END0.LB_SR;1;X1Y4/JN2BEG2;X1Y4/N1END3.JN2BEG2;1;X1Y4/JN2END2;X1Y4/JN2BEG2.JN2END2;1;X1Y4/N2BEG2;X1Y4/JN2END2.N2BEG2;1;X1Y3/N2MID2;X1Y4/N2BEG2.N2MID2;1;X1Y3/N2BEGb2;X1Y3/N2MID2.N2BEGb2;1;X1Y2/N2END2;X1Y3/N2BEGb2.N2END2;1;X1Y2/JN2BEG1;X1Y2/N2END2.JN2BEG1;1;X1Y2/JN2END1;X1Y2/JN2BEG1.JN2END1;1;X1Y2/J_SR_BEG0;X1Y2/JN2END1.J_SR_BEG0;1;X1Y2/J_SR_END0;X1Y2/J_SR_BEG0.J_SR_END0;1;X1Y2/LA_SR;X1Y2/J_SR_END0.LA_SR;1;X1Y3/LE_SR;X1Y3/J_SR_END0.LE_SR;1;X1Y3/LC_SR;X1Y3/J_SR_END0.LC_SR;1;X1Y3/LD_SR;X1Y3/J_SR_END0.LD_SR;1;X1Y3/LH_SR;X1Y3/J_SR_END0.LH_SR;1;X1Y3/LG_SR;X1Y3/J_SR_END0.LG_SR;1;X0Y5/B_OUT;;1;X0Y5/E6BEG1;X0Y5/B_OUT.E6BEG1;1;X1Y5/E6END1;X0Y5/E6BEG1.E6END1;1;X1Y5/JW2BEG2;X1Y5/E6END1.JW2BEG2;1;X1Y5/JW2END2;X1Y5/JW2BEG2.JW2END2;1;X1Y5/N1BEG3;X1Y5/JW2END2.N1BEG3;1;X1Y4/N1END3;X1Y5/N1BEG3.N1END3;1;X1Y4/JN2BEG6;X1Y4/N1END3.JN2BEG6;1;X1Y4/JN2END6;X1Y4/JN2BEG6.JN2END6;1;X1Y4/N2BEG6;X1Y4/JN2END6.N2BEG6;1;X1Y3/N2MID6;X1Y4/N2BEG6.N2MID6;1;X1Y3/J2MID_GHa_BEG0;X1Y3/N2MID6.J2MID_GHa_BEG0;1;X1Y3/J2MID_GHa_END0;X1Y3/J2MID_GHa_BEG0.J2MID_GHa_END0;1;X1Y3/J_SR_BEG0;X1Y3/J2MID_GHa_END0.J_SR_BEG0;1;X1Y3/J_SR_END0;X1Y3/J_SR_BEG0.J_SR_END0;1;X1Y3/LF_SR;X1Y3/J_SR_END0.LF_SR;1"
           }
         },
         "$iopadmap$ena": {
           "hide_name": 1,
-          "bits": [ 3550 ] ,
+          "bits": [ 5282 ] ,
           "attributes": {
-            "ROUTING": "X1Y5/NN4BEG2;X1Y5/E1END0.NN4BEG2;1;X1Y4/NN4END14;X1Y5/NN4BEG2.NN4END14;1;X1Y4/NN4BEG14;X1Y4/NN4END14.NN4BEG14;1;X1Y3/NN4END10;X1Y4/NN4BEG14.NN4END10;1;X1Y3/NN4BEG10;X1Y3/NN4END10.NN4BEG10;1;X1Y2/NN4END6;X1Y3/NN4BEG10.NN4END6;1;X1Y2/NN4BEG6;X1Y2/NN4END6.NN4BEG6;1;X1Y1/NN4END2;X1Y2/NN4BEG6.NN4END2;1;X1Y1/JS2BEG1;X1Y1/NN4END2.JS2BEG1;1;X1Y1/JS2END1;X1Y1/JS2BEG1.JS2END1;1;X1Y1/S2BEG1;X1Y1/JS2END1.S2BEG1;1;X1Y2/S2MID1;X1Y1/S2BEG1.S2MID1;1;X1Y2/J2MID_ABb_BEG3;X1Y2/S2MID1.J2MID_ABb_BEG3;1;X1Y2/J2MID_ABb_END3;X1Y2/J2MID_ABb_BEG3.J2MID_ABb_END3;1;X1Y2/J_EN_BEG0;X1Y2/J2MID_ABb_END3.J_EN_BEG0;1;X1Y2/J_EN_END0;X1Y2/J_EN_BEG0.J_EN_END0;1;X1Y2/LA_EN;X1Y2/J_EN_END0.LA_EN;1;X1Y3/LF_EN;X1Y3/J_EN_END0.LF_EN;1;X1Y3/LC_EN;X1Y3/J_EN_END0.LC_EN;1;X1Y3/LG_EN;X1Y3/J_EN_END0.LG_EN;1;X1Y3/LB_EN;X1Y3/J_EN_END0.LB_EN;1;X1Y3/LE_EN;X1Y3/J_EN_END0.LE_EN;1;X1Y3/LH_EN;X1Y3/J_EN_END0.LH_EN;1;X0Y5/A_OUT;;1;X0Y5/E1BEG0;X0Y5/A_OUT.E1BEG0;1;X1Y5/E1END0;X0Y5/E1BEG0.E1END0;1;X1Y5/JN2BEG7;X1Y5/E1END0.JN2BEG7;1;X1Y5/JN2END7;X1Y5/JN2BEG7.JN2END7;1;X1Y5/N2BEG7;X1Y5/JN2END7.N2BEG7;1;X1Y4/N2MID7;X1Y5/N2BEG7.N2MID7;1;X1Y4/N2BEGb7;X1Y4/N2MID7.N2BEGb7;1;X1Y3/N2END7;X1Y4/N2BEGb7.N2END7;1;X1Y3/JW2BEG6;X1Y3/N2END7.JW2BEG6;1;X1Y3/JW2END6;X1Y3/JW2BEG6.JW2END6;1;X1Y3/J2MID_GHa_BEG3;X1Y3/JW2END6.J2MID_GHa_BEG3;1;X1Y3/J2MID_GHa_END3;X1Y3/J2MID_GHa_BEG3.J2MID_GHa_END3;1;X1Y3/J_EN_BEG0;X1Y3/J2MID_GHa_END3.J_EN_BEG0;1;X1Y3/J_EN_END0;X1Y3/J_EN_BEG0.J_EN_END0;1;X1Y3/LD_EN;X1Y3/J_EN_END0.LD_EN;1"
+            "ROUTING": "X1Y3/LD_EN;X1Y3/J_EN_END0.LD_EN;1;X1Y3/LF_EN;X1Y3/J_EN_END0.LF_EN;1;X1Y3/LE_EN;X1Y3/J_EN_END0.LE_EN;1;X1Y3/LH_EN;X1Y3/J_EN_END0.LH_EN;1;X1Y3/LB_EN;X1Y3/J_EN_END0.LB_EN;1;X1Y3/LC_EN;X1Y3/J_EN_END0.LC_EN;1;X1Y5/JN2BEG7;X1Y5/E1END0.JN2BEG7;1;X1Y5/JN2END7;X1Y5/JN2BEG7.JN2END7;1;X1Y5/N2BEG7;X1Y5/JN2END7.N2BEG7;1;X1Y4/N2MID7;X1Y5/N2BEG7.N2MID7;1;X1Y4/N2BEGb7;X1Y4/N2MID7.N2BEGb7;1;X1Y3/N2END7;X1Y4/N2BEGb7.N2END7;1;X1Y3/JW2BEG6;X1Y3/N2END7.JW2BEG6;1;X1Y3/JW2END6;X1Y3/JW2BEG6.JW2END6;1;X1Y3/J2MID_GHa_BEG3;X1Y3/JW2END6.J2MID_GHa_BEG3;1;X1Y3/J2MID_GHa_END3;X1Y3/J2MID_GHa_BEG3.J2MID_GHa_END3;1;X1Y3/J_EN_BEG0;X1Y3/J2MID_GHa_END3.J_EN_BEG0;1;X1Y3/J_EN_END0;X1Y3/J_EN_BEG0.J_EN_END0;1;X1Y3/LG_EN;X1Y3/J_EN_END0.LG_EN;1;X0Y5/A_OUT;;1;X0Y5/E1BEG0;X0Y5/A_OUT.E1BEG0;1;X1Y5/E1END0;X0Y5/E1BEG0.E1END0;1;X1Y5/NN4BEG2;X1Y5/E1END0.NN4BEG2;1;X1Y4/NN4END14;X1Y5/NN4BEG2.NN4END14;1;X1Y4/NN4BEG14;X1Y4/NN4END14.NN4BEG14;1;X1Y3/NN4END10;X1Y4/NN4BEG14.NN4END10;1;X1Y3/NN4BEG10;X1Y3/NN4END10.NN4BEG10;1;X1Y2/NN4END6;X1Y3/NN4BEG10.NN4END6;1;X1Y2/NN4BEG6;X1Y2/NN4END6.NN4BEG6;1;X1Y1/NN4END2;X1Y2/NN4BEG6.NN4END2;1;X1Y1/JS2BEG1;X1Y1/NN4END2.JS2BEG1;1;X1Y1/JS2END1;X1Y1/JS2BEG1.JS2END1;1;X1Y1/S2BEG1;X1Y1/JS2END1.S2BEG1;1;X1Y2/S2MID1;X1Y1/S2BEG1.S2MID1;1;X1Y2/J2MID_CDb_BEG3;X1Y2/S2MID1.J2MID_CDb_BEG3;1;X1Y2/J2MID_CDb_END3;X1Y2/J2MID_CDb_BEG3.J2MID_CDb_END3;1;X1Y2/J_EN_BEG0;X1Y2/J2MID_CDb_END3.J_EN_BEG0;1;X1Y2/J_EN_END0;X1Y2/J_EN_BEG0.J_EN_END0;1;X1Y2/LA_EN;X1Y2/J_EN_END0.LA_EN;1"
           }
         },
         "clk1_buf": {
           "hide_name": 0,
-          "bits": [ 3549 ] ,
+          "bits": [ 5281 ] ,
           "attributes": {
-            "ROUTING": "X1Y3/N_GBUF_BEG3;X1Y3/N_GBUF_END3.N_GBUF_BEG3;1;X1Y2/N_GBUF_END3;X1Y3/N_GBUF_BEG3.N_GBUF_END3;1;X1Y2/GCLK_BEG0;X1Y2/N_GBUF_END3.GCLK_BEG0;1;X1Y2/GCLK_END0;X1Y2/GCLK_BEG0.GCLK_END0;1;X1Y2/LA_CLK;X1Y2/GCLK_END0.LA_CLK;1;X1Y3/LE_CLK;X1Y3/GCLK_END0.LE_CLK;1;X1Y3/LG_CLK;X1Y3/GCLK_END0.LG_CLK;1;X1Y3/LH_CLK;X1Y3/GCLK_END0.LH_CLK;1;X1Y3/LD_CLK;X1Y3/GCLK_END0.LD_CLK;1;X1Y3/LF_CLK;X1Y3/GCLK_END0.LF_CLK;1;X1Y3/LB_CLK;X1Y3/GCLK_END0.LB_CLK;1;X0Y7/GBUF_D_OUT;;1;X0Y7/E_GBUF_BEG3;X0Y7/GBUF_D_OUT.E_GBUF_BEG3;1;X1Y7/E_GBUF_END3;X0Y7/E_GBUF_BEG3.E_GBUF_END3;1;X1Y7/N_GBUF_BEG3;X1Y7/E_GBUF_END3.N_GBUF_BEG3;1;X1Y6/N_GBUF_END3;X1Y7/N_GBUF_BEG3.N_GBUF_END3;1;X1Y6/N_GBUF_BEG3;X1Y6/N_GBUF_END3.N_GBUF_BEG3;1;X1Y5/N_GBUF_END3;X1Y6/N_GBUF_BEG3.N_GBUF_END3;1;X1Y5/N_GBUF_BEG3;X1Y5/N_GBUF_END3.N_GBUF_BEG3;1;X1Y4/N_GBUF_END3;X1Y5/N_GBUF_BEG3.N_GBUF_END3;1;X1Y4/N_GBUF_BEG3;X1Y4/N_GBUF_END3.N_GBUF_BEG3;1;X1Y3/N_GBUF_END3;X1Y4/N_GBUF_BEG3.N_GBUF_END3;1;X1Y3/GCLK_BEG0;X1Y3/N_GBUF_END3.GCLK_BEG0;1;X1Y3/GCLK_END0;X1Y3/GCLK_BEG0.GCLK_END0;1;X1Y3/LC_CLK;X1Y3/GCLK_END0.LC_CLK;1",
+            "ROUTING": "X1Y3/LG_CLK;X1Y3/GCLK_END0.LG_CLK;1;X1Y3/LD_CLK;X1Y3/GCLK_END0.LD_CLK;1;X1Y3/LF_CLK;X1Y3/GCLK_END0.LF_CLK;1;X1Y3/LB_CLK;X1Y3/GCLK_END0.LB_CLK;1;X1Y3/LE_CLK;X1Y3/GCLK_END0.LE_CLK;1;X1Y3/N_GBUF_BEG0;X1Y3/N_GBUF_END0.N_GBUF_BEG0;1;X1Y2/N_GBUF_END0;X1Y3/N_GBUF_BEG0.N_GBUF_END0;1;X1Y2/GCLK_BEG0;X1Y2/N_GBUF_END0.GCLK_BEG0;1;X1Y2/GCLK_END0;X1Y2/GCLK_BEG0.GCLK_END0;1;X1Y2/LA_CLK;X1Y2/GCLK_END0.LA_CLK;1;X1Y3/LH_CLK;X1Y3/GCLK_END0.LH_CLK;1;X0Y13/GBUF_A_OUT;;1;X0Y13/E_GBUF_BEG0;X0Y13/GBUF_A_OUT.E_GBUF_BEG0;1;X1Y13/E_GBUF_END0;X0Y13/E_GBUF_BEG0.E_GBUF_END0;1;X1Y13/N_GBUF_BEG0;X1Y13/E_GBUF_END0.N_GBUF_BEG0;1;X1Y12/N_GBUF_END0;X1Y13/N_GBUF_BEG0.N_GBUF_END0;1;X1Y12/N_GBUF_BEG0;X1Y12/N_GBUF_END0.N_GBUF_BEG0;1;X1Y11/N_GBUF_END0;X1Y12/N_GBUF_BEG0.N_GBUF_END0;1;X1Y11/N_GBUF_BEG0;X1Y11/N_GBUF_END0.N_GBUF_BEG0;1;X1Y10/N_GBUF_END0;X1Y11/N_GBUF_BEG0.N_GBUF_END0;1;X1Y10/N_GBUF_BEG0;X1Y10/N_GBUF_END0.N_GBUF_BEG0;1;X1Y9/N_GBUF_END0;X1Y10/N_GBUF_BEG0.N_GBUF_END0;1;X1Y9/N_GBUF_BEG0;X1Y9/N_GBUF_END0.N_GBUF_BEG0;1;X1Y8/N_GBUF_END0;X1Y9/N_GBUF_BEG0.N_GBUF_END0;1;X1Y8/N_GBUF_BEG0;X1Y8/N_GBUF_END0.N_GBUF_BEG0;1;X1Y7/N_GBUF_END0;X1Y8/N_GBUF_BEG0.N_GBUF_END0;1;X1Y7/N_GBUF_BEG0;X1Y7/N_GBUF_END0.N_GBUF_BEG0;1;X1Y6/N_GBUF_END0;X1Y7/N_GBUF_BEG0.N_GBUF_END0;1;X1Y6/N_GBUF_BEG0;X1Y6/N_GBUF_END0.N_GBUF_BEG0;1;X1Y5/N_GBUF_END0;X1Y6/N_GBUF_BEG0.N_GBUF_END0;1;X1Y5/N_GBUF_BEG0;X1Y5/N_GBUF_END0.N_GBUF_BEG0;1;X1Y4/N_GBUF_END0;X1Y5/N_GBUF_BEG0.N_GBUF_END0;1;X1Y4/N_GBUF_BEG0;X1Y4/N_GBUF_END0.N_GBUF_BEG0;1;X1Y3/N_GBUF_END0;X1Y4/N_GBUF_BEG0.N_GBUF_END0;1;X1Y3/GCLK_BEG0;X1Y3/N_GBUF_END0.GCLK_BEG0;1;X1Y3/GCLK_END0;X1Y3/GCLK_BEG0.GCLK_END0;1;X1Y3/LC_CLK;X1Y3/GCLK_END0.LC_CLK;1",
             "src": "counter.v:14.10-14.18"
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$13.Y[7]": {
+        "$auto$alumacc.cc:512:replace_alu$17.Y[7]": {
           "hide_name": 1,
-          "bits": [ 3547 ] ,
+          "bits": [ 5279 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "counter.v:29.25-29.36|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:22.25-22.26",
@@ -810,32 +810,32 @@
         },
         "ctr1[7]": {
           "hide_name": 0,
-          "bits": [ 3546 ] ,
+          "bits": [ 5278 ] ,
           "attributes": {
-            "ROUTING": "X1Y2/S2BEG3;X1Y2/JS2END3.S2BEG3;1;X1Y3/S2MID3;X1Y2/S2BEG3.S2MID3;1;X1Y3/J2MID_GHb_BEG1;X1Y3/S2MID3.J2MID_GHb_BEG1;1;X1Y3/J2MID_GHb_END1;X1Y3/J2MID_GHb_BEG1.J2MID_GHb_END1;1;X1Y3/S1BEG2;X1Y3/J2MID_GHb_END1.S1BEG2;1;X1Y4/S1END2;X1Y3/S1BEG2.S1END2;1;X1Y4/W6BEG1;X1Y4/S1END2.W6BEG1;1;X0Y4/W6END11;X1Y4/W6BEG1.W6END11;1;X0Y4/E6BEG0;X0Y4/W6END11.E6BEG0;1;X1Y4/E6END0;X0Y4/E6BEG0.E6END0;1;X1Y4/JW2BEG1;X1Y4/E6END0.JW2BEG1;1;X1Y4/JW2END1;X1Y4/JW2BEG1.JW2END1;1;X1Y4/W2BEG1;X1Y4/JW2END1.W2BEG1;1;X0Y4/W2MID1;X1Y4/W2BEG1.W2MID1;1;X0Y4/B_IN;X0Y4/W2MID1.B_IN;1;X1Y2/A_Q;;1;X1Y2/LA_O;X1Y2/A_Q/X1Y2/LA_O;1;X1Y2/JS2BEG3;X1Y2/LA_O.JS2BEG3;1;X1Y2/JS2END3;X1Y2/JS2BEG3.JS2END3;1;X1Y2/J2MID_ABa_BEG2;X1Y2/JS2END3.J2MID_ABa_BEG2;1;X1Y2/J2MID_ABa_END2;X1Y2/J2MID_ABa_BEG2.J2MID_ABa_END2;1;X1Y2/LA_I2;X1Y2/J2MID_ABa_END2.LA_I2;1;X1Y2/A_PERM_I2;X1Y2/LA_I2/X1Y2/A_PERM_I2;1",
+            "ROUTING": "X1Y2/S2BEG1;X1Y2/JS2END1.S2BEG1;1;X1Y3/S2MID1;X1Y2/S2BEG1.S2MID1;1;X1Y3/S2BEGb1;X1Y3/S2MID1.S2BEGb1;1;X1Y4/S2END1;X1Y3/S2BEGb1.S2END1;1;X1Y4/JS2BEG0;X1Y4/S2END1.JS2BEG0;1;X1Y4/JS2END0;X1Y4/JS2BEG0.JS2END0;1;X1Y4/W1BEG1;X1Y4/JS2END0.W1BEG1;1;X0Y4/W1END1;X1Y4/W1BEG1.W1END1;1;X0Y4/B_IN;X0Y4/W1END1.B_IN;1;X1Y2/A_Q;;1;X1Y2/LA_O;X1Y2/A_Q/X1Y2/LA_O;1;X1Y2/JS2BEG1;X1Y2/LA_O.JS2BEG1;1;X1Y2/JS2END1;X1Y2/JS2BEG1.JS2END1;1;X1Y2/J_l_AB_BEG2;X1Y2/JS2END1.J_l_AB_BEG2;1;X1Y2/J_l_AB_END2;X1Y2/J_l_AB_BEG2.J_l_AB_END2;1;X1Y2/LA_I2;X1Y2/J_l_AB_END2.LA_I2;1;X1Y2/A_PERM_I2;X1Y2/LA_I2/X1Y2/A_PERM_I2;1",
             "src": "counter.v:21.15-21.19"
           }
         },
         "c[6]": {
           "hide_name": 0,
-          "bits": [ 3587 ] ,
+          "bits": [ 5319 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "counter.v:11.23-11.24"
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$13.CARRY[8]": {
+        "$auto$alumacc.cc:512:replace_alu$17.CARRY[8]": {
           "hide_name": 1,
-          "bits": [ 3543 ] ,
+          "bits": [ 5275 ] ,
           "attributes": {
             "ROUTING": " ",
             "unused_bits": "8",
             "src": "counter.v:29.25-29.36|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:33.18-33.23"
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$13.Y[6]": {
+        "$auto$alumacc.cc:512:replace_alu$17.Y[6]": {
           "hide_name": 1,
-          "bits": [ 3541 ] ,
+          "bits": [ 5273 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "counter.v:29.25-29.36|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:22.25-22.26",
@@ -844,7 +844,7 @@
         },
         "ctr1[6]": {
           "hide_name": 0,
-          "bits": [ 3540 ] ,
+          "bits": [ 5272 ] ,
           "attributes": {
             "ROUTING": "X1Y3/S1BEG3;X1Y3/LH_O.S1BEG3;1;X1Y4/S1END3;X1Y3/S1BEG3.S1END3;1;X1Y4/WW4BEG1;X1Y4/S1END3.WW4BEG1;1;X0Y4/WW4END13;X1Y4/WW4BEG1.WW4END13;1;X0Y4/E2BEGb2;X0Y4/WW4END13.E2BEGb2;1;X1Y4/E2END2;X0Y4/E2BEGb2.E2END2;1;X1Y4/J_l_CD_BEG1;X1Y4/E2END2.J_l_CD_BEG1;1;X1Y4/J_l_CD_END1;X1Y4/J_l_CD_BEG1.J_l_CD_END1;1;X1Y4/W1BEG0;X1Y4/J_l_CD_END1.W1BEG0;1;X0Y4/W1END0;X1Y4/W1BEG0.W1END0;1;X0Y4/A_IN;X0Y4/W1END0.A_IN;1;X1Y3/H_Q;;1;X1Y3/LH_O;X1Y3/H_Q/X1Y3/LH_O;1;X1Y3/JS2BEG6;X1Y3/LH_O.JS2BEG6;1;X1Y3/JS2END6;X1Y3/JS2BEG6.JS2END6;1;X1Y3/J2MID_GHa_BEG2;X1Y3/JS2END6.J2MID_GHa_BEG2;1;X1Y3/J2MID_GHa_END2;X1Y3/J2MID_GHa_BEG2.J2MID_GHa_END2;1;X1Y3/LH_I2;X1Y3/J2MID_GHa_END2.LH_I2;1;X1Y3/H_PERM_I2;X1Y3/LH_I2/X1Y3/H_PERM_I2;1",
             "src": "counter.v:21.15-21.19"
@@ -852,24 +852,24 @@
         },
         "ena": {
           "hide_name": 0,
-          "bits": [ 3487 ] ,
+          "bits": [ 5219 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "counter.v:9.23-9.26"
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$13.CARRY[7]": {
+        "$auto$alumacc.cc:512:replace_alu$17.CARRY[7]": {
           "hide_name": 1,
-          "bits": [ 3537 ] ,
+          "bits": [ 5269 ] ,
           "attributes": {
             "ROUTING": "X1Y3/LH_Co;;1;X1Y3/CO0;X1Y3/LH_Co.CO0;1;X1Y2/CI0;X1Y3/CO0.CI0;1;X1Y2/LA_Ci;X1Y2/CI0.LA_Ci;1",
             "unused_bits": "8",
             "src": "counter.v:29.25-29.36|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:33.18-33.23"
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$13.Y[5]": {
+        "$auto$alumacc.cc:512:replace_alu$17.Y[5]": {
           "hide_name": 1,
-          "bits": [ 3535 ] ,
+          "bits": [ 5267 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "counter.v:29.25-29.36|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:22.25-22.26",
@@ -878,7 +878,7 @@
         },
         "ctr1[5]": {
           "hide_name": 0,
-          "bits": [ 3534 ] ,
+          "bits": [ 5266 ] ,
           "attributes": {
             "ROUTING": "X1Y3/W1BEG1;X1Y3/LG_O.W1BEG1;1;X0Y3/W1END1;X1Y3/W1BEG1.W1END1;1;X0Y3/B_IN;X0Y3/W1END1.B_IN;1;X1Y3/G_Q;;1;X1Y3/LG_O;X1Y3/G_Q/X1Y3/LG_O;1;X1Y3/W6BEG0;X1Y3/LG_O.W6BEG0;1;X0Y3/W6END10;X1Y3/W6BEG0.W6END10;1;X0Y3/E6BEG1;X0Y3/W6END10.E6BEG1;1;X1Y3/E6END1;X0Y3/E6BEG1.E6END1;1;X1Y3/J_l_GH_BEG2;X1Y3/E6END1.J_l_GH_BEG2;1;X1Y3/J_l_GH_END2;X1Y3/J_l_GH_BEG2.J_l_GH_END2;1;X1Y3/LG_I2;X1Y3/J_l_GH_END2.LG_I2;1;X1Y3/G_PERM_I2;X1Y3/LG_I2/X1Y3/G_PERM_I2;1",
             "src": "counter.v:21.15-21.19"
@@ -886,24 +886,24 @@
         },
         "c[5]": {
           "hide_name": 0,
-          "bits": [ 3583 ] ,
+          "bits": [ 5315 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "counter.v:11.23-11.24"
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$13.CARRY[6]": {
+        "$auto$alumacc.cc:512:replace_alu$17.CARRY[6]": {
           "hide_name": 1,
-          "bits": [ 3531 ] ,
+          "bits": [ 5263 ] ,
           "attributes": {
             "ROUTING": "X1Y3/LG_Co;;1;X1Y3/LH_Ci;X1Y3/LG_Co.LH_Ci;1",
             "unused_bits": "8",
             "src": "counter.v:29.25-29.36|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:33.18-33.23"
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$13.Y[4]": {
+        "$auto$alumacc.cc:512:replace_alu$17.Y[4]": {
           "hide_name": 1,
-          "bits": [ 3529 ] ,
+          "bits": [ 5261 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "counter.v:29.25-29.36|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:22.25-22.26",
@@ -912,31 +912,31 @@
         },
         "ctr1[4]": {
           "hide_name": 0,
-          "bits": [ 3528 ] ,
+          "bits": [ 5260 ] ,
           "attributes": {
-            "ROUTING": "X1Y3/W1BEG0;X1Y3/LF_O.W1BEG0;1;X0Y3/W1END0;X1Y3/W1BEG0.W1END0;1;X0Y3/A_IN;X0Y3/W1END0.A_IN;1;X1Y3/F_Q;;1;X1Y3/LF_O;X1Y3/F_Q/X1Y3/LF_O;1;X1Y3/JW2BEG2;X1Y3/LF_O.JW2BEG2;1;X1Y3/JW2END2;X1Y3/JW2BEG2.JW2END2;1;X1Y3/W2BEG2;X1Y3/JW2END2.W2BEG2;1;X0Y3/W2MID2;X1Y3/W2BEG2.W2MID2;1;X0Y3/E2BEG5;X0Y3/W2MID2.E2BEG5;1;X1Y3/E2MID5;X0Y3/E2BEG5.E2MID5;1;X1Y3/J2MID_EFb_BEG2;X1Y3/E2MID5.J2MID_EFb_BEG2;1;X1Y3/J2MID_EFb_END2;X1Y3/J2MID_EFb_BEG2.J2MID_EFb_END2;1;X1Y3/LF_I2;X1Y3/J2MID_EFb_END2.LF_I2;1;X1Y3/F_PERM_I2;X1Y3/LF_I2/X1Y3/F_PERM_I2;1",
+            "ROUTING": "X1Y3/W1BEG0;X1Y3/LF_O.W1BEG0;1;X0Y3/W1END0;X1Y3/W1BEG0.W1END0;1;X0Y3/A_IN;X0Y3/W1END0.A_IN;1;X1Y3/F_Q;;1;X1Y3/LF_O;X1Y3/F_Q/X1Y3/LF_O;1;X1Y3/E1BEG2;X1Y3/LF_O.E1BEG2;1;X2Y3/E1END2;X1Y3/E1BEG2.E1END2;1;X2Y3/JW2BEG5;X2Y3/E1END2.JW2BEG5;1;X2Y3/JW2END5;X2Y3/JW2BEG5.JW2END5;1;X2Y3/W2BEG5;X2Y3/JW2END5.W2BEG5;1;X1Y3/W2MID5;X2Y3/W2BEG5.W2MID5;1;X1Y3/J2MID_EFb_BEG2;X1Y3/W2MID5.J2MID_EFb_BEG2;1;X1Y3/J2MID_EFb_END2;X1Y3/J2MID_EFb_BEG2.J2MID_EFb_END2;1;X1Y3/LF_I2;X1Y3/J2MID_EFb_END2.LF_I2;1;X1Y3/F_PERM_I2;X1Y3/LF_I2/X1Y3/F_PERM_I2;1",
             "src": "counter.v:21.15-21.19"
           }
         },
         "$PACKER_VCC": {
           "hide_name": 1,
-          "bits": [ 3640 ] ,
+          "bits": [ 5384 ] ,
           "attributes": {
-            "ROUTING": "X0Y4/A_EN;X0Y4/VCC0.A_EN;1;X0Y1/A_EN;X0Y1/VCC0.A_EN;1;X0Y1/$CONST1;X0Y0/$CONST1/X0Y1/$CONST1;1;X0Y1/VCC0;X0Y1/$CONST1/X0Y1/VCC0;1;X0Y1/B_EN;X0Y1/VCC0.B_EN;1;X0Y2/A_EN;X0Y2/VCC0.A_EN;1;X0Y2/$CONST1;X0Y0/$CONST1/X0Y2/$CONST1;1;X0Y2/VCC0;X0Y2/$CONST1/X0Y2/VCC0;1;X0Y2/B_EN;X0Y2/VCC0.B_EN;1;X2Y3/$CONST1;X0Y3/$CONST1/X2Y3/$CONST1;1;X2Y3/LA_O;X2Y3/$CONST1/X2Y3/LA_O;1;X2Y3/JW2BEG2;X2Y3/LA_O.JW2BEG2;1;X2Y3/JW2END2;X2Y3/JW2BEG2.JW2END2;1;X2Y3/W2BEG2;X2Y3/JW2END2.W2BEG2;1;X1Y3/W2MID2;X2Y3/W2BEG2.W2MID2;1;X1Y3/J2MID_ABa_BEG1;X1Y3/W2MID2.J2MID_ABa_BEG1;1;X1Y3/J2MID_ABa_END1;X1Y3/J2MID_ABa_BEG1.J2MID_ABa_END1;1;X1Y3/LB_I1;X1Y3/J2MID_ABa_END1.LB_I1;1;X1Y3/B_PERM_I1;X1Y3/LB_I1/X1Y3/B_PERM_I1;1;X0Y3/B_EN;X0Y3/VCC0.B_EN;1;X0Y4/$CONST1;X0Y0/$CONST1/X0Y4/$CONST1;1;X0Y4/VCC0;X0Y4/$CONST1/X0Y4/VCC0;1;X0Y4/B_EN;X0Y4/VCC0.B_EN;1;X0Y0/$CONST1;;1;X0Y3/$CONST1;X0Y0/$CONST1/X0Y3/$CONST1;1;X0Y3/VCC0;X0Y3/$CONST1/X0Y3/VCC0;1;X0Y3/A_EN;X0Y3/VCC0.A_EN;1"
+            "ROUTING": "X0Y1/B_EN;X0Y1/VCC0.B_EN;1;X0Y1/$CONST1;X0Y0/$CONST1/X0Y1/$CONST1;1;X0Y1/VCC0;X0Y1/$CONST1/X0Y1/VCC0;1;X0Y1/A_EN;X0Y1/VCC0.A_EN;1;X0Y2/A_EN;X0Y2/VCC0.A_EN;1;X2Y3/$CONST1;X0Y3/$CONST1/X2Y3/$CONST1;1;X2Y3/LH_O;X2Y3/$CONST1/X2Y3/LH_O;1;X2Y3/JW2BEG2;X2Y3/LH_O.JW2BEG2;1;X2Y3/JW2END2;X2Y3/JW2BEG2.JW2END2;1;X2Y3/W2BEG2;X2Y3/JW2END2.W2BEG2;1;X1Y3/W2MID2;X2Y3/W2BEG2.W2MID2;1;X1Y3/J2MID_ABa_BEG1;X1Y3/W2MID2.J2MID_ABa_BEG1;1;X1Y3/J2MID_ABa_END1;X1Y3/J2MID_ABa_BEG1.J2MID_ABa_END1;1;X1Y3/LB_I1;X1Y3/J2MID_ABa_END1.LB_I1;1;X1Y3/B_PERM_I1;X1Y3/LB_I1/X1Y3/B_PERM_I1;1;X0Y4/A_EN;X0Y4/VCC0.A_EN;1;X0Y3/A_EN;X0Y3/VCC0.A_EN;1;X0Y4/$CONST1;X0Y0/$CONST1/X0Y4/$CONST1;1;X0Y4/VCC0;X0Y4/$CONST1/X0Y4/VCC0;1;X0Y4/B_EN;X0Y4/VCC0.B_EN;1;X0Y2/$CONST1;X0Y0/$CONST1/X0Y2/$CONST1;1;X0Y2/VCC0;X0Y2/$CONST1/X0Y2/VCC0;1;X0Y2/B_EN;X0Y2/VCC0.B_EN;1;X0Y0/$CONST1;;1;X0Y3/$CONST1;X0Y0/$CONST1/X0Y3/$CONST1;1;X0Y3/VCC0;X0Y3/$CONST1/X0Y3/VCC0;1;X0Y3/B_EN;X0Y3/VCC0.B_EN;1"
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$13.CARRY[5]": {
+        "$auto$alumacc.cc:512:replace_alu$17.CARRY[5]": {
           "hide_name": 1,
-          "bits": [ 3525 ] ,
+          "bits": [ 5257 ] ,
           "attributes": {
             "ROUTING": "X1Y3/LF_Co;;1;X1Y3/LG_Ci;X1Y3/LF_Co.LG_Ci;1",
             "unused_bits": "8",
             "src": "counter.v:29.25-29.36|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:33.18-33.23"
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$13.Y[3]": {
+        "$auto$alumacc.cc:512:replace_alu$17.Y[3]": {
           "hide_name": 1,
-          "bits": [ 3523 ] ,
+          "bits": [ 5255 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "counter.v:29.25-29.36|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:22.25-22.26",
@@ -945,7 +945,7 @@
         },
         "ctr1[3]": {
           "hide_name": 0,
-          "bits": [ 3522 ] ,
+          "bits": [ 5254 ] ,
           "attributes": {
             "ROUTING": "X1Y3/N1BEG2;X1Y3/LE_O.N1BEG2;1;X1Y2/N1END2;X1Y3/N1BEG2.N1END2;1;X1Y2/JW2BEG1;X1Y2/N1END2.JW2BEG1;1;X1Y2/JW2END1;X1Y2/JW2BEG1.JW2END1;1;X1Y2/W2BEG1;X1Y2/JW2END1.W2BEG1;1;X0Y2/W2MID1;X1Y2/W2BEG1.W2MID1;1;X0Y2/B_IN;X0Y2/W2MID1.B_IN;1;X1Y3/E_Q;;1;X1Y3/LE_O;X1Y3/E_Q/X1Y3/LE_O;1;X1Y3/JS2BEG5;X1Y3/LE_O.JS2BEG5;1;X1Y3/JS2END5;X1Y3/JS2BEG5.JS2END5;1;X1Y3/J2MID_EFa_BEG2;X1Y3/JS2END5.J2MID_EFa_BEG2;1;X1Y3/J2MID_EFa_END2;X1Y3/J2MID_EFa_BEG2.J2MID_EFa_END2;1;X1Y3/LE_I2;X1Y3/J2MID_EFa_END2.LE_I2;1;X1Y3/E_PERM_I2;X1Y3/LE_I2/X1Y3/E_PERM_I2;1",
             "src": "counter.v:21.15-21.19"
@@ -953,24 +953,24 @@
         },
         "c[4]": {
           "hide_name": 0,
-          "bits": [ 3579 ] ,
+          "bits": [ 5311 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "counter.v:11.23-11.24"
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$13.CARRY[4]": {
+        "$auto$alumacc.cc:512:replace_alu$17.CARRY[4]": {
           "hide_name": 1,
-          "bits": [ 3519 ] ,
+          "bits": [ 5251 ] ,
           "attributes": {
             "ROUTING": "X1Y3/LE_Co;;1;X1Y3/LF_Ci;X1Y3/LE_Co.LF_Ci;1",
             "unused_bits": "8",
             "src": "counter.v:29.25-29.36|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:33.18-33.23"
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$13.Y[2]": {
+        "$auto$alumacc.cc:512:replace_alu$17.Y[2]": {
           "hide_name": 1,
-          "bits": [ 3517 ] ,
+          "bits": [ 5249 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "counter.v:29.25-29.36|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:22.25-22.26",
@@ -979,7 +979,7 @@
         },
         "ctr1[2]": {
           "hide_name": 0,
-          "bits": [ 3516 ] ,
+          "bits": [ 5248 ] ,
           "attributes": {
             "ROUTING": "X1Y3/N1BEG1;X1Y3/LD_O.N1BEG1;1;X1Y2/N1END1;X1Y3/N1BEG1.N1END1;1;X1Y2/JW2BEG0;X1Y2/N1END1.JW2BEG0;1;X1Y2/JW2END0;X1Y2/JW2BEG0.JW2END0;1;X1Y2/W2BEG0;X1Y2/JW2END0.W2BEG0;1;X0Y2/W2MID0;X1Y2/W2BEG0.W2MID0;1;X0Y2/A_IN;X0Y2/W2MID0.A_IN;1;X1Y3/D_Q;;1;X1Y3/LD_O;X1Y3/D_Q/X1Y3/LD_O;1;X1Y3/JS2BEG2;X1Y3/LD_O.JS2BEG2;1;X1Y3/JS2END2;X1Y3/JS2BEG2.JS2END2;1;X1Y3/J_l_CD_BEG2;X1Y3/JS2END2.J_l_CD_BEG2;1;X1Y3/J_l_CD_END2;X1Y3/J_l_CD_BEG2.J_l_CD_END2;1;X1Y3/LD_I2;X1Y3/J_l_CD_END2.LD_I2;1;X1Y3/D_PERM_I2;X1Y3/LD_I2/X1Y3/D_PERM_I2;1",
             "src": "counter.v:21.15-21.19"
@@ -987,24 +987,24 @@
         },
         "clk1": {
           "hide_name": 0,
-          "bits": [ 3486 ] ,
+          "bits": [ 5218 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "counter.v:7.23-7.27"
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$13.CARRY[3]": {
+        "$auto$alumacc.cc:512:replace_alu$17.CARRY[3]": {
           "hide_name": 1,
-          "bits": [ 3513 ] ,
+          "bits": [ 5245 ] ,
           "attributes": {
             "ROUTING": "X1Y3/LD_Co;;1;X1Y3/LE_Ci;X1Y3/LD_Co.LE_Ci;1",
             "unused_bits": "8",
             "src": "counter.v:29.25-29.36|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:33.18-33.23"
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$13.Y[1]": {
+        "$auto$alumacc.cc:512:replace_alu$17.Y[1]": {
           "hide_name": 1,
-          "bits": [ 3511 ] ,
+          "bits": [ 5243 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "counter.v:29.25-29.36|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:22.25-22.26",
@@ -1013,7 +1013,7 @@
         },
         "ctr1[1]": {
           "hide_name": 0,
-          "bits": [ 3510 ] ,
+          "bits": [ 5242 ] ,
           "attributes": {
             "ROUTING": "X1Y3/N1BEG0;X1Y3/LC_O.N1BEG0;1;X1Y2/N1END0;X1Y3/N1BEG0.N1END0;1;X1Y2/JN2BEG7;X1Y2/N1END0.JN2BEG7;1;X1Y2/JN2END7;X1Y2/JN2BEG7.JN2END7;1;X1Y2/N2BEG7;X1Y2/JN2END7.N2BEG7;1;X1Y1/N2MID7;X1Y2/N2BEG7.N2MID7;1;X1Y1/J2MID_EFb_BEG0;X1Y1/N2MID7.J2MID_EFb_BEG0;1;X1Y1/J2MID_EFb_END0;X1Y1/J2MID_EFb_BEG0.J2MID_EFb_END0;1;X1Y1/W1BEG1;X1Y1/J2MID_EFb_END0.W1BEG1;1;X0Y1/W1END1;X1Y1/W1BEG1.W1END1;1;X0Y1/B_IN;X0Y1/W1END1.B_IN;1;X1Y3/C_Q;;1;X1Y3/LC_O;X1Y3/C_Q/X1Y3/LC_O;1;X1Y3/JS2BEG4;X1Y3/LC_O.JS2BEG4;1;X1Y3/JS2END4;X1Y3/JS2BEG4.JS2END4;1;X1Y3/J2MID_CDa_BEG2;X1Y3/JS2END4.J2MID_CDa_BEG2;1;X1Y3/J2MID_CDa_END2;X1Y3/J2MID_CDa_BEG2.J2MID_CDa_END2;1;X1Y3/LC_I2;X1Y3/J2MID_CDa_END2.LC_I2;1;X1Y3/C_PERM_I2;X1Y3/LC_I2/X1Y3/C_PERM_I2;1",
             "src": "counter.v:21.15-21.19"
@@ -1021,24 +1021,24 @@
         },
         "c[3]": {
           "hide_name": 0,
-          "bits": [ 3575 ] ,
+          "bits": [ 5307 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "counter.v:11.23-11.24"
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$13.CARRY[2]": {
+        "$auto$alumacc.cc:512:replace_alu$17.CARRY[2]": {
           "hide_name": 1,
-          "bits": [ 3507 ] ,
+          "bits": [ 5239 ] ,
           "attributes": {
             "ROUTING": "X1Y3/LC_Co;;1;X1Y3/LD_Ci;X1Y3/LC_Co.LD_Ci;1",
             "unused_bits": "8",
             "src": "counter.v:29.25-29.36|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:33.18-33.23"
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$13.Y[0]": {
+        "$auto$alumacc.cc:512:replace_alu$17.Y[0]": {
           "hide_name": 1,
-          "bits": [ 3505 ] ,
+          "bits": [ 5237 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "counter.v:29.25-29.36|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:22.25-22.26",
@@ -1047,22 +1047,22 @@
         },
         "ctr1[0]": {
           "hide_name": 0,
-          "bits": [ 3504 ] ,
+          "bits": [ 5236 ] ,
           "attributes": {
-            "ROUTING": "X1Y3/JN2BEG7;X1Y3/LB_O.JN2BEG7;1;X1Y3/JN2END7;X1Y3/JN2BEG7.JN2END7;1;X1Y3/N2BEG7;X1Y3/JN2END7.N2BEG7;1;X1Y2/N2MID7;X1Y3/N2BEG7.N2MID7;1;X1Y2/J2MID_EFb_BEG0;X1Y2/N2MID7.J2MID_EFb_BEG0;1;X1Y2/J2MID_EFb_END0;X1Y2/J2MID_EFb_BEG0.J2MID_EFb_END0;1;X1Y2/N1BEG1;X1Y2/J2MID_EFb_END0.N1BEG1;1;X1Y1/N1END1;X1Y2/N1BEG1.N1END1;1;X1Y1/JW2BEG0;X1Y1/N1END1.JW2BEG0;1;X1Y1/JW2END0;X1Y1/JW2BEG0.JW2END0;1;X1Y1/W2BEG0;X1Y1/JW2END0.W2BEG0;1;X0Y1/W2MID0;X1Y1/W2BEG0.W2MID0;1;X0Y1/A_IN;X0Y1/W2MID0.A_IN;1;X1Y3/B_Q;;1;X1Y3/LB_O;X1Y3/B_Q/X1Y3/LB_O;1;X1Y3/JS2BEG3;X1Y3/LB_O.JS2BEG3;1;X1Y3/JS2END3;X1Y3/JS2BEG3.JS2END3;1;X1Y3/J2MID_ABa_BEG2;X1Y3/JS2END3.J2MID_ABa_BEG2;1;X1Y3/J2MID_ABa_END2;X1Y3/J2MID_ABa_BEG2.J2MID_ABa_END2;1;X1Y3/LB_I2;X1Y3/J2MID_ABa_END2.LB_I2;1;X1Y3/B_PERM_I2;X1Y3/LB_I2/X1Y3/B_PERM_I2;1",
+            "ROUTING": "X1Y3/JS2BEG3;X1Y3/LB_O.JS2BEG3;1;X1Y3/JS2END3;X1Y3/JS2BEG3.JS2END3;1;X1Y3/J2MID_ABa_BEG2;X1Y3/JS2END3.J2MID_ABa_BEG2;1;X1Y3/J2MID_ABa_END2;X1Y3/J2MID_ABa_BEG2.J2MID_ABa_END2;1;X1Y3/LB_I2;X1Y3/J2MID_ABa_END2.LB_I2;1;X1Y3/B_PERM_I2;X1Y3/LB_I2/X1Y3/B_PERM_I2;1;X1Y2/N1BEG3;X1Y2/J2MID_ABb_END2.N1BEG3;1;X1Y1/N1END3;X1Y2/N1BEG3.N1END3;1;X1Y1/JW2BEG0;X1Y1/N1END3.JW2BEG0;1;X1Y1/JW2END0;X1Y1/JW2BEG0.JW2END0;1;X1Y1/W2BEG0;X1Y1/JW2END0.W2BEG0;1;X0Y1/W2MID0;X1Y1/W2BEG0.W2MID0;1;X0Y1/A_IN;X0Y1/W2MID0.A_IN;1;X1Y3/B_Q;;1;X1Y3/LB_O;X1Y3/B_Q/X1Y3/LB_O;1;X1Y3/N2BEG5;X1Y3/JN2END5.N2BEG5;1;X1Y2/N2MID5;X1Y3/N2BEG5.N2MID5;1;X1Y3/JN2END5;X1Y3/JN2BEG5.JN2END5;1;X1Y3/JN2BEG5;X1Y3/LB_O.JN2BEG5;1;X1Y2/J2MID_ABb_BEG2;X1Y2/N2MID5.J2MID_ABb_BEG2;1;X1Y2/J2MID_ABb_END2;X1Y2/J2MID_ABb_BEG2.J2MID_ABb_END2;1",
             "src": "counter.v:21.15-21.19"
           }
         },
         "$iopadmap$clk1": {
           "hide_name": 1,
-          "bits": [ 3595 ] ,
+          "bits": [ 5327 ] ,
           "attributes": {
-            "ROUTING": "X5Y6/A_OUT;;1;X5Y6/WW4BEG0;X5Y6/A_OUT.WW4BEG0;1;X4Y6/WW4END0;X5Y6/WW4BEG0.WW4END0;1;X4Y6/J_l_AB_BEG0;X4Y6/WW4END0.J_l_AB_BEG0;1;X4Y6/J_l_AB_END0;X4Y6/J_l_AB_BEG0.J_l_AB_END0;1;X4Y6/S1BEG3;X4Y6/J_l_AB_END0.S1BEG3;1;X4Y7/S1END3;X4Y6/S1BEG3.S1END3;1;X4Y7/W_GBUF_FEED_BEG2;X4Y7/S1END3.W_GBUF_FEED_BEG2;1;X3Y7/W_GBUF_FEED_END2;X4Y7/W_GBUF_FEED_BEG2.W_GBUF_FEED_END2;1;X3Y7/W_GBUF_FEED_BEG2;X3Y7/W_GBUF_FEED_END2.W_GBUF_FEED_BEG2;1;X2Y7/W_GBUF_FEED_END2;X3Y7/W_GBUF_FEED_BEG2.W_GBUF_FEED_END2;1;X2Y7/W_GBUF_FEED_BEG2;X2Y7/W_GBUF_FEED_END2.W_GBUF_FEED_BEG2;1;X1Y7/W_GBUF_FEED_END2;X2Y7/W_GBUF_FEED_BEG2.W_GBUF_FEED_END2;1;X1Y7/W_GBUF_FEED_BEG2;X1Y7/W_GBUF_FEED_END2.W_GBUF_FEED_BEG2;1;X0Y7/W_GBUF_FEED_END2;X1Y7/W_GBUF_FEED_BEG2.W_GBUF_FEED_END2;1;X0Y7/GBUF_D_IN;X0Y7/W_GBUF_FEED_END2.GBUF_D_IN;1"
+            "ROUTING": "X14Y12/A_OUT;;1;X14Y12/W1BEG1;X14Y12/A_OUT.W1BEG1;1;X13Y12/W1END1;X14Y12/W1BEG1.W1END1;1;X13Y12/WW4BEG3;X13Y12/W1END1.WW4BEG3;1;X12Y12/WW4END15;X13Y12/WW4BEG3.WW4END15;1;X12Y12/WW4BEG15;X12Y12/WW4END15.WW4BEG15;1;X11Y12/WW4END11;X12Y12/WW4BEG15.WW4END11;1;X11Y12/WW4BEG11;X11Y12/WW4END11.WW4BEG11;1;X10Y12/WW4END7;X11Y12/WW4BEG11.WW4END7;1;X10Y12/WW4BEG7;X10Y12/WW4END7.WW4BEG7;1;X9Y12/WW4END3;X10Y12/WW4BEG7.WW4END3;1;X9Y12/JE2BEG1;X9Y12/WW4END3.JE2BEG1;1;X9Y12/JE2END1;X9Y12/JE2BEG1.JE2END1;1;X9Y12/S1BEG2;X9Y12/JE2END1.S1BEG2;1;X9Y13/S1END2;X9Y12/S1BEG2.S1END2;1;X9Y13/W_GBUF_FEED_BEG1;X9Y13/S1END2.W_GBUF_FEED_BEG1;1;X8Y13/W_GBUF_FEED_END1;X9Y13/W_GBUF_FEED_BEG1.W_GBUF_FEED_END1;1;X8Y13/W_GBUF_FEED_BEG1;X8Y13/W_GBUF_FEED_END1.W_GBUF_FEED_BEG1;1;X7Y13/W_GBUF_FEED_END1;X8Y13/W_GBUF_FEED_BEG1.W_GBUF_FEED_END1;1;X7Y13/W_GBUF_FEED_BEG1;X7Y13/W_GBUF_FEED_END1.W_GBUF_FEED_BEG1;1;X6Y13/W_GBUF_FEED_END1;X7Y13/W_GBUF_FEED_BEG1.W_GBUF_FEED_END1;1;X6Y13/W_GBUF_FEED_BEG1;X6Y13/W_GBUF_FEED_END1.W_GBUF_FEED_BEG1;1;X5Y13/W_GBUF_FEED_END1;X6Y13/W_GBUF_FEED_BEG1.W_GBUF_FEED_END1;1;X5Y13/W_GBUF_FEED_BEG1;X5Y13/W_GBUF_FEED_END1.W_GBUF_FEED_BEG1;1;X4Y13/W_GBUF_FEED_END1;X5Y13/W_GBUF_FEED_BEG1.W_GBUF_FEED_END1;1;X4Y13/W_GBUF_FEED_BEG1;X4Y13/W_GBUF_FEED_END1.W_GBUF_FEED_BEG1;1;X3Y13/W_GBUF_FEED_END1;X4Y13/W_GBUF_FEED_BEG1.W_GBUF_FEED_END1;1;X3Y13/W_GBUF_FEED_BEG1;X3Y13/W_GBUF_FEED_END1.W_GBUF_FEED_BEG1;1;X2Y13/W_GBUF_FEED_END1;X3Y13/W_GBUF_FEED_BEG1.W_GBUF_FEED_END1;1;X2Y13/W_GBUF_FEED_BEG1;X2Y13/W_GBUF_FEED_END1.W_GBUF_FEED_BEG1;1;X1Y13/W_GBUF_FEED_END1;X2Y13/W_GBUF_FEED_BEG1.W_GBUF_FEED_END1;1;X1Y13/W_GBUF_FEED_BEG1;X1Y13/W_GBUF_FEED_END1.W_GBUF_FEED_BEG1;1;X0Y13/W_GBUF_FEED_END1;X1Y13/W_GBUF_FEED_BEG1.W_GBUF_FEED_END1;1;X0Y13/GBUF_A_IN;X0Y13/W_GBUF_FEED_END1.GBUF_A_IN;1"
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$13.CARRY[1]": {
+        "$auto$alumacc.cc:512:replace_alu$17.CARRY[1]": {
           "hide_name": 1,
-          "bits": [ 3501 ] ,
+          "bits": [ 5233 ] ,
           "attributes": {
             "ROUTING": "X1Y3/LB_Co;;1;X1Y3/LC_Ci;X1Y3/LB_Co.LC_Ci;1",
             "unused_bits": "8",
@@ -1071,7 +1071,7 @@
         },
         "c[2]": {
           "hide_name": 0,
-          "bits": [ 3571 ] ,
+          "bits": [ 5303 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "counter.v:11.23-11.24"
@@ -1079,15 +1079,15 @@
         },
         "rst": {
           "hide_name": 0,
-          "bits": [ 3488 ] ,
+          "bits": [ 5220 ] ,
           "attributes": {
             "ROUTING": " ",
             "src": "counter.v:8.23-8.26"
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$13.CARRY[0]": {
+        "$auto$alumacc.cc:512:replace_alu$17.CARRY[0]": {
           "hide_name": 1,
-          "bits": [ 3493 ] ,
+          "bits": [ 5225 ] ,
           "attributes": {
             "ROUTING": "X1Y3/LA_Co;;1;X1Y3/LB_Ci;X1Y3/LA_Co.LB_Ci;1",
             "unused_bits": "8",

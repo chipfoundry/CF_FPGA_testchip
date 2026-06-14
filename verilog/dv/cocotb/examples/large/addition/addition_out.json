@@ -43,26 +43,26 @@
       "ports": {
         "c": {
           "direction": "output",
-          "bits": [ 3575, 3579, 3583, 3587, 3591, 3595, 3601, 3607, 3613, 3619 ]
+          "bits": [ 5320, 5324, 5328, 5332, 5336, 5340, 5344, 5350 ]
         },
         "b": {
           "direction": "input",
-          "bits": [ 3555, 3559, 3563, 3567, 3571 ]
+          "bits": [ 5296, 5300, 5304, 5308, 5312, 5316 ]
         },
         "a": {
           "direction": "input",
-          "bits": [ 3534, 3539, 3543, 3547, 3551 ]
+          "bits": [ 5271, 5276, 5280, 5284, 5288, 5292 ]
         }
       },
       "cells": {
-        "$iopadmap$addition.c_3": {
+        "$iopadmap$addition.c_4": {
           "hide_name": 1,
           "type": "IOBUF",
           "parameters": {
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000110",
-            "NEXTPNR_BEL": "X5Y1/B",
+            "NEXTPNR_BEL": "X0Y9/A",
             "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:6.8-6.57",
             "module_not_derived": "00000000000000000000000000000001",
             "keep": "00000000000000000000000000000001"
@@ -73,12 +73,12 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3587 ],
-            "IN": [ 3518 ],
-            "EN": [ 3656 ]
+            "PAD": [ 5336 ],
+            "IN": [ 5255 ],
+            "EN": [ 5399 ]
           }
         },
-        "$iopadmap$addition.b_3": {
+        "$iopadmap$addition.b_2": {
           "hide_name": 1,
           "type": "IOBUF",
           "parameters": {
@@ -96,19 +96,19 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3567 ],
-            "OUT": [ 3517 ],
-            "EN": [ 3657 ]
+            "PAD": [ 5304 ],
+            "OUT": [ 5244 ],
+            "EN": [ 5400 ]
           }
         },
-        "$iopadmap$addition.c_5": {
+        "$iopadmap$addition.c_1": {
           "hide_name": 1,
           "type": "IOBUF",
           "parameters": {
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000110",
-            "NEXTPNR_BEL": "X5Y2/B",
+            "NEXTPNR_BEL": "X0Y7/B",
             "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:6.8-6.57",
             "module_not_derived": "00000000000000000000000000000001",
             "keep": "00000000000000000000000000000001"
@@ -119,12 +119,12 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3595 ],
-            "IN": [ 3530 ],
-            "EN": [ 3656 ]
+            "PAD": [ 5324 ],
+            "IN": [ 5240 ],
+            "EN": [ 5399 ]
           }
         },
-        "$iopadmap$addition.b_2": {
+        "$iopadmap$addition.b_1": {
           "hide_name": 1,
           "type": "IOBUF",
           "parameters": {
@@ -142,19 +142,19 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3563 ],
-            "OUT": [ 3512 ],
-            "EN": [ 3657 ]
+            "PAD": [ 5300 ],
+            "OUT": [ 5239 ],
+            "EN": [ 5400 ]
           }
         },
-        "$iopadmap$addition.c_2": {
+        "$iopadmap$addition.c_5": {
           "hide_name": 1,
           "type": "IOBUF",
           "parameters": {
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000110",
-            "NEXTPNR_BEL": "X5Y1/A",
+            "NEXTPNR_BEL": "X0Y9/B",
             "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:6.8-6.57",
             "module_not_derived": "00000000000000000000000000000001",
             "keep": "00000000000000000000000000000001"
@@ -165,12 +165,12 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3583 ],
-            "IN": [ 3513 ],
-            "EN": [ 3656 ]
+            "PAD": [ 5340 ],
+            "IN": [ 5260 ],
+            "EN": [ 5399 ]
           }
         },
-        "$iopadmap$addition.b_1": {
+        "$iopadmap$addition.b": {
           "hide_name": 1,
           "type": "IOBUF",
           "parameters": {
@@ -188,19 +188,19 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3559 ],
-            "OUT": [ 3507 ],
-            "EN": [ 3657 ]
+            "PAD": [ 5296 ],
+            "OUT": [ 5234 ],
+            "EN": [ 5400 ]
           }
         },
-        "$iopadmap$addition.c_6": {
+        "$iopadmap$addition.c": {
           "hide_name": 1,
           "type": "IOBUF",
           "parameters": {
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000110",
-            "NEXTPNR_BEL": "X5Y3/A",
+            "NEXTPNR_BEL": "X0Y7/A",
             "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:6.8-6.57",
             "module_not_derived": "00000000000000000000000000000001",
             "keep": "00000000000000000000000000000001"
@@ -211,12 +211,12 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3601 ],
-            "IN": [ 3657 ],
-            "EN": [ 3656 ]
+            "PAD": [ 5320 ],
+            "IN": [ 5235 ],
+            "EN": [ 5399 ]
           }
         },
-        "$iopadmap$addition.b": {
+        "$iopadmap$addition.a_5": {
           "hide_name": 1,
           "type": "IOBUF",
           "parameters": {
@@ -234,19 +234,19 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3555 ],
-            "OUT": [ 3502 ],
-            "EN": [ 3657 ]
+            "PAD": [ 5292 ],
+            "OUT": [ 5258 ],
+            "EN": [ 5400 ]
           }
         },
-        "$iopadmap$addition.c_1": {
+        "$iopadmap$addition.c_3": {
           "hide_name": 1,
           "type": "IOBUF",
           "parameters": {
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000110",
-            "NEXTPNR_BEL": "X0Y6/B",
+            "NEXTPNR_BEL": "X0Y8/B",
             "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:6.8-6.57",
             "module_not_derived": "00000000000000000000000000000001",
             "keep": "00000000000000000000000000000001"
@@ -257,9 +257,9 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3579 ],
-            "IN": [ 3508 ],
-            "EN": [ 3656 ]
+            "PAD": [ 5332 ],
+            "IN": [ 5250 ],
+            "EN": [ 5399 ]
           }
         },
         "$iopadmap$addition.a_4": {
@@ -280,32 +280,32 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3551 ],
-            "OUT": [ 3521 ],
-            "EN": [ 3657 ]
+            "PAD": [ 5288 ],
+            "OUT": [ 5253 ],
+            "EN": [ 5400 ]
           }
         },
-        "$iopadmap$addition.c_4": {
+        "$iopadmap$addition.b_5": {
           "hide_name": 1,
           "type": "IOBUF",
           "parameters": {
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000110",
-            "NEXTPNR_BEL": "X5Y2/A",
-            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:6.8-6.57",
+            "NEXTPNR_BEL": "X0Y6/B",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:2.8-2.59",
             "module_not_derived": "00000000000000000000000000000001",
             "keep": "00000000000000000000000000000001"
           },
           "port_directions": {
             "PAD": "inout",
-            "IN": "input",
+            "OUT": "output",
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3591 ],
-            "IN": [ 3523 ],
-            "EN": [ 3656 ]
+            "PAD": [ 5316 ],
+            "OUT": [ 5259 ],
+            "EN": [ 5400 ]
           }
         },
         "$iopadmap$addition.a_3": {
@@ -326,19 +326,19 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3547 ],
-            "OUT": [ 3516 ],
-            "EN": [ 3657 ]
+            "PAD": [ 5284 ],
+            "OUT": [ 5248 ],
+            "EN": [ 5400 ]
           }
         },
-        "$iopadmap$addition.c": {
+        "$iopadmap$addition.c_6": {
           "hide_name": 1,
           "type": "IOBUF",
           "parameters": {
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000110",
-            "NEXTPNR_BEL": "X0Y6/A",
+            "NEXTPNR_BEL": "X0Y10/A",
             "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:6.8-6.57",
             "module_not_derived": "00000000000000000000000000000001",
             "keep": "00000000000000000000000000000001"
@@ -349,9 +349,9 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3575 ],
-            "IN": [ 3503 ],
-            "EN": [ 3656 ]
+            "PAD": [ 5344 ],
+            "IN": [ 5267 ],
+            "EN": [ 5399 ]
           }
         },
         "$iopadmap$addition.a_2": {
@@ -372,25 +372,32 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3543 ],
-            "OUT": [ 3511 ],
-            "EN": [ 3657 ]
+            "PAD": [ 5280 ],
+            "OUT": [ 5243 ],
+            "EN": [ 5400 ]
           }
         },
-        "$PACKER_GND_DRV": {
+        "$iopadmap$addition.b_4": {
           "hide_name": 1,
-          "type": "_CONST0_DRV",
+          "type": "IOBUF",
           "parameters": {
           },
           "attributes": {
-            "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "X0Y0/_CONST0_DRV"
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X0Y6/A",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:2.8-2.59",
+            "module_not_derived": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
           },
           "port_directions": {
-            "O": "output"
+            "PAD": "inout",
+            "OUT": "output",
+            "EN": "input"
           },
           "connections": {
-            "O": [ 3657 ]
+            "PAD": [ 5312 ],
+            "OUT": [ 5254 ],
+            "EN": [ 5400 ]
           }
         },
         "$iopadmap$addition.a_1": {
@@ -411,25 +418,32 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3539 ],
-            "OUT": [ 3506 ],
-            "EN": [ 3657 ]
+            "PAD": [ 5276 ],
+            "OUT": [ 5238 ],
+            "EN": [ 5400 ]
           }
         },
-        "$PACKER_VCC_DRV": {
+        "$iopadmap$addition.c_2": {
           "hide_name": 1,
-          "type": "_CONST1_DRV",
+          "type": "IOBUF",
           "parameters": {
           },
           "attributes": {
-            "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "X0Y0/_CONST1_DRV"
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "X0Y8/A",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:6.8-6.57",
+            "module_not_derived": "00000000000000000000000000000001",
+            "keep": "00000000000000000000000000000001"
           },
           "port_directions": {
-            "O": "output"
+            "PAD": "inout",
+            "IN": "input",
+            "EN": "input"
           },
           "connections": {
-            "O": [ 3656 ]
+            "PAD": [ 5328 ],
+            "IN": [ 5245 ],
+            "EN": [ 5399 ]
           }
         },
         "$iopadmap$addition.a": {
@@ -450,250 +464,12 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3534 ],
-            "OUT": [ 3501 ],
-            "EN": [ 3657 ]
+            "PAD": [ 5271 ],
+            "OUT": [ 5233 ],
+            "EN": [ 5400 ]
           }
         },
-        "$iopadmap$addition.c_9": {
-          "hide_name": 1,
-          "type": "IOBUF",
-          "parameters": {
-          },
-          "attributes": {
-            "BEL_STRENGTH": "00000000000000000000000000000110",
-            "NEXTPNR_BEL": "X5Y4/B",
-            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:6.8-6.57",
-            "module_not_derived": "00000000000000000000000000000001",
-            "keep": "00000000000000000000000000000001"
-          },
-          "port_directions": {
-            "PAD": "inout",
-            "IN": "input",
-            "EN": "input"
-          },
-          "connections": {
-            "PAD": [ 3619 ],
-            "IN": [ 3657 ],
-            "EN": [ 3656 ]
-          }
-        },
-        "$iopadmap$addition.c_7": {
-          "hide_name": 1,
-          "type": "IOBUF",
-          "parameters": {
-          },
-          "attributes": {
-            "BEL_STRENGTH": "00000000000000000000000000000110",
-            "NEXTPNR_BEL": "X5Y3/B",
-            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:6.8-6.57",
-            "module_not_derived": "00000000000000000000000000000001",
-            "keep": "00000000000000000000000000000001"
-          },
-          "port_directions": {
-            "PAD": "inout",
-            "IN": "input",
-            "EN": "input"
-          },
-          "connections": {
-            "PAD": [ 3607 ],
-            "IN": [ 3657 ],
-            "EN": [ 3656 ]
-          }
-        },
-        "$auto$alumacc.cc:512:replace_alu$4.slice[5].lut_i": {
-          "hide_name": 1,
-          "type": "FABULOUS_LC",
-          "parameters": {
-            "INIT": "1001011010010110",
-            "I0MUX": "1"
-          },
-          "attributes": {
-            "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "X1Y3/G",
-            "src": "addition.v:18.16-18.21|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:51.4-56.3",
-            "module_not_derived": "00000000000000000000000000000001"
-          },
-          "port_directions": {
-            "I3": "input",
-            "I0": "input",
-            "O": "output",
-            "I2": "input",
-            "I1": "input",
-            "Co": "output",
-            "Ci": "input"
-          },
-          "connections": {
-            "I3": [  ],
-            "I0": [  ],
-            "O": [ 3530 ],
-            "I2": [ 3657 ],
-            "I1": [ 3657 ],
-            "Co": [ 3525 ],
-            "Ci": [ 3520 ]
-          }
-        },
-        "$auto$alumacc.cc:512:replace_alu$4.slice[4].lut_i": {
-          "hide_name": 1,
-          "type": "FABULOUS_LC",
-          "parameters": {
-            "INIT": "1001011010010110",
-            "I0MUX": "1"
-          },
-          "attributes": {
-            "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "X1Y3/F",
-            "src": "addition.v:18.16-18.21|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:51.4-56.3",
-            "module_not_derived": "00000000000000000000000000000001"
-          },
-          "port_directions": {
-            "I3": "input",
-            "I0": "input",
-            "O": "output",
-            "I2": "input",
-            "I1": "input",
-            "Co": "output",
-            "Ci": "input"
-          },
-          "connections": {
-            "I3": [  ],
-            "I0": [  ],
-            "O": [ 3523 ],
-            "I2": [ 3522 ],
-            "I1": [ 3521 ],
-            "Co": [ 3520 ],
-            "Ci": [ 3515 ]
-          }
-        },
-        "$auto$alumacc.cc:512:replace_alu$4.slice[3].lut_i": {
-          "hide_name": 1,
-          "type": "FABULOUS_LC",
-          "parameters": {
-            "INIT": "1001011010010110",
-            "I0MUX": "1"
-          },
-          "attributes": {
-            "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "X1Y3/E",
-            "src": "addition.v:18.16-18.21|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:51.4-56.3",
-            "module_not_derived": "00000000000000000000000000000001"
-          },
-          "port_directions": {
-            "I3": "input",
-            "I0": "input",
-            "O": "output",
-            "I2": "input",
-            "I1": "input",
-            "Co": "output",
-            "Ci": "input"
-          },
-          "connections": {
-            "I3": [  ],
-            "I0": [  ],
-            "O": [ 3518 ],
-            "I2": [ 3517 ],
-            "I1": [ 3516 ],
-            "Co": [ 3515 ],
-            "Ci": [ 3510 ]
-          }
-        },
-        "$auto$alumacc.cc:512:replace_alu$4.slice[2].lut_i": {
-          "hide_name": 1,
-          "type": "FABULOUS_LC",
-          "parameters": {
-            "INIT": "1001011010010110",
-            "I0MUX": "1"
-          },
-          "attributes": {
-            "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "X1Y3/D",
-            "src": "addition.v:18.16-18.21|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:51.4-56.3",
-            "module_not_derived": "00000000000000000000000000000001"
-          },
-          "port_directions": {
-            "I3": "input",
-            "I0": "input",
-            "O": "output",
-            "I2": "input",
-            "I1": "input",
-            "Co": "output",
-            "Ci": "input"
-          },
-          "connections": {
-            "I3": [  ],
-            "I0": [  ],
-            "O": [ 3513 ],
-            "I2": [ 3512 ],
-            "I1": [ 3511 ],
-            "Co": [ 3510 ],
-            "Ci": [ 3505 ]
-          }
-        },
-        "$auto$alumacc.cc:512:replace_alu$4.slice[1].lut_i": {
-          "hide_name": 1,
-          "type": "FABULOUS_LC",
-          "parameters": {
-            "INIT": "1001011010010110",
-            "I0MUX": "1"
-          },
-          "attributes": {
-            "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "X1Y3/C",
-            "src": "addition.v:18.16-18.21|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:51.4-56.3",
-            "module_not_derived": "00000000000000000000000000000001"
-          },
-          "port_directions": {
-            "I3": "input",
-            "I0": "input",
-            "O": "output",
-            "I2": "input",
-            "I1": "input",
-            "Co": "output",
-            "Ci": "input"
-          },
-          "connections": {
-            "I3": [  ],
-            "I0": [  ],
-            "O": [ 3508 ],
-            "I2": [ 3507 ],
-            "I1": [ 3506 ],
-            "Co": [ 3505 ],
-            "Ci": [ 3500 ]
-          }
-        },
-        "$auto$alumacc.cc:512:replace_alu$4.slice[0].lut_i": {
-          "hide_name": 1,
-          "type": "FABULOUS_LC",
-          "parameters": {
-            "INIT": "1001011010010110",
-            "I0MUX": "1"
-          },
-          "attributes": {
-            "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "X1Y3/B",
-            "src": "addition.v:18.16-18.21|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:51.4-56.3",
-            "module_not_derived": "00000000000000000000000000000001"
-          },
-          "port_directions": {
-            "I3": "input",
-            "I0": "input",
-            "O": "output",
-            "I2": "input",
-            "I1": "input",
-            "Co": "output",
-            "Ci": "input"
-          },
-          "connections": {
-            "I3": [  ],
-            "I0": [  ],
-            "O": [ 3503 ],
-            "I2": [ 3502 ],
-            "I1": [ 3501 ],
-            "Co": [ 3500 ],
-            "Ci": [ 3492 ]
-          }
-        },
-        "$iopadmap$addition.b_4": {
+        "$iopadmap$addition.b_3": {
           "hide_name": 1,
           "type": "IOBUF",
           "parameters": {
@@ -711,19 +487,275 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3571 ],
-            "OUT": [ 3522 ],
-            "EN": [ 3657 ]
+            "PAD": [ 5308 ],
+            "OUT": [ 5249 ],
+            "EN": [ 5400 ]
           }
         },
-        "$iopadmap$addition.c_8": {
+        "$PACKER_GND_DRV": {
+          "hide_name": 1,
+          "type": "_CONST0_DRV",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X0Y0/_CONST0_DRV"
+          },
+          "port_directions": {
+            "O": "output"
+          },
+          "connections": {
+            "O": [ 5400 ]
+          }
+        },
+        "$auto$alumacc.cc:512:replace_alu$8.slice[6].lut_i": {
+          "hide_name": 1,
+          "type": "FABULOUS_LC",
+          "parameters": {
+            "INIT": "1001011010010110",
+            "I0MUX": "1"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y4/H",
+            "src": "addition.v:18.16-18.21|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:51.4-56.3",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I0": "input",
+            "O": "output",
+            "I2": "input",
+            "I1": "input",
+            "Co": "output",
+            "Ci": "input"
+          },
+          "connections": {
+            "I3": [  ],
+            "I0": [  ],
+            "O": [ 5267 ],
+            "I2": [ 5400 ],
+            "I1": [ 5400 ],
+            "Co": [ 5262 ],
+            "Ci": [ 5257 ]
+          }
+        },
+        "$auto$alumacc.cc:512:replace_alu$8.slice[5].lut_i": {
+          "hide_name": 1,
+          "type": "FABULOUS_LC",
+          "parameters": {
+            "INIT": "1001011010010110",
+            "I0MUX": "1"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y4/G",
+            "src": "addition.v:18.16-18.21|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:51.4-56.3",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I0": "input",
+            "O": "output",
+            "I2": "input",
+            "I1": "input",
+            "Co": "output",
+            "Ci": "input"
+          },
+          "connections": {
+            "I3": [  ],
+            "I0": [  ],
+            "O": [ 5260 ],
+            "I2": [ 5259 ],
+            "I1": [ 5258 ],
+            "Co": [ 5257 ],
+            "Ci": [ 5252 ]
+          }
+        },
+        "$auto$alumacc.cc:512:replace_alu$8.slice[4].lut_i": {
+          "hide_name": 1,
+          "type": "FABULOUS_LC",
+          "parameters": {
+            "INIT": "1001011010010110",
+            "I0MUX": "1"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y4/F",
+            "src": "addition.v:18.16-18.21|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:51.4-56.3",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I0": "input",
+            "O": "output",
+            "I2": "input",
+            "I1": "input",
+            "Co": "output",
+            "Ci": "input"
+          },
+          "connections": {
+            "I3": [  ],
+            "I0": [  ],
+            "O": [ 5255 ],
+            "I2": [ 5254 ],
+            "I1": [ 5253 ],
+            "Co": [ 5252 ],
+            "Ci": [ 5247 ]
+          }
+        },
+        "$auto$alumacc.cc:512:replace_alu$8.slice[3].lut_i": {
+          "hide_name": 1,
+          "type": "FABULOUS_LC",
+          "parameters": {
+            "INIT": "1001011010010110",
+            "I0MUX": "1"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y4/E",
+            "src": "addition.v:18.16-18.21|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:51.4-56.3",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I0": "input",
+            "O": "output",
+            "I2": "input",
+            "I1": "input",
+            "Co": "output",
+            "Ci": "input"
+          },
+          "connections": {
+            "I3": [  ],
+            "I0": [  ],
+            "O": [ 5250 ],
+            "I2": [ 5249 ],
+            "I1": [ 5248 ],
+            "Co": [ 5247 ],
+            "Ci": [ 5242 ]
+          }
+        },
+        "$auto$alumacc.cc:512:replace_alu$8.slice[2].lut_i": {
+          "hide_name": 1,
+          "type": "FABULOUS_LC",
+          "parameters": {
+            "INIT": "1001011010010110",
+            "I0MUX": "1"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y4/D",
+            "src": "addition.v:18.16-18.21|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:51.4-56.3",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I0": "input",
+            "O": "output",
+            "I2": "input",
+            "I1": "input",
+            "Co": "output",
+            "Ci": "input"
+          },
+          "connections": {
+            "I3": [  ],
+            "I0": [  ],
+            "O": [ 5245 ],
+            "I2": [ 5244 ],
+            "I1": [ 5243 ],
+            "Co": [ 5242 ],
+            "Ci": [ 5237 ]
+          }
+        },
+        "$auto$alumacc.cc:512:replace_alu$8.slice[1].lut_i": {
+          "hide_name": 1,
+          "type": "FABULOUS_LC",
+          "parameters": {
+            "INIT": "1001011010010110",
+            "I0MUX": "1"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y4/C",
+            "src": "addition.v:18.16-18.21|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:51.4-56.3",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I0": "input",
+            "O": "output",
+            "I2": "input",
+            "I1": "input",
+            "Co": "output",
+            "Ci": "input"
+          },
+          "connections": {
+            "I3": [  ],
+            "I0": [  ],
+            "O": [ 5240 ],
+            "I2": [ 5239 ],
+            "I1": [ 5238 ],
+            "Co": [ 5237 ],
+            "Ci": [ 5232 ]
+          }
+        },
+        "$auto$alumacc.cc:512:replace_alu$8.slice[0].lut_i": {
+          "hide_name": 1,
+          "type": "FABULOUS_LC",
+          "parameters": {
+            "INIT": "1001011010010110",
+            "I0MUX": "1"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X1Y4/B",
+            "src": "addition.v:18.16-18.21|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:51.4-56.3",
+            "module_not_derived": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "I3": "input",
+            "I0": "input",
+            "O": "output",
+            "I2": "input",
+            "I1": "input",
+            "Co": "output",
+            "Ci": "input"
+          },
+          "connections": {
+            "I3": [  ],
+            "I0": [  ],
+            "O": [ 5235 ],
+            "I2": [ 5234 ],
+            "I1": [ 5233 ],
+            "Co": [ 5232 ],
+            "Ci": [ 5224 ]
+          }
+        },
+        "$PACKER_VCC_DRV": {
+          "hide_name": 1,
+          "type": "_CONST1_DRV",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "X0Y0/_CONST1_DRV"
+          },
+          "port_directions": {
+            "O": "output"
+          },
+          "connections": {
+            "O": [ 5399 ]
+          }
+        },
+        "$iopadmap$addition.c_7": {
           "hide_name": 1,
           "type": "IOBUF",
           "parameters": {
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000110",
-            "NEXTPNR_BEL": "X5Y4/A",
+            "NEXTPNR_BEL": "X0Y10/B",
             "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:6.8-6.57",
             "module_not_derived": "00000000000000000000000000000001",
             "keep": "00000000000000000000000000000001"
@@ -734,12 +766,12 @@
             "EN": "input"
           },
           "connections": {
-            "PAD": [ 3613 ],
-            "IN": [ 3657 ],
-            "EN": [ 3656 ]
+            "PAD": [ 5350 ],
+            "IN": [ 5400 ],
+            "EN": [ 5399 ]
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$4.carry_start": {
+        "$auto$alumacc.cc:512:replace_alu$8.carry_start": {
           "hide_name": 1,
           "type": "FABULOUS_LC",
           "parameters": {
@@ -748,7 +780,7 @@
           },
           "attributes": {
             "BEL_STRENGTH": "00000000000000000000000000000001",
-            "NEXTPNR_BEL": "X1Y3/A",
+            "NEXTPNR_BEL": "X1Y4/A",
             "src": "addition.v:18.16-18.21|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:39.3-43.2",
             "module_not_derived": "00000000000000000000000000000001"
           },
@@ -762,359 +794,389 @@
           "connections": {
             "I3": [  ],
             "I0": [  ],
-            "I2": [ 3657 ],
-            "I1": [ 3657 ],
-            "Co": [ 3492 ]
+            "I2": [ 5400 ],
+            "I1": [ 5400 ],
+            "Co": [ 5224 ]
           }
         }
       },
       "netnames": {
-        "b[3]": {
-          "hide_name": 0,
-          "bits": [ 3567 ] ,
-          "attributes": {
-            "ROUTING": " ",
-            "src": "addition.v:13.23-13.24"
-          }
-        },
-        "c[7]": {
-          "hide_name": 0,
-          "bits": [ 3607 ] ,
-          "attributes": {
-            "ROUTING": " ",
-            "src": "addition.v:14.23-14.24"
-          }
-        },
         "b[2]": {
           "hide_name": 0,
-          "bits": [ 3563 ] ,
+          "bits": [ 5304 ] ,
           "attributes": {
             "ROUTING": " ",
-            "src": "addition.v:13.23-13.24"
-          }
-        },
-        "c[4]": {
-          "hide_name": 0,
-          "bits": [ 3591 ] ,
-          "attributes": {
-            "ROUTING": " ",
-            "src": "addition.v:14.23-14.24"
-          }
-        },
-        "b[1]": {
-          "hide_name": 0,
-          "bits": [ 3559 ] ,
-          "attributes": {
-            "ROUTING": " ",
-            "src": "addition.v:13.23-13.24"
-          }
-        },
-        "$PACKER_VCC": {
-          "hide_name": 1,
-          "bits": [ 3656 ] ,
-          "attributes": {
-            "ROUTING": "X5Y3/B_EN;X5Y3/VCC0.B_EN;1;X5Y2/B_EN;X5Y2/VCC0.B_EN;1;X5Y2/$CONST1;X5Y0/$CONST1/X5Y2/$CONST1;1;X5Y2/VCC0;X5Y2/$CONST1/X5Y2/VCC0;1;X5Y2/A_EN;X5Y2/VCC0.A_EN;1;X5Y1/A_EN;X5Y1/VCC0.A_EN;1;X5Y4/A_EN;X5Y4/VCC0.A_EN;1;X0Y6/A_EN;X0Y6/VCC0.A_EN;1;X0Y6/$CONST1;X0Y0/$CONST1/X0Y6/$CONST1;1;X0Y6/VCC0;X0Y6/$CONST1/X0Y6/VCC0;1;X0Y6/B_EN;X0Y6/VCC0.B_EN;1;X5Y4/$CONST1;X5Y0/$CONST1/X5Y4/$CONST1;1;X5Y4/VCC0;X5Y4/$CONST1/X5Y4/VCC0;1;X5Y4/B_EN;X5Y4/VCC0.B_EN;1;X5Y1/$CONST1;X5Y0/$CONST1/X5Y1/$CONST1;1;X5Y1/VCC0;X5Y1/$CONST1/X5Y1/VCC0;1;X5Y1/B_EN;X5Y1/VCC0.B_EN;1;X0Y0/$CONST1;;1;X5Y0/$CONST1;X0Y0/$CONST1/X5Y0/$CONST1;1;X5Y3/$CONST1;X5Y0/$CONST1/X5Y3/$CONST1;1;X5Y3/VCC0;X5Y3/$CONST1/X5Y3/VCC0;1;X5Y3/A_EN;X5Y3/VCC0.A_EN;1"
-          }
-        },
-        "b[0]": {
-          "hide_name": 0,
-          "bits": [ 3555 ] ,
-          "attributes": {
-            "ROUTING": " ",
-            "src": "addition.v:13.23-13.24"
-          }
-        },
-        "c[3]": {
-          "hide_name": 0,
-          "bits": [ 3587 ] ,
-          "attributes": {
-            "ROUTING": " ",
-            "src": "addition.v:14.23-14.24"
-          }
-        },
-        "a[4]": {
-          "hide_name": 0,
-          "bits": [ 3551 ] ,
-          "attributes": {
-            "ROUTING": " ",
-            "src": "addition.v:12.23-12.24"
-          }
-        },
-        "c[8]": {
-          "hide_name": 0,
-          "bits": [ 3613 ] ,
-          "attributes": {
-            "ROUTING": " ",
-            "src": "addition.v:14.23-14.24"
-          }
-        },
-        "a[3]": {
-          "hide_name": 0,
-          "bits": [ 3547 ] ,
-          "attributes": {
-            "ROUTING": " ",
-            "src": "addition.v:12.23-12.24"
-          }
-        },
-        "c[2]": {
-          "hide_name": 0,
-          "bits": [ 3583 ] ,
-          "attributes": {
-            "ROUTING": " ",
-            "src": "addition.v:14.23-14.24"
-          }
-        },
-        "a[2]": {
-          "hide_name": 0,
-          "bits": [ 3543 ] ,
-          "attributes": {
-            "ROUTING": " ",
-            "src": "addition.v:12.23-12.24"
+            "src": "addition.v:9.23-9.24"
           }
         },
         "c[6]": {
           "hide_name": 0,
-          "bits": [ 3601 ] ,
+          "bits": [ 5344 ] ,
           "attributes": {
             "ROUTING": " ",
-            "src": "addition.v:14.23-14.24"
+            "src": "addition.v:10.23-10.24"
           }
         },
-        "a[1]": {
+        "b[1]": {
           "hide_name": 0,
-          "bits": [ 3539 ] ,
+          "bits": [ 5300 ] ,
           "attributes": {
             "ROUTING": " ",
-            "src": "addition.v:12.23-12.24"
+            "src": "addition.v:9.23-9.24"
+          }
+        },
+        "c[2]": {
+          "hide_name": 0,
+          "bits": [ 5328 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "addition.v:10.23-10.24"
+          }
+        },
+        "b[0]": {
+          "hide_name": 0,
+          "bits": [ 5296 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "addition.v:9.23-9.24"
+          }
+        },
+        "c[7]": {
+          "hide_name": 0,
+          "bits": [ 5350 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "addition.v:10.23-10.24"
+          }
+        },
+        "a[5]": {
+          "hide_name": 0,
+          "bits": [ 5292 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "addition.v:8.23-8.24"
           }
         },
         "c[1]": {
           "hide_name": 0,
-          "bits": [ 3579 ] ,
+          "bits": [ 5324 ] ,
           "attributes": {
             "ROUTING": " ",
-            "src": "addition.v:14.23-14.24"
+            "src": "addition.v:10.23-10.24"
           }
         },
-        "a[0]": {
+        "a[4]": {
           "hide_name": 0,
-          "bits": [ 3534 ] ,
+          "bits": [ 5288 ] ,
           "attributes": {
             "ROUTING": " ",
-            "src": "addition.v:12.23-12.24"
+            "src": "addition.v:8.23-8.24"
           }
         },
-        "c[9]": {
+        "c[5]": {
           "hide_name": 0,
-          "bits": [ 3619 ] ,
+          "bits": [ 5340 ] ,
           "attributes": {
             "ROUTING": " ",
-            "src": "addition.v:14.23-14.24"
+            "src": "addition.v:10.23-10.24"
           }
         },
-        "$iopadmap$c[5]": {
-          "hide_name": 1,
-          "bits": [ 3530 ] ,
+        "a[3]": {
+          "hide_name": 0,
+          "bits": [ 5284 ] ,
           "attributes": {
-            "ROUTING": "X1Y3/LG_O;;1;X1Y3/E6BEG0;X1Y3/LG_O.E6BEG0;1;X2Y3/E6END10;X1Y3/E6BEG0.E6END10;1;X2Y3/E6BEG10;X2Y3/E6END10.E6BEG10;1;X3Y3/E6END8;X2Y3/E6BEG10.E6END8;1;X3Y3/E6BEG8;X3Y3/E6END8.E6BEG8;1;X4Y3/E6END6;X3Y3/E6BEG8.E6END6;1;X4Y3/E6BEG6;X4Y3/E6END6.E6BEG6;1;X5Y3/E6END4;X4Y3/E6BEG6.E6END4;1;X5Y3/W2BEG3;X5Y3/E6END4.W2BEG3;1;X4Y3/W2MID3;X5Y3/W2BEG3.W2MID3;1;X4Y3/J2MID_GHb_BEG1;X4Y3/W2MID3.J2MID_GHb_BEG1;1;X4Y3/J2MID_GHb_END1;X4Y3/J2MID_GHb_BEG1.J2MID_GHb_END1;1;X4Y3/N1BEG2;X4Y3/J2MID_GHb_END1.N1BEG2;1;X4Y2/N1END2;X4Y3/N1BEG2.N1END2;1;X4Y2/JE2BEG1;X4Y2/N1END2.JE2BEG1;1;X4Y2/JE2END1;X4Y2/JE2BEG1.JE2END1;1;X4Y2/E2BEG1;X4Y2/JE2END1.E2BEG1;1;X5Y2/E2MID1;X4Y2/E2BEG1.E2MID1;1;X5Y2/B_IN;X5Y2/E2MID1.B_IN;1"
+            "ROUTING": " ",
+            "src": "addition.v:8.23-8.24"
           }
         },
         "c[0]": {
           "hide_name": 0,
-          "bits": [ 3575 ] ,
+          "bits": [ 5320 ] ,
           "attributes": {
             "ROUTING": " ",
-            "src": "addition.v:14.23-14.24"
+            "src": "addition.v:10.23-10.24"
+          }
+        },
+        "a[2]": {
+          "hide_name": 0,
+          "bits": [ 5280 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "addition.v:8.23-8.24"
           }
         },
         "$PACKER_GND": {
           "hide_name": 1,
-          "bits": [ 3657 ] ,
+          "bits": [ 5400 ] ,
           "attributes": {
-            "ROUTING": "X0Y3/A_EN;X0Y3/GND0.A_EN;1;X1Y3/JE2BEG1;X1Y3/LH_O.JE2BEG1;1;X1Y3/JE2END1;X1Y3/JE2BEG1.JE2END1;1;X1Y3/J_l_AB_BEG1;X1Y3/JE2END1.J_l_AB_BEG1;1;X1Y3/J_l_AB_END1;X1Y3/J_l_AB_BEG1.J_l_AB_END1;1;X1Y3/LA_I1;X1Y3/J_l_AB_END1.LA_I1;1;X1Y3/A_PERM_I1;X1Y3/LA_I1/X1Y3/A_PERM_I1;1;X1Y3/J2MID_GHa_END1;X1Y3/J2MID_GHa_BEG1.J2MID_GHa_END1;1;X1Y3/LG_I1;X1Y3/J2MID_GHa_END1.LG_I1;1;X1Y3/G_PERM_I1;X1Y3/LG_I1/X1Y3/G_PERM_I1;1;X0Y2/A_EN;X0Y2/GND0.A_EN;1;X0Y5/$CONST0;X0Y0/$CONST0/X0Y5/$CONST0;1;X0Y5/GND0;X0Y5/$CONST0/X0Y5/GND0;1;X0Y5/A_EN;X0Y5/GND0.A_EN;1;X0Y3/GND0;X0Y3/$CONST0/X0Y3/GND0;1;X0Y3/B_EN;X0Y3/GND0.B_EN;1;X0Y2/$CONST0;X0Y0/$CONST0/X0Y2/$CONST0;1;X0Y2/GND0;X0Y2/$CONST0/X0Y2/GND0;1;X0Y2/B_EN;X0Y2/GND0.B_EN;1;X1Y3/JS2BEG3;X1Y3/LH_O.JS2BEG3;1;X1Y3/JS2END3;X1Y3/JS2BEG3.JS2END3;1;X1Y3/J2MID_ABa_BEG2;X1Y3/JS2END3.J2MID_ABa_BEG2;1;X1Y3/J2MID_ABa_END2;X1Y3/J2MID_ABa_BEG2.J2MID_ABa_END2;1;X1Y3/LA_I2;X1Y3/J2MID_ABa_END2.LA_I2;1;X1Y3/A_PERM_I2;X1Y3/LA_I2/X1Y3/A_PERM_I2;1;X0Y5/B_EN;X0Y5/GND0.B_EN;1;X5Y4/A_IN;X5Y4/GND0.A_IN;1;X5Y3/A_IN;X5Y3/GND0.A_IN;1;X1Y3/JE2BEG6;X1Y3/LH_O.JE2BEG6;1;X1Y3/JE2END6;X1Y3/JE2BEG6.JE2END6;1;X1Y3/J2MID_GHa_BEG1;X1Y3/JE2END6.J2MID_GHa_BEG1;1;X5Y3/$CONST0;X5Y0/$CONST0/X5Y3/$CONST0;1;X5Y3/GND0;X5Y3/$CONST0/X5Y3/GND0;1;X5Y3/B_IN;X5Y3/GND0.B_IN;1;X0Y3/$CONST0;X0Y0/$CONST0/X0Y3/$CONST0;1;X1Y3/$CONST0;X0Y3/$CONST0/X1Y3/$CONST0;1;X1Y3/LH_O;X1Y3/$CONST0/X1Y3/LH_O;1;X1Y3/JS2BEG4;X1Y3/LH_O.JS2BEG4;1;X1Y3/JS2END4;X1Y3/JS2BEG4.JS2END4;1;X1Y3/J_l_GH_BEG2;X1Y3/JS2END4.J_l_GH_BEG2;1;X1Y3/J_l_GH_END2;X1Y3/J_l_GH_BEG2.J_l_GH_END2;1;X1Y3/LG_I2;X1Y3/J_l_GH_END2.LG_I2;1;X1Y3/G_PERM_I2;X1Y3/LG_I2/X1Y3/G_PERM_I2;1;X0Y1/B_EN;X0Y1/GND0.B_EN;1;X0Y4/B_EN;X0Y4/GND0.B_EN;1;X5Y0/$CONST0;X0Y0/$CONST0/X5Y0/$CONST0;1;X5Y4/$CONST0;X5Y0/$CONST0/X5Y4/$CONST0;1;X5Y4/GND0;X5Y4/$CONST0/X5Y4/GND0;1;X5Y4/B_IN;X5Y4/GND0.B_IN;1;X0Y4/$CONST0;X0Y0/$CONST0/X0Y4/$CONST0;1;X0Y4/GND0;X0Y4/$CONST0/X0Y4/GND0;1;X0Y4/A_EN;X0Y4/GND0.A_EN;1;X0Y0/$CONST0;;1;X0Y1/$CONST0;X0Y0/$CONST0/X0Y1/$CONST0;1;X0Y1/GND0;X0Y1/$CONST0/X0Y1/GND0;1;X0Y1/A_EN;X0Y1/GND0.A_EN;1"
+            "ROUTING": "X0Y2/B_EN;X0Y2/GND0.B_EN;1;X0Y4/B_EN;X0Y4/GND0.B_EN;1;X1Y4/J2MID_ABb_BEG1;X1Y4/W2MID3.J2MID_ABb_BEG1;1;X1Y4/J2MID_ABb_END1;X1Y4/J2MID_ABb_BEG1.J2MID_ABb_END1;1;X1Y4/LA_I1;X1Y4/J2MID_ABb_END1.LA_I1;1;X1Y4/A_PERM_I1;X1Y4/LA_I1/X1Y4/A_PERM_I1;1;X0Y10/$CONST0;X0Y0/$CONST0/X0Y10/$CONST0;1;X0Y10/GND0;X0Y10/$CONST0/X0Y10/GND0;1;X0Y10/B_IN;X0Y10/GND0.B_IN;1;X0Y1/B_EN;X0Y1/GND0.B_EN;1;X2Y4/JW2BEG5;X2Y4/LG_O.JW2BEG5;1;X2Y4/JW2END5;X2Y4/JW2BEG5.JW2END5;1;X2Y4/W2BEG5;X2Y4/JW2END5.W2BEG5;1;X1Y4/W2MID5;X2Y4/W2BEG5.W2MID5;1;X1Y4/J2MID_ABb_BEG2;X1Y4/W2MID5.J2MID_ABb_BEG2;1;X1Y4/J2MID_ABb_END2;X1Y4/J2MID_ABb_BEG2.J2MID_ABb_END2;1;X1Y4/LA_I2;X1Y4/J2MID_ABb_END2.LA_I2;1;X1Y4/A_PERM_I2;X1Y4/LA_I2/X1Y4/A_PERM_I2;1;X0Y6/A_EN;X0Y6/GND0.A_EN;1;X0Y4/GND0;X0Y4/$CONST0/X0Y4/GND0;1;X0Y4/A_EN;X0Y4/GND0.A_EN;1;X0Y3/B_EN;X0Y3/GND0.B_EN;1;X2Y4/JW2BEG3;X2Y4/LG_O.JW2BEG3;1;X2Y4/JW2END3;X2Y4/JW2BEG3.JW2END3;1;X2Y4/W2BEG3;X2Y4/JW2END3.W2BEG3;1;X1Y4/W2MID3;X2Y4/W2BEG3.W2MID3;1;X1Y4/J2MID_GHb_BEG1;X1Y4/W2MID3.J2MID_GHb_BEG1;1;X1Y4/J2MID_GHb_END1;X1Y4/J2MID_GHb_BEG1.J2MID_GHb_END1;1;X1Y4/LH_I1;X1Y4/J2MID_GHb_END1.LH_I1;1;X1Y4/H_PERM_I1;X1Y4/LH_I1/X1Y4/H_PERM_I1;1;X0Y3/$CONST0;X0Y0/$CONST0/X0Y3/$CONST0;1;X0Y5/B_EN;X0Y5/GND0.B_EN;1;X0Y3/A_EN;X0Y3/GND0.A_EN;1;X0Y3/GND0;X0Y3/$CONST0/X0Y3/GND0;1;X0Y6/$CONST0;X0Y0/$CONST0/X0Y6/$CONST0;1;X0Y6/GND0;X0Y6/$CONST0/X0Y6/GND0;1;X0Y6/B_EN;X0Y6/GND0.B_EN;1;X0Y2/$CONST0;X0Y0/$CONST0/X0Y2/$CONST0;1;X0Y2/GND0;X0Y2/$CONST0/X0Y2/GND0;1;X0Y2/A_EN;X0Y2/GND0.A_EN;1;X0Y5/$CONST0;X0Y0/$CONST0/X0Y5/$CONST0;1;X0Y5/GND0;X0Y5/$CONST0/X0Y5/GND0;1;X0Y5/A_EN;X0Y5/GND0.A_EN;1;X0Y4/$CONST0;X0Y0/$CONST0/X0Y4/$CONST0;1;X2Y4/$CONST0;X0Y4/$CONST0/X2Y4/$CONST0;1;X2Y4/LG_O;X2Y4/$CONST0/X2Y4/LG_O;1;X2Y4/W1BEG1;X2Y4/LG_O.W1BEG1;1;X1Y4/W1END1;X2Y4/W1BEG1.W1END1;1;X1Y4/JS2END4;X1Y4/JS2BEG4.JS2END4;1;X1Y4/JS2BEG4;X1Y4/W1END1.JS2BEG4;1;X1Y4/J_l_GH_BEG2;X1Y4/JS2END4.J_l_GH_BEG2;1;X1Y4/J_l_GH_END2;X1Y4/J_l_GH_BEG2.J_l_GH_END2;1;X1Y4/LH_I2;X1Y4/J_l_GH_END2.LH_I2;1;X1Y4/H_PERM_I2;X1Y4/LH_I2/X1Y4/H_PERM_I2;1;X0Y0/$CONST0;;1;X0Y1/$CONST0;X0Y0/$CONST0/X0Y1/$CONST0;1;X0Y1/GND0;X0Y1/$CONST0/X0Y1/GND0;1;X0Y1/A_EN;X0Y1/GND0.A_EN;1"
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$4.CARRY[6]": {
-          "hide_name": 1,
-          "bits": [ 3525 ] ,
+        "a[1]": {
+          "hide_name": 0,
+          "bits": [ 5276 ] ,
           "attributes": {
             "ROUTING": " ",
-            "unused_bits": "6",
+            "src": "addition.v:8.23-8.24"
+          }
+        },
+        "b[5]": {
+          "hide_name": 0,
+          "bits": [ 5316 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "addition.v:9.23-9.24"
+          }
+        },
+        "a[0]": {
+          "hide_name": 0,
+          "bits": [ 5271 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "addition.v:8.23-8.24"
+          }
+        },
+        "c[4]": {
+          "hide_name": 0,
+          "bits": [ 5336 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "addition.v:10.23-10.24"
+          }
+        },
+        "$iopadmap$c[6]": {
+          "hide_name": 1,
+          "bits": [ 5267 ] ,
+          "attributes": {
+            "ROUTING": "X1Y4/LH_O;;1;X1Y4/SS4BEG1;X1Y4/LH_O.SS4BEG1;1;X1Y5/SS4END13;X1Y4/SS4BEG1.SS4END13;1;X1Y5/SS4BEG13;X1Y5/SS4END13.SS4BEG13;1;X1Y6/SS4END9;X1Y5/SS4BEG13.SS4END9;1;X1Y6/SS4BEG9;X1Y6/SS4END9.SS4BEG9;1;X1Y7/SS4END5;X1Y6/SS4BEG9.SS4END5;1;X1Y7/SS4BEG5;X1Y7/SS4END5.SS4BEG5;1;X1Y8/SS4END1;X1Y7/SS4BEG5.SS4END1;1;X1Y8/J_l_EF_BEG2;X1Y8/SS4END1.J_l_EF_BEG2;1;X1Y8/J_l_EF_END2;X1Y8/J_l_EF_BEG2.J_l_EF_END2;1;X1Y8/S1BEG1;X1Y8/J_l_EF_END2.S1BEG1;1;X1Y9/S1END1;X1Y8/S1BEG1.S1END1;1;X1Y9/JS2BEG4;X1Y9/S1END1.JS2BEG4;1;X1Y9/JS2END4;X1Y9/JS2BEG4.JS2END4;1;X1Y9/S2BEG4;X1Y9/JS2END4.S2BEG4;1;X1Y10/S2MID4;X1Y9/S2BEG4.S2MID4;1;X1Y10/J2MID_CDa_BEG2;X1Y10/S2MID4.J2MID_CDa_BEG2;1;X1Y10/J2MID_CDa_END2;X1Y10/J2MID_CDa_BEG2.J2MID_CDa_END2;1;X1Y10/WW4BEG1;X1Y10/J2MID_CDa_END2.WW4BEG1;1;X0Y10/WW4END13;X1Y10/WW4BEG1.WW4END13;1;X0Y10/E2BEGb2;X0Y10/WW4END13.E2BEGb2;1;X1Y10/E2END2;X0Y10/E2BEGb2.E2END2;1;X1Y10/J_l_CD_BEG1;X1Y10/E2END2.J_l_CD_BEG1;1;X1Y10/J_l_CD_END1;X1Y10/J_l_CD_BEG1.J_l_CD_END1;1;X1Y10/W1BEG0;X1Y10/J_l_CD_END1.W1BEG0;1;X0Y10/W1END0;X1Y10/W1BEG0.W1END0;1;X0Y10/A_IN;X0Y10/W1END0.A_IN;1"
+          }
+        },
+        "b[4]": {
+          "hide_name": 0,
+          "bits": [ 5312 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "addition.v:9.23-9.24"
+          }
+        },
+        "$PACKER_VCC": {
+          "hide_name": 1,
+          "bits": [ 5399 ] ,
+          "attributes": {
+            "ROUTING": "X0Y10/A_EN;X0Y10/VCC0.A_EN;1;X0Y9/A_EN;X0Y9/VCC0.A_EN;1;X0Y7/A_EN;X0Y7/VCC0.A_EN;1;X0Y7/$CONST1;X0Y0/$CONST1/X0Y7/$CONST1;1;X0Y7/VCC0;X0Y7/$CONST1/X0Y7/VCC0;1;X0Y7/B_EN;X0Y7/VCC0.B_EN;1;X0Y9/$CONST1;X0Y0/$CONST1/X0Y9/$CONST1;1;X0Y9/VCC0;X0Y9/$CONST1/X0Y9/VCC0;1;X0Y9/B_EN;X0Y9/VCC0.B_EN;1;X0Y10/$CONST1;X0Y0/$CONST1/X0Y10/$CONST1;1;X0Y10/VCC0;X0Y10/$CONST1/X0Y10/VCC0;1;X0Y10/B_EN;X0Y10/VCC0.B_EN;1;X0Y8/A_EN;X0Y8/VCC0.A_EN;1;X0Y0/$CONST1;;1;X0Y8/$CONST1;X0Y0/$CONST1/X0Y8/$CONST1;1;X0Y8/VCC0;X0Y8/$CONST1/X0Y8/VCC0;1;X0Y8/B_EN;X0Y8/VCC0.B_EN;1"
+          }
+        },
+        "$auto$alumacc.cc:512:replace_alu$8.CARRY[7]": {
+          "hide_name": 1,
+          "bits": [ 5262 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "7",
+            "src": "addition.v:18.16-18.21|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:33.18-33.23"
+          }
+        },
+        "$iopadmap$c[5]": {
+          "hide_name": 1,
+          "bits": [ 5260 ] ,
+          "attributes": {
+            "ROUTING": "X1Y4/LG_O;;1;X1Y4/S1BEG2;X1Y4/LG_O.S1BEG2;1;X1Y5/S1END2;X1Y4/S1BEG2.S1END2;1;X1Y5/JS2BEG5;X1Y5/S1END2.JS2BEG5;1;X1Y5/JS2END5;X1Y5/JS2BEG5.JS2END5;1;X1Y5/S2BEG5;X1Y5/JS2END5.S2BEG5;1;X1Y6/S2MID5;X1Y5/S2BEG5.S2MID5;1;X1Y6/S2BEGb5;X1Y6/S2MID5.S2BEGb5;1;X1Y7/S2END5;X1Y6/S2BEGb5.S2END5;1;X1Y7/JS2BEG4;X1Y7/S2END5.JS2BEG4;1;X1Y7/JS2END4;X1Y7/JS2BEG4.JS2END4;1;X1Y7/S2BEG4;X1Y7/JS2END4.S2BEG4;1;X1Y8/S2MID4;X1Y7/S2BEG4.S2MID4;1;X1Y8/S2BEGb4;X1Y8/S2MID4.S2BEGb4;1;X1Y9/S2END4;X1Y8/S2BEGb4.S2END4;1;X1Y9/JS2BEG3;X1Y9/S2END4.JS2BEG3;1;X1Y9/JS2END3;X1Y9/JS2BEG3.JS2END3;1;X1Y9/J_l_EF_BEG2;X1Y9/JS2END3.J_l_EF_BEG2;1;X1Y9/J_l_EF_END2;X1Y9/J_l_EF_BEG2.J_l_EF_END2;1;X1Y9/W1BEG1;X1Y9/J_l_EF_END2.W1BEG1;1;X0Y9/W1END1;X1Y9/W1BEG1.W1END1;1;X0Y9/B_IN;X0Y9/W1END1.B_IN;1"
+          }
+        },
+        "$iopadmap$b[5]": {
+          "hide_name": 1,
+          "bits": [ 5259 ] ,
+          "attributes": {
+            "ROUTING": "X0Y6/B_OUT;;1;X0Y6/E1BEG3;X0Y6/B_OUT.E1BEG3;1;X1Y6/E1END3;X0Y6/E1BEG3.E1END3;1;X1Y6/JN2BEG6;X1Y6/E1END3.JN2BEG6;1;X1Y6/JN2END6;X1Y6/JN2BEG6.JN2END6;1;X1Y6/N2BEG6;X1Y6/JN2END6.N2BEG6;1;X1Y5/N2MID6;X1Y6/N2BEG6.N2MID6;1;X1Y5/N2BEGb6;X1Y5/N2MID6.N2BEGb6;1;X1Y4/N2END6;X1Y5/N2BEGb6.N2END6;1;X1Y4/JN2BEG5;X1Y4/N2END6.JN2BEG5;1;X1Y4/JN2END5;X1Y4/JN2BEG5.JN2END5;1;X1Y4/N2BEG5;X1Y4/JN2END5.N2BEG5;1;X1Y3/N2MID5;X1Y4/N2BEG5.N2MID5;1;X1Y3/J2MID_ABb_BEG2;X1Y3/N2MID5.J2MID_ABb_BEG2;1;X1Y3/J2MID_ABb_END2;X1Y3/J2MID_ABb_BEG2.J2MID_ABb_END2;1;X1Y3/S1BEG3;X1Y3/J2MID_ABb_END2.S1BEG3;1;X1Y4/S1END3;X1Y3/S1BEG3.S1END3;1;X1Y4/JS2BEG6;X1Y4/S1END3.JS2BEG6;1;X1Y4/JS2END6;X1Y4/JS2BEG6.JS2END6;1;X1Y4/J2MID_GHa_BEG2;X1Y4/JS2END6.J2MID_GHa_BEG2;1;X1Y4/J2MID_GHa_END2;X1Y4/J2MID_GHa_BEG2.J2MID_GHa_END2;1;X1Y4/LG_I2;X1Y4/J2MID_GHa_END2.LG_I2;1;X1Y4/G_PERM_I2;X1Y4/LG_I2/X1Y4/G_PERM_I2;1"
+          }
+        },
+        "$iopadmap$a[5]": {
+          "hide_name": 1,
+          "bits": [ 5258 ] ,
+          "attributes": {
+            "ROUTING": "X0Y3/B_OUT;;1;X0Y3/E6BEG1;X0Y3/B_OUT.E6BEG1;1;X1Y3/E6END1;X0Y3/E6BEG1.E6END1;1;X1Y3/JS2BEG2;X1Y3/E6END1.JS2BEG2;1;X1Y3/JS2END2;X1Y3/JS2BEG2.JS2END2;1;X1Y3/S2BEG2;X1Y3/JS2END2.S2BEG2;1;X1Y4/S2MID2;X1Y3/S2BEG2.S2MID2;1;X1Y4/J2MID_GHa_BEG1;X1Y4/S2MID2.J2MID_GHa_BEG1;1;X1Y4/J2MID_GHa_END1;X1Y4/J2MID_GHa_BEG1.J2MID_GHa_END1;1;X1Y4/LG_I1;X1Y4/J2MID_GHa_END1.LG_I1;1;X1Y4/G_PERM_I1;X1Y4/LG_I1/X1Y4/G_PERM_I1;1"
+          }
+        },
+        "$auto$alumacc.cc:512:replace_alu$8.CARRY[6]": {
+          "hide_name": 1,
+          "bits": [ 5257 ] ,
+          "attributes": {
+            "ROUTING": "X1Y4/LG_Co;;1;X1Y4/LH_Ci;X1Y4/LG_Co.LH_Ci;1",
+            "unused_bits": "7",
             "src": "addition.v:18.16-18.21|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:33.18-33.23"
           }
         },
         "$iopadmap$c[4]": {
           "hide_name": 1,
-          "bits": [ 3523 ] ,
+          "bits": [ 5255 ] ,
           "attributes": {
-            "ROUTING": "X1Y3/LF_O;;1;X1Y3/N1BEG3;X1Y3/LF_O.N1BEG3;1;X1Y2/N1END3;X1Y3/N1BEG3.N1END3;1;X1Y2/EE4BEG1;X1Y2/N1END3.EE4BEG1;1;X2Y2/EE4END13;X1Y2/EE4BEG1.EE4END13;1;X2Y2/EE4BEG13;X2Y2/EE4END13.EE4BEG13;1;X3Y2/EE4END9;X2Y2/EE4BEG13.EE4END9;1;X3Y2/EE4BEG9;X3Y2/EE4END9.EE4BEG9;1;X4Y2/EE4END5;X3Y2/EE4BEG9.EE4END5;1;X4Y2/EE4BEG5;X4Y2/EE4END5.EE4BEG5;1;X5Y2/EE4END1;X4Y2/EE4BEG5.EE4END1;1;X5Y2/W2BEGb6;X5Y2/EE4END1.W2BEGb6;1;X4Y2/W2END6;X5Y2/W2BEGb6.W2END6;1;X4Y2/J2END_CD_BEG0;X4Y2/W2END6.J2END_CD_BEG0;1;X4Y2/J2END_CD_END0;X4Y2/J2END_CD_BEG0.J2END_CD_END0;1;X4Y2/EE4BEG2;X4Y2/J2END_CD_END0.EE4BEG2;1;X5Y2/EE4END14;X4Y2/EE4BEG2.EE4END14;1;X5Y2/W2BEG1;X5Y2/EE4END14.W2BEG1;1;X4Y2/W2MID1;X5Y2/W2BEG1.W2MID1;1;X4Y2/J2MID_CDb_BEG3;X4Y2/W2MID1.J2MID_CDb_BEG3;1;X4Y2/J2MID_CDb_END3;X4Y2/J2MID_CDb_BEG3.J2MID_CDb_END3;1;X4Y2/E1BEG0;X4Y2/J2MID_CDb_END3.E1BEG0;1;X5Y2/E1END0;X4Y2/E1BEG0.E1END0;1;X5Y2/A_IN;X5Y2/E1END0.A_IN;1"
+            "ROUTING": "X1Y4/LF_O;;1;X1Y4/SS4BEG0;X1Y4/LF_O.SS4BEG0;1;X1Y5/SS4END12;X1Y4/SS4BEG0.SS4END12;1;X1Y5/SS4BEG12;X1Y5/SS4END12.SS4BEG12;1;X1Y6/SS4END8;X1Y5/SS4BEG12.SS4END8;1;X1Y6/SS4BEG8;X1Y6/SS4END8.SS4BEG8;1;X1Y7/SS4END4;X1Y6/SS4BEG8.SS4END4;1;X1Y7/SS4BEG4;X1Y7/SS4END4.SS4BEG4;1;X1Y8/SS4END0;X1Y7/SS4BEG4.SS4END0;1;X1Y8/JE2BEG7;X1Y8/SS4END0.JE2BEG7;1;X1Y8/JE2END7;X1Y8/JE2BEG7.JE2END7;1;X1Y8/E2BEG7;X1Y8/JE2END7.E2BEG7;1;X2Y8/E2MID7;X1Y8/E2BEG7.E2MID7;1;X2Y8/J2MID_EFb_BEG0;X2Y8/E2MID7.J2MID_EFb_BEG0;1;X2Y8/J2MID_EFb_END0;X2Y8/J2MID_EFb_BEG0.J2MID_EFb_END0;1;X2Y8/S1BEG1;X2Y8/J2MID_EFb_END0.S1BEG1;1;X2Y9/S1END1;X2Y8/S1BEG1.S1END1;1;X2Y9/JW2BEG4;X2Y9/S1END1.JW2BEG4;1;X2Y9/JW2END4;X2Y9/JW2BEG4.JW2END4;1;X2Y9/W2BEG4;X2Y9/JW2END4.W2BEG4;1;X1Y9/W2MID4;X2Y9/W2BEG4.W2MID4;1;X1Y9/W2BEGb4;X1Y9/W2MID4.W2BEGb4;1;X0Y9/W2END4;X1Y9/W2BEGb4.W2END4;1;X0Y9/A_IN;X0Y9/W2END4.A_IN;1"
           }
         },
         "$iopadmap$b[4]": {
           "hide_name": 1,
-          "bits": [ 3522 ] ,
+          "bits": [ 5254 ] ,
           "attributes": {
-            "ROUTING": "X0Y5/B_OUT;;1;X0Y5/E1BEG3;X0Y5/B_OUT.E1BEG3;1;X1Y5/E1END3;X0Y5/E1BEG3.E1END3;1;X1Y5/JN2BEG6;X1Y5/E1END3.JN2BEG6;1;X1Y5/JN2END6;X1Y5/JN2BEG6.JN2END6;1;X1Y5/N2BEG6;X1Y5/JN2END6.N2BEG6;1;X1Y4/N2MID6;X1Y5/N2BEG6.N2MID6;1;X1Y4/N2BEGb6;X1Y4/N2MID6.N2BEGb6;1;X1Y3/N2END6;X1Y4/N2BEGb6.N2END6;1;X1Y3/JS2BEG5;X1Y3/N2END6.JS2BEG5;1;X1Y3/JS2END5;X1Y3/JS2BEG5.JS2END5;1;X1Y3/J2MID_EFa_BEG2;X1Y3/JS2END5.J2MID_EFa_BEG2;1;X1Y3/J2MID_EFa_END2;X1Y3/J2MID_EFa_BEG2.J2MID_EFa_END2;1;X1Y3/LF_I2;X1Y3/J2MID_EFa_END2.LF_I2;1;X1Y3/F_PERM_I2;X1Y3/LF_I2/X1Y3/F_PERM_I2;1"
+            "ROUTING": "X0Y6/A_OUT;;1;X0Y6/E1BEG2;X0Y6/A_OUT.E1BEG2;1;X1Y6/E1END2;X0Y6/E1BEG2.E1END2;1;X1Y6/JN2BEG5;X1Y6/E1END2.JN2BEG5;1;X1Y6/JN2END5;X1Y6/JN2BEG5.JN2END5;1;X1Y6/N2BEG5;X1Y6/JN2END5.N2BEG5;1;X1Y5/N2MID5;X1Y6/N2BEG5.N2MID5;1;X1Y5/N2BEGb5;X1Y5/N2MID5.N2BEGb5;1;X1Y4/N2END5;X1Y5/N2BEGb5.N2END5;1;X1Y4/J2END_EF_BEG2;X1Y4/N2END5.J2END_EF_BEG2;1;X1Y4/J2END_EF_END2;X1Y4/J2END_EF_BEG2.J2END_EF_END2;1;X1Y4/LF_I2;X1Y4/J2END_EF_END2.LF_I2;1;X1Y4/F_PERM_I2;X1Y4/LF_I2/X1Y4/F_PERM_I2;1"
           }
         },
         "$iopadmap$a[4]": {
           "hide_name": 1,
-          "bits": [ 3521 ] ,
+          "bits": [ 5253 ] ,
           "attributes": {
-            "ROUTING": "X0Y3/A_OUT;;1;X0Y3/E6BEG0;X0Y3/A_OUT.E6BEG0;1;X1Y3/E6END0;X0Y3/E6BEG0.E6END0;1;X1Y3/JE2BEG3;X1Y3/E6END0.JE2BEG3;1;X1Y3/JE2END3;X1Y3/JE2BEG3.JE2END3;1;X1Y3/J_l_EF_BEG1;X1Y3/JE2END3.J_l_EF_BEG1;1;X1Y3/J_l_EF_END1;X1Y3/J_l_EF_BEG1.J_l_EF_END1;1;X1Y3/LF_I1;X1Y3/J_l_EF_END1.LF_I1;1;X1Y3/F_PERM_I1;X1Y3/LF_I1/X1Y3/F_PERM_I1;1"
+            "ROUTING": "X0Y3/A_OUT;;1;X0Y3/E6BEG0;X0Y3/A_OUT.E6BEG0;1;X1Y3/E6END0;X0Y3/E6BEG0.E6END0;1;X1Y3/JS2BEG3;X1Y3/E6END0.JS2BEG3;1;X1Y3/JS2END3;X1Y3/JS2BEG3.JS2END3;1;X1Y3/S2BEG3;X1Y3/JS2END3.S2BEG3;1;X1Y4/S2MID3;X1Y3/S2BEG3.S2MID3;1;X1Y4/J2MID_EFb_BEG1;X1Y4/S2MID3.J2MID_EFb_BEG1;1;X1Y4/J2MID_EFb_END1;X1Y4/J2MID_EFb_BEG1.J2MID_EFb_END1;1;X1Y4/LF_I1;X1Y4/J2MID_EFb_END1.LF_I1;1;X1Y4/F_PERM_I1;X1Y4/LF_I1/X1Y4/F_PERM_I1;1"
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$4.CARRY[5]": {
+        "$auto$alumacc.cc:512:replace_alu$8.CARRY[5]": {
           "hide_name": 1,
-          "bits": [ 3520 ] ,
+          "bits": [ 5252 ] ,
           "attributes": {
-            "ROUTING": "X1Y3/LF_Co;;1;X1Y3/LG_Ci;X1Y3/LF_Co.LG_Ci;1",
-            "unused_bits": "6",
+            "ROUTING": "X1Y4/LF_Co;;1;X1Y4/LG_Ci;X1Y4/LF_Co.LG_Ci;1",
+            "unused_bits": "7",
             "src": "addition.v:18.16-18.21|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:33.18-33.23"
           }
         },
         "$iopadmap$c[3]": {
           "hide_name": 1,
-          "bits": [ 3518 ] ,
+          "bits": [ 5250 ] ,
           "attributes": {
-            "ROUTING": "X1Y3/LE_O;;1;X1Y3/E1BEG1;X1Y3/LE_O.E1BEG1;1;X2Y3/E1END1;X1Y3/E1BEG1.E1END1;1;X2Y3/EE4BEG3;X2Y3/E1END1.EE4BEG3;1;X3Y3/EE4END15;X2Y3/EE4BEG3.EE4END15;1;X3Y3/EE4BEG15;X3Y3/EE4END15.EE4BEG15;1;X4Y3/EE4END11;X3Y3/EE4BEG15.EE4END11;1;X4Y3/EE4BEG11;X4Y3/EE4END11.EE4BEG11;1;X5Y3/EE4END7;X4Y3/EE4BEG11.EE4END7;1;X5Y3/W2BEGb0;X5Y3/EE4END7.W2BEGb0;1;X4Y3/W2END0;X5Y3/W2BEGb0.W2END0;1;X4Y3/JN2BEG7;X4Y3/W2END0.JN2BEG7;1;X4Y3/JN2END7;X4Y3/JN2BEG7.JN2END7;1;X4Y3/N2BEG7;X4Y3/JN2END7.N2BEG7;1;X4Y2/N2MID7;X4Y3/N2BEG7.N2MID7;1;X4Y2/J2MID_EFb_BEG0;X4Y2/N2MID7.J2MID_EFb_BEG0;1;X4Y2/J2MID_EFb_END0;X4Y2/J2MID_EFb_BEG0.J2MID_EFb_END0;1;X4Y2/N1BEG1;X4Y2/J2MID_EFb_END0.N1BEG1;1;X4Y1/N1END1;X4Y2/N1BEG1.N1END1;1;X4Y1/JN2BEG0;X4Y1/N1END1.JN2BEG0;1;X4Y1/JN2END0;X4Y1/JN2BEG0.JN2END0;1;X4Y1/E1BEG1;X4Y1/JN2END0.E1BEG1;1;X5Y1/E1END1;X4Y1/E1BEG1.E1END1;1;X5Y1/B_IN;X5Y1/E1END1.B_IN;1"
+            "ROUTING": "X1Y4/LE_O;;1;X1Y4/S1BEG0;X1Y4/LE_O.S1BEG0;1;X1Y5/S1END0;X1Y4/S1BEG0.S1END0;1;X1Y5/JS2BEG7;X1Y5/S1END0.JS2BEG7;1;X1Y5/JS2END7;X1Y5/JS2BEG7.JS2END7;1;X1Y5/S2BEG7;X1Y5/JS2END7.S2BEG7;1;X1Y6/S2MID7;X1Y5/S2BEG7.S2MID7;1;X1Y6/J2MID_EFb_BEG0;X1Y6/S2MID7.J2MID_EFb_BEG0;1;X1Y6/J2MID_EFb_END0;X1Y6/J2MID_EFb_BEG0.J2MID_EFb_END0;1;X1Y6/S1BEG1;X1Y6/J2MID_EFb_END0.S1BEG1;1;X1Y7/S1END1;X1Y6/S1BEG1.S1END1;1;X1Y7/WW4BEG3;X1Y7/S1END1.WW4BEG3;1;X0Y7/WW4END15;X1Y7/WW4BEG3.WW4END15;1;X0Y7/E2BEGb0;X0Y7/WW4END15.E2BEGb0;1;X1Y7/E2END0;X0Y7/E2BEGb0.E2END0;1;X1Y7/JS2BEG7;X1Y7/E2END0.JS2BEG7;1;X1Y7/JS2END7;X1Y7/JS2BEG7.JS2END7;1;X1Y7/S2BEG7;X1Y7/JS2END7.S2BEG7;1;X1Y8/S2MID7;X1Y7/S2BEG7.S2MID7;1;X1Y8/J2MID_EFb_BEG0;X1Y8/S2MID7.J2MID_EFb_BEG0;1;X1Y8/J2MID_EFb_END0;X1Y8/J2MID_EFb_BEG0.J2MID_EFb_END0;1;X1Y8/W1BEG1;X1Y8/J2MID_EFb_END0.W1BEG1;1;X0Y8/W1END1;X1Y8/W1BEG1.W1END1;1;X0Y8/B_IN;X0Y8/W1END1.B_IN;1"
           }
         },
         "$iopadmap$b[3]": {
           "hide_name": 1,
-          "bits": [ 3517 ] ,
+          "bits": [ 5249 ] ,
           "attributes": {
-            "ROUTING": "X0Y5/A_OUT;;1;X0Y5/E1BEG2;X0Y5/A_OUT.E1BEG2;1;X1Y5/E1END2;X0Y5/E1BEG2.E1END2;1;X1Y5/JN2BEG5;X1Y5/E1END2.JN2BEG5;1;X1Y5/JN2END5;X1Y5/JN2BEG5.JN2END5;1;X1Y5/N2BEG5;X1Y5/JN2END5.N2BEG5;1;X1Y4/N2MID5;X1Y5/N2BEG5.N2MID5;1;X1Y4/N2BEGb5;X1Y4/N2MID5.N2BEGb5;1;X1Y3/N2END5;X1Y4/N2BEGb5.N2END5;1;X1Y3/J2END_EF_BEG2;X1Y3/N2END5.J2END_EF_BEG2;1;X1Y3/J2END_EF_END2;X1Y3/J2END_EF_BEG2.J2END_EF_END2;1;X1Y3/LE_I2;X1Y3/J2END_EF_END2.LE_I2;1;X1Y3/E_PERM_I2;X1Y3/LE_I2/X1Y3/E_PERM_I2;1"
+            "ROUTING": "X0Y5/B_OUT;;1;X0Y5/E1BEG1;X0Y5/B_OUT.E1BEG1;1;X1Y5/E1END1;X0Y5/E1BEG1.E1END1;1;X1Y5/JN2BEG4;X1Y5/E1END1.JN2BEG4;1;X1Y5/JN2END4;X1Y5/JN2BEG4.JN2END4;1;X1Y5/N2BEG4;X1Y5/JN2END4.N2BEG4;1;X1Y4/N2MID4;X1Y5/N2BEG4.N2MID4;1;X1Y4/J2MID_EFa_BEG2;X1Y4/N2MID4.J2MID_EFa_BEG2;1;X1Y4/J2MID_EFa_END2;X1Y4/J2MID_EFa_BEG2.J2MID_EFa_END2;1;X1Y4/LE_I2;X1Y4/J2MID_EFa_END2.LE_I2;1;X1Y4/E_PERM_I2;X1Y4/LE_I2/X1Y4/E_PERM_I2;1"
           }
         },
         "$iopadmap$a[3]": {
           "hide_name": 1,
-          "bits": [ 3516 ] ,
+          "bits": [ 5248 ] ,
           "attributes": {
-            "ROUTING": "X0Y2/B_OUT;;1;X0Y2/E1BEG1;X0Y2/B_OUT.E1BEG1;1;X1Y2/E1END1;X0Y2/E1BEG1.E1END1;1;X1Y2/JS2BEG2;X1Y2/E1END1.JS2BEG2;1;X1Y2/JS2END2;X1Y2/JS2BEG2.JS2END2;1;X1Y2/S2BEG2;X1Y2/JS2END2.S2BEG2;1;X1Y3/S2MID2;X1Y2/S2BEG2.S2MID2;1;X1Y3/J2MID_EFa_BEG1;X1Y3/S2MID2.J2MID_EFa_BEG1;1;X1Y3/J2MID_EFa_END1;X1Y3/J2MID_EFa_BEG1.J2MID_EFa_END1;1;X1Y3/LE_I1;X1Y3/J2MID_EFa_END1.LE_I1;1;X1Y3/E_PERM_I1;X1Y3/LE_I1/X1Y3/E_PERM_I1;1"
+            "ROUTING": "X0Y2/B_OUT;;1;X0Y2/EE4BEG1;X0Y2/B_OUT.EE4BEG1;1;X1Y2/EE4END1;X0Y2/EE4BEG1.EE4END1;1;X1Y2/JE2BEG0;X1Y2/EE4END1.JE2BEG0;1;X1Y2/JE2END0;X1Y2/JE2BEG0.JE2END0;1;X1Y2/S1BEG1;X1Y2/JE2END0.S1BEG1;1;X1Y3/S1END1;X1Y2/S1BEG1.S1END1;1;X1Y3/JW2BEG4;X1Y3/S1END1.JW2BEG4;1;X1Y3/JW2END4;X1Y3/JW2BEG4.JW2END4;1;X1Y3/J_l_GH_BEG3;X1Y3/JW2END4.J_l_GH_BEG3;1;X1Y3/J_l_GH_END3;X1Y3/J_l_GH_BEG3.J_l_GH_END3;1;X1Y3/S1BEG2;X1Y3/J_l_GH_END3.S1BEG2;1;X1Y4/S1END2;X1Y3/S1BEG2.S1END2;1;X1Y4/JE2BEG5;X1Y4/S1END2.JE2BEG5;1;X1Y4/JE2END5;X1Y4/JE2BEG5.JE2END5;1;X1Y4/J2MID_EFa_BEG1;X1Y4/JE2END5.J2MID_EFa_BEG1;1;X1Y4/J2MID_EFa_END1;X1Y4/J2MID_EFa_BEG1.J2MID_EFa_END1;1;X1Y4/LE_I1;X1Y4/J2MID_EFa_END1.LE_I1;1;X1Y4/E_PERM_I1;X1Y4/LE_I1/X1Y4/E_PERM_I1;1"
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$4.CARRY[4]": {
+        "$auto$alumacc.cc:512:replace_alu$8.CARRY[4]": {
           "hide_name": 1,
-          "bits": [ 3515 ] ,
+          "bits": [ 5247 ] ,
           "attributes": {
-            "ROUTING": "X1Y3/LE_Co;;1;X1Y3/LF_Ci;X1Y3/LE_Co.LF_Ci;1",
-            "unused_bits": "6",
+            "ROUTING": "X1Y4/LE_Co;;1;X1Y4/LF_Ci;X1Y4/LE_Co.LF_Ci;1",
+            "unused_bits": "7",
             "src": "addition.v:18.16-18.21|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:33.18-33.23"
           }
         },
         "$iopadmap$c[2]": {
           "hide_name": 1,
-          "bits": [ 3513 ] ,
+          "bits": [ 5245 ] ,
           "attributes": {
-            "ROUTING": "X1Y3/LD_O;;1;X1Y3/EE4BEG3;X1Y3/LD_O.EE4BEG3;1;X2Y3/EE4END15;X1Y3/EE4BEG3.EE4END15;1;X2Y3/EE4BEG15;X2Y3/EE4END15.EE4BEG15;1;X3Y3/EE4END11;X2Y3/EE4BEG15.EE4END11;1;X3Y3/EE4BEG11;X3Y3/EE4END11.EE4BEG11;1;X4Y3/EE4END7;X3Y3/EE4BEG11.EE4END7;1;X4Y3/EE4BEG7;X4Y3/EE4END7.EE4BEG7;1;X5Y3/EE4END3;X4Y3/EE4BEG7.EE4END3;1;X5Y3/W2BEGb4;X5Y3/EE4END3.W2BEGb4;1;X4Y3/W2END4;X5Y3/W2BEGb4.W2END4;1;X4Y3/JW2BEG3;X4Y3/W2END4.JW2BEG3;1;X4Y3/JW2END3;X4Y3/JW2BEG3.JW2END3;1;X4Y3/N1BEG0;X4Y3/JW2END3.N1BEG0;1;X4Y2/N1END0;X4Y3/N1BEG0.N1END0;1;X4Y2/JW2BEG3;X4Y2/N1END0.JW2BEG3;1;X4Y2/JW2END3;X4Y2/JW2BEG3.JW2END3;1;X4Y2/N1BEG0;X4Y2/JW2END3.N1BEG0;1;X4Y1/N1END0;X4Y2/N1BEG0.N1END0;1;X4Y1/JN2BEG3;X4Y1/N1END0.JN2BEG3;1;X4Y1/JN2END3;X4Y1/JN2BEG3.JN2END3;1;X4Y1/E1BEG0;X4Y1/JN2END3.E1BEG0;1;X5Y1/E1END0;X4Y1/E1BEG0.E1END0;1;X5Y1/A_IN;X5Y1/E1END0.A_IN;1"
+            "ROUTING": "X1Y4/LD_O;;1;X1Y4/SS4BEG3;X1Y4/LD_O.SS4BEG3;1;X1Y5/SS4END15;X1Y4/SS4BEG3.SS4END15;1;X1Y5/SS4BEG15;X1Y5/SS4END15.SS4BEG15;1;X1Y6/SS4END11;X1Y5/SS4BEG15.SS4END11;1;X1Y6/SS4BEG11;X1Y6/SS4END11.SS4BEG11;1;X1Y7/SS4END7;X1Y6/SS4BEG11.SS4END7;1;X1Y7/SS4BEG7;X1Y7/SS4END7.SS4BEG7;1;X1Y8/SS4END3;X1Y7/SS4BEG7.SS4END3;1;X1Y8/JW2BEG2;X1Y8/SS4END3.JW2BEG2;1;X1Y8/JW2END2;X1Y8/JW2BEG2.JW2END2;1;X1Y8/W2BEG2;X1Y8/JW2END2.W2BEG2;1;X0Y8/W2MID2;X1Y8/W2BEG2.W2MID2;1;X0Y8/E2BEG5;X0Y8/W2MID2.E2BEG5;1;X1Y8/E2MID5;X0Y8/E2BEG5.E2MID5;1;X1Y8/E2BEGb5;X1Y8/E2MID5.E2BEGb5;1;X2Y8/E2END5;X1Y8/E2BEGb5.E2END5;1;X2Y8/JW2BEG4;X2Y8/E2END5.JW2BEG4;1;X2Y8/JW2END4;X2Y8/JW2BEG4.JW2END4;1;X2Y8/W2BEG4;X2Y8/JW2END4.W2BEG4;1;X1Y8/W2MID4;X2Y8/W2BEG4.W2MID4;1;X1Y8/W2BEGb4;X1Y8/W2MID4.W2BEGb4;1;X0Y8/W2END4;X1Y8/W2BEGb4.W2END4;1;X0Y8/A_IN;X0Y8/W2END4.A_IN;1"
           }
         },
         "$iopadmap$b[2]": {
           "hide_name": 1,
-          "bits": [ 3512 ] ,
+          "bits": [ 5244 ] ,
           "attributes": {
-            "ROUTING": "X0Y4/B_OUT;;1;X0Y4/E6BEG1;X0Y4/B_OUT.E6BEG1;1;X1Y4/E6END1;X0Y4/E6BEG1.E6END1;1;X1Y4/JW2BEG2;X1Y4/E6END1.JW2BEG2;1;X1Y4/JW2END2;X1Y4/JW2BEG2.JW2END2;1;X1Y4/N1BEG3;X1Y4/JW2END2.N1BEG3;1;X1Y3/N1END3;X1Y4/N1BEG3.N1END3;1;X1Y3/JS2BEG2;X1Y3/N1END3.JS2BEG2;1;X1Y3/JS2END2;X1Y3/JS2BEG2.JS2END2;1;X1Y3/J_l_CD_BEG2;X1Y3/JS2END2.J_l_CD_BEG2;1;X1Y3/J_l_CD_END2;X1Y3/J_l_CD_BEG2.J_l_CD_END2;1;X1Y3/LD_I2;X1Y3/J_l_CD_END2.LD_I2;1;X1Y3/D_PERM_I2;X1Y3/LD_I2/X1Y3/D_PERM_I2;1"
+            "ROUTING": "X0Y5/A_OUT;;1;X0Y5/E1BEG2;X0Y5/A_OUT.E1BEG2;1;X1Y5/E1END2;X0Y5/E1BEG2.E1END2;1;X1Y5/JN2BEG5;X1Y5/E1END2.JN2BEG5;1;X1Y5/JN2END5;X1Y5/JN2BEG5.JN2END5;1;X1Y5/N2BEG5;X1Y5/JN2END5.N2BEG5;1;X1Y4/N2MID5;X1Y5/N2BEG5.N2MID5;1;X1Y4/J2MID_CDb_BEG2;X1Y4/N2MID5.J2MID_CDb_BEG2;1;X1Y4/J2MID_CDb_END2;X1Y4/J2MID_CDb_BEG2.J2MID_CDb_END2;1;X1Y4/LD_I2;X1Y4/J2MID_CDb_END2.LD_I2;1;X1Y4/D_PERM_I2;X1Y4/LD_I2/X1Y4/D_PERM_I2;1"
           }
         },
         "$iopadmap$a[2]": {
           "hide_name": 1,
-          "bits": [ 3511 ] ,
+          "bits": [ 5243 ] ,
           "attributes": {
-            "ROUTING": "X0Y2/A_OUT;;1;X0Y2/E6BEG0;X0Y2/A_OUT.E6BEG0;1;X1Y2/E6END0;X0Y2/E6BEG0.E6END0;1;X1Y2/JS2BEG3;X1Y2/E6END0.JS2BEG3;1;X1Y2/JS2END3;X1Y2/JS2BEG3.JS2END3;1;X1Y2/S2BEG3;X1Y2/JS2END3.S2BEG3;1;X1Y3/S2MID3;X1Y2/S2BEG3.S2MID3;1;X1Y3/J2MID_CDb_BEG1;X1Y3/S2MID3.J2MID_CDb_BEG1;1;X1Y3/J2MID_CDb_END1;X1Y3/J2MID_CDb_BEG1.J2MID_CDb_END1;1;X1Y3/LD_I1;X1Y3/J2MID_CDb_END1.LD_I1;1;X1Y3/D_PERM_I1;X1Y3/LD_I1/X1Y3/D_PERM_I1;1"
+            "ROUTING": "X0Y2/A_OUT;;1;X0Y2/E6BEG0;X0Y2/A_OUT.E6BEG0;1;X1Y2/E6END0;X0Y2/E6BEG0.E6END0;1;X1Y2/JS2BEG3;X1Y2/E6END0.JS2BEG3;1;X1Y2/JS2END3;X1Y2/JS2BEG3.JS2END3;1;X1Y2/S2BEG3;X1Y2/JS2END3.S2BEG3;1;X1Y3/S2MID3;X1Y2/S2BEG3.S2MID3;1;X1Y3/S2BEGb3;X1Y3/S2MID3.S2BEGb3;1;X1Y4/S2END3;X1Y3/S2BEGb3.S2END3;1;X1Y4/JE2BEG2;X1Y4/S2END3.JE2BEG2;1;X1Y4/JE2END2;X1Y4/JE2BEG2.JE2END2;1;X1Y4/J_l_CD_BEG1;X1Y4/JE2END2.J_l_CD_BEG1;1;X1Y4/J_l_CD_END1;X1Y4/J_l_CD_BEG1.J_l_CD_END1;1;X1Y4/LD_I1;X1Y4/J_l_CD_END1.LD_I1;1;X1Y4/D_PERM_I1;X1Y4/LD_I1/X1Y4/D_PERM_I1;1"
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$4.CARRY[3]": {
+        "$auto$alumacc.cc:512:replace_alu$8.CARRY[3]": {
           "hide_name": 1,
-          "bits": [ 3510 ] ,
+          "bits": [ 5242 ] ,
           "attributes": {
-            "ROUTING": "X1Y3/LD_Co;;1;X1Y3/LE_Ci;X1Y3/LD_Co.LE_Ci;1",
-            "unused_bits": "6",
+            "ROUTING": "X1Y4/LD_Co;;1;X1Y4/LE_Ci;X1Y4/LD_Co.LE_Ci;1",
+            "unused_bits": "7",
             "src": "addition.v:18.16-18.21|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:33.18-33.23"
           }
         },
         "$iopadmap$c[1]": {
           "hide_name": 1,
-          "bits": [ 3508 ] ,
+          "bits": [ 5240 ] ,
           "attributes": {
-            "ROUTING": "X1Y3/LC_O;;1;X1Y3/JS2BEG0;X1Y3/LC_O.JS2BEG0;1;X1Y3/JS2END0;X1Y3/JS2BEG0.JS2END0;1;X1Y3/S2BEG0;X1Y3/JS2END0.S2BEG0;1;X1Y4/S2MID0;X1Y3/S2BEG0.S2MID0;1;X1Y4/S2BEGb0;X1Y4/S2MID0.S2BEGb0;1;X1Y5/S2END0;X1Y4/S2BEGb0.S2END0;1;X1Y5/JS2BEG7;X1Y5/S2END0.JS2BEG7;1;X1Y5/JS2END7;X1Y5/JS2BEG7.JS2END7;1;X1Y5/S2BEG7;X1Y5/JS2END7.S2BEG7;1;X1Y6/S2MID7;X1Y5/S2BEG7.S2MID7;1;X1Y6/J2MID_EFb_BEG0;X1Y6/S2MID7.J2MID_EFb_BEG0;1;X1Y6/J2MID_EFb_END0;X1Y6/J2MID_EFb_BEG0.J2MID_EFb_END0;1;X1Y6/W1BEG1;X1Y6/J2MID_EFb_END0.W1BEG1;1;X0Y6/W1END1;X1Y6/W1BEG1.W1END1;1;X0Y6/B_IN;X0Y6/W1END1.B_IN;1"
+            "ROUTING": "X1Y4/LC_O;;1;X1Y4/S4BEG2;X1Y4/LC_O.S4BEG2;1;X1Y5/S4END14;X1Y4/S4BEG2.S4END14;1;X1Y5/S4BEG14;X1Y5/S4END14.S4BEG14;1;X1Y6/S4END10;X1Y5/S4BEG14.S4END10;1;X1Y6/S4BEG10;X1Y6/S4END10.S4BEG10;1;X1Y7/S4END6;X1Y6/S4BEG10.S4END6;1;X1Y7/S4BEG6;X1Y7/S4END6.S4BEG6;1;X1Y8/S4END2;X1Y7/S4BEG6.S4END2;1;X1Y8/JW2BEG1;X1Y8/S4END2.JW2BEG1;1;X1Y8/JW2END1;X1Y8/JW2BEG1.JW2END1;1;X1Y8/N1BEG2;X1Y8/JW2END1.N1BEG2;1;X1Y7/N1END2;X1Y8/N1BEG2.N1END2;1;X1Y7/JW2BEG1;X1Y7/N1END2.JW2BEG1;1;X1Y7/JW2END1;X1Y7/JW2BEG1.JW2END1;1;X1Y7/W2BEG1;X1Y7/JW2END1.W2BEG1;1;X0Y7/W2MID1;X1Y7/W2BEG1.W2MID1;1;X0Y7/B_IN;X0Y7/W2MID1.B_IN;1"
           }
         },
         "$iopadmap$b[1]": {
           "hide_name": 1,
-          "bits": [ 3507 ] ,
+          "bits": [ 5239 ] ,
           "attributes": {
-            "ROUTING": "X0Y4/A_OUT;;1;X0Y4/E1BEG2;X0Y4/A_OUT.E1BEG2;1;X1Y4/E1END2;X0Y4/E1BEG2.E1END2;1;X1Y4/JN2BEG5;X1Y4/E1END2.JN2BEG5;1;X1Y4/JN2END5;X1Y4/JN2BEG5.JN2END5;1;X1Y4/N2BEG5;X1Y4/JN2END5.N2BEG5;1;X1Y3/N2MID5;X1Y4/N2BEG5.N2MID5;1;X1Y3/J2MID_CDb_BEG2;X1Y3/N2MID5.J2MID_CDb_BEG2;1;X1Y3/J2MID_CDb_END2;X1Y3/J2MID_CDb_BEG2.J2MID_CDb_END2;1;X1Y3/LC_I2;X1Y3/J2MID_CDb_END2.LC_I2;1;X1Y3/C_PERM_I2;X1Y3/LC_I2/X1Y3/C_PERM_I2;1"
+            "ROUTING": "X0Y4/B_OUT;;1;X0Y4/E6BEG1;X0Y4/B_OUT.E6BEG1;1;X1Y4/E6END1;X0Y4/E6BEG1.E6END1;1;X1Y4/JS2BEG2;X1Y4/E6END1.JS2BEG2;1;X1Y4/JS2END2;X1Y4/JS2BEG2.JS2END2;1;X1Y4/J_l_CD_BEG2;X1Y4/JS2END2.J_l_CD_BEG2;1;X1Y4/J_l_CD_END2;X1Y4/J_l_CD_BEG2.J_l_CD_END2;1;X1Y4/LC_I2;X1Y4/J_l_CD_END2.LC_I2;1;X1Y4/C_PERM_I2;X1Y4/LC_I2/X1Y4/C_PERM_I2;1"
           }
         },
         "$iopadmap$a[1]": {
           "hide_name": 1,
-          "bits": [ 3506 ] ,
+          "bits": [ 5238 ] ,
           "attributes": {
-            "ROUTING": "X0Y1/B_OUT;;1;X0Y1/E1BEG1;X0Y1/B_OUT.E1BEG1;1;X1Y1/E1END1;X0Y1/E1BEG1.E1END1;1;X1Y1/JS2BEG2;X1Y1/E1END1.JS2BEG2;1;X1Y1/JS2END2;X1Y1/JS2BEG2.JS2END2;1;X1Y1/S2BEG2;X1Y1/JS2END2.S2BEG2;1;X1Y2/S2MID2;X1Y1/S2BEG2.S2MID2;1;X1Y2/S2BEGb2;X1Y2/S2MID2.S2BEGb2;1;X1Y3/S2END2;X1Y2/S2BEGb2.S2END2;1;X1Y3/J2END_CD_BEG1;X1Y3/S2END2.J2END_CD_BEG1;1;X1Y3/J2END_CD_END1;X1Y3/J2END_CD_BEG1.J2END_CD_END1;1;X1Y3/LC_I1;X1Y3/J2END_CD_END1.LC_I1;1;X1Y3/C_PERM_I1;X1Y3/LC_I1/X1Y3/C_PERM_I1;1"
+            "ROUTING": "X0Y1/B_OUT;;1;X0Y1/E6BEG1;X0Y1/B_OUT.E6BEG1;1;X1Y1/E6END1;X0Y1/E6BEG1.E6END1;1;X1Y1/S4BEG0;X1Y1/E6END1.S4BEG0;1;X1Y2/S4END12;X1Y1/S4BEG0.S4END12;1;X1Y2/S4BEG12;X1Y2/S4END12.S4BEG12;1;X1Y3/S4END8;X1Y2/S4BEG12.S4END8;1;X1Y3/S4BEG8;X1Y3/S4END8.S4BEG8;1;X1Y4/S4END4;X1Y3/S4BEG8.S4END4;1;X1Y4/S4BEG4;X1Y4/S4END4.S4BEG4;1;X1Y5/S4END0;X1Y4/S4BEG4.S4END0;1;X1Y5/JS2BEG3;X1Y5/S4END0.JS2BEG3;1;X1Y5/JS2END3;X1Y5/JS2BEG3.JS2END3;1;X1Y5/J_l_EF_BEG2;X1Y5/JS2END3.J_l_EF_BEG2;1;X1Y5/J_l_EF_END2;X1Y5/J_l_EF_BEG2.J_l_EF_END2;1;X1Y5/N1BEG1;X1Y5/J_l_EF_END2.N1BEG1;1;X1Y4/N1END1;X1Y5/N1BEG1.N1END1;1;X1Y4/JE2BEG4;X1Y4/N1END1.JE2BEG4;1;X1Y4/JE2END4;X1Y4/JE2BEG4.JE2END4;1;X1Y4/J2MID_CDa_BEG1;X1Y4/JE2END4.J2MID_CDa_BEG1;1;X1Y4/J2MID_CDa_END1;X1Y4/J2MID_CDa_BEG1.J2MID_CDa_END1;1;X1Y4/LC_I1;X1Y4/J2MID_CDa_END1.LC_I1;1;X1Y4/C_PERM_I1;X1Y4/LC_I1/X1Y4/C_PERM_I1;1"
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$4.CARRY[2]": {
+        "$auto$alumacc.cc:512:replace_alu$8.CARRY[2]": {
           "hide_name": 1,
-          "bits": [ 3505 ] ,
+          "bits": [ 5237 ] ,
           "attributes": {
-            "ROUTING": "X1Y3/LC_Co;;1;X1Y3/LD_Ci;X1Y3/LC_Co.LD_Ci;1",
-            "unused_bits": "6",
+            "ROUTING": "X1Y4/LC_Co;;1;X1Y4/LD_Ci;X1Y4/LC_Co.LD_Ci;1",
+            "unused_bits": "7",
             "src": "addition.v:18.16-18.21|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:33.18-33.23"
           }
         },
         "$iopadmap$c[0]": {
           "hide_name": 1,
-          "bits": [ 3503 ] ,
+          "bits": [ 5235 ] ,
           "attributes": {
-            "ROUTING": "X1Y3/LB_O;;1;X1Y3/JS2BEG6;X1Y3/LB_O.JS2BEG6;1;X1Y3/JS2END6;X1Y3/JS2BEG6.JS2END6;1;X1Y3/S2BEG6;X1Y3/JS2END6.S2BEG6;1;X1Y4/S2MID6;X1Y3/S2BEG6.S2MID6;1;X1Y4/S2BEGb6;X1Y4/S2MID6.S2BEGb6;1;X1Y5/S2END6;X1Y4/S2BEGb6.S2END6;1;X1Y5/JS2BEG5;X1Y5/S2END6.JS2BEG5;1;X1Y5/JS2END5;X1Y5/JS2BEG5.JS2END5;1;X1Y5/S2BEG5;X1Y5/JS2END5.S2BEG5;1;X1Y6/S2MID5;X1Y5/S2BEG5.S2MID5;1;X1Y6/J2MID_ABb_BEG2;X1Y6/S2MID5.J2MID_ABb_BEG2;1;X1Y6/J2MID_ABb_END2;X1Y6/J2MID_ABb_BEG2.J2MID_ABb_END2;1;X1Y6/W1BEG3;X1Y6/J2MID_ABb_END2.W1BEG3;1;X0Y6/W1END3;X1Y6/W1BEG3.W1END3;1;X0Y6/E6BEG1;X0Y6/W1END3.E6BEG1;1;X1Y6/E6END1;X0Y6/E6BEG1.E6END1;1;X1Y6/JW2BEG0;X1Y6/E6END1.JW2BEG0;1;X1Y6/JW2END0;X1Y6/JW2BEG0.JW2END0;1;X1Y6/W2BEG0;X1Y6/JW2END0.W2BEG0;1;X0Y6/W2MID0;X1Y6/W2BEG0.W2MID0;1;X0Y6/A_IN;X0Y6/W2MID0.A_IN;1"
+            "ROUTING": "X1Y4/LB_O;;1;X1Y4/S4BEG1;X1Y4/LB_O.S4BEG1;1;X1Y5/S4END13;X1Y4/S4BEG1.S4END13;1;X1Y5/S4BEG13;X1Y5/S4END13.S4BEG13;1;X1Y6/S4END9;X1Y5/S4BEG13.S4END9;1;X1Y6/S4BEG9;X1Y6/S4END9.S4BEG9;1;X1Y7/S4END5;X1Y6/S4BEG9.S4END5;1;X1Y7/S4BEG5;X1Y7/S4END5.S4BEG5;1;X1Y8/S4END1;X1Y7/S4BEG5.S4END1;1;X1Y8/JW2BEG0;X1Y8/S4END1.JW2BEG0;1;X1Y8/JW2END0;X1Y8/JW2BEG0.JW2END0;1;X1Y8/N1BEG1;X1Y8/JW2END0.N1BEG1;1;X1Y7/N1END1;X1Y8/N1BEG1.N1END1;1;X1Y7/JW2BEG0;X1Y7/N1END1.JW2BEG0;1;X1Y7/JW2END0;X1Y7/JW2BEG0.JW2END0;1;X1Y7/W2BEG0;X1Y7/JW2END0.W2BEG0;1;X0Y7/W2MID0;X1Y7/W2BEG0.W2MID0;1;X0Y7/A_IN;X0Y7/W2MID0.A_IN;1"
           }
         },
         "$iopadmap$b[0]": {
           "hide_name": 1,
-          "bits": [ 3502 ] ,
+          "bits": [ 5234 ] ,
           "attributes": {
-            "ROUTING": "X0Y3/B_OUT;;1;X0Y3/E6BEG1;X0Y3/B_OUT.E6BEG1;1;X1Y3/E6END1;X0Y3/E6BEG1.E6END1;1;X1Y3/J_l_AB_BEG2;X1Y3/E6END1.J_l_AB_BEG2;1;X1Y3/J_l_AB_END2;X1Y3/J_l_AB_BEG2.J_l_AB_END2;1;X1Y3/LB_I2;X1Y3/J_l_AB_END2.LB_I2;1;X1Y3/B_PERM_I2;X1Y3/LB_I2/X1Y3/B_PERM_I2;1"
+            "ROUTING": "X0Y4/A_OUT;;1;X0Y4/E1BEG2;X0Y4/A_OUT.E1BEG2;1;X1Y4/E1END2;X0Y4/E1BEG2.E1END2;1;X1Y4/JS2BEG3;X1Y4/E1END2.JS2BEG3;1;X1Y4/JS2END3;X1Y4/JS2BEG3.JS2END3;1;X1Y4/J2MID_ABa_BEG2;X1Y4/JS2END3.J2MID_ABa_BEG2;1;X1Y4/J2MID_ABa_END2;X1Y4/J2MID_ABa_BEG2.J2MID_ABa_END2;1;X1Y4/LB_I2;X1Y4/J2MID_ABa_END2.LB_I2;1;X1Y4/B_PERM_I2;X1Y4/LB_I2/X1Y4/B_PERM_I2;1"
           }
         },
         "$iopadmap$a[0]": {
           "hide_name": 1,
-          "bits": [ 3501 ] ,
+          "bits": [ 5233 ] ,
           "attributes": {
-            "ROUTING": "X0Y1/A_OUT;;1;X0Y1/E1BEG0;X0Y1/A_OUT.E1BEG0;1;X1Y1/E1END0;X0Y1/E1BEG0.E1END0;1;X1Y1/JS2BEG7;X1Y1/E1END0.JS2BEG7;1;X1Y1/JS2END7;X1Y1/JS2BEG7.JS2END7;1;X1Y1/S2BEG7;X1Y1/JS2END7.S2BEG7;1;X1Y2/S2MID7;X1Y1/S2BEG7.S2MID7;1;X1Y2/J2MID_EFb_BEG0;X1Y2/S2MID7.J2MID_EFb_BEG0;1;X1Y2/J2MID_EFb_END0;X1Y2/J2MID_EFb_BEG0.J2MID_EFb_END0;1;X1Y2/S1BEG1;X1Y2/J2MID_EFb_END0.S1BEG1;1;X1Y3/S1END1;X1Y2/S1BEG1.S1END1;1;X1Y3/JW2BEG4;X1Y3/S1END1.JW2BEG4;1;X1Y3/JW2END4;X1Y3/JW2BEG4.JW2END4;1;X1Y3/W2BEG4;X1Y3/JW2END4.W2BEG4;1;X0Y3/W2MID4;X1Y3/W2BEG4.W2MID4;1;X0Y3/E2BEG3;X0Y3/W2MID4.E2BEG3;1;X1Y3/E2MID3;X0Y3/E2BEG3.E2MID3;1;X1Y3/J2MID_ABb_BEG1;X1Y3/E2MID3.J2MID_ABb_BEG1;1;X1Y3/J2MID_ABb_END1;X1Y3/J2MID_ABb_BEG1.J2MID_ABb_END1;1;X1Y3/LB_I1;X1Y3/J2MID_ABb_END1.LB_I1;1;X1Y3/B_PERM_I1;X1Y3/LB_I1/X1Y3/B_PERM_I1;1"
+            "ROUTING": "X0Y1/A_OUT;;1;X0Y1/E1BEG2;X0Y1/A_OUT.E1BEG2;1;X1Y1/E1END2;X0Y1/E1BEG2.E1END2;1;X1Y1/JS2BEG5;X1Y1/E1END2.JS2BEG5;1;X1Y1/JS2END5;X1Y1/JS2BEG5.JS2END5;1;X1Y1/S2BEG5;X1Y1/JS2END5.S2BEG5;1;X1Y2/S2MID5;X1Y1/S2BEG5.S2MID5;1;X1Y2/S2BEGb5;X1Y2/S2MID5.S2BEGb5;1;X1Y3/S2END5;X1Y2/S2BEGb5.S2END5;1;X1Y3/JS2BEG4;X1Y3/S2END5.JS2BEG4;1;X1Y3/JS2END4;X1Y3/JS2BEG4.JS2END4;1;X1Y3/S2BEG4;X1Y3/JS2END4.S2BEG4;1;X1Y4/S2MID4;X1Y3/S2BEG4.S2MID4;1;X1Y4/J2MID_CDa_BEG2;X1Y4/S2MID4.J2MID_CDa_BEG2;1;X1Y4/J2MID_CDa_END2;X1Y4/J2MID_CDa_BEG2.J2MID_CDa_END2;1;X1Y4/WW4BEG1;X1Y4/J2MID_CDa_END2.WW4BEG1;1;X0Y4/WW4END13;X1Y4/WW4BEG1.WW4END13;1;X0Y4/E2BEG2;X0Y4/WW4END13.E2BEG2;1;X1Y4/E2MID2;X0Y4/E2BEG2.E2MID2;1;X1Y4/J2MID_ABa_BEG1;X1Y4/E2MID2.J2MID_ABa_BEG1;1;X1Y4/J2MID_ABa_END1;X1Y4/J2MID_ABa_BEG1.J2MID_ABa_END1;1;X1Y4/LB_I1;X1Y4/J2MID_ABa_END1.LB_I1;1;X1Y4/B_PERM_I1;X1Y4/LB_I1/X1Y4/B_PERM_I1;1"
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$4.CARRY[1]": {
+        "$auto$alumacc.cc:512:replace_alu$8.CARRY[1]": {
           "hide_name": 1,
-          "bits": [ 3500 ] ,
+          "bits": [ 5232 ] ,
           "attributes": {
-            "ROUTING": "X1Y3/LB_Co;;1;X1Y3/LC_Ci;X1Y3/LB_Co.LC_Ci;1",
-            "unused_bits": "6",
+            "ROUTING": "X1Y4/LB_Co;;1;X1Y4/LC_Ci;X1Y4/LB_Co.LC_Ci;1",
+            "unused_bits": "7",
             "src": "addition.v:18.16-18.21|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:33.18-33.23"
           }
         },
-        "b[4]": {
+        "b[3]": {
           "hide_name": 0,
-          "bits": [ 3571 ] ,
+          "bits": [ 5308 ] ,
           "attributes": {
             "ROUTING": " ",
-            "src": "addition.v:13.23-13.24"
+            "src": "addition.v:9.23-9.24"
           }
         },
-        "c[5]": {
+        "c[3]": {
           "hide_name": 0,
-          "bits": [ 3595 ] ,
+          "bits": [ 5332 ] ,
           "attributes": {
             "ROUTING": " ",
-            "src": "addition.v:14.23-14.24"
+            "src": "addition.v:10.23-10.24"
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$4.CARRY[0]": {
+        "$auto$alumacc.cc:512:replace_alu$8.CARRY[0]": {
           "hide_name": 1,
-          "bits": [ 3492 ] ,
+          "bits": [ 5224 ] ,
           "attributes": {
-            "ROUTING": "X1Y3/LA_Co;;1;X1Y3/LB_Ci;X1Y3/LA_Co.LB_Ci;1",
-            "unused_bits": "6",
+            "ROUTING": "X1Y4/LA_Co;;1;X1Y4/LB_Ci;X1Y4/LA_Co.LB_Ci;1",
+            "unused_bits": "7",
             "src": "addition.v:18.16-18.21|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:33.18-33.23"
           }
         }

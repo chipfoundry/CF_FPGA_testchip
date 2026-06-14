@@ -1,0 +1,49 @@
+# Auto-generated PCF for classic_fabric_chipfoundry_medium
+# Total available I/O pins: 24
+
+set_io a[0] X0Y1/A
+set_io a[1] X0Y1/B
+set_io a[2] X0Y2/A
+set_io a[3] X0Y2/B
+set_io a[4] X0Y3/A
+set_io b[0] X0Y3/B
+set_io b[1] X0Y4/A
+set_io b[2] X0Y4/B
+set_io b[3] X0Y5/A
+set_io b[4] X0Y5/B
+set_io product[0] X0Y6/A
+set_io product[1] X0Y6/B
+set_io product[2] X9Y1/A
+set_io product[3] X9Y1/B
+set_io product[4] X9Y2/A
+set_io product[5] X9Y2/B
+set_io product[6] X9Y3/A
+set_io product[7] X9Y3/B
+set_io product[8] X9Y4/A
+set_io product[9] X9Y4/B
+
+# Indexed I/O assignments (fallback/generic)
+set_io io[0] X0Y1/A
+set_io io[1] X0Y1/B
+set_io io[2] X0Y2/A
+set_io io[3] X0Y2/B
+set_io io[4] X0Y3/A
+set_io io[5] X0Y3/B
+set_io io[6] X0Y4/A
+set_io io[7] X0Y4/B
+set_io io[8] X0Y5/A
+set_io io[9] X0Y5/B
+set_io io[10] X0Y6/A
+set_io io[11] X0Y6/B
+set_io io[12] X9Y1/A
+set_io io[13] X9Y1/B
+set_io io[14] X9Y2/A
+set_io io[15] X9Y2/B
+set_io io[16] X9Y3/A
+set_io io[17] X9Y3/B
+set_io io[18] X9Y4/A
+set_io io[19] X9Y4/B
+set_io io[20] X9Y5/A
+set_io io[21] X9Y5/B
+set_io io[22] X9Y6/A
+set_io io[23] X9Y6/B

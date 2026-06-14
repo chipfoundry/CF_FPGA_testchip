@@ -786,9 +786,9 @@ Dumping module sys_reset to page 1.
 4. Executing JSON backend.
 
 Warnings: 2 unique messages, 16 total
-End of script. Logfile hash: 519ba6fb48, CPU: user 0.15s system 0.02s, MEM: 30.83 MB peak
+End of script. Logfile hash: 519ba6fb48, CPU: user 0.06s system 0.01s, MEM: 32.00 MB peak
 Yosys 0.62 (git sha1 2231c860ec7afd8eef9ba97231c3a10950469e95, clang++ 21.1.2 -fPIC -O3)
-Time spent: 48% 38x read_verilog (0 sec), 14% 18x opt_expr (0 sec), ...
+Time spent: 50% 38x read_verilog (0 sec), 15% 18x opt_expr (0 sec), ...
 Found 36 available I/O pins
 Discovered ports for module: sys_reset
 ✓ Generated PCF: /home/ank/Desktop/WORK/T_4/sky130-fabulous-testchip/user_designs/designs/classic/sys_reset/generated_constraints.pcf
@@ -880,8 +880,8 @@ Info:     at iteration #7, type _CONST1_DRV: wirelen solved = 71, spread = 71, l
 Info:     at iteration #7, type GBUF: wirelen solved = 67, spread = 67, legal = 71; time = 0.00s
 Info:     at iteration #7, type FABULOUS_LC: wirelen solved = 55, spread = 57, legal = 71; time = 0.00s
 Info:     at iteration #7, type ALL: wirelen solved = 50, spread = 52, legal = 71; time = 0.00s
-Info: HeAP Placer Time: 0.01s
-Info:   of which solving equations: 0.01s
+Info: HeAP Placer Time: 0.00s
+Info:   of which solving equations: 0.00s
 Info:   of which spreading cells: 0.00s
 Info:   of which strict legalisation: 0.00s
 Info:      FABULOUS_LC 0.000s
@@ -905,9 +905,9 @@ Info: Setting up routing queue.
 Info: Routing 39 arcs.
 Info:            |   (re-)routed arcs  |   delta    | remaining|       time spent     |
 Info:    IterCnt |  w/ripup   wo/ripup |  w/r  wo/r |      arcs| batch(sec) total(sec)|
-Info:         40 |        1         39 |    1    39 |         0|       0.01       0.01|
+Info:         40 |        1         39 |    1    39 |         0|       0.00       0.00|
 Info: Routing complete.
-Info: Router1 time 0.01s
+Info: Router1 time 0.00s
 Info: Checksum: 0x5f008d36
 
 Info: No Fmax available; no interior timing paths found in design.

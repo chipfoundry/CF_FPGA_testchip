@@ -4,14 +4,14 @@ import cocotb
 from cocotb.triggers import ClockCycles
 from pathlib import Path
 import random
-from common.common import get_fabric_handle, parse_pcf, bitbang_clear_bitstream, bitbang_upload_bitstream, set_signal, get_signal, release_signal, select_fabric, get_pcf_path, get_bitstream_path, GPIO_CFG_DONE, initialize_pads, force_power_signals
+from common.common import get_fabric_handle, parse_pcf, bitbang_clear_bitstream, bitbang_upload_bitstream, set_signal, get_signal, release_signal, select_fabric, get_pcf_path, get_bitstream_path, GPIO_CFG_DONE, initialize_pads, force_power_signals, log_all_tiles
 
 @cocotb.test()
 @report_test
 async def addition(dut):
     caravelEnv = await test_configure(dut, timeout_cycles=5000000)
     cocotb.log.info("=" * 62)
-    cocotb.log.info("OPENFRAME TESTCASE: addition (Small Fabric)")
+    cocotb.log.info("OPENFRAME TESTCASE: addition (Small & Large Fabric)")
     cocotb.log.info("=" * 62)
 
     proj_root = Path(__file__).resolve().parent.parent.parent.parent.parent
@@ -23,7 +23,7 @@ async def addition(dut):
         cocotb.log.info(f"--- Testing {testname} on {fabric_type} fabric ---")
         
         fabric_handle = get_fabric_handle(caravelEnv, fabric_type)
-        if fabric_handle:
+        if fabric_handle is not None:
             force_power_signals(fabric_handle)
     
         cocotb.log.info("[STEP 1] Fabric Selection")
@@ -68,10 +68,28 @@ async def addition(dut):
             cocotb.log.info("[STEP 6] Wait for Combinatorial Settling")
             await ClockCycles(caravelEnv.clk, 100)
         
-        
+            log_all_tiles(caravelEnv, fabric_handle, fabric_type)
 
             result = get_signal(caravelEnv, "c", pcf, fabric_type)
+            
+            # Print detailed debug info for bits
+            bin_a = bin(va)[2:].zfill(na)
+            bin_b = bin(vb)[2:].zfill(nb)
+            bin_res = bin(result)[2:].zfill(len(bin(expected)[2:]))
+            bin_exp = bin(expected)[2:].zfill(len(bin(expected)[2:]))
+            
             cocotb.log.info(f"  addition[{i}]: {va} + {vb} = {result} (expected {expected})")
+            cocotb.log.info(f"    Binary inputs: a = {bin_a}, b = {bin_b}")
+            cocotb.log.info(f"    Binary result: expected = {bin_exp}, actual = {bin_res}")
+            
+            if result != expected:
+                cocotb.log.error("    MISMATCH DETECTED!")
+                for bit_idx in range(len(bin_exp)):
+                    actual_bit = bin_res[len(bin_res) - 1 - bit_idx] if bit_idx < len(bin_res) else '0'
+                    exp_bit = bin_exp[len(bin_exp) - 1 - bit_idx]
+                    if actual_bit != exp_bit:
+                        cocotb.log.error(f"      -> Bit {bit_idx} mismatch! Expected {exp_bit}, got {actual_bit}")
+            
             assert result == expected, f"addition FAIL at step {i}"
         
         release_signal(caravelEnv, "a", pcf, fabric_type)

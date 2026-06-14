@@ -4985,15 +4985,15 @@
         },
         "a": {
           "direction": "input",
-          "bits": [ 5, 6, 7, 8, 9 ]
+          "bits": [ 5, 6, 7, 8, 9, 10 ]
         },
         "b": {
           "direction": "input",
-          "bits": [ 10, 11, 12, 13, 14 ]
+          "bits": [ 11, 12, 13, 14, 15, 16 ]
         },
         "product": {
           "direction": "output",
-          "bits": [ 15, 16, 17, 18, 19, 20, 21, 22, 23, 24 ]
+          "bits": [ 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28 ]
         }
       },
       "cells": {
@@ -5014,7 +5014,7 @@
           },
           "connections": {
             "EN": [ "0" ],
-            "OUT": [ 25 ],
+            "OUT": [ 29 ],
             "PAD": [ 5 ]
           }
         },
@@ -5035,7 +5035,7 @@
           },
           "connections": {
             "EN": [ "0" ],
-            "OUT": [ 26 ],
+            "OUT": [ 30 ],
             "PAD": [ 6 ]
           }
         },
@@ -5056,7 +5056,7 @@
           },
           "connections": {
             "EN": [ "0" ],
-            "OUT": [ 27 ],
+            "OUT": [ 31 ],
             "PAD": [ 7 ]
           }
         },
@@ -5077,7 +5077,7 @@
           },
           "connections": {
             "EN": [ "0" ],
-            "OUT": [ 28 ],
+            "OUT": [ 32 ],
             "PAD": [ 8 ]
           }
         },
@@ -5098,8 +5098,29 @@
           },
           "connections": {
             "EN": [ "0" ],
-            "OUT": [ 29 ],
+            "OUT": [ 33 ],
             "PAD": [ 9 ]
+          }
+        },
+        "$iopadmap$macc_8x8_20.a_5": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:2.8-2.59"
+          },
+          "port_directions": {
+            "EN": "input",
+            "OUT": "output",
+            "PAD": "inout"
+          },
+          "connections": {
+            "EN": [ "0" ],
+            "OUT": [ 34 ],
+            "PAD": [ 10 ]
           }
         },
         "$iopadmap$macc_8x8_20.b": {
@@ -5119,8 +5140,8 @@
           },
           "connections": {
             "EN": [ "0" ],
-            "OUT": [ 30 ],
-            "PAD": [ 10 ]
+            "OUT": [ 35 ],
+            "PAD": [ 11 ]
           }
         },
         "$iopadmap$macc_8x8_20.b_1": {
@@ -5140,8 +5161,8 @@
           },
           "connections": {
             "EN": [ "0" ],
-            "OUT": [ 31 ],
-            "PAD": [ 11 ]
+            "OUT": [ 36 ],
+            "PAD": [ 12 ]
           }
         },
         "$iopadmap$macc_8x8_20.b_2": {
@@ -5161,8 +5182,8 @@
           },
           "connections": {
             "EN": [ "0" ],
-            "OUT": [ 32 ],
-            "PAD": [ 12 ]
+            "OUT": [ 37 ],
+            "PAD": [ 13 ]
           }
         },
         "$iopadmap$macc_8x8_20.b_3": {
@@ -5182,8 +5203,8 @@
           },
           "connections": {
             "EN": [ "0" ],
-            "OUT": [ 33 ],
-            "PAD": [ 13 ]
+            "OUT": [ 38 ],
+            "PAD": [ 14 ]
           }
         },
         "$iopadmap$macc_8x8_20.b_4": {
@@ -5203,8 +5224,29 @@
           },
           "connections": {
             "EN": [ "0" ],
-            "OUT": [ 34 ],
-            "PAD": [ 14 ]
+            "OUT": [ 39 ],
+            "PAD": [ 15 ]
+          }
+        },
+        "$iopadmap$macc_8x8_20.b_5": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:2.8-2.59"
+          },
+          "port_directions": {
+            "EN": "input",
+            "OUT": "output",
+            "PAD": "inout"
+          },
+          "connections": {
+            "EN": [ "0" ],
+            "OUT": [ 40 ],
+            "PAD": [ 16 ]
           }
         },
         "$iopadmap$macc_8x8_20.clk1": {
@@ -5224,7 +5266,7 @@
           },
           "connections": {
             "EN": [ "0" ],
-            "OUT": [ 35 ],
+            "OUT": [ 41 ],
             "PAD": [ 2 ]
           }
         },
@@ -5245,7 +5287,7 @@
           },
           "connections": {
             "EN": [ "0" ],
-            "OUT": [ 36 ],
+            "OUT": [ 42 ],
             "PAD": [ 4 ]
           }
         },
@@ -5266,8 +5308,8 @@
           },
           "connections": {
             "EN": [ "1" ],
-            "IN": [ 37 ],
-            "PAD": [ 15 ]
+            "IN": [ 43 ],
+            "PAD": [ 17 ]
           }
         },
         "$iopadmap$macc_8x8_20.product_1": {
@@ -5287,8 +5329,50 @@
           },
           "connections": {
             "EN": [ "1" ],
-            "IN": [ 38 ],
-            "PAD": [ 16 ]
+            "IN": [ 44 ],
+            "PAD": [ 18 ]
+          }
+        },
+        "$iopadmap$macc_8x8_20.product_10": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:6.8-6.57"
+          },
+          "port_directions": {
+            "EN": "input",
+            "IN": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "EN": [ "1" ],
+            "IN": [ 45 ],
+            "PAD": [ 27 ]
+          }
+        },
+        "$iopadmap$macc_8x8_20.product_11": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:6.8-6.57"
+          },
+          "port_directions": {
+            "EN": "input",
+            "IN": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "EN": [ "1" ],
+            "IN": [ 46 ],
+            "PAD": [ 28 ]
           }
         },
         "$iopadmap$macc_8x8_20.product_2": {
@@ -5308,8 +5392,8 @@
           },
           "connections": {
             "EN": [ "1" ],
-            "IN": [ 39 ],
-            "PAD": [ 17 ]
+            "IN": [ 47 ],
+            "PAD": [ 19 ]
           }
         },
         "$iopadmap$macc_8x8_20.product_3": {
@@ -5329,8 +5413,8 @@
           },
           "connections": {
             "EN": [ "1" ],
-            "IN": [ 40 ],
-            "PAD": [ 18 ]
+            "IN": [ 48 ],
+            "PAD": [ 20 ]
           }
         },
         "$iopadmap$macc_8x8_20.product_4": {
@@ -5350,8 +5434,8 @@
           },
           "connections": {
             "EN": [ "1" ],
-            "IN": [ 41 ],
-            "PAD": [ 19 ]
+            "IN": [ 49 ],
+            "PAD": [ 21 ]
           }
         },
         "$iopadmap$macc_8x8_20.product_5": {
@@ -5371,8 +5455,8 @@
           },
           "connections": {
             "EN": [ "1" ],
-            "IN": [ 42 ],
-            "PAD": [ 20 ]
+            "IN": [ 50 ],
+            "PAD": [ 22 ]
           }
         },
         "$iopadmap$macc_8x8_20.product_6": {
@@ -5392,8 +5476,8 @@
           },
           "connections": {
             "EN": [ "1" ],
-            "IN": [ 43 ],
-            "PAD": [ 21 ]
+            "IN": [ 51 ],
+            "PAD": [ 23 ]
           }
         },
         "$iopadmap$macc_8x8_20.product_7": {
@@ -5413,8 +5497,8 @@
           },
           "connections": {
             "EN": [ "1" ],
-            "IN": [ 44 ],
-            "PAD": [ 22 ]
+            "IN": [ 52 ],
+            "PAD": [ 24 ]
           }
         },
         "$iopadmap$macc_8x8_20.product_8": {
@@ -5434,8 +5518,8 @@
           },
           "connections": {
             "EN": [ "1" ],
-            "IN": [ 45 ],
-            "PAD": [ 23 ]
+            "IN": [ 53 ],
+            "PAD": [ 25 ]
           }
         },
         "$iopadmap$macc_8x8_20.product_9": {
@@ -5455,8 +5539,8 @@
           },
           "connections": {
             "EN": [ "1" ],
-            "IN": [ 46 ],
-            "PAD": [ 24 ]
+            "IN": [ 54 ],
+            "PAD": [ 26 ]
           }
         },
         "$iopadmap$macc_8x8_20.rst": {
@@ -5476,7 +5560,7 @@
           },
           "connections": {
             "EN": [ "0" ],
-            "OUT": [ 47 ],
+            "OUT": [ 55 ],
             "PAD": [ 3 ]
           }
         },
@@ -5560,23 +5644,23 @@
             "Q9": "output"
           },
           "connections": {
-            "A0": [ 25 ],
-            "A1": [ 26 ],
-            "A2": [ 27 ],
-            "A3": [ 28 ],
-            "A4": [ 29 ],
-            "A5": [ "0" ],
+            "A0": [ 29 ],
+            "A1": [ 30 ],
+            "A2": [ 31 ],
+            "A3": [ 32 ],
+            "A4": [ 33 ],
+            "A5": [ 34 ],
             "A6": [ "0" ],
             "A7": [ "0" ],
             "ACC_CI": [ "0" ],
             "ACC_CO": [ ],
-            "ACC_RST": [ 47 ],
-            "B0": [ 30 ],
-            "B1": [ 31 ],
-            "B2": [ 32 ],
-            "B3": [ 33 ],
-            "B4": [ 34 ],
-            "B5": [ "0" ],
+            "ACC_RST": [ 55 ],
+            "B0": [ 35 ],
+            "B1": [ 36 ],
+            "B2": [ 37 ],
+            "B3": [ 38 ],
+            "B4": [ 39 ],
+            "B5": [ 40 ],
             "B6": [ "0" ],
             "B7": [ "0" ],
             "C0": [ "0" ],
@@ -5599,28 +5683,28 @@
             "C7": [ "0" ],
             "C8": [ "0" ],
             "C9": [ "0" ],
-            "CLK": [ 48 ],
-            "EN": [ 36 ],
-            "Q0": [ 37 ],
-            "Q1": [ 38 ],
-            "Q10": [ 49 ],
-            "Q11": [ 50 ],
-            "Q12": [ 51 ],
-            "Q13": [ 52 ],
-            "Q14": [ 53 ],
-            "Q15": [ 54 ],
-            "Q16": [ 55 ],
-            "Q17": [ 56 ],
-            "Q18": [ 57 ],
-            "Q19": [ 58 ],
-            "Q2": [ 39 ],
-            "Q3": [ 40 ],
-            "Q4": [ 41 ],
-            "Q5": [ 42 ],
-            "Q6": [ 43 ],
-            "Q7": [ 44 ],
-            "Q8": [ 45 ],
-            "Q9": [ 46 ]
+            "CLK": [ 56 ],
+            "EN": [ 42 ],
+            "Q0": [ 43 ],
+            "Q1": [ 44 ],
+            "Q10": [ 45 ],
+            "Q11": [ 46 ],
+            "Q12": [ 57 ],
+            "Q13": [ 58 ],
+            "Q14": [ 59 ],
+            "Q15": [ 60 ],
+            "Q16": [ 61 ],
+            "Q17": [ 62 ],
+            "Q18": [ 63 ],
+            "Q19": [ 64 ],
+            "Q2": [ 47 ],
+            "Q3": [ 48 ],
+            "Q4": [ 49 ],
+            "Q5": [ 50 ],
+            "Q6": [ 51 ],
+            "Q7": [ 52 ],
+            "Q8": [ 53 ],
+            "Q9": [ 54 ]
           }
         },
         "clock1_buf": {
@@ -5637,40 +5721,40 @@
             "OUT": "output"
           },
           "connections": {
-            "IN": [ 35 ],
-            "OUT": [ 48 ]
+            "IN": [ 41 ],
+            "OUT": [ 56 ]
           }
         }
       },
       "netnames": {
         "$iopadmap$clk1": {
           "hide_name": 1,
-          "bits": [ 35 ],
+          "bits": [ 41 ],
           "attributes": {
           }
         },
         "$iopadmap$ena": {
           "hide_name": 1,
-          "bits": [ 36 ],
+          "bits": [ 42 ],
           "attributes": {
           }
         },
         "$iopadmap$rst": {
           "hide_name": 1,
-          "bits": [ 47 ],
+          "bits": [ 55 ],
           "attributes": {
           }
         },
         "A": {
           "hide_name": 0,
-          "bits": [ 25, 26, 27, 28, 29, "0", "0", "0" ],
+          "bits": [ 29, 30, 31, 32, 33, 34, "0", "0" ],
           "attributes": {
             "src": "macc_8x8_20.sv:31.17-31.18"
           }
         },
         "B": {
           "hide_name": 0,
-          "bits": [ 30, 31, 32, 33, 34, "0", "0", "0" ],
+          "bits": [ 35, 36, 37, 38, 39, 40, "0", "0" ],
           "attributes": {
             "src": "macc_8x8_20.sv:32.17-32.18"
           }
@@ -5684,24 +5768,24 @@
         },
         "Q": {
           "hide_name": 0,
-          "bits": [ 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58 ],
+          "bits": [ 43, 44, 47, 48, 49, 50, 51, 52, 53, 54, 45, 46, 57, 58, 59, 60, 61, 62, 63, 64 ],
           "attributes": {
             "src": "macc_8x8_20.sv:34.17-34.18",
-            "unused_bits": "10 11 12 13 14 15 16 17 18 19"
+            "unused_bits": "12 13 14 15 16 17 18 19"
           }
         },
         "a": {
           "hide_name": 0,
-          "bits": [ 5, 6, 7, 8, 9 ],
+          "bits": [ 5, 6, 7, 8, 9, 10 ],
           "attributes": {
-            "src": "macc_8x8_20.sv:16.24-16.25"
+            "src": "macc_8x8_20.sv:12.24-12.25"
           }
         },
         "b": {
           "hide_name": 0,
-          "bits": [ 10, 11, 12, 13, 14 ],
+          "bits": [ 11, 12, 13, 14, 15, 16 ],
           "attributes": {
-            "src": "macc_8x8_20.sv:17.24-17.25"
+            "src": "macc_8x8_20.sv:13.24-13.25"
           }
         },
         "clk1": {
@@ -5713,7 +5797,7 @@
         },
         "clk1_buf": {
           "hide_name": 0,
-          "bits": [ 48 ],
+          "bits": [ 56 ],
           "attributes": {
             "src": "macc_8x8_20.sv:22.11-22.19"
           }
@@ -5727,9 +5811,9 @@
         },
         "product": {
           "hide_name": 0,
-          "bits": [ 15, 16, 17, 18, 19, 20, 21, 22, 23, 24 ],
+          "bits": [ 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28 ],
           "attributes": {
-            "src": "macc_8x8_20.sv:18.24-18.31"
+            "src": "macc_8x8_20.sv:14.24-14.31"
           }
         },
         "rst": {

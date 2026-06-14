@@ -156,6 +156,2554 @@
         }
       }
     },
+    "IHP_SRAM_1024x16_2RW": {
+      "attributes": {
+        "keep": "00000000000000000000000000000001",
+        "dynports": "00000000000000000000000000000001",
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:16.1-195.10"
+      },
+      "parameter_default_values": {
+        "A_CLK_INV": "0",
+        "B_CLK_INV": "0"
+      },
+      "ports": {
+        "A_CLK": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "A_ADDR0": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "A_ADDR1": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "A_ADDR2": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "A_ADDR3": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "A_ADDR4": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "A_ADDR5": {
+          "direction": "input",
+          "bits": [ 8 ]
+        },
+        "A_ADDR6": {
+          "direction": "input",
+          "bits": [ 9 ]
+        },
+        "A_ADDR7": {
+          "direction": "input",
+          "bits": [ 10 ]
+        },
+        "A_ADDR8": {
+          "direction": "input",
+          "bits": [ 11 ]
+        },
+        "A_ADDR9": {
+          "direction": "input",
+          "bits": [ 12 ]
+        },
+        "A_DIN0": {
+          "direction": "input",
+          "bits": [ 13 ]
+        },
+        "A_DIN1": {
+          "direction": "input",
+          "bits": [ 14 ]
+        },
+        "A_DIN2": {
+          "direction": "input",
+          "bits": [ 15 ]
+        },
+        "A_DIN3": {
+          "direction": "input",
+          "bits": [ 16 ]
+        },
+        "A_DIN4": {
+          "direction": "input",
+          "bits": [ 17 ]
+        },
+        "A_DIN5": {
+          "direction": "input",
+          "bits": [ 18 ]
+        },
+        "A_DIN6": {
+          "direction": "input",
+          "bits": [ 19 ]
+        },
+        "A_DIN7": {
+          "direction": "input",
+          "bits": [ 20 ]
+        },
+        "A_DIN8": {
+          "direction": "input",
+          "bits": [ 21 ]
+        },
+        "A_DIN9": {
+          "direction": "input",
+          "bits": [ 22 ]
+        },
+        "A_DIN10": {
+          "direction": "input",
+          "bits": [ 23 ]
+        },
+        "A_DIN11": {
+          "direction": "input",
+          "bits": [ 24 ]
+        },
+        "A_DIN12": {
+          "direction": "input",
+          "bits": [ 25 ]
+        },
+        "A_DIN13": {
+          "direction": "input",
+          "bits": [ 26 ]
+        },
+        "A_DIN14": {
+          "direction": "input",
+          "bits": [ 27 ]
+        },
+        "A_BM0": {
+          "direction": "input",
+          "bits": [ 28 ]
+        },
+        "A_BM1": {
+          "direction": "input",
+          "bits": [ 29 ]
+        },
+        "A_BM2": {
+          "direction": "input",
+          "bits": [ 30 ]
+        },
+        "A_BM3": {
+          "direction": "input",
+          "bits": [ 31 ]
+        },
+        "A_BM4": {
+          "direction": "input",
+          "bits": [ 32 ]
+        },
+        "A_BM5": {
+          "direction": "input",
+          "bits": [ 33 ]
+        },
+        "A_BM6": {
+          "direction": "input",
+          "bits": [ 34 ]
+        },
+        "A_BM7": {
+          "direction": "input",
+          "bits": [ 35 ]
+        },
+        "A_BM8": {
+          "direction": "input",
+          "bits": [ 36 ]
+        },
+        "A_BM9": {
+          "direction": "input",
+          "bits": [ 37 ]
+        },
+        "A_BM10": {
+          "direction": "input",
+          "bits": [ 38 ]
+        },
+        "A_BM11": {
+          "direction": "input",
+          "bits": [ 39 ]
+        },
+        "A_BM12": {
+          "direction": "input",
+          "bits": [ 40 ]
+        },
+        "A_BM13": {
+          "direction": "input",
+          "bits": [ 41 ]
+        },
+        "A_BM14": {
+          "direction": "input",
+          "bits": [ 42 ]
+        },
+        "A_WEN": {
+          "direction": "input",
+          "bits": [ 43 ]
+        },
+        "A_MEN": {
+          "direction": "input",
+          "bits": [ 44 ]
+        },
+        "A_REN": {
+          "direction": "input",
+          "bits": [ 45 ]
+        },
+        "A_DOUT0": {
+          "direction": "output",
+          "bits": [ 46 ]
+        },
+        "A_DOUT1": {
+          "direction": "output",
+          "bits": [ 47 ]
+        },
+        "A_DOUT2": {
+          "direction": "output",
+          "bits": [ 48 ]
+        },
+        "A_DOUT3": {
+          "direction": "output",
+          "bits": [ 49 ]
+        },
+        "A_DOUT4": {
+          "direction": "output",
+          "bits": [ 50 ]
+        },
+        "A_DOUT5": {
+          "direction": "output",
+          "bits": [ 51 ]
+        },
+        "A_DOUT6": {
+          "direction": "output",
+          "bits": [ 52 ]
+        },
+        "A_DOUT7": {
+          "direction": "output",
+          "bits": [ 53 ]
+        },
+        "A_DOUT8": {
+          "direction": "output",
+          "bits": [ 54 ]
+        },
+        "A_DOUT9": {
+          "direction": "output",
+          "bits": [ 55 ]
+        },
+        "A_DOUT10": {
+          "direction": "output",
+          "bits": [ 56 ]
+        },
+        "A_DOUT11": {
+          "direction": "output",
+          "bits": [ 57 ]
+        },
+        "A_DOUT12": {
+          "direction": "output",
+          "bits": [ 58 ]
+        },
+        "A_DOUT13": {
+          "direction": "output",
+          "bits": [ 59 ]
+        },
+        "A_DOUT14": {
+          "direction": "output",
+          "bits": [ 60 ]
+        },
+        "B_CLK": {
+          "direction": "input",
+          "bits": [ 61 ]
+        },
+        "B_ADDR0": {
+          "direction": "input",
+          "bits": [ 62 ]
+        },
+        "B_ADDR1": {
+          "direction": "input",
+          "bits": [ 63 ]
+        },
+        "B_ADDR2": {
+          "direction": "input",
+          "bits": [ 64 ]
+        },
+        "B_ADDR3": {
+          "direction": "input",
+          "bits": [ 65 ]
+        },
+        "B_ADDR4": {
+          "direction": "input",
+          "bits": [ 66 ]
+        },
+        "B_ADDR5": {
+          "direction": "input",
+          "bits": [ 67 ]
+        },
+        "B_ADDR6": {
+          "direction": "input",
+          "bits": [ 68 ]
+        },
+        "B_ADDR7": {
+          "direction": "input",
+          "bits": [ 69 ]
+        },
+        "B_ADDR8": {
+          "direction": "input",
+          "bits": [ 70 ]
+        },
+        "B_ADDR9": {
+          "direction": "input",
+          "bits": [ 71 ]
+        },
+        "B_DIN0": {
+          "direction": "input",
+          "bits": [ 72 ]
+        },
+        "B_DIN1": {
+          "direction": "input",
+          "bits": [ 73 ]
+        },
+        "B_DIN2": {
+          "direction": "input",
+          "bits": [ 74 ]
+        },
+        "B_DIN3": {
+          "direction": "input",
+          "bits": [ 75 ]
+        },
+        "B_DIN4": {
+          "direction": "input",
+          "bits": [ 76 ]
+        },
+        "B_DIN5": {
+          "direction": "input",
+          "bits": [ 77 ]
+        },
+        "B_DIN6": {
+          "direction": "input",
+          "bits": [ 78 ]
+        },
+        "B_DIN7": {
+          "direction": "input",
+          "bits": [ 79 ]
+        },
+        "B_DIN8": {
+          "direction": "input",
+          "bits": [ 80 ]
+        },
+        "B_DIN9": {
+          "direction": "input",
+          "bits": [ 81 ]
+        },
+        "B_DIN10": {
+          "direction": "input",
+          "bits": [ 82 ]
+        },
+        "B_DIN11": {
+          "direction": "input",
+          "bits": [ 83 ]
+        },
+        "B_DIN12": {
+          "direction": "input",
+          "bits": [ 84 ]
+        },
+        "B_DIN13": {
+          "direction": "input",
+          "bits": [ 85 ]
+        },
+        "B_DIN14": {
+          "direction": "input",
+          "bits": [ 86 ]
+        },
+        "B_BM0": {
+          "direction": "input",
+          "bits": [ 87 ]
+        },
+        "B_BM1": {
+          "direction": "input",
+          "bits": [ 88 ]
+        },
+        "B_BM2": {
+          "direction": "input",
+          "bits": [ 89 ]
+        },
+        "B_BM3": {
+          "direction": "input",
+          "bits": [ 90 ]
+        },
+        "B_BM4": {
+          "direction": "input",
+          "bits": [ 91 ]
+        },
+        "B_BM5": {
+          "direction": "input",
+          "bits": [ 92 ]
+        },
+        "B_BM6": {
+          "direction": "input",
+          "bits": [ 93 ]
+        },
+        "B_BM7": {
+          "direction": "input",
+          "bits": [ 94 ]
+        },
+        "B_BM8": {
+          "direction": "input",
+          "bits": [ 95 ]
+        },
+        "B_BM9": {
+          "direction": "input",
+          "bits": [ 96 ]
+        },
+        "B_BM10": {
+          "direction": "input",
+          "bits": [ 97 ]
+        },
+        "B_BM11": {
+          "direction": "input",
+          "bits": [ 98 ]
+        },
+        "B_BM12": {
+          "direction": "input",
+          "bits": [ 99 ]
+        },
+        "B_BM13": {
+          "direction": "input",
+          "bits": [ 100 ]
+        },
+        "B_BM14": {
+          "direction": "input",
+          "bits": [ 101 ]
+        },
+        "B_WEN": {
+          "direction": "input",
+          "bits": [ 102 ]
+        },
+        "B_MEN": {
+          "direction": "input",
+          "bits": [ 103 ]
+        },
+        "B_REN": {
+          "direction": "input",
+          "bits": [ 104 ]
+        },
+        "B_DOUT0": {
+          "direction": "output",
+          "bits": [ 105 ]
+        },
+        "B_DOUT1": {
+          "direction": "output",
+          "bits": [ 106 ]
+        },
+        "B_DOUT2": {
+          "direction": "output",
+          "bits": [ 107 ]
+        },
+        "B_DOUT3": {
+          "direction": "output",
+          "bits": [ 108 ]
+        },
+        "B_DOUT4": {
+          "direction": "output",
+          "bits": [ 109 ]
+        },
+        "B_DOUT5": {
+          "direction": "output",
+          "bits": [ 110 ]
+        },
+        "B_DOUT6": {
+          "direction": "output",
+          "bits": [ 111 ]
+        },
+        "B_DOUT7": {
+          "direction": "output",
+          "bits": [ 112 ]
+        },
+        "B_DOUT8": {
+          "direction": "output",
+          "bits": [ 113 ]
+        },
+        "B_DOUT9": {
+          "direction": "output",
+          "bits": [ 114 ]
+        },
+        "B_DOUT10": {
+          "direction": "output",
+          "bits": [ 115 ]
+        },
+        "B_DOUT11": {
+          "direction": "output",
+          "bits": [ 116 ]
+        },
+        "B_DOUT12": {
+          "direction": "output",
+          "bits": [ 117 ]
+        },
+        "B_DOUT13": {
+          "direction": "output",
+          "bits": [ 118 ]
+        },
+        "B_DOUT14": {
+          "direction": "output",
+          "bits": [ 119 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A_ADDR0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:21.18-21.25"
+          }
+        },
+        "A_ADDR1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:22.18-22.25"
+          }
+        },
+        "A_ADDR2": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:23.18-23.25"
+          }
+        },
+        "A_ADDR3": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:24.18-24.25"
+          }
+        },
+        "A_ADDR4": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:25.18-25.25"
+          }
+        },
+        "A_ADDR5": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:26.18-26.25"
+          }
+        },
+        "A_ADDR6": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:27.18-27.25"
+          }
+        },
+        "A_ADDR7": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:28.18-28.25"
+          }
+        },
+        "A_ADDR8": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:29.18-29.25"
+          }
+        },
+        "A_ADDR9": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:30.18-30.25"
+          }
+        },
+        "A_BM0": {
+          "hide_name": 0,
+          "bits": [ 28 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:46.18-46.23"
+          }
+        },
+        "A_BM1": {
+          "hide_name": 0,
+          "bits": [ 29 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:47.18-47.23"
+          }
+        },
+        "A_BM10": {
+          "hide_name": 0,
+          "bits": [ 38 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:56.18-56.24"
+          }
+        },
+        "A_BM11": {
+          "hide_name": 0,
+          "bits": [ 39 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:57.18-57.24"
+          }
+        },
+        "A_BM12": {
+          "hide_name": 0,
+          "bits": [ 40 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:58.18-58.24"
+          }
+        },
+        "A_BM13": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:59.18-59.24"
+          }
+        },
+        "A_BM14": {
+          "hide_name": 0,
+          "bits": [ 42 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:60.18-60.24"
+          }
+        },
+        "A_BM2": {
+          "hide_name": 0,
+          "bits": [ 30 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:48.18-48.23"
+          }
+        },
+        "A_BM3": {
+          "hide_name": 0,
+          "bits": [ 31 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:49.18-49.23"
+          }
+        },
+        "A_BM4": {
+          "hide_name": 0,
+          "bits": [ 32 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:50.18-50.23"
+          }
+        },
+        "A_BM5": {
+          "hide_name": 0,
+          "bits": [ 33 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:51.18-51.23"
+          }
+        },
+        "A_BM6": {
+          "hide_name": 0,
+          "bits": [ 34 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:52.18-52.23"
+          }
+        },
+        "A_BM7": {
+          "hide_name": 0,
+          "bits": [ 35 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:53.18-53.23"
+          }
+        },
+        "A_BM8": {
+          "hide_name": 0,
+          "bits": [ 36 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:54.18-54.23"
+          }
+        },
+        "A_BM9": {
+          "hide_name": 0,
+          "bits": [ 37 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:55.18-55.23"
+          }
+        },
+        "A_CLK": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "clkbuf_sink": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:20.36-20.41"
+          }
+        },
+        "A_DIN0": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:31.18-31.24"
+          }
+        },
+        "A_DIN1": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:32.18-32.24"
+          }
+        },
+        "A_DIN10": {
+          "hide_name": 0,
+          "bits": [ 23 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:41.18-41.25"
+          }
+        },
+        "A_DIN11": {
+          "hide_name": 0,
+          "bits": [ 24 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:42.18-42.25"
+          }
+        },
+        "A_DIN12": {
+          "hide_name": 0,
+          "bits": [ 25 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:43.18-43.25"
+          }
+        },
+        "A_DIN13": {
+          "hide_name": 0,
+          "bits": [ 26 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:44.18-44.25"
+          }
+        },
+        "A_DIN14": {
+          "hide_name": 0,
+          "bits": [ 27 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:45.18-45.25"
+          }
+        },
+        "A_DIN2": {
+          "hide_name": 0,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:33.18-33.24"
+          }
+        },
+        "A_DIN3": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:34.18-34.24"
+          }
+        },
+        "A_DIN4": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:35.18-35.24"
+          }
+        },
+        "A_DIN5": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:36.18-36.24"
+          }
+        },
+        "A_DIN6": {
+          "hide_name": 0,
+          "bits": [ 19 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:37.18-37.24"
+          }
+        },
+        "A_DIN7": {
+          "hide_name": 0,
+          "bits": [ 20 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:38.18-38.24"
+          }
+        },
+        "A_DIN8": {
+          "hide_name": 0,
+          "bits": [ 21 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:39.18-39.24"
+          }
+        },
+        "A_DIN9": {
+          "hide_name": 0,
+          "bits": [ 22 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:40.18-40.24"
+          }
+        },
+        "A_DOUT0": {
+          "hide_name": 0,
+          "bits": [ 46 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:64.18-64.25"
+          }
+        },
+        "A_DOUT1": {
+          "hide_name": 0,
+          "bits": [ 47 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:65.18-65.25"
+          }
+        },
+        "A_DOUT10": {
+          "hide_name": 0,
+          "bits": [ 56 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:74.18-74.26"
+          }
+        },
+        "A_DOUT11": {
+          "hide_name": 0,
+          "bits": [ 57 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:75.18-75.26"
+          }
+        },
+        "A_DOUT12": {
+          "hide_name": 0,
+          "bits": [ 58 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:76.18-76.26"
+          }
+        },
+        "A_DOUT13": {
+          "hide_name": 0,
+          "bits": [ 59 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:77.18-77.26"
+          }
+        },
+        "A_DOUT14": {
+          "hide_name": 0,
+          "bits": [ 60 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:78.18-78.26"
+          }
+        },
+        "A_DOUT2": {
+          "hide_name": 0,
+          "bits": [ 48 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:66.18-66.25"
+          }
+        },
+        "A_DOUT3": {
+          "hide_name": 0,
+          "bits": [ 49 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:67.18-67.25"
+          }
+        },
+        "A_DOUT4": {
+          "hide_name": 0,
+          "bits": [ 50 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:68.18-68.25"
+          }
+        },
+        "A_DOUT5": {
+          "hide_name": 0,
+          "bits": [ 51 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:69.18-69.25"
+          }
+        },
+        "A_DOUT6": {
+          "hide_name": 0,
+          "bits": [ 52 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:70.18-70.25"
+          }
+        },
+        "A_DOUT7": {
+          "hide_name": 0,
+          "bits": [ 53 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:71.18-71.25"
+          }
+        },
+        "A_DOUT8": {
+          "hide_name": 0,
+          "bits": [ 54 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:72.18-72.25"
+          }
+        },
+        "A_DOUT9": {
+          "hide_name": 0,
+          "bits": [ 55 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:73.18-73.25"
+          }
+        },
+        "A_MEN": {
+          "hide_name": 0,
+          "bits": [ 44 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:62.18-62.23"
+          }
+        },
+        "A_REN": {
+          "hide_name": 0,
+          "bits": [ 45 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:63.18-63.23"
+          }
+        },
+        "A_WEN": {
+          "hide_name": 0,
+          "bits": [ 43 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:61.18-61.23"
+          }
+        },
+        "B_ADDR0": {
+          "hide_name": 0,
+          "bits": [ 62 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:81.18-81.25"
+          }
+        },
+        "B_ADDR1": {
+          "hide_name": 0,
+          "bits": [ 63 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:82.18-82.25"
+          }
+        },
+        "B_ADDR2": {
+          "hide_name": 0,
+          "bits": [ 64 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:83.18-83.25"
+          }
+        },
+        "B_ADDR3": {
+          "hide_name": 0,
+          "bits": [ 65 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:84.18-84.25"
+          }
+        },
+        "B_ADDR4": {
+          "hide_name": 0,
+          "bits": [ 66 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:85.18-85.25"
+          }
+        },
+        "B_ADDR5": {
+          "hide_name": 0,
+          "bits": [ 67 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:86.18-86.25"
+          }
+        },
+        "B_ADDR6": {
+          "hide_name": 0,
+          "bits": [ 68 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:87.18-87.25"
+          }
+        },
+        "B_ADDR7": {
+          "hide_name": 0,
+          "bits": [ 69 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:88.18-88.25"
+          }
+        },
+        "B_ADDR8": {
+          "hide_name": 0,
+          "bits": [ 70 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:89.18-89.25"
+          }
+        },
+        "B_ADDR9": {
+          "hide_name": 0,
+          "bits": [ 71 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:90.18-90.25"
+          }
+        },
+        "B_BM0": {
+          "hide_name": 0,
+          "bits": [ 87 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:106.18-106.23"
+          }
+        },
+        "B_BM1": {
+          "hide_name": 0,
+          "bits": [ 88 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:107.18-107.23"
+          }
+        },
+        "B_BM10": {
+          "hide_name": 0,
+          "bits": [ 97 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:116.18-116.24"
+          }
+        },
+        "B_BM11": {
+          "hide_name": 0,
+          "bits": [ 98 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:117.18-117.24"
+          }
+        },
+        "B_BM12": {
+          "hide_name": 0,
+          "bits": [ 99 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:118.18-118.24"
+          }
+        },
+        "B_BM13": {
+          "hide_name": 0,
+          "bits": [ 100 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:119.18-119.24"
+          }
+        },
+        "B_BM14": {
+          "hide_name": 0,
+          "bits": [ 101 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:120.18-120.24"
+          }
+        },
+        "B_BM2": {
+          "hide_name": 0,
+          "bits": [ 89 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:108.18-108.23"
+          }
+        },
+        "B_BM3": {
+          "hide_name": 0,
+          "bits": [ 90 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:109.18-109.23"
+          }
+        },
+        "B_BM4": {
+          "hide_name": 0,
+          "bits": [ 91 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:110.18-110.23"
+          }
+        },
+        "B_BM5": {
+          "hide_name": 0,
+          "bits": [ 92 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:111.18-111.23"
+          }
+        },
+        "B_BM6": {
+          "hide_name": 0,
+          "bits": [ 93 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:112.18-112.23"
+          }
+        },
+        "B_BM7": {
+          "hide_name": 0,
+          "bits": [ 94 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:113.18-113.23"
+          }
+        },
+        "B_BM8": {
+          "hide_name": 0,
+          "bits": [ 95 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:114.18-114.23"
+          }
+        },
+        "B_BM9": {
+          "hide_name": 0,
+          "bits": [ 96 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:115.18-115.23"
+          }
+        },
+        "B_CLK": {
+          "hide_name": 0,
+          "bits": [ 61 ],
+          "attributes": {
+            "clkbuf_sink": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:80.36-80.41"
+          }
+        },
+        "B_DIN0": {
+          "hide_name": 0,
+          "bits": [ 72 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:91.18-91.24"
+          }
+        },
+        "B_DIN1": {
+          "hide_name": 0,
+          "bits": [ 73 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:92.18-92.24"
+          }
+        },
+        "B_DIN10": {
+          "hide_name": 0,
+          "bits": [ 82 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:101.18-101.25"
+          }
+        },
+        "B_DIN11": {
+          "hide_name": 0,
+          "bits": [ 83 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:102.18-102.25"
+          }
+        },
+        "B_DIN12": {
+          "hide_name": 0,
+          "bits": [ 84 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:103.18-103.25"
+          }
+        },
+        "B_DIN13": {
+          "hide_name": 0,
+          "bits": [ 85 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:104.18-104.25"
+          }
+        },
+        "B_DIN14": {
+          "hide_name": 0,
+          "bits": [ 86 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:105.18-105.25"
+          }
+        },
+        "B_DIN2": {
+          "hide_name": 0,
+          "bits": [ 74 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:93.18-93.24"
+          }
+        },
+        "B_DIN3": {
+          "hide_name": 0,
+          "bits": [ 75 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:94.18-94.24"
+          }
+        },
+        "B_DIN4": {
+          "hide_name": 0,
+          "bits": [ 76 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:95.18-95.24"
+          }
+        },
+        "B_DIN5": {
+          "hide_name": 0,
+          "bits": [ 77 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:96.18-96.24"
+          }
+        },
+        "B_DIN6": {
+          "hide_name": 0,
+          "bits": [ 78 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:97.18-97.24"
+          }
+        },
+        "B_DIN7": {
+          "hide_name": 0,
+          "bits": [ 79 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:98.18-98.24"
+          }
+        },
+        "B_DIN8": {
+          "hide_name": 0,
+          "bits": [ 80 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:99.18-99.24"
+          }
+        },
+        "B_DIN9": {
+          "hide_name": 0,
+          "bits": [ 81 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:100.18-100.24"
+          }
+        },
+        "B_DOUT0": {
+          "hide_name": 0,
+          "bits": [ 105 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:124.18-124.25"
+          }
+        },
+        "B_DOUT1": {
+          "hide_name": 0,
+          "bits": [ 106 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:125.18-125.25"
+          }
+        },
+        "B_DOUT10": {
+          "hide_name": 0,
+          "bits": [ 115 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:134.18-134.26"
+          }
+        },
+        "B_DOUT11": {
+          "hide_name": 0,
+          "bits": [ 116 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:135.18-135.26"
+          }
+        },
+        "B_DOUT12": {
+          "hide_name": 0,
+          "bits": [ 117 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:136.18-136.26"
+          }
+        },
+        "B_DOUT13": {
+          "hide_name": 0,
+          "bits": [ 118 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:137.18-137.26"
+          }
+        },
+        "B_DOUT14": {
+          "hide_name": 0,
+          "bits": [ 119 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:138.18-138.26"
+          }
+        },
+        "B_DOUT2": {
+          "hide_name": 0,
+          "bits": [ 107 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:126.18-126.25"
+          }
+        },
+        "B_DOUT3": {
+          "hide_name": 0,
+          "bits": [ 108 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:127.18-127.25"
+          }
+        },
+        "B_DOUT4": {
+          "hide_name": 0,
+          "bits": [ 109 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:128.18-128.25"
+          }
+        },
+        "B_DOUT5": {
+          "hide_name": 0,
+          "bits": [ 110 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:129.18-129.25"
+          }
+        },
+        "B_DOUT6": {
+          "hide_name": 0,
+          "bits": [ 111 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:130.18-130.25"
+          }
+        },
+        "B_DOUT7": {
+          "hide_name": 0,
+          "bits": [ 112 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:131.18-131.25"
+          }
+        },
+        "B_DOUT8": {
+          "hide_name": 0,
+          "bits": [ 113 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:132.18-132.25"
+          }
+        },
+        "B_DOUT9": {
+          "hide_name": 0,
+          "bits": [ 114 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:133.18-133.25"
+          }
+        },
+        "B_MEN": {
+          "hide_name": 0,
+          "bits": [ 103 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:122.18-122.23"
+          }
+        },
+        "B_REN": {
+          "hide_name": 0,
+          "bits": [ 104 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:123.18-123.23"
+          }
+        },
+        "B_WEN": {
+          "hide_name": 0,
+          "bits": [ 102 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x16_2RW/yosys/primitives/IHP_SRAM_1024x16_2RW.v:121.18-121.23"
+          }
+        }
+      }
+    },
+    "IHP_SRAM_1024x32_1RW": {
+      "attributes": {
+        "keep": "00000000000000000000000000000001",
+        "dynports": "00000000000000000000000000000001",
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:16.1-166.10"
+      },
+      "parameter_default_values": {
+        "CLK_INV": "0"
+      },
+      "ports": {
+        "CLK": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "ADDR0": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "ADDR1": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "ADDR2": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "ADDR3": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "ADDR4": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "ADDR5": {
+          "direction": "input",
+          "bits": [ 8 ]
+        },
+        "ADDR6": {
+          "direction": "input",
+          "bits": [ 9 ]
+        },
+        "ADDR7": {
+          "direction": "input",
+          "bits": [ 10 ]
+        },
+        "ADDR8": {
+          "direction": "input",
+          "bits": [ 11 ]
+        },
+        "ADDR9": {
+          "direction": "input",
+          "bits": [ 12 ]
+        },
+        "DIN0": {
+          "direction": "input",
+          "bits": [ 13 ]
+        },
+        "DIN1": {
+          "direction": "input",
+          "bits": [ 14 ]
+        },
+        "DIN2": {
+          "direction": "input",
+          "bits": [ 15 ]
+        },
+        "DIN3": {
+          "direction": "input",
+          "bits": [ 16 ]
+        },
+        "DIN4": {
+          "direction": "input",
+          "bits": [ 17 ]
+        },
+        "DIN5": {
+          "direction": "input",
+          "bits": [ 18 ]
+        },
+        "DIN6": {
+          "direction": "input",
+          "bits": [ 19 ]
+        },
+        "DIN7": {
+          "direction": "input",
+          "bits": [ 20 ]
+        },
+        "DIN8": {
+          "direction": "input",
+          "bits": [ 21 ]
+        },
+        "DIN9": {
+          "direction": "input",
+          "bits": [ 22 ]
+        },
+        "DIN10": {
+          "direction": "input",
+          "bits": [ 23 ]
+        },
+        "DIN11": {
+          "direction": "input",
+          "bits": [ 24 ]
+        },
+        "DIN12": {
+          "direction": "input",
+          "bits": [ 25 ]
+        },
+        "DIN13": {
+          "direction": "input",
+          "bits": [ 26 ]
+        },
+        "DIN14": {
+          "direction": "input",
+          "bits": [ 27 ]
+        },
+        "DIN15": {
+          "direction": "input",
+          "bits": [ 28 ]
+        },
+        "DIN16": {
+          "direction": "input",
+          "bits": [ 29 ]
+        },
+        "DIN17": {
+          "direction": "input",
+          "bits": [ 30 ]
+        },
+        "DIN18": {
+          "direction": "input",
+          "bits": [ 31 ]
+        },
+        "DIN19": {
+          "direction": "input",
+          "bits": [ 32 ]
+        },
+        "DIN20": {
+          "direction": "input",
+          "bits": [ 33 ]
+        },
+        "DIN21": {
+          "direction": "input",
+          "bits": [ 34 ]
+        },
+        "DIN22": {
+          "direction": "input",
+          "bits": [ 35 ]
+        },
+        "DIN23": {
+          "direction": "input",
+          "bits": [ 36 ]
+        },
+        "DIN24": {
+          "direction": "input",
+          "bits": [ 37 ]
+        },
+        "DIN25": {
+          "direction": "input",
+          "bits": [ 38 ]
+        },
+        "DIN26": {
+          "direction": "input",
+          "bits": [ 39 ]
+        },
+        "DIN27": {
+          "direction": "input",
+          "bits": [ 40 ]
+        },
+        "DIN28": {
+          "direction": "input",
+          "bits": [ 41 ]
+        },
+        "DIN29": {
+          "direction": "input",
+          "bits": [ 42 ]
+        },
+        "DIN30": {
+          "direction": "input",
+          "bits": [ 43 ]
+        },
+        "DIN31": {
+          "direction": "input",
+          "bits": [ 44 ]
+        },
+        "BM0": {
+          "direction": "input",
+          "bits": [ 45 ]
+        },
+        "BM1": {
+          "direction": "input",
+          "bits": [ 46 ]
+        },
+        "BM2": {
+          "direction": "input",
+          "bits": [ 47 ]
+        },
+        "BM3": {
+          "direction": "input",
+          "bits": [ 48 ]
+        },
+        "BM4": {
+          "direction": "input",
+          "bits": [ 49 ]
+        },
+        "BM5": {
+          "direction": "input",
+          "bits": [ 50 ]
+        },
+        "BM6": {
+          "direction": "input",
+          "bits": [ 51 ]
+        },
+        "BM7": {
+          "direction": "input",
+          "bits": [ 52 ]
+        },
+        "BM8": {
+          "direction": "input",
+          "bits": [ 53 ]
+        },
+        "BM9": {
+          "direction": "input",
+          "bits": [ 54 ]
+        },
+        "BM10": {
+          "direction": "input",
+          "bits": [ 55 ]
+        },
+        "BM11": {
+          "direction": "input",
+          "bits": [ 56 ]
+        },
+        "BM12": {
+          "direction": "input",
+          "bits": [ 57 ]
+        },
+        "BM13": {
+          "direction": "input",
+          "bits": [ 58 ]
+        },
+        "BM14": {
+          "direction": "input",
+          "bits": [ 59 ]
+        },
+        "BM15": {
+          "direction": "input",
+          "bits": [ 60 ]
+        },
+        "BM16": {
+          "direction": "input",
+          "bits": [ 61 ]
+        },
+        "BM17": {
+          "direction": "input",
+          "bits": [ 62 ]
+        },
+        "BM18": {
+          "direction": "input",
+          "bits": [ 63 ]
+        },
+        "BM19": {
+          "direction": "input",
+          "bits": [ 64 ]
+        },
+        "BM20": {
+          "direction": "input",
+          "bits": [ 65 ]
+        },
+        "BM21": {
+          "direction": "input",
+          "bits": [ 66 ]
+        },
+        "BM22": {
+          "direction": "input",
+          "bits": [ 67 ]
+        },
+        "BM23": {
+          "direction": "input",
+          "bits": [ 68 ]
+        },
+        "BM24": {
+          "direction": "input",
+          "bits": [ 69 ]
+        },
+        "BM25": {
+          "direction": "input",
+          "bits": [ 70 ]
+        },
+        "BM26": {
+          "direction": "input",
+          "bits": [ 71 ]
+        },
+        "BM27": {
+          "direction": "input",
+          "bits": [ 72 ]
+        },
+        "BM28": {
+          "direction": "input",
+          "bits": [ 73 ]
+        },
+        "BM29": {
+          "direction": "input",
+          "bits": [ 74 ]
+        },
+        "BM30": {
+          "direction": "input",
+          "bits": [ 75 ]
+        },
+        "BM31": {
+          "direction": "input",
+          "bits": [ 76 ]
+        },
+        "WEN": {
+          "direction": "input",
+          "bits": [ 77 ]
+        },
+        "MEN": {
+          "direction": "input",
+          "bits": [ 78 ]
+        },
+        "REN": {
+          "direction": "input",
+          "bits": [ 79 ]
+        },
+        "DOUT0": {
+          "direction": "output",
+          "bits": [ 80 ]
+        },
+        "DOUT1": {
+          "direction": "output",
+          "bits": [ 81 ]
+        },
+        "DOUT2": {
+          "direction": "output",
+          "bits": [ 82 ]
+        },
+        "DOUT3": {
+          "direction": "output",
+          "bits": [ 83 ]
+        },
+        "DOUT4": {
+          "direction": "output",
+          "bits": [ 84 ]
+        },
+        "DOUT5": {
+          "direction": "output",
+          "bits": [ 85 ]
+        },
+        "DOUT6": {
+          "direction": "output",
+          "bits": [ 86 ]
+        },
+        "DOUT7": {
+          "direction": "output",
+          "bits": [ 87 ]
+        },
+        "DOUT8": {
+          "direction": "output",
+          "bits": [ 88 ]
+        },
+        "DOUT9": {
+          "direction": "output",
+          "bits": [ 89 ]
+        },
+        "DOUT10": {
+          "direction": "output",
+          "bits": [ 90 ]
+        },
+        "DOUT11": {
+          "direction": "output",
+          "bits": [ 91 ]
+        },
+        "DOUT12": {
+          "direction": "output",
+          "bits": [ 92 ]
+        },
+        "DOUT13": {
+          "direction": "output",
+          "bits": [ 93 ]
+        },
+        "DOUT14": {
+          "direction": "output",
+          "bits": [ 94 ]
+        },
+        "DOUT15": {
+          "direction": "output",
+          "bits": [ 95 ]
+        },
+        "DOUT16": {
+          "direction": "output",
+          "bits": [ 96 ]
+        },
+        "DOUT17": {
+          "direction": "output",
+          "bits": [ 97 ]
+        },
+        "DOUT18": {
+          "direction": "output",
+          "bits": [ 98 ]
+        },
+        "DOUT19": {
+          "direction": "output",
+          "bits": [ 99 ]
+        },
+        "DOUT20": {
+          "direction": "output",
+          "bits": [ 100 ]
+        },
+        "DOUT21": {
+          "direction": "output",
+          "bits": [ 101 ]
+        },
+        "DOUT22": {
+          "direction": "output",
+          "bits": [ 102 ]
+        },
+        "DOUT23": {
+          "direction": "output",
+          "bits": [ 103 ]
+        },
+        "DOUT24": {
+          "direction": "output",
+          "bits": [ 104 ]
+        },
+        "DOUT25": {
+          "direction": "output",
+          "bits": [ 105 ]
+        },
+        "DOUT26": {
+          "direction": "output",
+          "bits": [ 106 ]
+        },
+        "DOUT27": {
+          "direction": "output",
+          "bits": [ 107 ]
+        },
+        "DOUT28": {
+          "direction": "output",
+          "bits": [ 108 ]
+        },
+        "DOUT29": {
+          "direction": "output",
+          "bits": [ 109 ]
+        },
+        "DOUT30": {
+          "direction": "output",
+          "bits": [ 110 ]
+        },
+        "DOUT31": {
+          "direction": "output",
+          "bits": [ 111 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "ADDR0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:20.18-20.23"
+          }
+        },
+        "ADDR1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:21.18-21.23"
+          }
+        },
+        "ADDR2": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:22.18-22.23"
+          }
+        },
+        "ADDR3": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:23.18-23.23"
+          }
+        },
+        "ADDR4": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:24.18-24.23"
+          }
+        },
+        "ADDR5": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:25.18-25.23"
+          }
+        },
+        "ADDR6": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:26.18-26.23"
+          }
+        },
+        "ADDR7": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:27.18-27.23"
+          }
+        },
+        "ADDR8": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:28.18-28.23"
+          }
+        },
+        "ADDR9": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:29.18-29.23"
+          }
+        },
+        "BM0": {
+          "hide_name": 0,
+          "bits": [ 45 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:62.18-62.21"
+          }
+        },
+        "BM1": {
+          "hide_name": 0,
+          "bits": [ 46 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:63.18-63.21"
+          }
+        },
+        "BM10": {
+          "hide_name": 0,
+          "bits": [ 55 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:72.18-72.22"
+          }
+        },
+        "BM11": {
+          "hide_name": 0,
+          "bits": [ 56 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:73.18-73.22"
+          }
+        },
+        "BM12": {
+          "hide_name": 0,
+          "bits": [ 57 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:74.18-74.22"
+          }
+        },
+        "BM13": {
+          "hide_name": 0,
+          "bits": [ 58 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:75.18-75.22"
+          }
+        },
+        "BM14": {
+          "hide_name": 0,
+          "bits": [ 59 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:76.18-76.22"
+          }
+        },
+        "BM15": {
+          "hide_name": 0,
+          "bits": [ 60 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:77.18-77.22"
+          }
+        },
+        "BM16": {
+          "hide_name": 0,
+          "bits": [ 61 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:78.18-78.22"
+          }
+        },
+        "BM17": {
+          "hide_name": 0,
+          "bits": [ 62 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:79.18-79.22"
+          }
+        },
+        "BM18": {
+          "hide_name": 0,
+          "bits": [ 63 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:80.18-80.22"
+          }
+        },
+        "BM19": {
+          "hide_name": 0,
+          "bits": [ 64 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:81.18-81.22"
+          }
+        },
+        "BM2": {
+          "hide_name": 0,
+          "bits": [ 47 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:64.18-64.21"
+          }
+        },
+        "BM20": {
+          "hide_name": 0,
+          "bits": [ 65 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:82.18-82.22"
+          }
+        },
+        "BM21": {
+          "hide_name": 0,
+          "bits": [ 66 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:83.18-83.22"
+          }
+        },
+        "BM22": {
+          "hide_name": 0,
+          "bits": [ 67 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:84.18-84.22"
+          }
+        },
+        "BM23": {
+          "hide_name": 0,
+          "bits": [ 68 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:85.18-85.22"
+          }
+        },
+        "BM24": {
+          "hide_name": 0,
+          "bits": [ 69 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:86.18-86.22"
+          }
+        },
+        "BM25": {
+          "hide_name": 0,
+          "bits": [ 70 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:87.18-87.22"
+          }
+        },
+        "BM26": {
+          "hide_name": 0,
+          "bits": [ 71 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:88.18-88.22"
+          }
+        },
+        "BM27": {
+          "hide_name": 0,
+          "bits": [ 72 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:89.18-89.22"
+          }
+        },
+        "BM28": {
+          "hide_name": 0,
+          "bits": [ 73 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:90.18-90.22"
+          }
+        },
+        "BM29": {
+          "hide_name": 0,
+          "bits": [ 74 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:91.18-91.22"
+          }
+        },
+        "BM3": {
+          "hide_name": 0,
+          "bits": [ 48 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:65.18-65.21"
+          }
+        },
+        "BM30": {
+          "hide_name": 0,
+          "bits": [ 75 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:92.18-92.22"
+          }
+        },
+        "BM31": {
+          "hide_name": 0,
+          "bits": [ 76 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:93.18-93.22"
+          }
+        },
+        "BM4": {
+          "hide_name": 0,
+          "bits": [ 49 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:66.18-66.21"
+          }
+        },
+        "BM5": {
+          "hide_name": 0,
+          "bits": [ 50 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:67.18-67.21"
+          }
+        },
+        "BM6": {
+          "hide_name": 0,
+          "bits": [ 51 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:68.18-68.21"
+          }
+        },
+        "BM7": {
+          "hide_name": 0,
+          "bits": [ 52 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:69.18-69.21"
+          }
+        },
+        "BM8": {
+          "hide_name": 0,
+          "bits": [ 53 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:70.18-70.21"
+          }
+        },
+        "BM9": {
+          "hide_name": 0,
+          "bits": [ 54 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:71.18-71.21"
+          }
+        },
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "clkbuf_sink": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:19.36-19.39"
+          }
+        },
+        "DIN0": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:30.18-30.22"
+          }
+        },
+        "DIN1": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:31.18-31.22"
+          }
+        },
+        "DIN10": {
+          "hide_name": 0,
+          "bits": [ 23 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:40.18-40.23"
+          }
+        },
+        "DIN11": {
+          "hide_name": 0,
+          "bits": [ 24 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:41.18-41.23"
+          }
+        },
+        "DIN12": {
+          "hide_name": 0,
+          "bits": [ 25 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:42.18-42.23"
+          }
+        },
+        "DIN13": {
+          "hide_name": 0,
+          "bits": [ 26 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:43.18-43.23"
+          }
+        },
+        "DIN14": {
+          "hide_name": 0,
+          "bits": [ 27 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:44.18-44.23"
+          }
+        },
+        "DIN15": {
+          "hide_name": 0,
+          "bits": [ 28 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:45.18-45.23"
+          }
+        },
+        "DIN16": {
+          "hide_name": 0,
+          "bits": [ 29 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:46.18-46.23"
+          }
+        },
+        "DIN17": {
+          "hide_name": 0,
+          "bits": [ 30 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:47.18-47.23"
+          }
+        },
+        "DIN18": {
+          "hide_name": 0,
+          "bits": [ 31 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:48.18-48.23"
+          }
+        },
+        "DIN19": {
+          "hide_name": 0,
+          "bits": [ 32 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:49.18-49.23"
+          }
+        },
+        "DIN2": {
+          "hide_name": 0,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:32.18-32.22"
+          }
+        },
+        "DIN20": {
+          "hide_name": 0,
+          "bits": [ 33 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:50.18-50.23"
+          }
+        },
+        "DIN21": {
+          "hide_name": 0,
+          "bits": [ 34 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:51.18-51.23"
+          }
+        },
+        "DIN22": {
+          "hide_name": 0,
+          "bits": [ 35 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:52.18-52.23"
+          }
+        },
+        "DIN23": {
+          "hide_name": 0,
+          "bits": [ 36 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:53.18-53.23"
+          }
+        },
+        "DIN24": {
+          "hide_name": 0,
+          "bits": [ 37 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:54.18-54.23"
+          }
+        },
+        "DIN25": {
+          "hide_name": 0,
+          "bits": [ 38 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:55.18-55.23"
+          }
+        },
+        "DIN26": {
+          "hide_name": 0,
+          "bits": [ 39 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:56.18-56.23"
+          }
+        },
+        "DIN27": {
+          "hide_name": 0,
+          "bits": [ 40 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:57.18-57.23"
+          }
+        },
+        "DIN28": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:58.18-58.23"
+          }
+        },
+        "DIN29": {
+          "hide_name": 0,
+          "bits": [ 42 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:59.18-59.23"
+          }
+        },
+        "DIN3": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:33.18-33.22"
+          }
+        },
+        "DIN30": {
+          "hide_name": 0,
+          "bits": [ 43 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:60.18-60.23"
+          }
+        },
+        "DIN31": {
+          "hide_name": 0,
+          "bits": [ 44 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:61.18-61.23"
+          }
+        },
+        "DIN4": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:34.18-34.22"
+          }
+        },
+        "DIN5": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:35.18-35.22"
+          }
+        },
+        "DIN6": {
+          "hide_name": 0,
+          "bits": [ 19 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:36.18-36.22"
+          }
+        },
+        "DIN7": {
+          "hide_name": 0,
+          "bits": [ 20 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:37.18-37.22"
+          }
+        },
+        "DIN8": {
+          "hide_name": 0,
+          "bits": [ 21 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:38.18-38.22"
+          }
+        },
+        "DIN9": {
+          "hide_name": 0,
+          "bits": [ 22 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:39.18-39.22"
+          }
+        },
+        "DOUT0": {
+          "hide_name": 0,
+          "bits": [ 80 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:97.18-97.23"
+          }
+        },
+        "DOUT1": {
+          "hide_name": 0,
+          "bits": [ 81 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:98.18-98.23"
+          }
+        },
+        "DOUT10": {
+          "hide_name": 0,
+          "bits": [ 90 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:107.18-107.24"
+          }
+        },
+        "DOUT11": {
+          "hide_name": 0,
+          "bits": [ 91 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:108.18-108.24"
+          }
+        },
+        "DOUT12": {
+          "hide_name": 0,
+          "bits": [ 92 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:109.18-109.24"
+          }
+        },
+        "DOUT13": {
+          "hide_name": 0,
+          "bits": [ 93 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:110.18-110.24"
+          }
+        },
+        "DOUT14": {
+          "hide_name": 0,
+          "bits": [ 94 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:111.18-111.24"
+          }
+        },
+        "DOUT15": {
+          "hide_name": 0,
+          "bits": [ 95 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:112.18-112.24"
+          }
+        },
+        "DOUT16": {
+          "hide_name": 0,
+          "bits": [ 96 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:113.18-113.24"
+          }
+        },
+        "DOUT17": {
+          "hide_name": 0,
+          "bits": [ 97 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:114.18-114.24"
+          }
+        },
+        "DOUT18": {
+          "hide_name": 0,
+          "bits": [ 98 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:115.18-115.24"
+          }
+        },
+        "DOUT19": {
+          "hide_name": 0,
+          "bits": [ 99 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:116.18-116.24"
+          }
+        },
+        "DOUT2": {
+          "hide_name": 0,
+          "bits": [ 82 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:99.18-99.23"
+          }
+        },
+        "DOUT20": {
+          "hide_name": 0,
+          "bits": [ 100 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:117.18-117.24"
+          }
+        },
+        "DOUT21": {
+          "hide_name": 0,
+          "bits": [ 101 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:118.18-118.24"
+          }
+        },
+        "DOUT22": {
+          "hide_name": 0,
+          "bits": [ 102 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:119.18-119.24"
+          }
+        },
+        "DOUT23": {
+          "hide_name": 0,
+          "bits": [ 103 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:120.18-120.24"
+          }
+        },
+        "DOUT24": {
+          "hide_name": 0,
+          "bits": [ 104 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:121.18-121.24"
+          }
+        },
+        "DOUT25": {
+          "hide_name": 0,
+          "bits": [ 105 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:122.18-122.24"
+          }
+        },
+        "DOUT26": {
+          "hide_name": 0,
+          "bits": [ 106 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:123.18-123.24"
+          }
+        },
+        "DOUT27": {
+          "hide_name": 0,
+          "bits": [ 107 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:124.18-124.24"
+          }
+        },
+        "DOUT28": {
+          "hide_name": 0,
+          "bits": [ 108 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:125.18-125.24"
+          }
+        },
+        "DOUT29": {
+          "hide_name": 0,
+          "bits": [ 109 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:126.18-126.24"
+          }
+        },
+        "DOUT3": {
+          "hide_name": 0,
+          "bits": [ 83 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:100.18-100.23"
+          }
+        },
+        "DOUT30": {
+          "hide_name": 0,
+          "bits": [ 110 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:127.18-127.24"
+          }
+        },
+        "DOUT31": {
+          "hide_name": 0,
+          "bits": [ 111 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:128.18-128.24"
+          }
+        },
+        "DOUT4": {
+          "hide_name": 0,
+          "bits": [ 84 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:101.18-101.23"
+          }
+        },
+        "DOUT5": {
+          "hide_name": 0,
+          "bits": [ 85 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:102.18-102.23"
+          }
+        },
+        "DOUT6": {
+          "hide_name": 0,
+          "bits": [ 86 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:103.18-103.23"
+          }
+        },
+        "DOUT7": {
+          "hide_name": 0,
+          "bits": [ 87 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:104.18-104.23"
+          }
+        },
+        "DOUT8": {
+          "hide_name": 0,
+          "bits": [ 88 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:105.18-105.23"
+          }
+        },
+        "DOUT9": {
+          "hide_name": 0,
+          "bits": [ 89 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:106.18-106.23"
+          }
+        },
+        "MEN": {
+          "hide_name": 0,
+          "bits": [ 78 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:95.18-95.21"
+          }
+        },
+        "REN": {
+          "hide_name": 0,
+          "bits": [ 79 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:96.18-96.21"
+          }
+        },
+        "WEN": {
+          "hide_name": 0,
+          "bits": [ 77 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/IHP_SRAM_1024x32_1RW/yosys/primitives/IHP_SRAM_1024x32_1RW.v:94.18-94.21"
+          }
+        }
+      }
+    },
     "IOBUF": {
       "attributes": {
         "blackbox": "00000000000000000000000000000001",
@@ -1180,6 +3728,701 @@
         }
       }
     },
+    "MACC_8x8_20": {
+      "attributes": {
+        "keep": "00000000000000000000000000000001",
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:5.1-146.10"
+      },
+      "parameter_default_values": {
+        "ACC_OUT": "0",
+        "ACC_SEL": "0",
+        "A_REG": "0",
+        "B_REG": "0",
+        "CLK_INV": "0",
+        "C_REG": "0",
+        "SIGN_EXT": "0"
+      },
+      "ports": {
+        "CLK": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "EN": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "ACC_RST": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "ACC_CI": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "ACC_CO": {
+          "direction": "output",
+          "bits": [ 6 ]
+        },
+        "A0": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "A1": {
+          "direction": "input",
+          "bits": [ 8 ]
+        },
+        "A2": {
+          "direction": "input",
+          "bits": [ 9 ]
+        },
+        "A3": {
+          "direction": "input",
+          "bits": [ 10 ]
+        },
+        "A4": {
+          "direction": "input",
+          "bits": [ 11 ]
+        },
+        "A5": {
+          "direction": "input",
+          "bits": [ 12 ]
+        },
+        "A6": {
+          "direction": "input",
+          "bits": [ 13 ]
+        },
+        "A7": {
+          "direction": "input",
+          "bits": [ 14 ]
+        },
+        "B0": {
+          "direction": "input",
+          "bits": [ 15 ]
+        },
+        "B1": {
+          "direction": "input",
+          "bits": [ 16 ]
+        },
+        "B2": {
+          "direction": "input",
+          "bits": [ 17 ]
+        },
+        "B3": {
+          "direction": "input",
+          "bits": [ 18 ]
+        },
+        "B4": {
+          "direction": "input",
+          "bits": [ 19 ]
+        },
+        "B5": {
+          "direction": "input",
+          "bits": [ 20 ]
+        },
+        "B6": {
+          "direction": "input",
+          "bits": [ 21 ]
+        },
+        "B7": {
+          "direction": "input",
+          "bits": [ 22 ]
+        },
+        "C0": {
+          "direction": "input",
+          "bits": [ 23 ]
+        },
+        "C1": {
+          "direction": "input",
+          "bits": [ 24 ]
+        },
+        "C2": {
+          "direction": "input",
+          "bits": [ 25 ]
+        },
+        "C3": {
+          "direction": "input",
+          "bits": [ 26 ]
+        },
+        "C4": {
+          "direction": "input",
+          "bits": [ 27 ]
+        },
+        "C5": {
+          "direction": "input",
+          "bits": [ 28 ]
+        },
+        "C6": {
+          "direction": "input",
+          "bits": [ 29 ]
+        },
+        "C7": {
+          "direction": "input",
+          "bits": [ 30 ]
+        },
+        "C8": {
+          "direction": "input",
+          "bits": [ 31 ]
+        },
+        "C9": {
+          "direction": "input",
+          "bits": [ 32 ]
+        },
+        "C10": {
+          "direction": "input",
+          "bits": [ 33 ]
+        },
+        "C11": {
+          "direction": "input",
+          "bits": [ 34 ]
+        },
+        "C12": {
+          "direction": "input",
+          "bits": [ 35 ]
+        },
+        "C13": {
+          "direction": "input",
+          "bits": [ 36 ]
+        },
+        "C14": {
+          "direction": "input",
+          "bits": [ 37 ]
+        },
+        "C15": {
+          "direction": "input",
+          "bits": [ 38 ]
+        },
+        "C16": {
+          "direction": "input",
+          "bits": [ 39 ]
+        },
+        "C17": {
+          "direction": "input",
+          "bits": [ 40 ]
+        },
+        "C18": {
+          "direction": "input",
+          "bits": [ 41 ]
+        },
+        "C19": {
+          "direction": "input",
+          "bits": [ 42 ]
+        },
+        "Q0": {
+          "direction": "output",
+          "bits": [ 43 ]
+        },
+        "Q1": {
+          "direction": "output",
+          "bits": [ 44 ]
+        },
+        "Q2": {
+          "direction": "output",
+          "bits": [ 45 ]
+        },
+        "Q3": {
+          "direction": "output",
+          "bits": [ 46 ]
+        },
+        "Q4": {
+          "direction": "output",
+          "bits": [ 47 ]
+        },
+        "Q5": {
+          "direction": "output",
+          "bits": [ 48 ]
+        },
+        "Q6": {
+          "direction": "output",
+          "bits": [ 49 ]
+        },
+        "Q7": {
+          "direction": "output",
+          "bits": [ 50 ]
+        },
+        "Q8": {
+          "direction": "output",
+          "bits": [ 51 ]
+        },
+        "Q9": {
+          "direction": "output",
+          "bits": [ 52 ]
+        },
+        "Q10": {
+          "direction": "output",
+          "bits": [ 53 ]
+        },
+        "Q11": {
+          "direction": "output",
+          "bits": [ 54 ]
+        },
+        "Q12": {
+          "direction": "output",
+          "bits": [ 55 ]
+        },
+        "Q13": {
+          "direction": "output",
+          "bits": [ 56 ]
+        },
+        "Q14": {
+          "direction": "output",
+          "bits": [ 57 ]
+        },
+        "Q15": {
+          "direction": "output",
+          "bits": [ 58 ]
+        },
+        "Q16": {
+          "direction": "output",
+          "bits": [ 59 ]
+        },
+        "Q17": {
+          "direction": "output",
+          "bits": [ 60 ]
+        },
+        "Q18": {
+          "direction": "output",
+          "bits": [ 61 ]
+        },
+        "Q19": {
+          "direction": "output",
+          "bits": [ 62 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A0": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:21.12-21.14"
+          }
+        },
+        "A1": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:22.12-22.14"
+          }
+        },
+        "A2": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:23.12-23.14"
+          }
+        },
+        "A3": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:24.12-24.14"
+          }
+        },
+        "A4": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:25.12-25.14"
+          }
+        },
+        "A5": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:26.12-26.14"
+          }
+        },
+        "A6": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:27.12-27.14"
+          }
+        },
+        "A7": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:28.12-28.14"
+          }
+        },
+        "ACC_CI": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:18.12-18.18"
+          }
+        },
+        "ACC_CO": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:19.12-19.18"
+          }
+        },
+        "ACC_RST": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:17.12-17.19"
+          }
+        },
+        "B0": {
+          "hide_name": 0,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:30.12-30.14"
+          }
+        },
+        "B1": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:31.12-31.14"
+          }
+        },
+        "B2": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:32.12-32.14"
+          }
+        },
+        "B3": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:33.12-33.14"
+          }
+        },
+        "B4": {
+          "hide_name": 0,
+          "bits": [ 19 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:34.12-34.14"
+          }
+        },
+        "B5": {
+          "hide_name": 0,
+          "bits": [ 20 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:35.12-35.14"
+          }
+        },
+        "B6": {
+          "hide_name": 0,
+          "bits": [ 21 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:36.12-36.14"
+          }
+        },
+        "B7": {
+          "hide_name": 0,
+          "bits": [ 22 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:37.12-37.14"
+          }
+        },
+        "C0": {
+          "hide_name": 0,
+          "bits": [ 23 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:39.12-39.14"
+          }
+        },
+        "C1": {
+          "hide_name": 0,
+          "bits": [ 24 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:40.12-40.14"
+          }
+        },
+        "C10": {
+          "hide_name": 0,
+          "bits": [ 33 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:49.12-49.15"
+          }
+        },
+        "C11": {
+          "hide_name": 0,
+          "bits": [ 34 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:50.12-50.15"
+          }
+        },
+        "C12": {
+          "hide_name": 0,
+          "bits": [ 35 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:51.12-51.15"
+          }
+        },
+        "C13": {
+          "hide_name": 0,
+          "bits": [ 36 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:52.12-52.15"
+          }
+        },
+        "C14": {
+          "hide_name": 0,
+          "bits": [ 37 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:53.12-53.15"
+          }
+        },
+        "C15": {
+          "hide_name": 0,
+          "bits": [ 38 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:54.12-54.15"
+          }
+        },
+        "C16": {
+          "hide_name": 0,
+          "bits": [ 39 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:55.12-55.15"
+          }
+        },
+        "C17": {
+          "hide_name": 0,
+          "bits": [ 40 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:56.12-56.15"
+          }
+        },
+        "C18": {
+          "hide_name": 0,
+          "bits": [ 41 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:57.12-57.15"
+          }
+        },
+        "C19": {
+          "hide_name": 0,
+          "bits": [ 42 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:58.12-58.15"
+          }
+        },
+        "C2": {
+          "hide_name": 0,
+          "bits": [ 25 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:41.12-41.14"
+          }
+        },
+        "C3": {
+          "hide_name": 0,
+          "bits": [ 26 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:42.12-42.14"
+          }
+        },
+        "C4": {
+          "hide_name": 0,
+          "bits": [ 27 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:43.12-43.14"
+          }
+        },
+        "C5": {
+          "hide_name": 0,
+          "bits": [ 28 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:44.12-44.14"
+          }
+        },
+        "C6": {
+          "hide_name": 0,
+          "bits": [ 29 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:45.12-45.14"
+          }
+        },
+        "C7": {
+          "hide_name": 0,
+          "bits": [ 30 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:46.12-46.14"
+          }
+        },
+        "C8": {
+          "hide_name": 0,
+          "bits": [ 31 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:47.12-47.14"
+          }
+        },
+        "C9": {
+          "hide_name": 0,
+          "bits": [ 32 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:48.12-48.14"
+          }
+        },
+        "CLK": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "clkbuf_sink": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:14.30-14.33"
+          }
+        },
+        "EN": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:15.12-15.14"
+          }
+        },
+        "Q0": {
+          "hide_name": 0,
+          "bits": [ 43 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:60.12-60.14"
+          }
+        },
+        "Q1": {
+          "hide_name": 0,
+          "bits": [ 44 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:61.12-61.14"
+          }
+        },
+        "Q10": {
+          "hide_name": 0,
+          "bits": [ 53 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:70.12-70.15"
+          }
+        },
+        "Q11": {
+          "hide_name": 0,
+          "bits": [ 54 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:71.12-71.15"
+          }
+        },
+        "Q12": {
+          "hide_name": 0,
+          "bits": [ 55 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:72.12-72.15"
+          }
+        },
+        "Q13": {
+          "hide_name": 0,
+          "bits": [ 56 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:73.12-73.15"
+          }
+        },
+        "Q14": {
+          "hide_name": 0,
+          "bits": [ 57 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:74.12-74.15"
+          }
+        },
+        "Q15": {
+          "hide_name": 0,
+          "bits": [ 58 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:75.12-75.15"
+          }
+        },
+        "Q16": {
+          "hide_name": 0,
+          "bits": [ 59 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:76.12-76.15"
+          }
+        },
+        "Q17": {
+          "hide_name": 0,
+          "bits": [ 60 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:77.12-77.15"
+          }
+        },
+        "Q18": {
+          "hide_name": 0,
+          "bits": [ 61 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:78.12-78.15"
+          }
+        },
+        "Q19": {
+          "hide_name": 0,
+          "bits": [ 62 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:79.12-79.15"
+          }
+        },
+        "Q2": {
+          "hide_name": 0,
+          "bits": [ 45 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:62.12-62.14"
+          }
+        },
+        "Q3": {
+          "hide_name": 0,
+          "bits": [ 46 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:63.12-63.14"
+          }
+        },
+        "Q4": {
+          "hide_name": 0,
+          "bits": [ 47 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:64.12-64.14"
+          }
+        },
+        "Q5": {
+          "hide_name": 0,
+          "bits": [ 48 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:65.12-65.14"
+          }
+        },
+        "Q6": {
+          "hide_name": 0,
+          "bits": [ 49 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:66.12-66.14"
+          }
+        },
+        "Q7": {
+          "hide_name": 0,
+          "bits": [ 50 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:67.12-67.14"
+          }
+        },
+        "Q8": {
+          "hide_name": 0,
+          "bits": [ 51 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:68.12-68.14"
+          }
+        },
+        "Q9": {
+          "hide_name": 0,
+          "bits": [ 52 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/MACC_8x8_20/yosys/primitives/MACC_8x8_20.v:69.12-69.14"
+          }
+        }
+      }
+    },
     "OBUF": {
       "attributes": {
         "keep": "00000000000000000000000000000001",
@@ -1240,6 +4483,394 @@
           "attributes": {
             "iopad_external_pin": "00000000000000000000000000000001",
             "src": "../../../../ip/fabulous-tiles/primitives/OBUF/yosys/primitives/OBUF.v:23.35-23.38"
+          }
+        }
+      }
+    },
+    "RAM_32x4_2R_1W": {
+      "attributes": {
+        "keep": "00000000000000000000000000000001",
+        "dynports": "00000000000000000000000000000001",
+        "blackbox": "00000000000000000000000000000001",
+        "cells_not_processed": "00000000000000000000000000000001",
+        "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:16.1-134.10"
+      },
+      "parameter_default_values": {
+        "A_CLK_INV": "0",
+        "B_CLK_INV": "0",
+        "B_REG": "0",
+        "C_CLK_INV": "0",
+        "C_REG": "0"
+      },
+      "ports": {
+        "A_CLK": {
+          "direction": "input",
+          "bits": [ 2 ]
+        },
+        "A_ADDR0": {
+          "direction": "input",
+          "bits": [ 3 ]
+        },
+        "A_ADDR1": {
+          "direction": "input",
+          "bits": [ 4 ]
+        },
+        "A_ADDR2": {
+          "direction": "input",
+          "bits": [ 5 ]
+        },
+        "A_ADDR3": {
+          "direction": "input",
+          "bits": [ 6 ]
+        },
+        "A_ADDR4": {
+          "direction": "input",
+          "bits": [ 7 ]
+        },
+        "A_WEN": {
+          "direction": "input",
+          "bits": [ 8 ]
+        },
+        "A_DIN0": {
+          "direction": "input",
+          "bits": [ 9 ]
+        },
+        "A_DIN1": {
+          "direction": "input",
+          "bits": [ 10 ]
+        },
+        "A_DIN2": {
+          "direction": "input",
+          "bits": [ 11 ]
+        },
+        "A_DIN3": {
+          "direction": "input",
+          "bits": [ 12 ]
+        },
+        "B_CLK": {
+          "direction": "input",
+          "bits": [ 13 ]
+        },
+        "B_ADDR0": {
+          "direction": "input",
+          "bits": [ 14 ]
+        },
+        "B_ADDR1": {
+          "direction": "input",
+          "bits": [ 15 ]
+        },
+        "B_ADDR2": {
+          "direction": "input",
+          "bits": [ 16 ]
+        },
+        "B_ADDR3": {
+          "direction": "input",
+          "bits": [ 17 ]
+        },
+        "B_ADDR4": {
+          "direction": "input",
+          "bits": [ 18 ]
+        },
+        "B_REN": {
+          "direction": "input",
+          "bits": [ 19 ]
+        },
+        "B_DOUT0": {
+          "direction": "output",
+          "bits": [ 20 ]
+        },
+        "B_DOUT1": {
+          "direction": "output",
+          "bits": [ 21 ]
+        },
+        "B_DOUT2": {
+          "direction": "output",
+          "bits": [ 22 ]
+        },
+        "B_DOUT3": {
+          "direction": "output",
+          "bits": [ 23 ]
+        },
+        "C_CLK": {
+          "direction": "input",
+          "bits": [ 24 ]
+        },
+        "C_ADDR0": {
+          "direction": "input",
+          "bits": [ 25 ]
+        },
+        "C_ADDR1": {
+          "direction": "input",
+          "bits": [ 26 ]
+        },
+        "C_ADDR2": {
+          "direction": "input",
+          "bits": [ 27 ]
+        },
+        "C_ADDR3": {
+          "direction": "input",
+          "bits": [ 28 ]
+        },
+        "C_ADDR4": {
+          "direction": "input",
+          "bits": [ 29 ]
+        },
+        "C_REN": {
+          "direction": "input",
+          "bits": [ 30 ]
+        },
+        "C_DOUT0": {
+          "direction": "output",
+          "bits": [ 31 ]
+        },
+        "C_DOUT1": {
+          "direction": "output",
+          "bits": [ 32 ]
+        },
+        "C_DOUT2": {
+          "direction": "output",
+          "bits": [ 33 ]
+        },
+        "C_DOUT3": {
+          "direction": "output",
+          "bits": [ 34 ]
+        }
+      },
+      "cells": {
+      },
+      "netnames": {
+        "A_ADDR0": {
+          "hide_name": 0,
+          "bits": [ 3 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:25.18-25.25"
+          }
+        },
+        "A_ADDR1": {
+          "hide_name": 0,
+          "bits": [ 4 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:26.18-26.25"
+          }
+        },
+        "A_ADDR2": {
+          "hide_name": 0,
+          "bits": [ 5 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:27.18-27.25"
+          }
+        },
+        "A_ADDR3": {
+          "hide_name": 0,
+          "bits": [ 6 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:28.18-28.25"
+          }
+        },
+        "A_ADDR4": {
+          "hide_name": 0,
+          "bits": [ 7 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:29.18-29.25"
+          }
+        },
+        "A_CLK": {
+          "hide_name": 0,
+          "bits": [ 2 ],
+          "attributes": {
+            "clkbuf_sink": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:24.36-24.41"
+          }
+        },
+        "A_DIN0": {
+          "hide_name": 0,
+          "bits": [ 9 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:31.18-31.24"
+          }
+        },
+        "A_DIN1": {
+          "hide_name": 0,
+          "bits": [ 10 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:32.18-32.24"
+          }
+        },
+        "A_DIN2": {
+          "hide_name": 0,
+          "bits": [ 11 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:33.18-33.24"
+          }
+        },
+        "A_DIN3": {
+          "hide_name": 0,
+          "bits": [ 12 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:34.18-34.24"
+          }
+        },
+        "A_WEN": {
+          "hide_name": 0,
+          "bits": [ 8 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:30.18-30.23"
+          }
+        },
+        "B_ADDR0": {
+          "hide_name": 0,
+          "bits": [ 14 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:38.18-38.25"
+          }
+        },
+        "B_ADDR1": {
+          "hide_name": 0,
+          "bits": [ 15 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:39.18-39.25"
+          }
+        },
+        "B_ADDR2": {
+          "hide_name": 0,
+          "bits": [ 16 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:40.18-40.25"
+          }
+        },
+        "B_ADDR3": {
+          "hide_name": 0,
+          "bits": [ 17 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:41.18-41.25"
+          }
+        },
+        "B_ADDR4": {
+          "hide_name": 0,
+          "bits": [ 18 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:42.18-42.25"
+          }
+        },
+        "B_CLK": {
+          "hide_name": 0,
+          "bits": [ 13 ],
+          "attributes": {
+            "clkbuf_sink": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:37.36-37.41"
+          }
+        },
+        "B_DOUT0": {
+          "hide_name": 0,
+          "bits": [ 20 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:44.18-44.25"
+          }
+        },
+        "B_DOUT1": {
+          "hide_name": 0,
+          "bits": [ 21 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:45.18-45.25"
+          }
+        },
+        "B_DOUT2": {
+          "hide_name": 0,
+          "bits": [ 22 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:46.18-46.25"
+          }
+        },
+        "B_DOUT3": {
+          "hide_name": 0,
+          "bits": [ 23 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:47.18-47.25"
+          }
+        },
+        "B_REN": {
+          "hide_name": 0,
+          "bits": [ 19 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:43.18-43.23"
+          }
+        },
+        "C_ADDR0": {
+          "hide_name": 0,
+          "bits": [ 25 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:51.18-51.25"
+          }
+        },
+        "C_ADDR1": {
+          "hide_name": 0,
+          "bits": [ 26 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:52.18-52.25"
+          }
+        },
+        "C_ADDR2": {
+          "hide_name": 0,
+          "bits": [ 27 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:53.18-53.25"
+          }
+        },
+        "C_ADDR3": {
+          "hide_name": 0,
+          "bits": [ 28 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:54.18-54.25"
+          }
+        },
+        "C_ADDR4": {
+          "hide_name": 0,
+          "bits": [ 29 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:55.18-55.25"
+          }
+        },
+        "C_CLK": {
+          "hide_name": 0,
+          "bits": [ 24 ],
+          "attributes": {
+            "clkbuf_sink": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:50.36-50.41"
+          }
+        },
+        "C_DOUT0": {
+          "hide_name": 0,
+          "bits": [ 31 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:57.18-57.25"
+          }
+        },
+        "C_DOUT1": {
+          "hide_name": 0,
+          "bits": [ 32 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:58.18-58.25"
+          }
+        },
+        "C_DOUT2": {
+          "hide_name": 0,
+          "bits": [ 33 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:59.18-59.25"
+          }
+        },
+        "C_DOUT3": {
+          "hide_name": 0,
+          "bits": [ 34 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:60.18-60.25"
+          }
+        },
+        "C_REN": {
+          "hide_name": 0,
+          "bits": [ 30 ],
+          "attributes": {
+            "src": "../../../../ip/fabulous-tiles/primitives/RAM_32x4_2R_1W/yosys/primitives/RAM_32x4_2R_1W.v:56.18-56.23"
           }
         }
       }
@@ -1343,19 +4974,19 @@
       "ports": {
         "a": {
           "direction": "input",
-          "bits": [ 2, 3, 4, 5, 6 ]
+          "bits": [ 2, 3, 4, 5, 6, 7 ]
         },
         "b": {
           "direction": "input",
-          "bits": [ 7, 8, 9, 10, 11 ]
+          "bits": [ 8, 9, 10, 11, 12, 13 ]
         },
         "c": {
           "direction": "output",
-          "bits": [ 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ]
+          "bits": [ 14, 15, 16, 17, 18, 19, 20, 21 ]
         }
       },
       "cells": {
-        "$auto$alumacc.cc:512:replace_alu$4.carry_start": {
+        "$auto$alumacc.cc:512:replace_alu$8.carry_start": {
           "hide_name": 1,
           "type": "LUT4_HA",
           "parameters": {
@@ -1383,7 +5014,7 @@
             "I3": [ ]
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$4.slice[0].lut_i": {
+        "$auto$alumacc.cc:512:replace_alu$8.slice[0].lut_i": {
           "hide_name": 1,
           "type": "LUT4_HA",
           "parameters": {
@@ -1413,7 +5044,7 @@
             "O": [ 26 ]
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$4.slice[1].lut_i": {
+        "$auto$alumacc.cc:512:replace_alu$8.slice[1].lut_i": {
           "hide_name": 1,
           "type": "LUT4_HA",
           "parameters": {
@@ -1443,7 +5074,7 @@
             "O": [ 30 ]
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$4.slice[2].lut_i": {
+        "$auto$alumacc.cc:512:replace_alu$8.slice[2].lut_i": {
           "hide_name": 1,
           "type": "LUT4_HA",
           "parameters": {
@@ -1473,7 +5104,7 @@
             "O": [ 34 ]
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$4.slice[3].lut_i": {
+        "$auto$alumacc.cc:512:replace_alu$8.slice[3].lut_i": {
           "hide_name": 1,
           "type": "LUT4_HA",
           "parameters": {
@@ -1503,7 +5134,7 @@
             "O": [ 38 ]
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$4.slice[4].lut_i": {
+        "$auto$alumacc.cc:512:replace_alu$8.slice[4].lut_i": {
           "hide_name": 1,
           "type": "LUT4_HA",
           "parameters": {
@@ -1533,7 +5164,7 @@
             "O": [ 42 ]
           }
         },
-        "$auto$alumacc.cc:512:replace_alu$4.slice[5].lut_i": {
+        "$auto$alumacc.cc:512:replace_alu$8.slice[5].lut_i": {
           "hide_name": 1,
           "type": "LUT4_HA",
           "parameters": {
@@ -1557,10 +5188,40 @@
             "Ci": [ 39 ],
             "Co": [ 43 ],
             "I0": [ ],
+            "I1": [ 44 ],
+            "I2": [ 45 ],
+            "I3": [ ],
+            "O": [ 46 ]
+          }
+        },
+        "$auto$alumacc.cc:512:replace_alu$8.slice[6].lut_i": {
+          "hide_name": 1,
+          "type": "LUT4_HA",
+          "parameters": {
+            "I0MUX": "1",
+            "INIT": "1001011010010110"
+          },
+          "attributes": {
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "addition.v:18.16-18.21|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:51.4-56.3"
+          },
+          "port_directions": {
+            "Ci": "input",
+            "Co": "output",
+            "I0": "input",
+            "I1": "input",
+            "I2": "input",
+            "I3": "input",
+            "O": "output"
+          },
+          "connections": {
+            "Ci": [ 43 ],
+            "Co": [ 47 ],
+            "I0": [ ],
             "I1": [ "0" ],
             "I2": [ "0" ],
             "I3": [ ],
-            "O": [ 44 ]
+            "O": [ 48 ]
           }
         },
         "$iopadmap$addition.a": {
@@ -1668,6 +5329,27 @@
             "PAD": [ 6 ]
           }
         },
+        "$iopadmap$addition.a_5": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:2.8-2.59"
+          },
+          "port_directions": {
+            "EN": "input",
+            "OUT": "output",
+            "PAD": "inout"
+          },
+          "connections": {
+            "EN": [ "0" ],
+            "OUT": [ 44 ],
+            "PAD": [ 7 ]
+          }
+        },
         "$iopadmap$addition.b": {
           "hide_name": 1,
           "type": "IOBUF",
@@ -1686,7 +5368,7 @@
           "connections": {
             "EN": [ "0" ],
             "OUT": [ 25 ],
-            "PAD": [ 7 ]
+            "PAD": [ 8 ]
           }
         },
         "$iopadmap$addition.b_1": {
@@ -1707,7 +5389,7 @@
           "connections": {
             "EN": [ "0" ],
             "OUT": [ 29 ],
-            "PAD": [ 8 ]
+            "PAD": [ 9 ]
           }
         },
         "$iopadmap$addition.b_2": {
@@ -1728,7 +5410,7 @@
           "connections": {
             "EN": [ "0" ],
             "OUT": [ 33 ],
-            "PAD": [ 9 ]
+            "PAD": [ 10 ]
           }
         },
         "$iopadmap$addition.b_3": {
@@ -1749,7 +5431,7 @@
           "connections": {
             "EN": [ "0" ],
             "OUT": [ 37 ],
-            "PAD": [ 10 ]
+            "PAD": [ 11 ]
           }
         },
         "$iopadmap$addition.b_4": {
@@ -1770,7 +5452,28 @@
           "connections": {
             "EN": [ "0" ],
             "OUT": [ 41 ],
-            "PAD": [ 11 ]
+            "PAD": [ 12 ]
+          }
+        },
+        "$iopadmap$addition.b_5": {
+          "hide_name": 1,
+          "type": "IOBUF",
+          "parameters": {
+          },
+          "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:2.8-2.59"
+          },
+          "port_directions": {
+            "EN": "input",
+            "OUT": "output",
+            "PAD": "inout"
+          },
+          "connections": {
+            "EN": [ "0" ],
+            "OUT": [ 45 ],
+            "PAD": [ 13 ]
           }
         },
         "$iopadmap$addition.c": {
@@ -1791,7 +5494,7 @@
           "connections": {
             "EN": [ "1" ],
             "IN": [ 26 ],
-            "PAD": [ 12 ]
+            "PAD": [ 14 ]
           }
         },
         "$iopadmap$addition.c_1": {
@@ -1812,7 +5515,7 @@
           "connections": {
             "EN": [ "1" ],
             "IN": [ 30 ],
-            "PAD": [ 13 ]
+            "PAD": [ 15 ]
           }
         },
         "$iopadmap$addition.c_2": {
@@ -1833,7 +5536,7 @@
           "connections": {
             "EN": [ "1" ],
             "IN": [ 34 ],
-            "PAD": [ 14 ]
+            "PAD": [ 16 ]
           }
         },
         "$iopadmap$addition.c_3": {
@@ -1854,7 +5557,7 @@
           "connections": {
             "EN": [ "1" ],
             "IN": [ 38 ],
-            "PAD": [ 15 ]
+            "PAD": [ 17 ]
           }
         },
         "$iopadmap$addition.c_4": {
@@ -1875,7 +5578,7 @@
           "connections": {
             "EN": [ "1" ],
             "IN": [ 42 ],
-            "PAD": [ 16 ]
+            "PAD": [ 18 ]
           }
         },
         "$iopadmap$addition.c_5": {
@@ -1895,8 +5598,8 @@
           },
           "connections": {
             "EN": [ "1" ],
-            "IN": [ 44 ],
-            "PAD": [ 17 ]
+            "IN": [ 46 ],
+            "PAD": [ 19 ]
           }
         },
         "$iopadmap$addition.c_6": {
@@ -1916,53 +5619,11 @@
           },
           "connections": {
             "EN": [ "1" ],
-            "IN": [ "0" ],
-            "PAD": [ 18 ]
-          }
-        },
-        "$iopadmap$addition.c_7": {
-          "hide_name": 1,
-          "type": "IOBUF",
-          "parameters": {
-          },
-          "attributes": {
-            "keep": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:6.8-6.57"
-          },
-          "port_directions": {
-            "EN": "input",
-            "IN": "input",
-            "PAD": "inout"
-          },
-          "connections": {
-            "EN": [ "1" ],
-            "IN": [ "0" ],
-            "PAD": [ 19 ]
-          }
-        },
-        "$iopadmap$addition.c_8": {
-          "hide_name": 1,
-          "type": "IOBUF",
-          "parameters": {
-          },
-          "attributes": {
-            "keep": "00000000000000000000000000000001",
-            "module_not_derived": "00000000000000000000000000000001",
-            "src": "../../../../ip/fabulous-tiles/primitives/IOBUF/yosys/techmap/IOBUF_map.v:6.8-6.57"
-          },
-          "port_directions": {
-            "EN": "input",
-            "IN": "input",
-            "PAD": "inout"
-          },
-          "connections": {
-            "EN": [ "1" ],
-            "IN": [ "0" ],
+            "IN": [ 48 ],
             "PAD": [ 20 ]
           }
         },
-        "$iopadmap$addition.c_9": {
+        "$iopadmap$addition.c_7": {
           "hide_name": 1,
           "type": "IOBUF",
           "parameters": {
@@ -1985,51 +5646,51 @@
         }
       },
       "netnames": {
-        "$auto$alumacc.cc:512:replace_alu$4.CARRY": {
+        "$auto$alumacc.cc:512:replace_alu$8.CARRY": {
           "hide_name": 1,
-          "bits": [ 22, 23, 27, 31, 35, 39, 43 ],
+          "bits": [ 22, 23, 27, 31, 35, 39, 43, 47 ],
           "attributes": {
             "src": "addition.v:18.16-18.21|/nix/store/l2gyv6slac7jvgvpvi2r6js1bc6in6wf-yosys-2231c860/bin/../share/yosys/fabulous/arith_map.v:33.18-33.23",
-            "unused_bits": "6"
+            "unused_bits": "7"
           }
         },
         "$iopadmap$a": {
           "hide_name": 1,
-          "bits": [ 24, 28, 32, 36, 40 ],
+          "bits": [ 24, 28, 32, 36, 40, 44 ],
           "attributes": {
           }
         },
         "$iopadmap$b": {
           "hide_name": 1,
-          "bits": [ 25, 29, 33, 37, 41 ],
+          "bits": [ 25, 29, 33, 37, 41, 45 ],
           "attributes": {
           }
         },
         "$iopadmap$c": {
           "hide_name": 1,
-          "bits": [ 26, 30, 34, 38, 42, 44, "0", "0", "0", "0" ],
+          "bits": [ 26, 30, 34, 38, 42, 46, 48, "0" ],
           "attributes": {
           }
         },
         "a": {
           "hide_name": 0,
-          "bits": [ 2, 3, 4, 5, 6 ],
+          "bits": [ 2, 3, 4, 5, 6, 7 ],
           "attributes": {
-            "src": "addition.v:12.23-12.24"
+            "src": "addition.v:8.23-8.24"
           }
         },
         "b": {
           "hide_name": 0,
-          "bits": [ 7, 8, 9, 10, 11 ],
+          "bits": [ 8, 9, 10, 11, 12, 13 ],
           "attributes": {
-            "src": "addition.v:13.23-13.24"
+            "src": "addition.v:9.23-9.24"
           }
         },
         "c": {
           "hide_name": 0,
-          "bits": [ 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 ],
+          "bits": [ 14, 15, 16, 17, 18, 19, 20, 21 ],
           "attributes": {
-            "src": "addition.v:14.23-14.24"
+            "src": "addition.v:10.23-10.24"
           }
         }
       }
