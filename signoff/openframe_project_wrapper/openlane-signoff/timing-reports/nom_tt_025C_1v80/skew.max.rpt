@@ -5,10 +5,10 @@ Clock Skew (Setup)
 ======================= nom_tt_025C_1v80 Corner ===================================
 
 Clock clk
-2.496650 source latency _4017_/CLK ^
--1.623750 target latency _3979_/CLK ^
+3.080450 source latency _4021_/CLK ^
+-1.974578 target latency _3668_/CLK ^
 0.100000 clock uncertainty
--0.076063 CRPR
+-0.092296 CRPR
 --------------
-0.896838 setup skew
+1.113576 setup skew
 

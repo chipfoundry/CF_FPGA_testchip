@@ -3884,7 +3884,7 @@ MACRO openframe_project_wrapper
   PIN gpio_in[10]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 1.424700 ;
+    ANTENNAGATEAREA 1.286700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met3 ;
@@ -3904,7 +3904,7 @@ MACRO openframe_project_wrapper
   PIN gpio_in[12]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.929700 ;
+    ANTENNAGATEAREA 0.860700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met3 ;
@@ -3942,7 +3942,7 @@ MACRO openframe_project_wrapper
   PIN gpio_in[16]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 1.286700 ;
+    ANTENNAGATEAREA 1.424700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met2 ;
@@ -3962,7 +3962,7 @@ MACRO openframe_project_wrapper
   PIN gpio_in[18]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 1.286700 ;
+    ANTENNAGATEAREA 1.424700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met2 ;
@@ -3972,7 +3972,7 @@ MACRO openframe_project_wrapper
   PIN gpio_in[19]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 1.177200 ;
+    ANTENNAGATEAREA 1.286700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met2 ;
@@ -4002,7 +4002,7 @@ MACRO openframe_project_wrapper
   PIN gpio_in[21]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 1.177200 ;
+    ANTENNAGATEAREA 0.929700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met2 ;
@@ -4022,7 +4022,7 @@ MACRO openframe_project_wrapper
   PIN gpio_in[23]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 1.177200 ;
+    ANTENNAGATEAREA 0.929700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met2 ;
@@ -4042,7 +4042,7 @@ MACRO openframe_project_wrapper
   PIN gpio_in[25]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.593700 ;
+    ANTENNAGATEAREA 0.647700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met3 ;
@@ -4062,7 +4062,7 @@ MACRO openframe_project_wrapper
   PIN gpio_in[27]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.682200 ;
+    ANTENNAGATEAREA 0.647700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met3 ;
@@ -4180,8 +4180,8 @@ MACRO openframe_project_wrapper
   PIN gpio_in[38]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 1.286700 ;
-    ANTENNADIFFAREA 0.434700 ;
+    ANTENNAGATEAREA 2.590800 ;
+    ANTENNADIFFAREA 1.738800 ;
     PORT
       LAYER met2 ;
         RECT 725.950 -2.000 726.230 0.280 ;
@@ -4280,7 +4280,7 @@ MACRO openframe_project_wrapper
   PIN gpio_in[7]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 1.286700 ;
+    ANTENNAGATEAREA 1.424700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met3 ;
@@ -4290,7 +4290,7 @@ MACRO openframe_project_wrapper
   PIN gpio_in[8]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 1.424700 ;
+    ANTENNAGATEAREA 1.286700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met3 ;
@@ -4300,7 +4300,7 @@ MACRO openframe_project_wrapper
   PIN gpio_in[9]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 1.177200 ;
+    ANTENNAGATEAREA 1.424700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met3 ;
@@ -5269,7 +5269,7 @@ MACRO openframe_project_wrapper
     ANTENNADIFFAREA 1.304100 ;
     PORT
       LAYER met3 ;
-        RECT -2.000 2823.220 2.390 2823.520 ;
+        RECT -2.000 2823.220 1.010 2823.520 ;
     END
   END gpio_loopback_one[29]
   PIN gpio_loopback_one[2]
@@ -5289,7 +5289,7 @@ MACRO openframe_project_wrapper
     ANTENNADIFFAREA 0.869400 ;
     PORT
       LAYER met3 ;
-        RECT -2.000 2608.220 2.390 2608.520 ;
+        RECT -2.000 2608.220 0.300 2608.520 ;
     END
   END gpio_loopback_one[30]
   PIN gpio_loopback_one[31]
@@ -5299,7 +5299,7 @@ MACRO openframe_project_wrapper
     ANTENNADIFFAREA 1.738800 ;
     PORT
       LAYER met3 ;
-        RECT -2.000 2393.220 1.930 2393.520 ;
+        RECT -2.000 2393.220 2.390 2393.520 ;
     END
   END gpio_loopback_one[31]
   PIN gpio_loopback_one[32]
@@ -5339,7 +5339,7 @@ MACRO openframe_project_wrapper
     ANTENNADIFFAREA 0.869400 ;
     PORT
       LAYER met3 ;
-        RECT -2.000 1103.220 0.300 1103.520 ;
+        RECT -2.000 1103.220 2.850 1103.520 ;
     END
   END gpio_loopback_one[35]
   PIN gpio_loopback_one[36]
@@ -5359,7 +5359,7 @@ MACRO openframe_project_wrapper
     ANTENNADIFFAREA 0.869400 ;
     PORT
       LAYER met3 ;
-        RECT -2.000 673.220 2.850 673.520 ;
+        RECT -2.000 673.220 0.300 673.520 ;
     END
   END gpio_loopback_one[37]
   PIN gpio_loopback_one[38]
@@ -5767,7 +5767,7 @@ MACRO openframe_project_wrapper
     ANTENNADIFFAREA 3.912300 ;
     PORT
       LAYER met3 ;
-        RECT -2.000 1308.220 1.010 1308.520 ;
+        RECT -2.000 1308.220 2.850 1308.520 ;
     END
   END gpio_loopback_zero[34]
   PIN gpio_loopback_zero[35]
@@ -7513,7 +7513,7 @@ MACRO openframe_project_wrapper
   PIN mask_rev[0]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.647700 ;
+    ANTENNAGATEAREA 0.560700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met2 ;
@@ -7523,7 +7523,7 @@ MACRO openframe_project_wrapper
   PIN mask_rev[10]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.631200 ;
+    ANTENNAGATEAREA 0.560700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met2 ;
@@ -7543,7 +7543,7 @@ MACRO openframe_project_wrapper
   PIN mask_rev[12]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.631200 ;
+    ANTENNAGATEAREA 0.560700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met2 ;
@@ -7573,7 +7573,7 @@ MACRO openframe_project_wrapper
   PIN mask_rev[15]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.631200 ;
+    ANTENNAGATEAREA 0.560700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met2 ;
@@ -7593,7 +7593,7 @@ MACRO openframe_project_wrapper
   PIN mask_rev[17]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.647700 ;
+    ANTENNAGATEAREA 0.631200 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met2 ;
@@ -7603,7 +7603,7 @@ MACRO openframe_project_wrapper
   PIN mask_rev[18]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.631200 ;
+    ANTENNAGATEAREA 0.647700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met2 ;
@@ -7613,7 +7613,7 @@ MACRO openframe_project_wrapper
   PIN mask_rev[19]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.631200 ;
+    ANTENNAGATEAREA 0.647700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met2 ;
@@ -7623,7 +7623,7 @@ MACRO openframe_project_wrapper
   PIN mask_rev[1]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.593700 ;
+    ANTENNAGATEAREA 0.647700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met2 ;
@@ -7633,7 +7633,7 @@ MACRO openframe_project_wrapper
   PIN mask_rev[20]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.631200 ;
+    ANTENNAGATEAREA 0.647700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met2 ;
@@ -7653,7 +7653,7 @@ MACRO openframe_project_wrapper
   PIN mask_rev[22]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.631200 ;
+    ANTENNAGATEAREA 0.647700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met2 ;
@@ -7663,7 +7663,7 @@ MACRO openframe_project_wrapper
   PIN mask_rev[23]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.631200 ;
+    ANTENNAGATEAREA 0.593700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met2 ;
@@ -7683,7 +7683,7 @@ MACRO openframe_project_wrapper
   PIN mask_rev[25]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.631200 ;
+    ANTENNAGATEAREA 0.593700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met2 ;
@@ -7693,7 +7693,7 @@ MACRO openframe_project_wrapper
   PIN mask_rev[26]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.631200 ;
+    ANTENNAGATEAREA 0.560700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met2 ;
@@ -7713,7 +7713,7 @@ MACRO openframe_project_wrapper
   PIN mask_rev[28]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.631200 ;
+    ANTENNAGATEAREA 0.593700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met2 ;
@@ -7743,7 +7743,7 @@ MACRO openframe_project_wrapper
   PIN mask_rev[30]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.631200 ;
+    ANTENNAGATEAREA 0.647700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met2 ;
@@ -7753,7 +7753,7 @@ MACRO openframe_project_wrapper
   PIN mask_rev[31]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.647700 ;
+    ANTENNAGATEAREA 0.593700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met2 ;
@@ -7773,7 +7773,7 @@ MACRO openframe_project_wrapper
   PIN mask_rev[4]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.593700 ;
+    ANTENNAGATEAREA 0.647700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met2 ;
@@ -7783,7 +7783,7 @@ MACRO openframe_project_wrapper
   PIN mask_rev[5]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.631200 ;
+    ANTENNAGATEAREA 0.560700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met2 ;
@@ -7823,7 +7823,7 @@ MACRO openframe_project_wrapper
   PIN mask_rev[9]
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 0.647700 ;
+    ANTENNAGATEAREA 0.560700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met2 ;
@@ -7865,7 +7865,7 @@ MACRO openframe_project_wrapper
   PIN resetb_l
     DIRECTION INPUT ;
     USE SIGNAL ;
-    ANTENNAGATEAREA 1.177200 ;
+    ANTENNAGATEAREA 1.424700 ;
     ANTENNADIFFAREA 0.434700 ;
     PORT
       LAYER met2 ;
@@ -9007,8 +9007,8 @@ MACRO openframe_project_wrapper
         RECT 0.000 2826.140 3165.930 2827.290 ;
         RECT 0.000 2824.070 3166.630 2826.140 ;
         RECT 0.000 2823.920 3165.930 2824.070 ;
-        RECT 2.790 2822.920 3165.930 2823.920 ;
-        RECT 2.790 2822.820 3166.630 2822.920 ;
+        RECT 1.410 2822.920 3165.930 2823.920 ;
+        RECT 1.410 2822.820 3166.630 2822.920 ;
         RECT 0.000 2814.870 3166.630 2822.820 ;
         RECT 0.000 2813.920 3165.930 2814.870 ;
         RECT 0.700 2813.720 3165.930 2813.920 ;
@@ -9076,7 +9076,7 @@ MACRO openframe_project_wrapper
         RECT 0.000 2615.735 3166.630 2624.630 ;
         RECT 0.000 2614.625 3165.930 2615.735 ;
         RECT 0.000 2608.920 3166.630 2614.625 ;
-        RECT 2.790 2607.820 3166.630 2608.920 ;
+        RECT 0.700 2607.820 3166.630 2608.920 ;
         RECT 0.000 2607.270 3166.630 2607.820 ;
         RECT 0.000 2606.120 3165.930 2607.270 ;
         RECT 0.000 2604.510 3166.630 2606.120 ;
@@ -9148,7 +9148,7 @@ MACRO openframe_project_wrapper
         RECT 0.000 2417.510 3166.630 2419.120 ;
         RECT 0.700 2416.360 3166.630 2417.510 ;
         RECT 0.000 2393.920 3166.630 2416.360 ;
-        RECT 2.330 2392.820 3166.630 2393.920 ;
+        RECT 2.790 2392.820 3166.630 2393.920 ;
         RECT 0.000 2383.920 3166.630 2392.820 ;
         RECT 0.700 2383.220 3166.630 2383.920 ;
         RECT 0.700 2382.820 3165.930 2383.220 ;
@@ -9364,7 +9364,7 @@ MACRO openframe_project_wrapper
         RECT 0.000 1318.920 3166.630 1346.360 ;
         RECT 0.700 1317.820 3166.630 1318.920 ;
         RECT 0.000 1308.920 3166.630 1317.820 ;
-        RECT 1.410 1307.820 3166.630 1308.920 ;
+        RECT 3.250 1307.820 3166.630 1308.920 ;
         RECT 0.000 1290.740 3166.630 1307.820 ;
         RECT 0.000 1289.630 3165.930 1290.740 ;
         RECT 0.000 1280.735 3166.630 1289.630 ;
@@ -9438,7 +9438,7 @@ MACRO openframe_project_wrapper
         RECT 0.000 1131.510 3166.630 1133.120 ;
         RECT 0.700 1130.360 3166.630 1131.510 ;
         RECT 0.000 1103.920 3166.630 1130.360 ;
-        RECT 0.700 1102.820 3166.630 1103.920 ;
+        RECT 3.250 1102.820 3166.630 1103.920 ;
         RECT 0.000 1093.920 3166.630 1102.820 ;
         RECT 0.700 1092.820 3166.630 1093.920 ;
         RECT 0.000 1065.740 3166.630 1092.820 ;
@@ -9590,7 +9590,7 @@ MACRO openframe_project_wrapper
         RECT 0.000 699.510 3166.630 701.120 ;
         RECT 0.700 698.360 3166.630 699.510 ;
         RECT 0.000 673.920 3166.630 698.360 ;
-        RECT 3.250 672.820 3166.630 673.920 ;
+        RECT 0.700 672.820 3166.630 673.920 ;
         RECT 0.000 663.920 3166.630 672.820 ;
         RECT 0.700 662.820 3166.630 663.920 ;
         RECT 0.000 615.740 3166.630 662.820 ;

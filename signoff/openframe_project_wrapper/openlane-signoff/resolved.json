@@ -255,6 +255,7 @@
         "/home/ank/Desktop/WORK/T_4/CF_FPGA_testchip/ip/CF_gpio_config/rtl/CF_gpio_config.v",
         "/home/ank/Desktop/WORK/T_4/CF_FPGA_testchip/ip/CF_owire_id/rtl/CF_owire_id.v",
         "/home/ank/Desktop/WORK/T_4/CF_FPGA_testchip/ip/CF_owire_id/rtl/CF_owire_id_pad.v",
+        "/home/ank/Desktop/WORK/T_4/CF_FPGA_testchip/ip/CF_owire_id/rtl/CF_owire_id_shared.v",
         "/home/ank/Desktop/WORK/T_4/CF_FPGA_testchip/verilog/rtl/chip_core.sv",
         "/home/ank/Desktop/WORK/T_4/CF_FPGA_testchip/verilog/rtl/fabulous/synchronizer.sv",
         "/home/ank/Desktop/WORK/T_4/CF_FPGA_testchip/verilog/rtl/fabulous/fabric_spi_receiver.sv",

@@ -4,8 +4,8 @@ report_checks -unconstrained
 ===========================================================================
 ======================= min_tt_025C_1v80 Corner ===================================
 
-Startpoint: _4020_ (rising edge-triggered flip-flop clocked by clk)
-Endpoint: _3689_ (recovery check against rising-edge clock clk)
+Startpoint: _4017_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _3958_ (recovery check against rising-edge clock clk)
 Path Group: asynchronous
 Path Type: max
 
@@ -13,110 +13,110 @@ Fanout         Cap        Slew       Delay        Time   Description
 ---------------------------------------------------------------------------------------------
                                   0.000000    0.000000   clock clk (rise edge)
                                   0.000000    0.000000   clock source latency
-     2    0.176035    1.190000    0.000000    0.000000 ^ gpio_in[38] (in)
+     5    0.286972    1.190000    0.000000    0.000000 ^ gpio_in[38] (in)
                                                          gpio_in[38] (net)
-                      1.372128    0.095617    0.095617 ^ clkbuf_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_16)
-     5    0.254023    0.263993    0.480889    0.576507 ^ clkbuf_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_16)
+                      1.689919    0.262458    0.262458 ^ clkbuf_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_16)
+     5    0.084281    0.133166    0.428653    0.691111 ^ clkbuf_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_16)
                                                          clknet_0_gpio_in[38] (net)
-                      0.264032    0.003422    0.579929 ^ clkbuf_1_0_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
-     3    0.024148    0.059922    0.220643    0.800572 ^ clkbuf_1_0_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
+                      0.133722    0.007089    0.698200 ^ clkbuf_1_0_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
+     3    0.028571    0.064428    0.182980    0.881180 ^ clkbuf_1_0_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
                                                          clknet_1_0_0_gpio_in[38] (net)
-                      0.060067    0.002200    0.802772 ^ clkbuf_1_0_1_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
-     5    0.066224    0.125073    0.197477    1.000249 ^ clkbuf_1_0_1_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
+                      0.064656    0.003097    0.884277 ^ clkbuf_1_0_1_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
+     5    0.074277    0.136870    0.207936    1.092212 ^ clkbuf_1_0_1_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
                                                          clknet_1_0_1_gpio_in[38] (net)
-                      0.126934    0.012775    1.013024 ^ clkbuf_2_1_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
-     5    0.068680    0.129308    0.225539    1.238563 ^ clkbuf_2_1_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
+                      0.139266    0.015080    1.107292 ^ clkbuf_2_1_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
+     5    0.062012    0.118737    0.220214    1.327506 ^ clkbuf_2_1_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
                                                          clknet_2_1_0_gpio_in[38] (net)
-                      0.131625    0.014475    1.253038 ^ clkbuf_3_2_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
-    29    0.305246    0.515180    0.447500    1.700538 ^ clkbuf_3_2_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
+                      0.121551    0.015140    1.342646 ^ clkbuf_3_2_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
+     3    0.052590    0.102905    0.204678    1.547324 ^ clkbuf_3_2_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
                                                          clknet_3_2_0_gpio_in[38] (net)
-                      0.517506    0.032087    1.732625 ^ clkbuf_leaf_58_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
-     7    0.059925    0.118820    0.320694    2.053319 ^ clkbuf_leaf_58_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
-                                                         clknet_leaf_58_gpio_in[38] (net)
-                      0.118821    0.000613    2.053932 ^ _4020_/CLK (sky130_fd_sc_hd__dfrtp_4)
-     3    0.021614    0.093304    0.488676    2.542608 ^ _4020_/Q (sky130_fd_sc_hd__dfrtp_4)
+                      0.104946    0.011959    1.559283 ^ clkbuf_3_2_1_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
+    37    0.497369    0.830802    0.628501    2.187784 ^ clkbuf_3_2_1_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
+                                                         clknet_3_2_1_gpio_in[38] (net)
+                      0.948197    0.251452    2.439236 ^ clkbuf_leaf_57_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
+     3    0.039302    0.097591    0.350194    2.789430 ^ clkbuf_leaf_57_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
+                                                         clknet_leaf_57_gpio_in[38] (net)
+                      0.097592    0.000589    2.790019 ^ _4017_/CLK (sky130_fd_sc_hd__dfrtp_4)
+     3    0.012821    0.071853    0.456438    3.246457 ^ _4017_/Q (sky130_fd_sc_hd__dfrtp_4)
                                                          u_chip_core.fabric_spi_controller.rst_ni (net)
-                      0.093387    0.001697    2.544305 ^ hold1449/A (sky130_fd_sc_hd__dlygate4sd3_1)
-     3    0.022073    0.227468    0.721033    3.265338 ^ hold1449/X (sky130_fd_sc_hd__dlygate4sd3_1)
-                                                         net2902 (net)
-                      0.227477    0.001849    3.267187 ^ hold1445/A (sky130_fd_sc_hd__clkbuf_4)
-     3    0.046282    0.147229    0.284557    3.551744 ^ hold1445/X (sky130_fd_sc_hd__clkbuf_4)
-                                                         net2898 (net)
-                      0.147885    0.008347    3.560091 ^ wire1313/A (sky130_fd_sc_hd__buf_12)
-     5    0.239127    0.253703    0.218775    3.778866 ^ wire1313/X (sky130_fd_sc_hd__buf_12)
-                                                         net1313 (net)
-                      0.389390    0.159381    3.938247 ^ wire1312/A (sky130_fd_sc_hd__clkbuf_16)
-     5    0.142441    0.156371    0.304773    4.243020 ^ wire1312/X (sky130_fd_sc_hd__clkbuf_16)
-                                                         net1312 (net)
-                      0.184592    0.053088    4.296108 ^ _1490_/C_N (sky130_fd_sc_hd__nor3b_1)
-     1    0.002836    0.166131    0.212021    4.508128 ^ _1490_/Y (sky130_fd_sc_hd__nor3b_1)
-                                                         u_chip_core.fabric_config_large.rst_ni (net)
-                      0.166131    0.000035    4.508163 ^ hold1289/A (sky130_fd_sc_hd__dlygate4sd3_1)
-     1    0.003562    0.059432    0.602229    5.110392 ^ hold1289/X (sky130_fd_sc_hd__dlygate4sd3_1)
-                                                         net2742 (net)
-                      0.059432    0.000048    5.110440 ^ wire1283/A (sky130_fd_sc_hd__clkbuf_2)
-     1    0.004679    0.037005    0.108518    5.218958 ^ wire1283/X (sky130_fd_sc_hd__clkbuf_2)
-                                                         net1283 (net)
-                      0.037005    0.000093    5.219051 ^ hold1290/A (sky130_fd_sc_hd__dlygate4sd3_1)
-     1    0.007918    0.097845    0.601164    5.820216 ^ hold1290/X (sky130_fd_sc_hd__dlygate4sd3_1)
-                                                         net2743 (net)
-                      0.097845    0.000261    5.820477 ^ wire1282/A (sky130_fd_sc_hd__clkbuf_2)
-     2    0.017302    0.100722    0.172833    5.993309 ^ wire1282/X (sky130_fd_sc_hd__clkbuf_2)
-                                                         net1282 (net)
-                      0.100722    0.000527    5.993836 ^ fanout1259/A (sky130_fd_sc_hd__buf_12)
-    11    0.531345    0.502827    0.359115    6.352951 ^ fanout1259/X (sky130_fd_sc_hd__buf_12)
-                                                         net1259 (net)
-                      0.949186    0.424979    6.777930 ^ fanout1256/A (sky130_fd_sc_hd__buf_8)
-    11    0.101441    0.173538    0.300444    7.078374 ^ fanout1256/X (sky130_fd_sc_hd__buf_8)
-                                                         net1256 (net)
-                      0.175108    0.013772    7.092146 ^ fanout1255/A (sky130_fd_sc_hd__buf_8)
-    17    0.174901    0.281421    0.288640    7.380786 ^ fanout1255/X (sky130_fd_sc_hd__buf_8)
-                                                         net1255 (net)
-                      0.281422    0.000312    7.381098 ^ fanout1253/A (sky130_fd_sc_hd__buf_2)
-    11    0.057261    0.278491    0.360434    7.741532 ^ fanout1253/X (sky130_fd_sc_hd__buf_2)
-                                                         net1253 (net)
-                      0.278491    0.000380    7.741912 ^ fanout1252/A (sky130_fd_sc_hd__clkbuf_4)
-    17    0.064844    0.198190    0.344098    8.086010 ^ fanout1252/X (sky130_fd_sc_hd__clkbuf_4)
-                                                         net1252 (net)
-                      0.198262    0.003779    8.089789 ^ _3689_/RESET_B (sky130_fd_sc_hd__dfrtp_4)
-                                              8.089789   data arrival time
+                      0.071853    0.000550    3.247006 ^ hold1666/A (sky130_fd_sc_hd__dlygate4sd3_1)
+     1    0.015846    0.169816    0.670092    3.917099 ^ hold1666/X (sky130_fd_sc_hd__dlygate4sd3_1)
+                                                         net3142 (net)
+                      0.169816    0.000796    3.917895 ^ wire1340/A (sky130_fd_sc_hd__buf_8)
+     5    0.098848    0.164378    0.220620    4.138515 ^ wire1340/X (sky130_fd_sc_hd__buf_8)
+                                                         net1340 (net)
+                      0.170934    0.027082    4.165597 ^ wire1339/A (sky130_fd_sc_hd__clkbuf_16)
+     3    0.052775    0.071790    0.200990    4.366587 ^ wire1339/X (sky130_fd_sc_hd__clkbuf_16)
+                                                         net1339 (net)
+                      0.074393    0.011008    4.377594 ^ fanout1338/A (sky130_fd_sc_hd__clkbuf_16)
+    15    1.056631    1.035574    0.645201    5.022795 ^ fanout1338/X (sky130_fd_sc_hd__clkbuf_16)
+                                                         net1338 (net)
+                      1.204993    0.337839    5.360634 ^ fanout1336/A (sky130_fd_sc_hd__clkbuf_16)
+    21    0.207116    0.226137    0.444353    5.804987 ^ fanout1336/X (sky130_fd_sc_hd__clkbuf_16)
+                                                         net1336 (net)
+                      0.268609    0.078110    5.883097 ^ _1458_/C (sky130_fd_sc_hd__and3b_4)
+     1    0.020207    0.094372    0.290553    6.173651 ^ _1458_/X (sky130_fd_sc_hd__and3b_4)
+                                                         u_chip_core.fabric_config_small.rst_ni (net)
+                      0.094390    0.001332    6.174983 ^ hold1159/A (sky130_fd_sc_hd__dlygate4sd3_1)
+     1    0.025768    0.261071    0.747549    6.922532 ^ hold1159/X (sky130_fd_sc_hd__dlygate4sd3_1)
+                                                         net2635 (net)
+                      0.261071    0.000946    6.923478 ^ fanout1318/A (sky130_fd_sc_hd__buf_12)
+    13    1.090506    1.093329    0.551403    7.474881 ^ fanout1318/X (sky130_fd_sc_hd__buf_12)
+                                                         net1318 (net)
+                      1.249597    0.310209    7.785089 ^ hold1160/A (sky130_fd_sc_hd__buf_8)
+     3    0.269346    0.425171    0.455557    8.240646 ^ hold1160/X (sky130_fd_sc_hd__buf_8)
+                                                         net2636 (net)
+                      0.466154    0.107057    8.347704 ^ fanout1308/A (sky130_fd_sc_hd__buf_12)
+    13    0.207424    0.233981    0.278270    8.625974 ^ fanout1308/X (sky130_fd_sc_hd__buf_12)
+                                                         net1308 (net)
+                      0.233997    0.002447    8.628421 ^ fanout1307/A (sky130_fd_sc_hd__clkbuf_16)
+    15    0.175366    0.185428    0.282267    8.910687 ^ fanout1307/X (sky130_fd_sc_hd__clkbuf_16)
+                                                         net1307 (net)
+                      0.218141    0.061814    8.972501 ^ fanout1305/A (sky130_fd_sc_hd__buf_4)
+    24    0.090323    0.250164    0.327530    9.300032 ^ fanout1305/X (sky130_fd_sc_hd__buf_4)
+                                                         net1305 (net)
+                      0.250191    0.002308    9.302340 ^ _3958_/RESET_B (sky130_fd_sc_hd__dfrtp_4)
+                                              9.302340   data arrival time
 
                                  40.000000   40.000000   clock clk (rise edge)
                                   0.000000   40.000000   clock source latency
-     2    0.176035    1.000000    0.000000   40.000000 ^ gpio_in[38] (in)
+     5    0.286972    1.000000    0.000000   40.000000 ^ gpio_in[38] (in)
                                                          gpio_in[38] (net)
-                      1.182128    0.086512   40.086514 ^ clkbuf_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_16)
-     5    0.254023    0.261950    0.417302   40.503815 ^ clkbuf_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_16)
+                      1.499919    0.237460   40.237461 ^ clkbuf_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_16)
+     5    0.084281    0.129545    0.371251   40.608711 ^ clkbuf_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_16)
                                                          clknet_0_gpio_in[38] (net)
-                      0.261989    0.003098   40.506912 ^ clkbuf_1_0_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
-     3    0.024148    0.059880    0.199019   40.705933 ^ clkbuf_1_0_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
+                      0.130115    0.006413   40.615124 ^ clkbuf_1_0_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
+     3    0.028571    0.064364    0.164476   40.779602 ^ clkbuf_1_0_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
                                                          clknet_1_0_0_gpio_in[38] (net)
-                      0.060027    0.001990   40.707920 ^ clkbuf_1_0_1_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
-     5    0.066224    0.125073    0.178655   40.886578 ^ clkbuf_1_0_1_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
+                      0.064593    0.002800   40.782402 ^ clkbuf_1_0_1_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
+     5    0.074277    0.136871    0.188113   40.970512 ^ clkbuf_1_0_1_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
                                                          clknet_1_0_1_gpio_in[38] (net)
-                      0.126754    0.011006   40.897583 ^ clkbuf_2_0_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
-     5    0.085010    0.153927    0.221803   41.119385 ^ clkbuf_2_0_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
-                                                         clknet_2_0_0_gpio_in[38] (net)
-                      0.156101    0.013856   41.133244 ^ clkbuf_3_0_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
-    19    0.179720    0.309050    0.335508   41.468750 ^ clkbuf_3_0_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
-                                                         clknet_3_0_0_gpio_in[38] (net)
-                      0.309962    0.013046   41.481796 ^ clkbuf_leaf_62_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
-    11    0.056316    0.109819    0.248068   41.729862 ^ clkbuf_leaf_62_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
-                                                         clknet_leaf_62_gpio_in[38] (net)
-                      0.109819    0.000437   41.730301 ^ _3689_/CLK (sky130_fd_sc_hd__dfrtp_4)
-                                 -0.100000   41.630302   clock uncertainty
-                                  0.113672   41.743977   clock reconvergence pessimism
-                                  0.188094   41.932068   library recovery time
-                                             41.932068   data required time
+                      0.139267    0.013642   40.984158 ^ clkbuf_2_1_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
+     5    0.062012    0.118737    0.199240   41.183395 ^ clkbuf_2_1_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
+                                                         clknet_2_1_0_gpio_in[38] (net)
+                      0.121572    0.013749   41.197144 ^ clkbuf_3_3_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
+     3    0.072122    0.135766    0.200668   41.397812 ^ clkbuf_3_3_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
+                                                         clknet_3_3_0_gpio_in[38] (net)
+                      0.140805    0.019501   41.417313 ^ clkbuf_3_3_1_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
+    23    0.160835    0.278636    0.304794   41.722107 ^ clkbuf_3_3_1_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
+                                                         clknet_3_3_1_gpio_in[38] (net)
+                      0.283478    0.027814   41.749924 ^ clkbuf_leaf_95_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
+     3    0.032183    0.072440    0.215099   41.965019 ^ clkbuf_leaf_95_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
+                                                         clknet_leaf_95_gpio_in[38] (net)
+                      0.072440    0.000078   41.965099 ^ _3958_/CLK (sky130_fd_sc_hd__dfrtp_4)
+                                 -0.100000   41.865101   clock uncertainty
+                                  0.144111   42.009212   clock reconvergence pessimism
+                                  0.159539   42.168751   library recovery time
+                                             42.168751   data required time
 ---------------------------------------------------------------------------------------------
-                                             41.932068   data required time
-                                             -8.089789   data arrival time
+                                             42.168751   data required time
+                                             -9.302340   data arrival time
 ---------------------------------------------------------------------------------------------
-                                             33.842281   slack (MET)
+                                             32.866409   slack (MET)
 
 
-Startpoint: _4020_ (rising edge-triggered flip-flop clocked by clk)
-Endpoint: _3636_ (rising edge-triggered flip-flop clocked by clk)
+Startpoint: _4017_ (rising edge-triggered flip-flop clocked by clk)
+Endpoint: _3203_ (rising edge-triggered flip-flop clocked by clk)
 Path Group: clk
 Path Type: max
 
@@ -124,124 +124,136 @@ Fanout         Cap        Slew       Delay        Time   Description
 ---------------------------------------------------------------------------------------------
                                   0.000000    0.000000   clock clk (rise edge)
                                   0.000000    0.000000   clock source latency
-     2    0.176035    1.190000    0.000000    0.000000 ^ gpio_in[38] (in)
+     5    0.286972    1.190000    0.000000    0.000000 ^ gpio_in[38] (in)
                                                          gpio_in[38] (net)
-                      1.372128    0.095617    0.095617 ^ clkbuf_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_16)
-     5    0.254023    0.263993    0.480889    0.576507 ^ clkbuf_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_16)
+                      1.689919    0.262458    0.262458 ^ clkbuf_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_16)
+     5    0.084281    0.133166    0.428653    0.691111 ^ clkbuf_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_16)
                                                          clknet_0_gpio_in[38] (net)
-                      0.264032    0.003422    0.579929 ^ clkbuf_1_0_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
-     3    0.024148    0.059922    0.220643    0.800572 ^ clkbuf_1_0_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
+                      0.133722    0.007089    0.698200 ^ clkbuf_1_0_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
+     3    0.028571    0.064428    0.182980    0.881180 ^ clkbuf_1_0_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
                                                          clknet_1_0_0_gpio_in[38] (net)
-                      0.060067    0.002200    0.802772 ^ clkbuf_1_0_1_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
-     5    0.066224    0.125073    0.197477    1.000249 ^ clkbuf_1_0_1_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
+                      0.064656    0.003097    0.884277 ^ clkbuf_1_0_1_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
+     5    0.074277    0.136870    0.207936    1.092212 ^ clkbuf_1_0_1_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
                                                          clknet_1_0_1_gpio_in[38] (net)
-                      0.126934    0.012775    1.013024 ^ clkbuf_2_1_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
-     5    0.068680    0.129308    0.225539    1.238563 ^ clkbuf_2_1_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
+                      0.139266    0.015080    1.107292 ^ clkbuf_2_1_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
+     5    0.062012    0.118737    0.220214    1.327506 ^ clkbuf_2_1_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
                                                          clknet_2_1_0_gpio_in[38] (net)
-                      0.131625    0.014475    1.253038 ^ clkbuf_3_2_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
-    29    0.305246    0.515180    0.447500    1.700538 ^ clkbuf_3_2_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
+                      0.121551    0.015140    1.342646 ^ clkbuf_3_2_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
+     3    0.052590    0.102905    0.204678    1.547324 ^ clkbuf_3_2_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
                                                          clknet_3_2_0_gpio_in[38] (net)
-                      0.517506    0.032087    1.732625 ^ clkbuf_leaf_58_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
-     7    0.059925    0.118820    0.320694    2.053319 ^ clkbuf_leaf_58_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
-                                                         clknet_leaf_58_gpio_in[38] (net)
-                      0.118821    0.000613    2.053932 ^ _4020_/CLK (sky130_fd_sc_hd__dfrtp_4)
-     3    0.021614    0.093304    0.488676    2.542608 ^ _4020_/Q (sky130_fd_sc_hd__dfrtp_4)
+                      0.104946    0.011959    1.559283 ^ clkbuf_3_2_1_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
+    37    0.497369    0.830802    0.628501    2.187784 ^ clkbuf_3_2_1_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
+                                                         clknet_3_2_1_gpio_in[38] (net)
+                      0.948197    0.251452    2.439236 ^ clkbuf_leaf_57_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
+     3    0.039302    0.097591    0.350194    2.789430 ^ clkbuf_leaf_57_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
+                                                         clknet_leaf_57_gpio_in[38] (net)
+                      0.097592    0.000589    2.790019 ^ _4017_/CLK (sky130_fd_sc_hd__dfrtp_4)
+     3    0.012821    0.071853    0.456438    3.246457 ^ _4017_/Q (sky130_fd_sc_hd__dfrtp_4)
                                                          u_chip_core.fabric_spi_controller.rst_ni (net)
-                      0.093387    0.001697    2.544305 ^ hold1449/A (sky130_fd_sc_hd__dlygate4sd3_1)
-     3    0.022073    0.227468    0.721033    3.265338 ^ hold1449/X (sky130_fd_sc_hd__dlygate4sd3_1)
-                                                         net2902 (net)
-                      0.227477    0.001849    3.267187 ^ hold1445/A (sky130_fd_sc_hd__clkbuf_4)
-     3    0.046282    0.147229    0.284557    3.551744 ^ hold1445/X (sky130_fd_sc_hd__clkbuf_4)
-                                                         net2898 (net)
-                      0.147885    0.008347    3.560091 ^ wire1313/A (sky130_fd_sc_hd__buf_12)
-     5    0.239127    0.253703    0.218775    3.778866 ^ wire1313/X (sky130_fd_sc_hd__buf_12)
-                                                         net1313 (net)
-                      0.254365    0.014611    3.793477 ^ hold1446/A (sky130_fd_sc_hd__dlygate4sd3_1)
-     1    0.011418    0.128868    0.682917    4.476394 ^ hold1446/X (sky130_fd_sc_hd__dlygate4sd3_1)
-                                                         net2899 (net)
-                      0.128868    0.000537    4.476931 ^ fanout1311/A (sky130_fd_sc_hd__clkbuf_8)
-    11    0.095228    0.170851    0.255765    4.732696 ^ fanout1311/X (sky130_fd_sc_hd__clkbuf_8)
-                                                         net1311 (net)
-                      0.170851    0.000191    4.732887 ^ hold1447/A (sky130_fd_sc_hd__clkbuf_4)
-     5    0.066800    0.203833    0.306720    5.039608 ^ hold1447/X (sky130_fd_sc_hd__clkbuf_4)
-                                                         net2900 (net)
-                      0.203837    0.000778    5.040385 ^ fanout1310/A (sky130_fd_sc_hd__clkbuf_4)
-     7    0.036975    0.120533    0.258051    5.298436 ^ fanout1310/X (sky130_fd_sc_hd__clkbuf_4)
-                                                         net1310 (net)
-                      0.120533    0.000182    5.298618 ^ fanout1309/A (sky130_fd_sc_hd__buf_2)
-    11    0.047817    0.233990    0.282211    5.580829 ^ fanout1309/X (sky130_fd_sc_hd__buf_2)
-                                                         net1309 (net)
-                      0.233990    0.000262    5.581091 ^ fanout1306/A (sky130_fd_sc_hd__clkbuf_4)
-    15    0.061295    0.187909    0.321384    5.902475 ^ fanout1306/X (sky130_fd_sc_hd__clkbuf_4)
-                                                         net1306 (net)
-                      0.187909    0.000510    5.902986 ^ _1597_/A (sky130_fd_sc_hd__nand2_8)
-    15    0.143235    0.200741    0.209265    6.112250 v _1597_/Y (sky130_fd_sc_hd__nand2_8)
-                                                         _0873_ (net)
-                      0.202316    0.014982    6.127233 v _1599_/A (sky130_fd_sc_hd__or2_4)
-    11    0.240835    0.309049    0.512507    6.639740 v _1599_/X (sky130_fd_sc_hd__or2_4)
-                                                         _0875_ (net)
-                      0.391758    0.128789    6.768529 v _1604_/A (sky130_fd_sc_hd__nor2_2)
-     5    0.056705    0.607063    0.650993    7.419522 ^ _1604_/Y (sky130_fd_sc_hd__nor2_2)
-                                                         _0000_ (net)
-                      0.607198    0.007967    7.427489 ^ wire752/A (sky130_fd_sc_hd__clkbuf_8)
-     3    0.121857    0.218124    0.394533    7.822022 ^ wire752/X (sky130_fd_sc_hd__clkbuf_8)
-                                                         net752 (net)
-                      0.231696    0.044489    7.866511 ^ wire751/A (sky130_fd_sc_hd__clkbuf_16)
-     3    0.127630    0.141498    0.275828    8.142340 ^ wire751/X (sky130_fd_sc_hd__clkbuf_16)
-                                                         net751 (net)
-                      0.142594    0.010425    8.152765 ^ wire750/A (sky130_fd_sc_hd__buf_12)
-     4    0.115100    0.138814    0.191615    8.344379 ^ wire750/X (sky130_fd_sc_hd__buf_12)
-                                                         net750 (net)
-                      0.157523    0.040773    8.385153 ^ fanout749/A (sky130_fd_sc_hd__clkbuf_2)
-     5    0.031147    0.173001    0.244682    8.629834 ^ fanout749/X (sky130_fd_sc_hd__clkbuf_2)
-                                                         net749 (net)
-                      0.173001    0.000433    8.630267 ^ fanout746/A (sky130_fd_sc_hd__clkbuf_2)
-     5    0.028126    0.157423    0.237328    8.867595 ^ fanout746/X (sky130_fd_sc_hd__clkbuf_2)
-                                                         net746 (net)
-                      0.157423    0.000346    8.867941 ^ fanout745/A (sky130_fd_sc_hd__clkbuf_4)
-    10    0.055320    0.170637    0.282342    9.150284 ^ fanout745/X (sky130_fd_sc_hd__clkbuf_4)
-                                                         net745 (net)
-                      0.170637    0.000664    9.150948 ^ _2480_/S (sky130_fd_sc_hd__mux2_1)
-     1    0.007826    0.087802    0.390700    9.541648 v _2480_/X (sky130_fd_sc_hd__mux2_1)
-                                                         _0434_ (net)
-                      0.087802    0.000262    9.541910 v hold1529/A (sky130_fd_sc_hd__dlygate4sd3_1)
-     1    0.004311    0.060193    0.607340   10.149250 v hold1529/X (sky130_fd_sc_hd__dlygate4sd3_1)
-                                                         net2982 (net)
-                      0.060193    0.000082   10.149331 v _3636_/D (sky130_fd_sc_hd__dfxtp_1)
-                                             10.149331   data arrival time
+                      0.071853    0.000550    3.247006 ^ hold1666/A (sky130_fd_sc_hd__dlygate4sd3_1)
+     1    0.015846    0.169816    0.670092    3.917099 ^ hold1666/X (sky130_fd_sc_hd__dlygate4sd3_1)
+                                                         net3142 (net)
+                      0.169816    0.000796    3.917895 ^ wire1340/A (sky130_fd_sc_hd__buf_8)
+     5    0.098848    0.164378    0.220620    4.138515 ^ wire1340/X (sky130_fd_sc_hd__buf_8)
+                                                         net1340 (net)
+                      0.166178    0.014536    4.153051 ^ fanout1335/A (sky130_fd_sc_hd__buf_12)
+    13    0.402802    0.432423    0.298346    4.451397 ^ fanout1335/X (sky130_fd_sc_hd__buf_12)
+                                                         net1335 (net)
+                      0.575517    0.205371    4.656768 ^ fanout1333/A (sky130_fd_sc_hd__buf_8)
+    11    0.147207    0.241369    0.315924    4.972692 ^ fanout1333/X (sky130_fd_sc_hd__buf_8)
+                                                         net1333 (net)
+                      0.249009    0.035463    5.008155 ^ fanout1332/A (sky130_fd_sc_hd__clkbuf_16)
+    19    0.247862    0.248621    0.304061    5.312216 ^ fanout1332/X (sky130_fd_sc_hd__clkbuf_16)
+                                                         net1332 (net)
+                      0.248625    0.001160    5.313375 ^ fanout1331/A (sky130_fd_sc_hd__buf_6)
+    13    0.134190    0.267451    0.311108    5.624484 ^ fanout1331/X (sky130_fd_sc_hd__buf_6)
+                                                         net1331 (net)
+                      0.267452    0.000291    5.624775 ^ fanout1330/A (sky130_fd_sc_hd__clkbuf_8)
+    19    0.115918    0.204230    0.330704    5.955480 ^ fanout1330/X (sky130_fd_sc_hd__clkbuf_8)
+                                                         net1330 (net)
+                      0.204967    0.010533    5.966013 ^ fanout1329/A (sky130_fd_sc_hd__buf_4)
+    17    0.085874    0.238998    0.311480    6.277493 ^ fanout1329/X (sky130_fd_sc_hd__buf_4)
+                                                         net1329 (net)
+                      0.239003    0.001042    6.278534 ^ fanout1328/A (sky130_fd_sc_hd__clkbuf_4)
+    21    0.071136    0.215464    0.342902    6.621436 ^ fanout1328/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         net1328 (net)
+                      0.215467    0.000793    6.622229 ^ fanout1327/A (sky130_fd_sc_hd__clkbuf_4)
+    17    0.063603    0.194475    0.319651    6.941880 ^ fanout1327/X (sky130_fd_sc_hd__clkbuf_4)
+                                                         net1327 (net)
+                      0.194475    0.000598    6.942478 ^ fanout1322/A (sky130_fd_sc_hd__buf_2)
+    10    0.040868    0.201342    0.280900    7.223378 ^ fanout1322/X (sky130_fd_sc_hd__buf_2)
+                                                         net1322 (net)
+                      0.201348    0.001454    7.224832 ^ _1946_/A (sky130_fd_sc_hd__and2_1)
+     1    0.015390    0.159448    0.251923    7.476756 ^ _1946_/X (sky130_fd_sc_hd__and2_1)
+                                                         _0916_ (net)
+                      0.159448    0.000593    7.477349 ^ fanout1276/A (sky130_fd_sc_hd__buf_12)
+    13    0.728836    0.782758    0.534047    8.011396 ^ fanout1276/X (sky130_fd_sc_hd__buf_12)
+                                                         net1276 (net)
+                      0.782766    0.002640    8.014036 ^ fanout1274/A (sky130_fd_sc_hd__buf_12)
+    21    0.487613    0.540481    0.474825    8.488860 ^ fanout1274/X (sky130_fd_sc_hd__buf_12)
+                                                         net1274 (net)
+                      0.540679    0.010279    8.499140 ^ _1948_/B (sky130_fd_sc_hd__and3_1)
+     1    0.004718    0.072249    0.267054    8.766193 ^ _1948_/X (sky130_fd_sc_hd__and3_1)
+                                                         _0918_ (net)
+                      0.072249    0.000120    8.766314 ^ _1954_/A (sky130_fd_sc_hd__and4_1)
+     1    0.009367    0.109019    0.229841    8.996154 ^ _1954_/X (sky130_fd_sc_hd__and4_1)
+                                                         _0924_ (net)
+                      0.109019    0.000387    8.996542 ^ _1955_/D_N (sky130_fd_sc_hd__or4b_4)
+     7    0.068926    0.177954    0.641407    9.637948 v _1955_/X (sky130_fd_sc_hd__or4b_4)
+                                                         _0925_ (net)
+                      0.178838    0.008320    9.646269 v hold1566/A (sky130_fd_sc_hd__dlygate4sd3_1)
+     3    0.035408    0.195051    0.797042   10.443312 v hold1566/X (sky130_fd_sc_hd__dlygate4sd3_1)
+                                                         net3042 (net)
+                      0.195141    0.004106   10.447417 v _1956_/B (sky130_fd_sc_hd__nand2b_2)
+     5    0.022673    0.141902    0.205227   10.652644 ^ _1956_/Y (sky130_fd_sc_hd__nand2b_2)
+                                                         _0926_ (net)
+                      0.141904    0.000872   10.653517 ^ hold1567/A (sky130_fd_sc_hd__dlygate4sd3_1)
+     1    0.007982    0.098212    0.632518   11.286035 ^ hold1567/X (sky130_fd_sc_hd__dlygate4sd3_1)
+                                                         net3043 (net)
+                      0.098327    0.000279   11.286314 ^ _1961_/B1 (sky130_fd_sc_hd__o211a_1)
+     1    0.005508    0.062769    0.177368   11.463682 ^ _1961_/X (sky130_fd_sc_hd__o211a_1)
+                                                         _0004_ (net)
+                      0.062769    0.000134   11.463816 ^ hold1568/A (sky130_fd_sc_hd__dlygate4sd3_1)
+     1    0.004641    0.069025    0.583225   12.047041 ^ hold1568/X (sky130_fd_sc_hd__dlygate4sd3_1)
+                                                         net3044 (net)
+                      0.069025    0.000095   12.047136 ^ _3203_/D (sky130_fd_sc_hd__dfrtp_4)
+                                             12.047136   data arrival time
 
                                  40.000000   40.000000   clock clk (rise edge)
                                   0.000000   40.000000   clock source latency
-     2    0.176035    1.000000    0.000000   40.000000 ^ gpio_in[38] (in)
+     5    0.286972    1.000000    0.000000   40.000000 ^ gpio_in[38] (in)
                                                          gpio_in[38] (net)
-                      1.182128    0.086512   40.086514 ^ clkbuf_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_16)
-     5    0.254023    0.261950    0.417302   40.503815 ^ clkbuf_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_16)
+                      1.499919    0.237460   40.237461 ^ clkbuf_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_16)
+     5    0.084281    0.129545    0.371251   40.608711 ^ clkbuf_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_16)
                                                          clknet_0_gpio_in[38] (net)
-                      0.344688    0.107423   40.611237 ^ clkbuf_1_1_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
-     3    0.080140    0.147712    0.272529   40.883766 ^ clkbuf_1_1_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
-                                                         clknet_1_1_0_gpio_in[38] (net)
-                      0.151828    0.018424   40.902191 ^ clkbuf_1_1_1_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
-     5    0.083315    0.151398    0.226621   41.128811 ^ clkbuf_1_1_1_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
-                                                         clknet_1_1_1_gpio_in[38] (net)
-                      0.154402    0.016076   41.144886 ^ clkbuf_2_2_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
-     5    0.082792    0.150654    0.225903   41.370792 ^ clkbuf_2_2_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
-                                                         clknet_2_2_0_gpio_in[38] (net)
-                      0.154106    0.017153   41.387943 ^ clkbuf_3_5_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
-    19    0.258725    0.440844    0.340414   41.728355 ^ clkbuf_3_5_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
-                                                         clknet_3_5_0_gpio_in[38] (net)
-                      0.509557    0.126782   41.855141 ^ clkbuf_leaf_32_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
-     3    0.047607    0.100304    0.274099   42.129238 ^ clkbuf_leaf_32_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
-                                                         clknet_leaf_32_gpio_in[38] (net)
-                      0.100304    0.000320   42.129559 ^ _3636_/CLK (sky130_fd_sc_hd__dfxtp_1)
-                                 -0.100000   42.029560   clock uncertainty
-                                  0.072691   42.102253   clock reconvergence pessimism
-                                 -0.104262   41.997990   library setup time
-                                             41.997990   data required time
+                      0.130115    0.006413   40.615124 ^ clkbuf_1_0_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
+     3    0.028571    0.064364    0.164476   40.779602 ^ clkbuf_1_0_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
+                                                         clknet_1_0_0_gpio_in[38] (net)
+                      0.064593    0.002800   40.782402 ^ clkbuf_1_0_1_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
+     5    0.074277    0.136871    0.188113   40.970512 ^ clkbuf_1_0_1_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
+                                                         clknet_1_0_1_gpio_in[38] (net)
+                      0.139267    0.013642   40.984158 ^ clkbuf_2_1_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
+     5    0.062012    0.118737    0.199240   41.183395 ^ clkbuf_2_1_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
+                                                         clknet_2_1_0_gpio_in[38] (net)
+                      0.121572    0.013749   41.197144 ^ clkbuf_3_3_0_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
+     3    0.072122    0.135766    0.200668   41.397812 ^ clkbuf_3_3_0_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
+                                                         clknet_3_3_0_gpio_in[38] (net)
+                      0.140805    0.019501   41.417313 ^ clkbuf_3_3_1_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
+    23    0.160835    0.278636    0.304794   41.722107 ^ clkbuf_3_3_1_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
+                                                         clknet_3_3_1_gpio_in[38] (net)
+                      0.278677    0.002785   41.724892 ^ clkbuf_leaf_92_gpio_in[38]/A (sky130_fd_sc_hd__clkbuf_8)
+     3    0.032709    0.073145    0.214396   41.939289 ^ clkbuf_leaf_92_gpio_in[38]/X (sky130_fd_sc_hd__clkbuf_8)
+                                                         clknet_leaf_92_gpio_in[38] (net)
+                      0.073145    0.000242   41.939529 ^ _3203_/CLK (sky130_fd_sc_hd__dfrtp_4)
+                                 -0.100000   41.839531   clock uncertainty
+                                  0.144111   41.983643   clock reconvergence pessimism
+                                 -0.064783   41.918861   library setup time
+                                             41.918861   data required time
 ---------------------------------------------------------------------------------------------
-                                             41.997990   data required time
-                                            -10.149331   data arrival time
+                                             41.918861   data required time
+                                            -12.047136   data arrival time
 ---------------------------------------------------------------------------------------------
-                                             31.848658   slack (MET)
+                                             29.871725   slack (MET)
 
 
 
@@ -263,200 +275,211 @@ max slew
 
 Pin                                        Limit        Slew       Slack
 ------------------------------------------------------------------------
-wire932/A                               1.500000   10.060610   -8.560610 (VIOLATED)
-ANTENNA_wire932_A/DIODE                 1.500000   10.060574   -8.560574 (VIOLATED)
-ANTENNA_wire941_A/DIODE                 1.500000    9.891402   -8.391402 (VIOLATED)
-wire941/A                               1.500000    9.891407   -8.391407 (VIOLATED)
-ANTENNA__1504__A/DIODE                  1.500000    4.795860   -3.295860 (VIOLATED)
-_1504_/A                                1.500000    4.795860   -3.295860 (VIOLATED)
-wire1032/A                              1.500000    4.347909   -2.847909 (VIOLATED)
-ANTENNA_wire1032_A/DIODE                1.500000    4.347794   -2.847794 (VIOLATED)
-wire1036/A                              1.500000    3.616244   -2.116244 (VIOLATED)
-ANTENNA_wire1036_A/DIODE                1.500000    3.616152   -2.116153 (VIOLATED)
-wire1034/A                              1.500000    3.579435   -2.079435 (VIOLATED)
-ANTENNA_wire1034_A/DIODE                1.500000    3.579398   -2.079398 (VIOLATED)
-ANTENNA_load_slew1431_A/DIODE           1.500000    3.386111   -1.886111 (VIOLATED)
-load_slew1431/A                         1.500000    3.386098   -1.886098 (VIOLATED)
-_1485_/A                                1.500000    3.250772   -1.750772 (VIOLATED)
-ANTENNA__1485__A/DIODE                  1.500000    3.250768   -1.750768 (VIOLATED)
-ANTENNA__1509__A/DIODE                  1.500000    3.235001   -1.735001 (VIOLATED)
-_1509_/A                                1.500000    3.235000   -1.735000 (VIOLATED)
-ANTENNA_wire854_A/DIODE                 1.500000    3.171308   -1.671308 (VIOLATED)
-wire854/A                               1.500000    3.171308   -1.671308 (VIOLATED)
-ANTENNA__1582__Y/DIODE                  1.500000    3.169722   -1.669722 (VIOLATED)
-_1582_/Y                                1.500000    3.169722   -1.669722 (VIOLATED)
-ANTENNA__1510__A/DIODE                  1.500000    2.975181   -1.475181 (VIOLATED)
-_1510_/A                                1.500000    2.973939   -1.473939 (VIOLATED)
-ANTENNA__1535__X/DIODE                  1.500000    2.905194   -1.405194 (VIOLATED)
-_1535_/X                                1.500000    2.905194   -1.405194 (VIOLATED)
-_1500_/A                                1.500000    2.881181   -1.381181 (VIOLATED)
-ANTENNA__1500__A/DIODE                  1.500000    2.881156   -1.381156 (VIOLATED)
-ANTENNA_load_slew1405_A/DIODE           1.500000    2.874935   -1.374936 (VIOLATED)
-load_slew1405/A                         1.500000    2.874935   -1.374935 (VIOLATED)
-ANTENNA_235/DIODE                       1.500000    2.799403   -1.299403 (VIOLATED)
-ANTENNA_236/DIODE                       1.500000    2.799403   -1.299404 (VIOLATED)
-wire950/A                               1.500000    2.799401   -1.299401 (VIOLATED)
-ANTENNA_wire950_A/DIODE                 1.500000    2.799379   -1.299379 (VIOLATED)
-ANTENNA_237/DIODE                       1.500000    2.799377   -1.299377 (VIOLATED)
-ANTENNA_238/DIODE                       1.500000    2.799373   -1.299374 (VIOLATED)
-ANTENNA_239/DIODE                       1.500000    2.799369   -1.299369 (VIOLATED)
-ANTENNA_240/DIODE                       1.500000    2.799365   -1.299365 (VIOLATED)
-wire1024/A                              1.500000    2.695684   -1.195684 (VIOLATED)
-ANTENNA_wire1024_A/DIODE                1.500000    2.695647   -1.195647 (VIOLATED)
-ANTENNA_wire951_X/DIODE                 1.500000    2.645239   -1.145239 (VIOLATED)
-wire951/X                               1.500000    2.645239   -1.145239 (VIOLATED)
-_1503_/A                                1.500000    2.634597   -1.134597 (VIOLATED)
-ANTENNA__1503__A/DIODE                  1.500000    2.634593   -1.134593 (VIOLATED)
-wire909/A                               1.500000    2.313793   -0.813793 (VIOLATED)
-ANTENNA_wire909_A/DIODE                 1.500000    2.313791   -0.813791 (VIOLATED)
-ANTENNA__1576__Y/DIODE                  1.500000    2.243215   -0.743215 (VIOLATED)
-_1576_/Y                                1.500000    2.243215   -0.743215 (VIOLATED)
-ANTENNA_211/DIODE                       1.500000    2.148008   -0.648008 (VIOLATED)
-ANTENNA_209/DIODE                       1.500000    2.147582   -0.647582 (VIOLATED)
-ANTENNA_207/DIODE                       1.500000    2.147356   -0.647356 (VIOLATED)
-ANTENNA_205/DIODE                       1.500000    2.147178   -0.647178 (VIOLATED)
-ANTENNA_203/DIODE                       1.500000    2.147020   -0.647020 (VIOLATED)
-ANTENNA_wire933_X/DIODE                 1.500000    2.146894   -0.646895 (VIOLATED)
-ANTENNA_206/DIODE                       1.500000    2.146800   -0.646800 (VIOLATED)
-ANTENNA_208/DIODE                       1.500000    2.146800   -0.646800 (VIOLATED)
-ANTENNA_210/DIODE                       1.500000    2.146800   -0.646800 (VIOLATED)
-ANTENNA_212/DIODE                       1.500000    2.146801   -0.646801 (VIOLATED)
-ANTENNA_204/DIODE                       1.500000    2.146799   -0.646799 (VIOLATED)
-ANTENNA_202/DIODE                       1.500000    2.146762   -0.646762 (VIOLATED)
-wire933/X                               1.500000    2.146671   -0.646671 (VIOLATED)
-wire1428/A                              1.500000    2.106337   -0.606337 (VIOLATED)
-ANTENNA_wire1428_A/DIODE                1.500000    2.106309   -0.606309 (VIOLATED)
-_1508_/A                                1.500000    2.048439   -0.548439 (VIOLATED)
-ANTENNA__1508__A/DIODE                  1.500000    2.048432   -0.548432 (VIOLATED)
-_1506_/A                                1.500000    2.030627   -0.530627 (VIOLATED)
-ANTENNA__1506__A/DIODE                  1.500000    2.030623   -0.530624 (VIOLATED)
-ANTENNA__2504__A1/DIODE                 1.500000    2.017124   -0.517124 (VIOLATED)
-_2504_/A1                               1.500000    2.017117   -0.517117 (VIOLATED)
-ANTENNA_wire942_X/DIODE                 1.500000    1.915683   -0.415684 (VIOLATED)
-wire942/X                               1.500000    1.915670   -0.415670 (VIOLATED)
-_1505_/A                                1.500000    1.894283   -0.394283 (VIOLATED)
-ANTENNA__1505__A/DIODE                  1.500000    1.894282   -0.394282 (VIOLATED)
-ANTENNA_wire873_A/DIODE                 1.500000    1.876160   -0.376160 (VIOLATED)
-wire873/A                               1.500000    1.876157   -0.376157 (VIOLATED)
-ANTENNA__1580__Y/DIODE                  1.500000    1.844930   -0.344930 (VIOLATED)
-_1580_/Y                                1.500000    1.844930   -0.344930 (VIOLATED)
-ANTENNA_wire1035_X/DIODE                1.500000    1.832776   -0.332776 (VIOLATED)
-wire1035/X                              1.500000    1.832725   -0.332725 (VIOLATED)
-ANTENNA_301/DIODE                       1.500000    1.828866   -0.328866 (VIOLATED)
-ANTENNA_300/DIODE                       1.500000    1.828865   -0.328865 (VIOLATED)
-ANTENNA_load_slew1388_A/DIODE           1.500000    1.828820   -0.328821 (VIOLATED)
-load_slew1388/A                         1.500000    1.828791   -0.328791 (VIOLATED)
-ANTENNA_298/DIODE                       1.500000    1.828684   -0.328684 (VIOLATED)
-ANTENNA_299/DIODE                       1.500000    1.828664   -0.328664 (VIOLATED)
-_2493_/A1                               1.500000    1.812524   -0.312524 (VIOLATED)
-ANTENNA__2493__A1/DIODE                 1.500000    1.812484   -0.312484 (VIOLATED)
-ANTENNA__2503__A1/DIODE                 1.500000    1.804736   -0.304736 (VIOLATED)
-_2503_/A1                               1.500000    1.804729   -0.304729 (VIOLATED)
-ANTENNA__2487__A1/DIODE                 1.500000    1.781163   -0.281163 (VIOLATED)
-_2487_/A1                               1.500000    1.781144   -0.281144 (VIOLATED)
-ANTENNA_359/DIODE                       1.500000    1.781127   -0.281127 (VIOLATED)
-wire1021/A                              1.500000    1.732471   -0.232471 (VIOLATED)
-ANTENNA_wire1021_A/DIODE                1.500000    1.732468   -0.232468 (VIOLATED)
-ANTENNA_1/DIODE                         1.500000    1.732455   -0.232455 (VIOLATED)
-ANTENNA_281/DIODE                       1.500000    1.681212   -0.181212 (VIOLATED)
-ANTENNA_279/DIODE                       1.500000    1.679753   -0.179753 (VIOLATED)
-ANTENNA__1545__X/DIODE                  1.500000    1.676676   -0.176676 (VIOLATED)
-_1545_/X                                1.500000    1.676676   -0.176676 (VIOLATED)
-ANTENNA_277/DIODE                       1.500000    1.675418   -0.175418 (VIOLATED)
-ANTENNA_275/DIODE                       1.500000    1.673839   -0.173840 (VIOLATED)
-fanout1122/A                            1.500000    1.672716   -0.172716 (VIOLATED)
-ANTENNA_fanout1122_A/DIODE              1.500000    1.672637   -0.172637 (VIOLATED)
-ANTENNA_274/DIODE                       1.500000    1.671144   -0.171144 (VIOLATED)
-ANTENNA_278/DIODE                       1.500000    1.669887   -0.169887 (VIOLATED)
-ANTENNA_276/DIODE                       1.500000    1.669025   -0.169025 (VIOLATED)
-ANTENNA_280/DIODE                       1.500000    1.663453   -0.163453 (VIOLATED)
-ANTENNA_282/DIODE                       1.500000    1.660780   -0.160780 (VIOLATED)
-_1339_/Y                                1.494479    1.537213   -0.042734 (VIOLATED)
-wire1108/A                              1.500000    1.537699   -0.037699 (VIOLATED)
-ANTENNA_wire1108_A/DIODE                1.500000    1.537698   -0.037698 (VIOLATED)
-ANTENNA__1339__Y/DIODE                  1.500000    1.537213   -0.037213 (VIOLATED)
+wire913/A                               1.500000   11.246607   -9.746607 (VIOLATED)
+ANTENNA_wire913_A/DIODE                 1.500000   11.246584   -9.746583 (VIOLATED)
+wire904/A                               1.500000    8.903633   -7.403633 (VIOLATED)
+ANTENNA_wire904_A/DIODE                 1.500000    8.903607   -7.403607 (VIOLATED)
+ANTENNA_wire914_X/DIODE                 1.500000    6.241999   -4.741999 (VIOLATED)
+wire914/X                               1.500000    6.241985   -4.741986 (VIOLATED)
+wire985/A                               1.500000    5.575621   -4.075621 (VIOLATED)
+ANTENNA_wire985_A/DIODE                 1.500000    5.575509   -4.075509 (VIOLATED)
+_1498_/B                                1.500000    4.746000   -3.246000 (VIOLATED)
+ANTENNA__1498__B/DIODE                  1.500000    4.745986   -3.245986 (VIOLATED)
+ANTENNA_wire882_A/DIODE                 1.500000    3.959911   -2.459911 (VIOLATED)
+wire882/A                               1.500000    3.959913   -2.459913 (VIOLATED)
+ANTENNA__1570__Y/DIODE                  1.500000    3.919351   -2.419351 (VIOLATED)
+_1570_/Y                                1.500000    3.919344   -2.419344 (VIOLATED)
+wire986/A                               1.500000    3.769896   -2.269896 (VIOLATED)
+ANTENNA_6/DIODE                         1.500000    3.769889   -2.269889 (VIOLATED)
+ANTENNA_wire986_A/DIODE                 1.500000    3.769805   -2.269805 (VIOLATED)
+ANTENNA_5/DIODE                         1.500000    3.769794   -2.269794 (VIOLATED)
+ANTENNA_7/DIODE                         1.500000    3.769781   -2.269781 (VIOLATED)
+ANTENNA_8/DIODE                         1.500000    3.769768   -2.269768 (VIOLATED)
+ANTENNA_9/DIODE                         1.500000    3.769741   -2.269741 (VIOLATED)
+ANTENNA_10/DIODE                        1.500000    3.769726   -2.269726 (VIOLATED)
+_1477_/A                                1.500000    3.667717   -2.167717 (VIOLATED)
+ANTENNA__1477__A/DIODE                  1.500000    3.667712   -2.167712 (VIOLATED)
+ANTENNA__1497__B/DIODE                  1.500000    3.518974   -2.018974 (VIOLATED)
+_1497_/B                                1.500000    3.518972   -2.018972 (VIOLATED)
+wire983/A                               1.500000    3.373961   -1.873961 (VIOLATED)
+ANTENNA_wire983_A/DIODE                 1.500000    3.373928   -1.873928 (VIOLATED)
+ANTENNA__1503__B/DIODE                  1.500000    3.254465   -1.754465 (VIOLATED)
+_1503_/B                                1.500000    3.252521   -1.752521 (VIOLATED)
+_1478_/A                                1.500000    3.248763   -1.748763 (VIOLATED)
+ANTENNA__1478__A/DIODE                  1.500000    3.248759   -1.748759 (VIOLATED)
+ANTENNA__1495__B/DIODE                  1.500000    3.216353   -1.716354 (VIOLATED)
+_1495_/B                                1.500000    3.216331   -1.716331 (VIOLATED)
+ANTENNA_349/DIODE                       1.500000    3.216268   -1.716268 (VIOLATED)
+_1504_/B                                1.500000    2.903168   -1.403169 (VIOLATED)
+ANTENNA__1504__B/DIODE                  1.500000    2.903150   -1.403150 (VIOLATED)
+wire976/A                               1.500000    2.849529   -1.349529 (VIOLATED)
+ANTENNA_wire976_A/DIODE                 1.500000    2.849493   -1.349493 (VIOLATED)
+ANTENNA__1500__B/DIODE                  1.500000    2.763453   -1.263453 (VIOLATED)
+_1500_/B                                1.500000    2.763446   -1.263446 (VIOLATED)
+ANTENNA_304/DIODE                       1.500000    2.737381   -1.237381 (VIOLATED)
+ANTENNA_303/DIODE                       1.500000    2.737146   -1.237146 (VIOLATED)
+ANTENNA_302/DIODE                       1.500000    2.736634   -1.236634 (VIOLATED)
+_1469_/A                                1.500000    2.736353   -1.236354 (VIOLATED)
+ANTENNA__1469__A/DIODE                  1.500000    2.734257   -1.234257 (VIOLATED)
+ANTENNA_308/DIODE                       1.500000    2.733739   -1.233739 (VIOLATED)
+ANTENNA_309/DIODE                       1.500000    2.733220   -1.233220 (VIOLATED)
+ANTENNA_310/DIODE                       1.500000    2.732699   -1.232699 (VIOLATED)
+ANTENNA__1529__X/DIODE                  1.500000    2.700456   -1.200456 (VIOLATED)
+_1529_/X                                1.500000    2.700424   -1.200424 (VIOLATED)
+ANTENNA_170/DIODE                       1.500000    2.597227   -1.097227 (VIOLATED)
+ANTENNA_171/DIODE                       1.500000    2.597227   -1.097227 (VIOLATED)
+wire921/A                               1.500000    2.597227   -1.097227 (VIOLATED)
+ANTENNA_wire921_A/DIODE                 1.500000    2.597220   -1.097221 (VIOLATED)
+ANTENNA_172/DIODE                       1.500000    2.597218   -1.097218 (VIOLATED)
+ANTENNA_173/DIODE                       1.500000    2.597214   -1.097214 (VIOLATED)
+ANTENNA_174/DIODE                       1.500000    2.597210   -1.097210 (VIOLATED)
+ANTENNA_175/DIODE                       1.500000    2.597206   -1.097206 (VIOLATED)
+ANTENNA_wire922_X/DIODE                 1.500000    2.460600   -0.960600 (VIOLATED)
+wire922/X                               1.500000    2.460596   -0.960596 (VIOLATED)
+ANTENNA_168/DIODE                       1.500000    2.119848   -0.619848 (VIOLATED)
+ANTENNA_166/DIODE                       1.500000    2.119784   -0.619784 (VIOLATED)
+ANTENNA_164/DIODE                       1.500000    2.119652   -0.619652 (VIOLATED)
+ANTENNA_162/DIODE                       1.500000    2.119511   -0.619511 (VIOLATED)
+ANTENNA_160/DIODE                       1.500000    2.119207   -0.619207 (VIOLATED)
+ANTENNA_wire905_X/DIODE                 1.500000    2.119178   -0.619178 (VIOLATED)
+ANTENNA_163/DIODE                       1.500000    2.119175   -0.619175 (VIOLATED)
+ANTENNA_165/DIODE                       1.500000    2.119175   -0.619175 (VIOLATED)
+ANTENNA_167/DIODE                       1.500000    2.119175   -0.619175 (VIOLATED)
+ANTENNA_169/DIODE                       1.500000    2.119175   -0.619175 (VIOLATED)
+ANTENNA_159/DIODE                       1.500000    2.119174   -0.619174 (VIOLATED)
+ANTENNA_161/DIODE                       1.500000    2.119174   -0.619174 (VIOLATED)
+wire905/X                               1.500000    2.119153   -0.619153 (VIOLATED)
+wire1453/A                              1.500000    2.114091   -0.614091 (VIOLATED)
+ANTENNA_wire1453_A/DIODE                1.500000    2.114074   -0.614073 (VIOLATED)
+_2499_/A1                               1.500000    2.098611   -0.598611 (VIOLATED)
+ANTENNA__2499__A1/DIODE                 1.500000    2.098572   -0.598572 (VIOLATED)
+fanout1317/A                            1.500000    1.954237   -0.454237 (VIOLATED)
+ANTENNA_fanout1317_A/DIODE              1.500000    1.954184   -0.454184 (VIOLATED)
+_1499_/B                                1.500000    1.938554   -0.438554 (VIOLATED)
+ANTENNA__1499__B/DIODE                  1.500000    1.938549   -0.438549 (VIOLATED)
+wire969/A                               1.500000    1.932611   -0.432612 (VIOLATED)
+ANTENNA_wire969_A/DIODE                 1.500000    1.932608   -0.432608 (VIOLATED)
+ANTENNA__1541__X/DIODE                  1.500000    1.931100   -0.431100 (VIOLATED)
+_1541_/X                                1.500000    1.931100   -0.431100 (VIOLATED)
+ANTENNA_wire846_A/DIODE                 1.500000    1.929919   -0.429919 (VIOLATED)
+wire846/A                               1.500000    1.929910   -0.429910 (VIOLATED)
+ANTENNA__1530__X/DIODE                  1.500000    1.899484   -0.399484 (VIOLATED)
+_1530_/X                                1.500000    1.899456   -0.399456 (VIOLATED)
+ANTENNA__1574__Y/DIODE                  1.500000    1.898507   -0.398507 (VIOLATED)
+_1574_/Y                                1.500000    1.898507   -0.398507 (VIOLATED)
+_2500_/A1                               1.500000    1.842189   -0.342189 (VIOLATED)
+ANTENNA__2500__A1/DIODE                 1.500000    1.842179   -0.342179 (VIOLATED)
+_2479_/A1                               1.500000    1.837543   -0.337543 (VIOLATED)
+ANTENNA__2479__A1/DIODE                 1.500000    1.837528   -0.337528 (VIOLATED)
+clkbuf_0_gpio_in[38]/A                  1.500000    1.689919   -0.189919 (VIOLATED)
+ANTENNA_314/DIODE                       1.500000    1.689851   -0.189851 (VIOLATED)
+ANTENNA_clkbuf_0_gpio_in[38]_A/DIODE    1.500000    1.689822   -0.189822 (VIOLATED)
+ANTENNA_313/DIODE                       1.500000    1.689790   -0.189790 (VIOLATED)
+ANTENNA_315/DIODE                       1.500000    1.689753   -0.189753 (VIOLATED)
+ANTENNA__2501__A1/DIODE                 1.500000    1.685995   -0.185995 (VIOLATED)
+_2501_/A1                               1.500000    1.685985   -0.185985 (VIOLATED)
+fanout1312/A                            1.500000    1.675048   -0.175048 (VIOLATED)
+ANTENNA_fanout1312_A/DIODE              1.500000    1.675011   -0.175011 (VIOLATED)
+_2477_/A1                               1.500000    1.662186   -0.162186 (VIOLATED)
+ANTENNA__2477__A1/DIODE                 1.500000    1.662168   -0.162168 (VIOLATED)
+fanout759/A                             1.500000    1.654519   -0.154519 (VIOLATED)
+ANTENNA_fanout759_A/DIODE               1.500000    1.654516   -0.154516 (VIOLATED)
+ANTENNA__2484__S/DIODE                  1.500000    1.654466   -0.154466 (VIOLATED)
+_2484_/S                                1.500000    1.654457   -0.154457 (VIOLATED)
+ANTENNA__2480__S/DIODE                  1.500000    1.654293   -0.154293 (VIOLATED)
+_2480_/S                                1.500000    1.654229   -0.154229 (VIOLATED)
+ANTENNA_fanout757_A/DIODE               1.500000    1.653841   -0.153842 (VIOLATED)
+fanout757/A                             1.500000    1.653839   -0.153839 (VIOLATED)
+ANTENNA__2474__A1/DIODE                 1.500000    1.642065   -0.142065 (VIOLATED)
+_2474_/A1                               1.500000    1.642048   -0.142048 (VIOLATED)
+ANTENNA_252/DIODE                       1.500000    1.642032   -0.142032 (VIOLATED)
+fanout1173/A                            1.500000    1.621810   -0.121810 (VIOLATED)
+ANTENNA_fanout1173_A/DIODE              1.500000    1.621804   -0.121804 (VIOLATED)
+ANTENNA__1566__B1/DIODE                 1.500000    1.609176   -0.109176 (VIOLATED)
+_1566_/B1                               1.500000    1.609164   -0.109164 (VIOLATED)
+ANTENNA__1531__B1/DIODE                 1.500000    1.608944   -0.108945 (VIOLATED)
+_1531_/B1                               1.500000    1.608807   -0.108807 (VIOLATED)
+ANTENNA__1530__B1/DIODE                 1.500000    1.604513   -0.104513 (VIOLATED)
+_1530_/B1                               1.500000    1.604366   -0.104366 (VIOLATED)
+_1565_/B1                               1.500000    1.604110   -0.104110 (VIOLATED)
+ANTENNA__1565__B1/DIODE                 1.500000    1.603675   -0.103675 (VIOLATED)
+ANTENNA__1529__B1/DIODE                 1.500000    1.603378   -0.103378 (VIOLATED)
+_1529_/B1                               1.500000    1.603061   -0.103061 (VIOLATED)
+_1564_/B1                               1.500000    1.601622   -0.101622 (VIOLATED)
+ANTENNA__1564__B1/DIODE                 1.500000    1.600690   -0.100691 (VIOLATED)
+_2492_/A1                               1.500000    1.593745   -0.093745 (VIOLATED)
+ANTENNA__2492__A1/DIODE                 1.500000    1.593735   -0.093735 (VIOLATED)
+ANTENNA_338/DIODE                       1.500000    1.593697   -0.093697 (VIOLATED)
+ANTENNA_337/DIODE                       1.500000    1.593674   -0.093675 (VIOLATED)
+ANTENNA__2473__A1/DIODE                 1.500000    1.580574   -0.080574 (VIOLATED)
+_2473_/A1                               1.500000    1.580574   -0.080574 (VIOLATED)
+_2484_/A1                               1.500000    1.558132   -0.058132 (VIOLATED)
+ANTENNA__2484__A1/DIODE                 1.500000    1.558101   -0.058101 (VIOLATED)
+_2483_/A1                               1.500000    1.548454   -0.048454 (VIOLATED)
+ANTENNA__2483__A1/DIODE                 1.500000    1.548441   -0.048441 (VIOLATED)
+_2488_/A1                               1.500000    1.525392   -0.025392 (VIOLATED)
+ANTENNA__2488__A1/DIODE                 1.500000    1.525378   -0.025378 (VIOLATED)
+wire980/A                               1.500000    1.515468   -0.015468 (VIOLATED)
+ANTENNA_wire980_A/DIODE                 1.500000    1.515419   -0.015419 (VIOLATED)
+fanout1170/A                            1.500000    1.511634   -0.011634 (VIOLATED)
+ANTENNA_fanout1170_A/DIODE              1.500000    1.511537   -0.011537 (VIOLATED)
 
 max fanout
 
 Pin                                   Limit Fanout  Slack
 ---------------------------------------------------------
-clkbuf_leaf_12_gpio_in[38]/X             20     51    -31 (VIOLATED)
-clkbuf_leaf_30_gpio_in[38]/X             20     51    -31 (VIOLATED)
-clkbuf_leaf_34_gpio_in[38]/X             20     51    -31 (VIOLATED)
-clkbuf_leaf_47_gpio_in[38]/X             20     51    -31 (VIOLATED)
-clkbuf_leaf_4_gpio_in[38]/X              20     49    -29 (VIOLATED)
-clkbuf_leaf_14_gpio_in[38]/X             20     47    -27 (VIOLATED)
-clkbuf_leaf_31_gpio_in[38]/X             20     47    -27 (VIOLATED)
-clkbuf_leaf_22_gpio_in[38]/X             20     45    -25 (VIOLATED)
-clkbuf_leaf_23_gpio_in[38]/X             20     45    -25 (VIOLATED)
-clkbuf_leaf_33_gpio_in[38]/X             20     45    -25 (VIOLATED)
-clkbuf_leaf_50_gpio_in[38]/X             20     45    -25 (VIOLATED)
-clkbuf_leaf_11_gpio_in[38]/X             20     43    -23 (VIOLATED)
-clkbuf_leaf_15_gpio_in[38]/X             20     43    -23 (VIOLATED)
-clkbuf_leaf_25_gpio_in[38]/X             20     43    -23 (VIOLATED)
-clkbuf_leaf_40_gpio_in[38]/X             20     43    -23 (VIOLATED)
-clkbuf_leaf_27_gpio_in[38]/X             20     41    -21 (VIOLATED)
-clkbuf_leaf_3_gpio_in[38]/X              20     41    -21 (VIOLATED)
-clkbuf_leaf_2_gpio_in[38]/X              20     39    -19 (VIOLATED)
-clkbuf_leaf_16_gpio_in[38]/X             20     37    -17 (VIOLATED)
-clkbuf_leaf_24_gpio_in[38]/X             20     35    -15 (VIOLATED)
-clkbuf_leaf_56_gpio_in[38]/X             20     35    -15 (VIOLATED)
-clkbuf_leaf_19_gpio_in[38]/X             20     33    -13 (VIOLATED)
-clkbuf_leaf_20_gpio_in[38]/X             20     33    -13 (VIOLATED)
-clkbuf_leaf_49_gpio_in[38]/X             20     33    -13 (VIOLATED)
-clkbuf_leaf_9_gpio_in[38]/X              20     33    -13 (VIOLATED)
-clkbuf_leaf_13_gpio_in[38]/X             20     31    -11 (VIOLATED)
-clkbuf_leaf_48_gpio_in[38]/X             20     31    -11 (VIOLATED)
-max_cap809/X                             20     31    -11 (VIOLATED)
-clkbuf_3_2_0_gpio_in[38]/X               20     29     -9 (VIOLATED)
-clkbuf_leaf_29_gpio_in[38]/X             20     29     -9 (VIOLATED)
-clkbuf_leaf_53_gpio_in[38]/X             20     29     -9 (VIOLATED)
-clkbuf_leaf_54_gpio_in[38]/X             20     27     -7 (VIOLATED)
-clkbuf_3_1_0_gpio_in[38]/X               20     25     -5 (VIOLATED)
-clkbuf_leaf_66_gpio_in[38]/X             20     25     -5 (VIOLATED)
-clkbuf_leaf_6_gpio_in[38]/X              20     25     -5 (VIOLATED)
-fanout1284/X                             20     24     -4 (VIOLATED)
-fanout1328/X                             20     24     -4 (VIOLATED)
-clkbuf_leaf_1_gpio_in[38]/X              20     23     -3 (VIOLATED)
-clkbuf_leaf_28_gpio_in[38]/X             20     23     -3 (VIOLATED)
-fanout1197/X                             20     23     -3 (VIOLATED)
+clkbuf_leaf_5_gpio_in[38]/X              20     41    -21 (VIOLATED)
+clkbuf_3_2_1_gpio_in[38]/X               20     37    -17 (VIOLATED)
+clkbuf_leaf_54_gpio_in[38]/X             20     37    -17 (VIOLATED)
+clkbuf_3_4_1_gpio_in[38]/X               20     33    -13 (VIOLATED)
+fanout1244/X                             20     32    -12 (VIOLATED)
+clkbuf_3_1_1_gpio_in[38]/X               20     31    -11 (VIOLATED)
+clkbuf_leaf_22_gpio_in[38]/X             20     31    -11 (VIOLATED)
+clkbuf_leaf_38_gpio_in[38]/X             20     31    -11 (VIOLATED)
+clkbuf_leaf_45_gpio_in[38]/X             20     31    -11 (VIOLATED)
+clkbuf_leaf_6_gpio_in[38]/X              20     31    -11 (VIOLATED)
+clkbuf_leaf_78_gpio_in[38]/X             20     31    -11 (VIOLATED)
+clkbuf_leaf_79_gpio_in[38]/X             20     31    -11 (VIOLATED)
+clkbuf_leaf_2_gpio_in[38]/X              20     29     -9 (VIOLATED)
+clkbuf_leaf_32_gpio_in[38]/X             20     29     -9 (VIOLATED)
+clkbuf_leaf_51_gpio_in[38]/X             20     29     -9 (VIOLATED)
+clkbuf_leaf_10_gpio_in[38]/X             20     27     -7 (VIOLATED)
+clkbuf_leaf_29_gpio_in[38]/X             20     27     -7 (VIOLATED)
+clkbuf_leaf_85_gpio_in[38]/X             20     27     -7 (VIOLATED)
+clkbuf_leaf_69_gpio_in[38]/X             20     25     -5 (VIOLATED)
+fanout1305/X                             20     24     -4 (VIOLATED)
+clkbuf_3_0_1_gpio_in[38]/X               20     23     -3 (VIOLATED)
+clkbuf_3_3_1_gpio_in[38]/X               20     23     -3 (VIOLATED)
+fanout1230/X                             20     23     -3 (VIOLATED)
+fanout1254/X                             20     23     -3 (VIOLATED)
 gpio_loopback_zero[25]                   20     22     -2 (VIOLATED)
 gpio_loopback_zero[26]                   20     22     -2 (VIOLATED)
 gpio_loopback_zero[30]                   20     22     -2 (VIOLATED)
 gpio_loopback_zero[32]                   20     22     -2 (VIOLATED)
 gpio_loopback_zero[38]                   20     22     -2 (VIOLATED)
-fanout1123/X                             20     22     -2 (VIOLATED)
-fanout1161/X                             20     22     -2 (VIOLATED)
-fanout1178/X                             20     22     -2 (VIOLATED)
-fanout1185/X                             20     22     -2 (VIOLATED)
-fanout1194/X                             20     22     -2 (VIOLATED)
-fanout1203/X                             20     22     -2 (VIOLATED)
-fanout1215/X                             20     22     -2 (VIOLATED)
-fanout1221/X                             20     22     -2 (VIOLATED)
-fanout1250/X                             20     22     -2 (VIOLATED)
-clkbuf_3_3_0_gpio_in[38]/X               20     21        (VIOLATED)
-clkbuf_leaf_35_gpio_in[38]/X             20     21        (VIOLATED)
-clkbuf_leaf_57_gpio_in[38]/X             20     21        (VIOLATED)
-fanout1109/X                             20     21        (VIOLATED)
-fanout1110/X                             20     21        (VIOLATED)
-fanout1114/X                             20     21        (VIOLATED)
-fanout1121/X                             20     21        (VIOLATED)
+fanout1193/X                             20     22     -2 (VIOLATED)
+fanout1224/X                             20     22     -2 (VIOLATED)
+fanout1236/X                             20     22     -2 (VIOLATED)
+fanout1245/X                             20     22     -2 (VIOLATED)
+fanout1278/X                             20     22     -2 (VIOLATED)
+fanout1363/X                             20     22     -2 (VIOLATED)
+_4063_/Q                                 20     21        (VIOLATED)
+_4064_/Q                                 20     21        (VIOLATED)
+clkbuf_3_6_1_gpio_in[38]/X               20     21        (VIOLATED)
+clkbuf_leaf_1_gpio_in[38]/X              20     21        (VIOLATED)
+clkbuf_leaf_33_gpio_in[38]/X             20     21        (VIOLATED)
+clkbuf_leaf_62_gpio_in[38]/X             20     21        (VIOLATED)
+fanout1000/X                             20     21        (VIOLATED)
+fanout1001/X                             20     21        (VIOLATED)
+fanout1022/X                             20     21        (VIOLATED)
+fanout1023/X                             20     21        (VIOLATED)
+fanout1120/X                             20     21        (VIOLATED)
 fanout1122/X                             20     21        (VIOLATED)
-fanout1124/X                             20     21        (VIOLATED)
-fanout1125/X                             20     21        (VIOLATED)
 fanout1127/X                             20     21        (VIOLATED)
 fanout1128/X                             20     21        (VIOLATED)
-fanout1130/X                             20     21        (VIOLATED)
-fanout1131/X                             20     21        (VIOLATED)
-fanout1136/X                             20     21        (VIOLATED)
-fanout1137/X                             20     21        (VIOLATED)
-fanout1142/X                             20     21        (VIOLATED)
-fanout1143/X                             20     21        (VIOLATED)
-fanout1148/X                             20     21        (VIOLATED)
-fanout1149/X                             20     21        (VIOLATED)
-fanout1154/X                             20     21        (VIOLATED)
+fanout1150/X                             20     21        (VIOLATED)
 fanout1155/X                             20     21        (VIOLATED)
-fanout1160/X                             20     21        (VIOLATED)
+fanout1158/X                             20     21        (VIOLATED)
 fanout1166/X                             20     21        (VIOLATED)
 fanout1167/X                             20     21        (VIOLATED)
 fanout1169/X                             20     21        (VIOLATED)
@@ -465,111 +488,121 @@ fanout1172/X                             20     21        (VIOLATED)
 fanout1173/X                             20     21        (VIOLATED)
 fanout1175/X                             20     21        (VIOLATED)
 fanout1176/X                             20     21        (VIOLATED)
-fanout1179/X                             20     21        (VIOLATED)
 fanout1181/X                             20     21        (VIOLATED)
 fanout1182/X                             20     21        (VIOLATED)
-fanout1184/X                             20     21        (VIOLATED)
 fanout1187/X                             20     21        (VIOLATED)
 fanout1188/X                             20     21        (VIOLATED)
-fanout1190/X                             20     21        (VIOLATED)
-fanout1191/X                             20     21        (VIOLATED)
-fanout1193/X                             20     21        (VIOLATED)
-fanout1196/X                             20     21        (VIOLATED)
+fanout1194/X                             20     21        (VIOLATED)
 fanout1199/X                             20     21        (VIOLATED)
 fanout1200/X                             20     21        (VIOLATED)
-fanout1202/X                             20     21        (VIOLATED)
 fanout1205/X                             20     21        (VIOLATED)
 fanout1206/X                             20     21        (VIOLATED)
-fanout1208/X                             20     21        (VIOLATED)
-fanout1209/X                             20     21        (VIOLATED)
 fanout1211/X                             20     21        (VIOLATED)
 fanout1212/X                             20     21        (VIOLATED)
 fanout1214/X                             20     21        (VIOLATED)
+fanout1215/X                             20     21        (VIOLATED)
 fanout1217/X                             20     21        (VIOLATED)
 fanout1218/X                             20     21        (VIOLATED)
 fanout1220/X                             20     21        (VIOLATED)
+fanout1221/X                             20     21        (VIOLATED)
 fanout1223/X                             20     21        (VIOLATED)
-fanout1224/X                             20     21        (VIOLATED)
 fanout1226/X                             20     21        (VIOLATED)
 fanout1227/X                             20     21        (VIOLATED)
 fanout1229/X                             20     21        (VIOLATED)
-fanout1230/X                             20     21        (VIOLATED)
 fanout1232/X                             20     21        (VIOLATED)
 fanout1233/X                             20     21        (VIOLATED)
-fanout1243/X                             20     21        (VIOLATED)
-fanout1245/X                             20     21        (VIOLATED)
+fanout1235/X                             20     21        (VIOLATED)
+fanout1238/X                             20     21        (VIOLATED)
+fanout1239/X                             20     21        (VIOLATED)
+fanout1241/X                             20     21        (VIOLATED)
+fanout1242/X                             20     21        (VIOLATED)
 fanout1247/X                             20     21        (VIOLATED)
 fanout1248/X                             20     21        (VIOLATED)
-fanout1249/X                             20     21        (VIOLATED)
-fanout1254/X                             20     21        (VIOLATED)
+fanout1250/X                             20     21        (VIOLATED)
+fanout1251/X                             20     21        (VIOLATED)
+fanout1253/X                             20     21        (VIOLATED)
+fanout1256/X                             20     21        (VIOLATED)
 fanout1257/X                             20     21        (VIOLATED)
-fanout1258/X                             20     21        (VIOLATED)
+fanout1259/X                             20     21        (VIOLATED)
 fanout1260/X                             20     21        (VIOLATED)
-fanout1261/X                             20     21        (VIOLATED)
+fanout1262/X                             20     21        (VIOLATED)
 fanout1263/X                             20     21        (VIOLATED)
-fanout1285/X                             20     21        (VIOLATED)
-fanout1287/X                             20     21        (VIOLATED)
+fanout1265/X                             20     21        (VIOLATED)
+fanout1266/X                             20     21        (VIOLATED)
+fanout1268/X                             20     21        (VIOLATED)
+fanout1269/X                             20     21        (VIOLATED)
+fanout1271/X                             20     21        (VIOLATED)
+fanout1272/X                             20     21        (VIOLATED)
+fanout1274/X                             20     21        (VIOLATED)
+fanout1275/X                             20     21        (VIOLATED)
+fanout1277/X                             20     21        (VIOLATED)
 fanout1288/X                             20     21        (VIOLATED)
 fanout1289/X                             20     21        (VIOLATED)
-fanout1291/X                             20     21        (VIOLATED)
-fanout1292/X                             20     21        (VIOLATED)
+fanout1290/X                             20     21        (VIOLATED)
 fanout1293/X                             20     21        (VIOLATED)
-fanout1294/X                             20     21        (VIOLATED)
-fanout1322/X                             20     21        (VIOLATED)
-fanout1325/X                             20     21        (VIOLATED)
-fanout1331/X                             20     21        (VIOLATED)
+fanout1295/X                             20     21        (VIOLATED)
+fanout1297/X                             20     21        (VIOLATED)
+fanout1306/X                             20     21        (VIOLATED)
+fanout1309/X                             20     21        (VIOLATED)
+fanout1313/X                             20     21        (VIOLATED)
+fanout1314/X                             20     21        (VIOLATED)
+fanout1315/X                             20     21        (VIOLATED)
+fanout1316/X                             20     21        (VIOLATED)
+fanout1326/X                             20     21        (VIOLATED)
+fanout1328/X                             20     21        (VIOLATED)
 fanout1334/X                             20     21        (VIOLATED)
-fanout1337/X                             20     21        (VIOLATED)
-fanout1340/X                             20     21        (VIOLATED)
-fanout1343/X                             20     21        (VIOLATED)
-fanout1346/X                             20     21        (VIOLATED)
-fanout1349/X                             20     21        (VIOLATED)
-fanout1352/X                             20     21        (VIOLATED)
-fanout1355/X                             20     21        (VIOLATED)
-fanout1358/X                             20     21        (VIOLATED)
-fanout1361/X                             20     21        (VIOLATED)
-fanout1364/X                             20     21        (VIOLATED)
-fanout1367/X                             20     21        (VIOLATED)
-fanout1370/X                             20     21        (VIOLATED)
-fanout1373/X                             20     21        (VIOLATED)
-fanout1376/X                             20     21        (VIOLATED)
-fanout1379/X                             20     21        (VIOLATED)
-fanout1392/X                             20     21        (VIOLATED)
+fanout1336/X                             20     21        (VIOLATED)
+fanout1351/X                             20     21        (VIOLATED)
+fanout1354/X                             20     21        (VIOLATED)
+fanout1357/X                             20     21        (VIOLATED)
+fanout1360/X                             20     21        (VIOLATED)
+fanout1366/X                             20     21        (VIOLATED)
+fanout1369/X                             20     21        (VIOLATED)
+fanout1372/X                             20     21        (VIOLATED)
+fanout1375/X                             20     21        (VIOLATED)
+fanout1378/X                             20     21        (VIOLATED)
+fanout1381/X                             20     21        (VIOLATED)
+fanout1384/X                             20     21        (VIOLATED)
+fanout1387/X                             20     21        (VIOLATED)
+fanout1390/X                             20     21        (VIOLATED)
 fanout1393/X                             20     21        (VIOLATED)
 fanout1396/X                             20     21        (VIOLATED)
-fanout636/X                              20     21        (VIOLATED)
-fanout655/X                              20     21        (VIOLATED)
-fanout671/X                              20     21        (VIOLATED)
-fanout765/X                              20     21        (VIOLATED)
-fanout769/X                              20     21        (VIOLATED)
+fanout1399/X                             20     21        (VIOLATED)
+fanout1402/X                             20     21        (VIOLATED)
+fanout1405/X                             20     21        (VIOLATED)
+fanout1408/X                             20     21        (VIOLATED)
+fanout1419/X                             20     21        (VIOLATED)
+fanout1420/X                             20     21        (VIOLATED)
+fanout1421/X                             20     21        (VIOLATED)
+fanout1422/X                             20     21        (VIOLATED)
+fanout635/X                              20     21        (VIOLATED)
+fanout667/X                              20     21        (VIOLATED)
+fanout668/X                              20     21        (VIOLATED)
+fanout697/X                              20     21        (VIOLATED)
 fanout773/X                              20     21        (VIOLATED)
+fanout777/X                              20     21        (VIOLATED)
+fanout783/X                              20     21        (VIOLATED)
 fanout786/X                              20     21        (VIOLATED)
-fanout788/X                              20     21        (VIOLATED)
-fanout789/X                              20     21        (VIOLATED)
-fanout791/X                              20     21        (VIOLATED)
-fanout812/X                              20     21        (VIOLATED)
-fanout813/X                              20     21        (VIOLATED)
+fanout999/X                              20     21        (VIOLATED)
 
 max capacitance
 
 Pin                                        Limit         Cap       Slack
 ------------------------------------------------------------------------
-wire933/X                               0.561228    1.472257   -0.911029 (VIOLATED)
-wire942/X                               0.561228    1.418517   -0.857289 (VIOLATED)
-_1535_/X                                0.556650    1.087390   -0.530740 (VIOLATED)
-wire1035/X                              0.785532    1.108194   -0.322662 (VIOLATED)
-wire951/X                               0.281077    0.496411   -0.215334 (VIOLATED)
-_1582_/Y                                0.088816    0.153543   -0.064727 (VIOLATED)
-_1576_/Y                                0.293894    0.338595   -0.044701 (VIOLATED)
-_1545_/X                                0.301218    0.334190   -0.032971 (VIOLATED)
-_1339_/Y                                0.086070    0.089605   -0.003535 (VIOLATED)
+wire914/X                               0.281077    1.351826   -1.070749 (VIOLATED)
+wire905/X                               0.561228    1.368197   -0.806969 (VIOLATED)
+_1529_/X                                0.556650    1.031159   -0.474509 (VIOLATED)
+_1530_/X                                0.556650    1.006126   -0.449476 (VIOLATED)
+wire922/X                               0.281077    0.462097   -0.181019 (VIOLATED)
+_1570_/Y                                0.170298    0.345512   -0.175214 (VIOLATED)
+_1541_/X                                0.159312    0.205388   -0.046076 (VIOLATED)
 
 
 
 ===========================================================================
 report_parasitic_annotation -report_unannotated
 ============================================================================
-Found 217 unannotated drivers.
+Found 233 unannotated drivers.
  analog_io[0]
  analog_io[10]
  analog_io[11]
@@ -710,16 +743,16 @@ Found 217 unannotated drivers.
  porb_h
  porb_l
  resetb_h
- _4019__1452/LO
- clkload0/Y
- clkload1/Y
+ _4016__1475/LO
+ clkload0/X
+ clkload1/X
  clkload10/Y
- clkload11/X
+ clkload11/Y
  clkload12/Y
  clkload13/Y
  clkload14/Y
- clkload15/X
- clkload16/Y
+ clkload15/Y
+ clkload16/X
  clkload17/Y
  clkload18/Y
  clkload19/Y
@@ -738,8 +771,8 @@ Found 217 unannotated drivers.
  clkload30/Y
  clkload31/Y
  clkload32/Y
- clkload33/X
- clkload34/Y
+ clkload33/Y
+ clkload34/X
  clkload35/Y
  clkload36/Y
  clkload37/Y
@@ -764,35 +797,51 @@ Found 217 unannotated drivers.
  clkload54/Y
  clkload55/Y
  clkload56/Y
- clkload57/Y
+ clkload57/X
  clkload58/Y
  clkload59/Y
  clkload6/Y
  clkload60/Y
  clkload61/Y
  clkload62/Y
+ clkload63/X
+ clkload64/Y
+ clkload65/Y
+ clkload66/Y
+ clkload67/Y
+ clkload68/Y
+ clkload69/Y
  clkload7/Y
- clkload8/Y
+ clkload70/Y
+ clkload71/Y
+ clkload72/Y
+ clkload73/Y
+ clkload74/Y
+ clkload75/X
+ clkload76/X
+ clkload77/Y
+ clkload78/X
+ clkload8/X
  clkload9/Y
- openframe_project_wrapper_1440/HI
- openframe_project_wrapper_1441/HI
- openframe_project_wrapper_1442/HI
- openframe_project_wrapper_1443/HI
- openframe_project_wrapper_1444/HI
- openframe_project_wrapper_1445/HI
- openframe_project_wrapper_1446/HI
- openframe_project_wrapper_1447/HI
- openframe_project_wrapper_1448/HI
- openframe_project_wrapper_1449/HI
- openframe_project_wrapper_1450/HI
- openframe_project_wrapper_1451/HI
- openframe_project_wrapper_1453/LO
+ openframe_project_wrapper_1463/HI
+ openframe_project_wrapper_1464/HI
+ openframe_project_wrapper_1465/HI
+ openframe_project_wrapper_1466/HI
+ openframe_project_wrapper_1467/HI
+ openframe_project_wrapper_1468/HI
+ openframe_project_wrapper_1469/HI
+ openframe_project_wrapper_1470/HI
+ openframe_project_wrapper_1471/HI
+ openframe_project_wrapper_1472/HI
+ openframe_project_wrapper_1473/HI
+ openframe_project_wrapper_1474/HI
+ openframe_project_wrapper_1476/LO
 Found 0 partially unannotated drivers.
 
 ===========================================================================
-max slew violation count 112
-max fanout violation count 169
-max cap violation count 9
+max slew violation count 148
+max fanout violation count 156
+max cap violation count 7
 ============================================================================
 
 ===========================================================================
@@ -1100,13 +1149,16 @@ Warning: There are 300 input ports missing set_input_delay.
   resetb_h
   resetb_l
 Warning: There are 51 unclocked register/latch pins.
+  _3204_/CLK
+  _3205_/CLK
+  _3206_/CLK
   _3207_/CLK
   _3208_/CLK
   _3209_/CLK
   _3210_/CLK
-  _3211_/CLK
-  _3212_/CLK
-  _3213_/CLK
+  _4022_/CLK
+  _4023_/CLK
+  _4024_/CLK
   _4025_/CLK
   _4026_/CLK
   _4027_/CLK
@@ -1148,9 +1200,6 @@ Warning: There are 51 unclocked register/latch pins.
   _4063_/CLK
   _4064_/CLK
   _4065_/CLK
-  _4066_/CLK
-  _4067_/CLK
-  _4068_/CLK
 Warning: There are 717 unconstrained endpoints.
   analog_io[0]
   analog_io[10]
@@ -1812,19 +1861,22 @@ Warning: There are 717 unconstrained endpoints.
   gpio_vtrip_sel[7]
   gpio_vtrip_sel[8]
   gpio_vtrip_sel[9]
+  _3204_/D
+  _3205_/D
+  _3206_/D
   _3207_/D
   _3208_/D
   _3209_/D
   _3210_/D
-  _3211_/D
-  _3212_/D
-  _3213_/D
-  _4013_/D
-  _4014_/D
-  _4015_/D
+  _3689_/D
+  _3690_/D
+  _3691_/D
+  _4016_/D
+  _4018_/D
   _4019_/D
-  _4021_/D
   _4022_/D
+  _4023_/D
+  _4024_/D
   _4025_/D
   _4026_/D
   _4027_/D
@@ -1866,20 +1918,17 @@ Warning: There are 717 unconstrained endpoints.
   _4063_/D
   _4064_/D
   _4065_/D
-  _4066_/D
-  _4067_/D
-  _4068_/D
 Warning: There is 1 combinational loop in the design.
-  fanout1113/A
-  fanout1113/X
+  fanout1159/A
+  fanout1159/X
   u_owire.u_ip.osc_i0/A
   u_owire.u_ip.osc_i0/Y
   u_owire.u_ip.osc_i1/A
   u_owire.u_ip.osc_i1/Y
   u_owire.u_ip.osc_i2/A
   u_owire.u_ip.osc_i2/Y
-  fanout1115/A
-  fanout1115/X
+  fanout1160/A
+  fanout1160/X
   | loop cut point
-  fanout1113/A
+  fanout1159/A
   --------------------------------

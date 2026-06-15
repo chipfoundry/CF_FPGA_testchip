@@ -147,15 +147,15 @@ module openframe_project_wrapper (
         // Fabric pulls low when actively driving a 0; reads wire level via owire_user_in.
         // GPIO 0: CF_owire_id_pad (1-Wire chip-ID dedicated pad)
 
-        CF_owire_id_pad #(
+        CF_owire_id_shared #(
             .FAMILY_CODE        (8'hCF),
             .SERIAL_HIGH        (16'hCF1D)
         ) u_owire (
             .rst_n              (resetb_l),
             .mask_rev           (mask_rev),
-            // .user_pull_low      (bidir_oe[0] & ~bidir_out[0]),
-            // .user_in            (owire_user_in),
-            // .ip_busy            (owire_ip_busy),
+            .user_pull_low      (bidir_oe[0] & ~bidir_out[0]),
+            .user_in            (owire_user_in),
+            .ip_busy            (owire_ip_busy),
             .gpio_in_pin        (gpio_in[0]),
             .gpio_out_pin       (gpio_out[0]),
             .gpio_oeb_pin       (gpio_oeb[0]),
@@ -173,8 +173,8 @@ module openframe_project_wrapper (
         );
 
         // Feed wire level back to fabric bidir[0] input
-        // assign bidir_in[0] = owire_user_in;
-        assign bidir_in[0] = gpio_in[0];
+        assign bidir_in[0] = owire_user_in;
+        //  assign bidir_in[0] = gpio_in[0];
         
         // GPIO 1: bidir[1] (Mode 5: bidirectional)
         CF_gpio_config #(.MODE(3'd5)) gpio_1_config (

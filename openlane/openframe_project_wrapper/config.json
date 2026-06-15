@@ -11,6 +11,7 @@
         "dir::../../ip/CF_gpio_config/rtl/CF_gpio_config.v",
         "dir::../../ip/CF_owire_id/rtl/CF_owire_id.v",
         "dir::../../ip/CF_owire_id/rtl/CF_owire_id_pad.v",
+        "dir::../../ip/CF_owire_id/rtl/CF_owire_id_shared.v",
         "dir::../../verilog/rtl/chip_core.sv",
         "dir::../../verilog/rtl/fabulous/synchronizer.sv",
         "dir::../../verilog/rtl/fabulous/fabric_spi_receiver.sv",

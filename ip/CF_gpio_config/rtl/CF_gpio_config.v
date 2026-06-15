@@ -6,6 +6,7 @@
 //=============================================================================
 
 `default_nettype none
+`timescale 1ns / 1ps
 
 module CF_gpio_config #(
   parameter [2:0] MODE = 3'd1  // 0=ANALOG, 1=INPUT, 2=INPUT_PD, 3=INPUT_PU, 4=OUTPUT, 5=BIDIR
